@@ -1,0 +1,1715 @@
+{
+ "overview": [
+  "The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.",
+  "All 11 icons use a cloud. Ten place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.",
+  "Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.",
+  "The archive contains 11 icons, 11 feature graphics and 90 unique screenshot URLs: 74 portrait and 16 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."
+ ],
+ "captureNote": "Original assets captured 14 September 2026. Requested listing locale: English / US. Click an image to open its saved full-resolution file.",
+ "table": [
+  {
+   "id": "01-cloudgate",
+   "name": "CloudGate",
+   "publisher": "CloudGate Technologies",
+   "downloads": "100K+",
+   "rating": "4.1",
+   "portrait": 6,
+   "landscape": 0
+  },
+  {
+   "id": "02-fazcon",
+   "name": "Fazcon",
+   "publisher": "Fazcon Apps",
+   "downloads": "5M+",
+   "rating": "4.1",
+   "portrait": 7,
+   "landscape": 7
+  },
+  {
+   "id": "03-anz-cloud-drive",
+   "name": "ANZ Cloud Drive",
+   "publisher": "Auzi Apps Studios",
+   "downloads": "5K+",
+   "rating": "Not returned",
+   "portrait": 6,
+   "landscape": 0
+  },
+  {
+   "id": "04-cloud-backup",
+   "name": "Cloud Backup",
+   "publisher": "MAPIDIRECTIONS STUDIOS",
+   "downloads": "100K+",
+   "rating": "4.3",
+   "portrait": 5,
+   "landscape": 0
+  },
+  {
+   "id": "05-cloud-storage-drive",
+   "name": "Cloud Storage & Drive",
+   "publisher": "Fuzon Apps",
+   "downloads": "500K+",
+   "rating": "4.1",
+   "portrait": 6,
+   "landscape": 4
+  },
+  {
+   "id": "06-cloud-storage-backup-drive",
+   "name": "Cloud Storage Backup & Drive",
+   "publisher": "Daily Utility Apps",
+   "downloads": "1M+",
+   "rating": "4.1",
+   "portrait": 7,
+   "landscape": 1
+  },
+  {
+   "id": "07-cloud-storage-drive-backup",
+   "name": "Cloud Storage Drive Backup",
+   "publisher": "MindByte Studios L.L.C-FZ",
+   "downloads": "500K+",
+   "rating": "3.7",
+   "portrait": 7,
+   "landscape": 0
+  },
+  {
+   "id": "08-datahatch",
+   "name": "DataHatch",
+   "publisher": "Appseen Studio",
+   "downloads": "10K+",
+   "rating": "3.6",
+   "portrait": 10,
+   "landscape": 1
+  },
+  {
+   "id": "09-cloud-storage-sync",
+   "name": "Cloud Storage-Sync",
+   "publisher": "Utility Forge",
+   "downloads": "100K+",
+   "rating": "4.4",
+   "portrait": 9,
+   "landscape": 3
+  },
+  {
+   "id": "10-cloud-storage",
+   "name": "Cloud storage",
+   "publisher": "Golden Associate Pvt. Ltd.",
+   "downloads": "1K+",
+   "rating": "Not returned",
+   "portrait": 5,
+   "landscape": 0
+  },
+  {
+   "id": "11-nova-cloud",
+   "name": "Nova Cloud",
+   "publisher": "Nova Apps Studios",
+   "downloads": "5K+",
+   "rating": "Not returned",
+   "portrait": 6,
+   "landscape": 0
+  }
+ ],
+ "scope": [
+  "Snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.",
+  "Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.",
+  "Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.",
+  "All 112 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets.",
+  "The library is reusable project memory: an index, per-app notes, local original assets and a machine-readable manifest containing URLs, dimensions and file hashes. It is not an assertion of account-wide memory or ongoing monitoring. Recheck listings before a new production campaign because graphics, names, ratings and download brackets can change."
+ ],
+ "apps": [
+  {
+   "id": "01-cloudgate",
+   "num": "01",
+   "name": "CloudGate",
+   "title": "Cloudgate: Cloud Storage Drive",
+   "publisher": "CloudGate Technologies",
+   "downloads": "100K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.cloudgate.cloudstorage&hl=en&gl=US",
+   "notes": {
+    "Icon": "A white continuous cloud outline sits on a cyan-to-blue field. A red corner capacity badge attracts attention before the symbol; the open linework feels light but becomes less distinctive when reduced.",
+    "Feature graphic": "A centered wordmark and capacity strip dominate a blue banner with faint cloud silhouettes. The hierarchy is simple; the smallest supporting line loses prominence at listing scale.",
+    "Screenshot system": "Six portrait panels repeat an indigo background, centered white heading and tall white interface. The sequence moves from capacity to media, plans, backup, vault and scanning. Photo tiles extend beyond the gallery; other panels keep the UI mostly intact.",
+    "Design assessment": "Useful for a consistent portrait template and connected photo popups. The icon/banner promote 1TB while the opening screenshot promotes 100GB free: these need plan context, not blind reuse. No landscape screenshot was captured."
+   },
+   "tags": [
+    "outline cloud",
+    "indigo",
+    "centered headings",
+    "gallery popups",
+    "vault",
+    "scanner"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "01-cloudgate/icon-01.png",
+     "alt": "A white continuous cloud outline sits on a cyan-to-blue field. A red corner capacity badge attracts attention before the symbol; the open linework feels light but becomes less distinctive when reduced.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/uyHV-mrKyUmPhlHOaBdf2_f5rnjvlqD7bn4v2Ef9e3pqw4inhT6Lq2q1o3_-Xp5SNMQAe5NWp0bZC_j4q4HHMg"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "01-cloudgate/feature-graphic-01.png",
+     "alt": "A centered wordmark and capacity strip dominate a blue banner with faint cloud silhouettes. The hierarchy is simple; the smallest supporting line loses prominence at listing scale.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/BsYM-klHXxZrBN5q65d0bXrFI-G5bgbcgHr_cWmvurwZxYMFfTvnqOwKzScPLdpn6yztUT_0TuDXoMRsk8e4mA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-01.png",
+     "alt": "Capacity and dashboard",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Capacity and dashboard",
+     "src": "https://play-lh.googleusercontent.com/4FZGJCFstWIT4Ost1McPye00osHqXXCcqO7e9e5qYKLPmQrCci9aketsWyErkgktNvNK0nHf6DYbOx6hLrg75w"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-02.png",
+     "alt": "Photo gallery with lifted tiles",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo gallery with lifted tiles",
+     "src": "https://play-lh.googleusercontent.com/_mNXEfGS-bdpOTXJL8xOw1YCFBCY-wRo4Mx4Fep5m2LI-PJXqSj_TZd8frugPKNDV5976zO8gJTAudcORd1nEg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-03.png",
+     "alt": "Storage plan comparison",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage plan comparison",
+     "src": "https://play-lh.googleusercontent.com/kAZn7Yv7IoZQtrRgjH8jiyavKzSQ9QOX_SGsepN_3vgwi1g8qBPgRqSg9e0-wrwOo2OdR5alWoWLSxvgKvCuUg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-04.png",
+     "alt": "Selected-data backup",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Selected-data backup",
+     "src": "https://play-lh.googleusercontent.com/Aev_JpE_UnDqLhG6N-bBtWBPoSaOt2rurMy6mQ9prP_597fNXXuDtN2Fq1okbZWv1FZ8YPWIf2X1jhLkHDnN"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-05.png",
+     "alt": "PIN vault",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "PIN vault",
+     "src": "https://play-lh.googleusercontent.com/5vR5_FzAIK0pTFDddKq0GZf5H_fgA50MlXn4s9gRYFo8jrmH2xgS2j01dV-bB1jJsq4woCtafxDBkoFiK6Ur"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "01-cloudgate/screenshot-06.png",
+     "alt": "Document camera",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Document camera",
+     "src": "https://play-lh.googleusercontent.com/2_zbLTeSNVD-jgUrDo8_uSeAUi-pqmDv5yz-3ttRYnhLra3qa8jJ9jt6N9s8rAM8_SP9essqH6WuGAtrl6cjUI4"
+    }
+   ]
+  },
+  {
+   "id": "02-fazcon",
+   "num": "02",
+   "name": "Fazcon",
+   "title": "Cloud Storage: Cloud Drive App",
+   "publisher": "Fazcon Apps",
+   "downloads": "5M+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.fazconapps.backup.restore.data&hl=en&gl=US",
+   "notes": {
+    "Icon": "A solid white cloud and circular sync badge sit on an indigo gradient. The badge overlaps the lower center and preserves a strong cloud silhouette at small sizes.",
+    "Feature graphic": "The blue feature graphic repeats the cloud, sync badge and short brand lockup. It is spacious but explains little beyond the category.",
+    "Screenshot system": "Seven portraits use blue backgrounds, white interface panels, selective bold headings and cyan underline strokes. Lifted progress, document and media elements remain connected to their source. Seven landscapes switch to alternating blue/white compositions with side-by-side phone and problem-led copy; orange highlights provide emphasis.",
+    "Design assessment": "The broadest matched orientation reference in this collection, and the largest displayed install bracket. Useful for adapting information hierarchy across aspect ratios. The landscapes change the visual treatment rather than simply stretching portraits. Decorative rockets, hands and file symbols can compete with the actual feature."
+   },
+   "tags": [
+    "sync badge",
+    "blue",
+    "portrait and landscape",
+    "attached popups",
+    "problem-led messaging"
+   ],
+   "noLandscape": false,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "02-fazcon/icon-01.png",
+     "alt": "A solid white cloud and circular sync badge sit on an indigo gradient. The badge overlaps the lower center and preserves a strong cloud silhouette at small sizes.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/-D_rTljw18usqyOwuoCRRpbDBaHvS1DH6A_ML9coasJ6U4MvUVPYIYKSScE9tjzKRJMmfZE6t_filhn3icgf"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "02-fazcon/feature-graphic-01.png",
+     "alt": "The blue feature graphic repeats the cloud, sync badge and short brand lockup. It is spacious but explains little beyond the category.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/csMV3RlVIoOsET9_MRnH653eyvSz0H1nx3RgepOjtPp3ffwTXQMEHK-t6A3sbQQSa3LlUaR5GdEnIb9GFNXj"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-01.png",
+     "alt": "Storage offer overview",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage offer overview",
+     "src": "https://play-lh.googleusercontent.com/b0QDGZzorOPilMUCU_z0-PyKn6F3bDucFPCx3llNocQOLNiSOpNTNvW-Bt1Kb-XSERNoTl5t1ZLBD5fpA6ApMg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-02.png",
+     "alt": "Dashboard capacity",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Dashboard capacity",
+     "src": "https://play-lh.googleusercontent.com/qiVsViLNbwBvGO8gnx_efVyXgVdi1pHZimgQnVMbT8nFzHotEz62yU6oGYfoVTX0UqtnbI-ypG6N3K6qGa6211M"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-03.png",
+     "alt": "Backup progress",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup progress",
+     "src": "https://play-lh.googleusercontent.com/WmGeSlgR6nM3vCF7xtGiCFSSNtcAEDM1Hlr_eN6W0lsPKrohvREmQQERsRFnaup-EtwJZcdf652e9sqnab7avQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-04.png",
+     "alt": "Photo gallery",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo gallery",
+     "src": "https://play-lh.googleusercontent.com/WN39XPcikt6-a-Za2L22HW6Hvn8bX7D_RCnBd2QrRlRr_qmbRSS2_h990vbU0iGhQZ65xDZwRQ6L8VSChmvu6A"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-05.png",
+     "alt": "Document selection",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Document selection",
+     "src": "https://play-lh.googleusercontent.com/8GO5qAORaoaROjInHgjg_ZKF8XDlDgGG4ff2AOUQbzPX6B1TGkLwqb5HUqKn492AeUrTBXbM9QqGwi-fWuhG"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-06.png",
+     "alt": "Video playback",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video playback",
+     "src": "https://play-lh.googleusercontent.com/Gs1AqU0mZm9m7kmoJUK38BsO7Z595gsKXYEJGkvd6GMpOzPG6jdLRVO__6Jx8RlHbrG64v2B5VUJ7CBpURQi"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "02-fazcon/screenshot-07.png",
+     "alt": "Video compression",
+     "label": "Screenshot 07",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video compression",
+     "src": "https://play-lh.googleusercontent.com/nHrZMZNLNDJPYtQ4N0k-nF_uyYN7T9mwPxofSgD2wHvnnMOoG3r5Ec1EpnERVnNHRJtrqfye6PTHGe3peTLA2w"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-08.png",
+     "alt": "Space shortage",
+     "label": "Screenshot 08",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Space shortage",
+     "src": "https://play-lh.googleusercontent.com/UDXYgY8Hk3X9ID0ihSEtdOzjcvaIE8M3bkcRr7tdB_BPUodwqFc950LsTQKrmiv6wuhV6jUKZV3tMgmBO2uw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-09.png",
+     "alt": "File consolidation",
+     "label": "Screenshot 09",
+     "w": 1920,
+     "h": 1080,
+     "caption": "File consolidation",
+     "src": "https://play-lh.googleusercontent.com/dJYFBCjVEgnosFIOf9pp1TLglu0RHkD8I_9eDNebXyakWUC7OOZAzpT2m44Zvb0_PazHiEerm6W-BPCIH13FMw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-10.png",
+     "alt": "Contact protection",
+     "label": "Screenshot 10",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Contact protection",
+     "src": "https://play-lh.googleusercontent.com/2LoYvZ7McmZL2DXoH2Gafemoze6GsK6GP4XKHT92lLGUivOoeS1t3ZZreoh1hjiaA8EJeX9jQHtH2uGb09Qovw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-11.png",
+     "alt": "Photo organization",
+     "label": "Screenshot 11",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Photo organization",
+     "src": "https://play-lh.googleusercontent.com/XoHgRHcOpr2csFbHBfZA0MAmYx1ioCRjbwoQqZj7DxmJP-4b8wJ7xn9Jjnmln3xRhLA_BUfHHmPVbJT5Zm-E"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-12.png",
+     "alt": "Video and music storage",
+     "label": "Screenshot 12",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Video and music storage",
+     "src": "https://play-lh.googleusercontent.com/515TmMdBiWW_Tkpxt5UXUZ8tvyBTGFBWKpJqNWBdthTKZ8-BLieG2YlKlPc8tMUTmu7kB11SJhBLIwnjAtnr-g"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-13.png",
+     "alt": "Document protection",
+     "label": "Screenshot 13",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Document protection",
+     "src": "https://play-lh.googleusercontent.com/gR2-dHOzqtX0A2Y6bTXEYP7XTQYkFWnz4VcLqfGxfPOvUHmvKCVYud0CpDtGmJqHNOWDq1xBy9oPj6v4l2_P"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "02-fazcon/screenshot-14.png",
+     "alt": "Storage expansion",
+     "label": "Screenshot 14",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Storage expansion",
+     "src": "https://play-lh.googleusercontent.com/45aV8mJj8tEyMp7XIYRetejQfdFkjkIhmToA2ycqGw5ZzetEiyb_sBS4Vs9iLk2gKN9oqHtYfuqKZ0i47qMeDg"
+    }
+   ]
+  },
+  {
+   "id": "03-anz-cloud-drive",
+   "num": "03",
+   "name": "ANZ Cloud Drive",
+   "title": "ANZ Cloud Drive: Cloud Storage",
+   "publisher": "Auzi Apps Studios",
+   "downloads": "5K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace&hl=en&gl=US",
+   "notes": {
+    "Icon": "A white cloud outline surrounds blue negative space. A circular upload badge overlaps the lower middle; a second curved line suggests a highlight rather than another cloud lobe.",
+    "Feature graphic": "The blue banner combines cloud symbolism, a person using a phone and orange capacity/name labels. The human figure carries considerable visual weight.",
+    "Screenshot system": "Six portraits share bright blue gradients, white headings and orange keyword pills. The opening panel uses illustration; later panels show file selection, upload progress, recovery and dashboard tiles. Hands and lifted category cards indicate interaction.",
+    "Design assessment": "Useful for orange emphasis against blue and for enlarging a real selection/progress element. Some panels combine a phone, people, arrows and floating icons, reducing focus. The icon uses an up arrow while the opening illustration uses a down arrow; semantic direction should be deliberate. No landscape screenshot was captured."
+   },
+   "tags": [
+    "outline cloud",
+    "orange emphasis",
+    "blue",
+    "selection popup",
+    "upload progress"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "03-anz-cloud-drive/icon-01.png",
+     "alt": "A white cloud outline surrounds blue negative space. A circular upload badge overlaps the lower middle; a second curved line suggests a highlight rather than another cloud lobe.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/buZ9Z9M8uEHYEgYcmOoKPf5MEW4ibGwjzvd7rGra1Up7iKQM2HV_iin31Df2s6jQ-3D_x7rrluNGuF461_40qg"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "03-anz-cloud-drive/feature-graphic-01.png",
+     "alt": "The blue banner combines cloud symbolism, a person using a phone and orange capacity/name labels. The human figure carries considerable visual weight.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/iYbU8juNs8C7YAA0CfqDsALsPCs02ynAWzfb4shqaTMpo7ENooGSPlhb9f0CxyoC-PbN3WZkMEyYhbIHmsOwFw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-01.png",
+     "alt": "Capacity introduction",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Capacity introduction",
+     "src": "https://play-lh.googleusercontent.com/4npmXPEJyuygTO3f3ihFLYZrJa5lyGswVVcxX2eqlyZ6xPcl7GCEwCRDkGwALylla8fH0_dsJpoKNnNu40am"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-02.png",
+     "alt": "Image selection",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Image selection",
+     "src": "https://play-lh.googleusercontent.com/F0jpigZItN5vMEh9dJ9qQ5cEvdbOhfIC-JgRzXdkG19-_WptKNxU3_Kow5prCR8rEo2f8aV_rghzy_bdrTc_"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-03.png",
+     "alt": "Upload progress dialog",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload progress dialog",
+     "src": "https://play-lh.googleusercontent.com/ZOYIWM1tmPI8YnhASVXL1ur34nXam7X41VyzUgbmNN3Me1SYP22dWZNtBVqhg8ChUnjqe_9VXEi9TuvLKWBV4g"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-04.png",
+     "alt": "Restore and download",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore and download",
+     "src": "https://play-lh.googleusercontent.com/gocqfNi12q5XsnaZfzs-EyJrkBIxf6g7vToagRAKk3voQ5L2nllVyumZNyzBmP2NMDqu8MHG-9gxCb4juPYB"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-05.png",
+     "alt": "Storage dashboard tiles",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage dashboard tiles",
+     "src": "https://play-lh.googleusercontent.com/DdyxtE1hau48tSI9jilV3RdPy6ve9SdfJd_33luj-iRIRnq0LQs4gF8Ty9oA8xnIrxmazG4H3d2kBotuD-sC"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "03-anz-cloud-drive/screenshot-06.png",
+     "alt": "Backup and restore overview",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup and restore overview",
+     "src": "https://play-lh.googleusercontent.com/szWBzr2kN_jwIGppp_ulfTbA2KcDiIOR-9zP--4at4mKuZIKQBIMaQG7tyHMZg8uCYqdYgAK0onpdLq7737jEEw"
+    }
+   ]
+  },
+  {
+   "id": "04-cloud-backup",
+   "num": "04",
+   "name": "Cloud Backup",
+   "title": "Cloud Backup : Cloud Storage",
+   "publisher": "MAPIDIRECTIONS STUDIOS",
+   "downloads": "100K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.backup.restore.clould.backup.freecloud.storage&hl=en&gl=US",
+   "notes": {
+    "Icon": "A solid white cloud contains an up/down pair in a blue disc with a green-to-cyan ring. The badge is inside the cloud rather than below its baseline.",
+    "Feature graphic": "A centered cloud mark and category name sit on blue, with faint photo tiles near the edges. Small explanatory copy is subordinate to the large symbol.",
+    "Screenshot system": "Five portraits alternate blue areas and white curved cutouts. Angled phones, photo tiles, enlarged controls and a pointing hand create depth. Headings move between top and bottom, producing variety but less consistent scanning.",
+    "Design assessment": "Useful for studying foreground controls against angled devices. Device crops make some UI harder to evaluate. A 50GB offer appears in the upload panel while the banner references 100GB; the library records both without validating either entitlement. No landscape screenshot was captured."
+   },
+   "tags": [
+    "embedded arrows",
+    "green ring",
+    "angled phone",
+    "blue and white curves"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "04-cloud-backup/icon-01.png",
+     "alt": "A solid white cloud contains an up/down pair in a blue disc with a green-to-cyan ring. The badge is inside the cloud rather than below its baseline.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/73xGWGURdx18edsR7LeAWpis7CT3tWExObGgYI9c4bm-xnIdb7wY6QTBOUT5d1GmWH7pHFoJ5-hG0Eu_abFHIA"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "04-cloud-backup/feature-graphic-01.png",
+     "alt": "A centered cloud mark and category name sit on blue, with faint photo tiles near the edges. Small explanatory copy is subordinate to the large symbol.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/lolf8y50rcG5H2yKAJzav3-QpSyVCTDNFVuSVmF5A40gH6oBMpGuF0s5Ypyss6Qz48PDZVR0w6MbauwbF1-teg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "04-cloud-backup/screenshot-01.png",
+     "alt": "Backup category list",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup category list",
+     "src": "https://play-lh.googleusercontent.com/oTQ-ty7EPkNT3y3d8vy6IclHaMDCYZZRCb3MpgT4KfLaAWCpXj1LO6waXT487pfY5W4tvlFlR8tHsxvWhaAN9g"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "04-cloud-backup/screenshot-02.png",
+     "alt": "Photo and video gallery",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo and video gallery",
+     "src": "https://play-lh.googleusercontent.com/cf7Ugkze60hgENaO2WGR2dXp50hU3jCUmFpTakDvks5uhcpjPHV__0uDG_gm6JNaafbonL8mwvO1kJeGYRdy1w"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "04-cloud-backup/screenshot-03.png",
+     "alt": "Upload progress and offer",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload progress and offer",
+     "src": "https://play-lh.googleusercontent.com/EPRxL4EjBwebgCewwhDtmD-0Yt_fRmJ99d-TGB1van6f-LOhDVNUKRl6RrW9zs8AHxU5ICkhvGOUQ6im3Nw54Q"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "04-cloud-backup/screenshot-04.png",
+     "alt": "Restore controls",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore controls",
+     "src": "https://play-lh.googleusercontent.com/1YuWm_SKHIqkt2DsVbx8vW2TLkP6P-j2k5lZWXTs0iesT2BV7lKHf7K2TzAo8yeZr1d96Pc9n7iLFp_GuOZdlg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "04-cloud-backup/screenshot-05.png",
+     "alt": "Data category overview",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Data category overview",
+     "src": "https://play-lh.googleusercontent.com/zltzpKCxzy8y5u9yDEHSy0Or2p6eUZgzqO2a3LZ_Ye41n8U_mHHIGdcpVQTMJgaEadGk5pwLjtMKk6Kz0Ssh"
+    }
+   ]
+  },
+  {
+   "id": "05-cloud-storage-drive",
+   "num": "05",
+   "name": "Cloud Storage & Drive",
+   "title": "Cloud Storage & Cloud Drive",
+   "publisher": "Fuzon Apps",
+   "downloads": "500K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.cloudstorageapp.cloudbackup.storagespace.databackup&hl=en&gl=US",
+   "notes": {
+    "Icon": "A white outline cloud and sync circle sit above a white capacity band on blue. The large capacity text takes substantial space from the pictogram.",
+    "Feature graphic": "Two angled phones occupy the right side; a short heading and upload/download clouds sit on the left. Small file-type symbols line the bottom.",
+    "Screenshot system": "Four landscapes use blue-violet backgrounds, lime keyword blocks, people cutouts and phones. Six portraits emphasize white phone UI, lifted category tiles and a bottom sheet over a dimmed screen. Portrait headline placement and phone size vary.",
+    "Design assessment": "Strong reference for the requested feature-associated popup behavior: screenshot 7 expands the category chooser while leaving the parent screen visible. The lime accents make selected words easy to locate, but many small decorative objects compete in the landscapes. Use the popup relationship, not the competitor's screen contents or capacity promise."
+   },
+   "tags": [
+    "sync circle",
+    "lime keywords",
+    "portrait and landscape",
+    "bottom sheet",
+    "category tiles"
+   ],
+   "noLandscape": false,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "05-cloud-storage-drive/icon-01.png",
+     "alt": "A white outline cloud and sync circle sit above a white capacity band on blue. The large capacity text takes substantial space from the pictogram.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/-CevSr-tQWZ9w7hktRu-XizleTFpcbd4NYBTTagVRmvtVY7dNHCBlpoFSjxvdj-6qva9j8zNj-JAWnCTp56Qgg"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "05-cloud-storage-drive/feature-graphic-01.png",
+     "alt": "Two angled phones occupy the right side; a short heading and upload/download clouds sit on the left. Small file-type symbols line the bottom.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/97KF3Y8xYH3qDyIqt-VKxWMh8xPJeBxn0BJQ-GiQjRIwvSAJgFZgr-7y2Eri4_PswSzELkDxqJctV7luH7Vn"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "05-cloud-storage-drive/screenshot-01.png",
+     "alt": "Cloud capacity overview",
+     "label": "Screenshot 01",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Cloud capacity overview",
+     "src": "https://play-lh.googleusercontent.com/TbZSCJ7MxR1jsIWlyXFJhNxa2OxDSOkj2H2UFa32IFJxuHDbIj7WCm7WTIZkHmY5dqhtENcDihFOhbYAe33J"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "05-cloud-storage-drive/screenshot-02.png",
+     "alt": "Secure storage concept",
+     "label": "Screenshot 02",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Secure storage concept",
+     "src": "https://play-lh.googleusercontent.com/zVtFiPMVBxh7HJCqaWxdKrhhy_tUo9_YBvEQs6xRcZTZyYoSL3lZV9no_cAwyOcpsah7YjL8jIBDcaehNO3d"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "05-cloud-storage-drive/screenshot-03.png",
+     "alt": "Upload and download",
+     "label": "Screenshot 03",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Upload and download",
+     "src": "https://play-lh.googleusercontent.com/7S9FTv9NNtVE_I3tcXEtNhCQM-0GGISldMmY43Q16WB61Xx-TlJ_2FN2jEbBxvP2rwCNiLKiZpkET6Qr31pu"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "05-cloud-storage-drive/screenshot-04.png",
+     "alt": "Media backup",
+     "label": "Screenshot 04",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Media backup",
+     "src": "https://play-lh.googleusercontent.com/YYUoz6-XhUk4WdZso3oCMawSYsp-uKGfnZzK0fBLlBbwgsrnAexuzkI39E-PE7TK36Fxgd-5aD4IzgYeL9KD"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-05.png",
+     "alt": "Storage home",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage home",
+     "src": "https://play-lh.googleusercontent.com/5g0ujOOScPkeoXIzwmAs3W-kX4kgENDEQaCTqaFOgsS1Hld1fyl8E0VNEViV714Zy0u0hBtko76ZBIXNo196zg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-06.png",
+     "alt": "Category access",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Category access",
+     "src": "https://play-lh.googleusercontent.com/inIJnrYEaV-ZAjpwT9zkuOsNSGy1wBI7Cec3q2WqgGvW5sbF2Lh9b1u0AyEBaAjQHoN9vWEFqu0rh4BdxeL1"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-07.png",
+     "alt": "Expanded category chooser",
+     "label": "Screenshot 07",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Expanded category chooser",
+     "src": "https://play-lh.googleusercontent.com/DxyPEBCHDDanG6uUp9zcz0azY-DwWuAkcmkYVtRAwMd_NRAra76bY3FOsyhrpk4adVBv2mIsq_WOX5FpVuVaBA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-08.png",
+     "alt": "Video restore selection",
+     "label": "Screenshot 08",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video restore selection",
+     "src": "https://play-lh.googleusercontent.com/Z9b5aTjqfRxlkcGDTAWIUmnLq5uxey81hEkOKZXLKjiiYYw1xRT3lvfswqK4dJOxl6EPE4EqT3Cjnm4Q6jbWDF8"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-09.png",
+     "alt": "Backup and restore dashboard",
+     "label": "Screenshot 09",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup and restore dashboard",
+     "src": "https://play-lh.googleusercontent.com/izba_SDeYPplTTOnBAeVuqoTJ1IbUyk9ml9_FvSRTsTH20Wf3dXqSG7LW6LC0ODzUdA7XFkp82F82-3rfGB6_WQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "05-cloud-storage-drive/screenshot-10.png",
+     "alt": "Phone upload categories",
+     "label": "Screenshot 10",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Phone upload categories",
+     "src": "https://play-lh.googleusercontent.com/YrIkmAXFXLD7rp5kG8rQ4Uh-jZDZGF7vbuJmtRKW5iO3cArZS2Ryx3XUIM7Sa_vMFYp_FwuDe34UYTkL_4otEA"
+    }
+   ]
+  },
+  {
+   "id": "06-cloud-storage-backup-drive",
+   "num": "06",
+   "name": "Cloud Storage Backup & Drive",
+   "title": "Cloud Storage Backup & Drive",
+   "publisher": "Daily Utility Apps",
+   "downloads": "1M+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.backup.and.restore.all.apps.photo.backup&hl=en&gl=US",
+   "notes": {
+    "Icon": "A broad white cloud with a single blue upload arrow uses very few components. The purple-blue field supplies contrast without an additional badge or capacity label.",
+    "Feature graphic": "The blue banner combines an orange storage offer, folder symbols and a large angled phone. The composition has clear left/right roles, although the small copy is dense.",
+    "Screenshot system": "One landscape introduces transfer through a phone-to-folder diagram. Seven portraits use vivid blue, black device frames, large action strips and attached popups. The sequence includes overview, restore, media backup, completion and save confirmation.",
+    "Design assessment": "Useful for simple icon reduction and showing task completion as proof. Screenshot 6 keeps a success dialog over the dimmed source gallery; screenshot 7 does the same for saving. The many action strips and pointing hands should be used selectively. Its 1M+ bracket does not establish that these particular creatives caused installs."
+   },
+   "tags": [
+    "single upload arrow",
+    "success dialog",
+    "dimmed source UI",
+    "blue",
+    "action strips"
+   ],
+   "noLandscape": false,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "06-cloud-storage-backup-drive/icon-01.jpg",
+     "alt": "A broad white cloud with a single blue upload arrow uses very few components. The purple-blue field supplies contrast without an additional badge or capacity label.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/WNNDb4VyH2yXBwFME6OTWZKhVFPDnQt2xoJeXPcRZSBcnDoMD1JAHQc1GAzu9pH04wCUhFrxfGD1yEE2Bg9HXA"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "06-cloud-storage-backup-drive/feature-graphic-01.png",
+     "alt": "The blue banner combines an orange storage offer, folder symbols and a large angled phone. The composition has clear left/right roles, although the small copy is dense.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/f2H2fNYVeVrjF9IUdXU-o6WCGcIzfI_8uF_AV-oUhX71PMOcwf-OPA08Nv4WgOEz0Sx9Z4Zx6GZSkWPTJcMu"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "06-cloud-storage-backup-drive/screenshot-01.jpg",
+     "alt": "Phone-to-cloud transfer",
+     "label": "Screenshot 01",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Phone-to-cloud transfer",
+     "src": "https://play-lh.googleusercontent.com/fOp-_44ub5OWze6gXp8Nd0GEKy0_oTjzj92PrcWV0IlUYDgHPB_luJxJLTusZBTb_d3U4c00vrGzeqohGRHueA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-02.png",
+     "alt": "Backup and restore home",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup and restore home",
+     "src": "https://play-lh.googleusercontent.com/Ih7h3VAUk6vm4Ikw5_rmN0rd6Hrf_lFphnfILf8Nx9H6cElQyYCTEBoKzoa6Vj6FYw_JPr9sxuB39x2o4zuc8CI"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-03.png",
+     "alt": "Cloud categories",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Cloud categories",
+     "src": "https://play-lh.googleusercontent.com/M-0XmuIeJzFEMc78dZWr-g87NrVPPjcx3bEIrrYf33imefBz5RfTM4qlXi0MbFmVidP3Ea93HFb8T9j1qle9wQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-04.png",
+     "alt": "Restore gallery",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore gallery",
+     "src": "https://play-lh.googleusercontent.com/GJLg_dxC0q9L1KrBff-X5stY-NmkzH5S7VhiHFK2BrRQCRtu4PB3RBbGwbbCOXSmFag4SDKnb_D5rsX6xVFKnA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-05.png",
+     "alt": "Video backup selection",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video backup selection",
+     "src": "https://play-lh.googleusercontent.com/3sclhMl5d5xkA4brvQFIeQA8BD4L4UfWxrpoijhXLS7U-5nsUPqtPxnUTCeE3zdORt8hkrN2IzcNJFh-WMb9HA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-06.png",
+     "alt": "Backup success dialog",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup success dialog",
+     "src": "https://play-lh.googleusercontent.com/PmBjCyO1P1PirTbk3iqxmJEUYK00bGO2KzuWcdN7NVUIn64J480t5ayLEBs3g7-dXaBVn718D2WyLzs0c4WLcw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-07.png",
+     "alt": "Save backup dialog",
+     "label": "Screenshot 07",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Save backup dialog",
+     "src": "https://play-lh.googleusercontent.com/xt4PF2ebD8s4Sn-O2KGtP-xI8Zf50_n4yXbwndzCFcmIFCegS9yDPf_CP5ocP-gQWx-62iL7qwEoeYPR7JGTjg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "06-cloud-storage-backup-drive/screenshot-08.png",
+     "alt": "Multi-category backup",
+     "label": "Screenshot 08",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Multi-category backup",
+     "src": "https://play-lh.googleusercontent.com/7x-XELJ0pbxWgDa92EGGUK_W7yIyMdEKDObL_44hHBmW3DquCjAwyYisTzfrOeXPAHvHgf1xu_ClhV8rXrqWKg"
+    }
+   ]
+  },
+  {
+   "id": "07-cloud-storage-drive-backup",
+   "num": "07",
+   "name": "Cloud Storage Drive Backup",
+   "title": "Cloud Storage Drive Backup app",
+   "publisher": "MindByte Studios L.L.C-FZ",
+   "downloads": "500K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup&hl=en&gl=US",
+   "notes": {
+    "Icon": "A white softly shaded cloud contains large blue capacity text on a saturated blue square. The symbol is recognizable, but the text becomes the identifying element.",
+    "Feature graphic": "A pale banner pairs bold dark copy, blue keyword highlighting, a shield and a phone. It is visually calmer than the full-blue competitors.",
+    "Screenshot system": "Seven portraits repeat white backgrounds, black headings, blue emphasis blocks and one large phone. Oversized upload/restore buttons, completion feedback, sharing controls and gallery chips remain near their original UI locations. Security, scanning and AI organization extend the story beyond storage.",
+    "Design assessment": "A strong reference for restrained productivity marketing and readable heading contrast. The 10TB icon differs from 1TB imagery in the screenshot set; do not imply an equivalent free allocation. Decorative security symbols illustrate positioning, not verified encryption. No landscape screenshot was captured."
+   },
+   "tags": [
+    "white surfaces",
+    "blue keyword blocks",
+    "security",
+    "scanner",
+    "AI gallery",
+    "connected popups"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "07-cloud-storage-drive-backup/icon-01.png",
+     "alt": "A white softly shaded cloud contains large blue capacity text on a saturated blue square. The symbol is recognizable, but the text becomes the identifying element.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/5vtGG3F-r0WE_EmA0RrYRDqmc9P4UegxuTUWrXxY7iAco5LKoqYj5h8LyD4aSzvmFZUbCjOzweGTeqSna-hGpUM"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "07-cloud-storage-drive-backup/feature-graphic-01.png",
+     "alt": "A pale banner pairs bold dark copy, blue keyword highlighting, a shield and a phone. It is visually calmer than the full-blue competitors.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/q59S3ailCKQzezY7VWHpXi6vbk8EwMXbVagNyS7J1Z0x2b7RfwyXqvp2c-r4oo2j5q7YXIkfTBFpFPPNejls"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-01.png",
+     "alt": "Upload and restore access",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload and restore access",
+     "src": "https://play-lh.googleusercontent.com/461E4Q17UzLs_NHwuqopjwTefFTcq1fYgLkHfnf7qYCBZrCDWFogDwZn_LU7nPeYj9vBTgtgeuD5f2x2Hnuk"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-02.png",
+     "alt": "Completed backup",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Completed backup",
+     "src": "https://play-lh.googleusercontent.com/cGmm0ryxUW4wHCM2vGuIFzbmv6mMyZ7eufnjv87d7Y8opnmdhq867unzQe2WPyPuEL-dyRkhZRiLeuolI62r5XI"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-03.png",
+     "alt": "Secure vault gallery",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Secure vault gallery",
+     "src": "https://play-lh.googleusercontent.com/LGzRD0J39aWJWcaXASJJdeWf45n7Nfj_jOBDatlx1Ij-XzWCCSvE9InzlGAks2OlkhM1QZZrHgk-sxIBnuf53Q"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-04.png",
+     "alt": "Restore selection",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore selection",
+     "src": "https://play-lh.googleusercontent.com/VZcoEsxRn75XwKn_wz1_5FUs1AOIv8XRTU4gUIwPJ9Hw9yso1UmGkoI_g8KRGdz9K5PkF0pnqgbx9CODnAuoGQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-05.png",
+     "alt": "Share-link generation",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Share-link generation",
+     "src": "https://play-lh.googleusercontent.com/9vxk4DRcWrgbv-IWU2M3TKeVWb3TWyjTo2HJoHNuxBHAY9TNKlKEi-hrZ3y8jakiy2jkCPhw1Aqp4ulCc2Z7-A"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-06.png",
+     "alt": "Document scanning",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Document scanning",
+     "src": "https://play-lh.googleusercontent.com/WRo44VsalY_ebagJe3hlwOKPwnbYMnrXOVBBaiJTZb9B25U-ClEElYcYarJIQXGSI6OV6zlGhPffJt8pWLV3"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "07-cloud-storage-drive-backup/screenshot-07.png",
+     "alt": "AI gallery categories",
+     "label": "Screenshot 07",
+     "w": 1080,
+     "h": 1920,
+     "caption": "AI gallery categories",
+     "src": "https://play-lh.googleusercontent.com/zOY5LePNVYYRwI-aSwJBmQkICj5RBFUFX55ByxBGwIxpy9MWRgweWgt39I_sJ4eGkl0eFkYAl0BOhjiTdyUg8eY"
+    }
+   ]
+  },
+  {
+   "id": "08-datahatch",
+   "num": "08",
+   "name": "DataHatch",
+   "title": "Cloud Storage Drive: DataHatch",
+   "publisher": "Appseen Studio",
+   "downloads": "10K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.datahatch.cloud.storage.drive.data.backup&hl=en&gl=US",
+   "notes": {
+    "Icon": "A blue upload arrow cuts into a pale cloud with an orange rear edge. The orange rim creates separation and a shallow layered effect on the blue field.",
+    "Feature graphic": "A blue banner places an orange capacity strip and cloud on the left, with file-list UI on the right. Dotted transfer paths connect the two.",
+    "Screenshot system": "Ten portraits split into two visible styles: five use blue/lavender backgrounds and black headings; five use stronger blue and white headings. One landscape uses a phone, paper plane and short message. Gallery tiles, transfer progress and video previews recur across both sets.",
+    "Design assessment": "Useful for comparing two treatments of similar feature content without assuming they are a documented A/B test. The lighter set offers quieter framing; the saturated set emphasizes category familiarity. Repetition and mixed heading systems weaken cohesion. The observed orientation count spans distinct published assets, not a single phone carousel."
+   },
+   "tags": [
+    "orange cloud rim",
+    "two visual families",
+    "photo popups",
+    "video previews",
+    "transfer progress"
+   ],
+   "noLandscape": false,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "08-datahatch/icon-01.png",
+     "alt": "A blue upload arrow cuts into a pale cloud with an orange rear edge. The orange rim creates separation and a shallow layered effect on the blue field.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/gKoEOycA-RzKrL8Gn6IG0DESuc7a5bY1Iz2lcBdxXpvl05O-EXdxITQjVrsN4Lv2eN3Pf-zYjoRXqhO34xds_XA"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "08-datahatch/feature-graphic-01.png",
+     "alt": "A blue banner places an orange capacity strip and cloud on the left, with file-list UI on the right. Dotted transfer paths connect the two.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/UwuFprt4BPV0RaAmD4mseMnzXpHzFGGz2VZ8nG81x8XvQzyJkAMRXhLZVitIISbOfZQ1utMU7gJxpHpFccsABg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-01.png",
+     "alt": "Capacity and file list",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Capacity and file list",
+     "src": "https://play-lh.googleusercontent.com/IH4nRVeS9qEkCAtnoew5q0EUEjEKxP5PN8lxHOkYrvkoAG3V6AQ507WgQwcp7J0-9RRnz_vxWa-d8dZM0MUH2Q"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-02.png",
+     "alt": "Photo memories",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo memories",
+     "src": "https://play-lh.googleusercontent.com/vorztVeXIt5LvrYFbm3wEaAxiDyNJ8NdVFTyqZCu6HzSDjjFoI9Whzwm6JVmy3N_-bovS1U7p5edA0Pxf9UUZFc"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-03.png",
+     "alt": "Transfer queue",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Transfer queue",
+     "src": "https://play-lh.googleusercontent.com/zFf6OYj8-kfm3NTsORQ3-Ax6jHWIGEmR3DjCbSVzOjLmEp2jbxSdT6KzwGRF-Dnsvvb9ZsfZXk0_q_w2hQQTJw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-04.png",
+     "alt": "Video library",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video library",
+     "src": "https://play-lh.googleusercontent.com/ijCVBQDoBN8agT2d6KxiEtamD6RIjmNCln6cId2OMDBjQAZDrqDLHjKcGQos_dLnqftf9JL4APYny13HtEOR_g"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-05.png",
+     "alt": "Video preview",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video preview",
+     "src": "https://play-lh.googleusercontent.com/dXnpZ6ZKUdpArYCGnpgtkqbQv0QTD2NKNxy6gzHktoyYD5I5fmtJIr0bOmwVhgVNl4Lco1DNzQA9xDdAJutkQ48"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "08-datahatch/screenshot-06.png",
+     "alt": "One-tap backup concept",
+     "label": "Screenshot 06",
+     "w": 1920,
+     "h": 1080,
+     "caption": "One-tap backup concept",
+     "src": "https://play-lh.googleusercontent.com/nSu0TXHyyDQq7SAB10u-Hjzllgfzb_HsH7O45VSdrFv3ubboJInRLeTlco9Vubo9zVm2BOrUwT_KQQ3sTR6LeeI"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-07.png",
+     "alt": "Capacity and folders",
+     "label": "Screenshot 07",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Capacity and folders",
+     "src": "https://play-lh.googleusercontent.com/FotlUNhVvDy1NoKnr8AosJZLw8mXmElAI0z0UK14OUqpwGVi6Ik6XeYBiaVfc6xzTvTaTrp8MygOncHI7c1Sd4Q"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-08.png",
+     "alt": "Photo upload",
+     "label": "Screenshot 08",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo upload",
+     "src": "https://play-lh.googleusercontent.com/FLE1zvpGtN-uIRakJclxBxCtefMQQhhlVNu3Vexhq4Bkp2WxDZdQEub840IVThZEjerxZ00Z1bLTUuM0qe9w3IQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-09.png",
+     "alt": "Video upload",
+     "label": "Screenshot 09",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Video upload",
+     "src": "https://play-lh.googleusercontent.com/KZSyV-Yx3ggVGQbCZHvpYqYKYAPjoYJRW63uDDowYvTmpPhjIkgwKg1q3SZyXKpazGUHkjDLMsKjnsutgGYE0sc"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-10.png",
+     "alt": "Backup queue",
+     "label": "Screenshot 10",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup queue",
+     "src": "https://play-lh.googleusercontent.com/-0QileAF_0qa_-wNc3xL8SngcmHFrnXu9OhqQs8Qr6x9XoMN6dGMZAkUm3PI-Pdou2hVGh4-VyxPtMja3c3etg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "08-datahatch/screenshot-11.png",
+     "alt": "Full-screen video preview",
+     "label": "Screenshot 11",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Full-screen video preview",
+     "src": "https://play-lh.googleusercontent.com/MminxRy9bXaLrCcYogoyDVlmoDM1f79osff_R_jSiG8cE80kob1YqZyMo1Q1CoyIBao_SuRnXeX_wyhWopzzKFQ"
+    }
+   ]
+  },
+  {
+   "id": "09-cloud-storage-sync",
+   "num": "09",
+   "name": "Cloud Storage-Sync",
+   "title": "Cloud Storage: Drive Backup",
+   "publisher": "Utility Forge",
+   "downloads": "100K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.cloud.storage.extrastorage.gbsfreespace&hl=en&gl=US",
+   "notes": {
+    "Icon": "Three overlapping cyan-blue cloud lobes sit on white with a small green sync badge. Tonal layering gives depth without the heavy glossy treatment seen in Nova Cloud.",
+    "Feature graphic": "A pale banner combines a person, tilted phone, oversized upload control and orange capacity badge. It is relatively busy for the available width.",
+    "Screenshot system": "Three landscapes and nine portraits include two portrait families: saturated cyan with white headings, and pale clouds with blue title pills. Five portraits are 1007 pixels wide rather than 1080. Lifted file rows, restore buttons and plan cards repeat across the set.",
+    "Design assessment": "Useful for studying a cloud on white and contrasting compact versus expanded controls. Mixed handset styles, headline systems and widths make this a cautionary consistency reference. Screenshot 8 closely repeats the feature graphic's concept but remains cataloged as a screenshot because of its listing role. Orientation alone must not determine asset type."
+   },
+   "tags": [
+    "cyan layered cloud",
+    "green sync badge",
+    "mixed screenshot styles",
+    "plan cards",
+    "white background"
+   ],
+   "noLandscape": false,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "09-cloud-storage-sync/icon-01.png",
+     "alt": "Three overlapping cyan-blue cloud lobes sit on white with a small green sync badge. Tonal layering gives depth without the heavy glossy treatment seen in Nova Cloud.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/AYCfQ7uxqDuq_0NmXKwmdj364O_b71SRTbZnkQ0EsDPsIurU5eoVlMKDeI-Vl2hrIIeZ4v9RP-dGLJ5LS1AZkcc"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "09-cloud-storage-sync/feature-graphic-01.png",
+     "alt": "A pale banner combines a person, tilted phone, oversized upload control and orange capacity badge. It is relatively busy for the available width.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/xaPF-x-4ekTE6ERSZHncvFyDZPt-PM7aDMgXK2ujcra6FR1CITPjWb6teGBTCnj3GFmMdXN0zE-FpPANE_kWIA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "09-cloud-storage-sync/screenshot-01.png",
+     "alt": "Capacity concept",
+     "label": "Screenshot 01",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Capacity concept",
+     "src": "https://play-lh.googleusercontent.com/g_o02g-C0i-rhLP4IRj6T5OEHW2jJnr16pV_vCdJ-tjYWFCHV5i2bk4rIPTcLIRW7D8PK-MKAYi9ePaYjWHA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "09-cloud-storage-sync/screenshot-02.png",
+     "alt": "Secure media storage",
+     "label": "Screenshot 02",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Secure media storage",
+     "src": "https://play-lh.googleusercontent.com/63t2MFaqJk9I71v0hlBNR6vQsdMR8xMPKA0FVEK-g4qinhvWLzvAGRonXku6y-iqQw9WS_M_psbGkpgPx7kw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-03.png",
+     "alt": "Storage introduction",
+     "label": "Screenshot 03",
+     "w": 1007,
+     "h": 1920,
+     "caption": "Storage introduction",
+     "src": "https://play-lh.googleusercontent.com/6nAVYJsOmszHBViToYAF6rT1n3zelkY3J6jB1XMGySiVtwVuI28ooBZlnxrUvbIu3ubmz07DDgCoHio1kRfVgA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-04.png",
+     "alt": "Extra-space dashboard",
+     "label": "Screenshot 04",
+     "w": 1007,
+     "h": 1920,
+     "caption": "Extra-space dashboard",
+     "src": "https://play-lh.googleusercontent.com/Y6L_aR9SzCeLrHzazyXn1uMHdVOdjPCnGADuSWsA8B5CEtmPBkIcdE65RCoqPuRvQ3pnCnOtYN_AskkmAetFQzA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-05.png",
+     "alt": "Backup progress",
+     "label": "Screenshot 05",
+     "w": 1007,
+     "h": 1920,
+     "caption": "Backup progress",
+     "src": "https://play-lh.googleusercontent.com/pK4hG9uTaRS59qyq2iMU-HNyOPO3-dEyGDK0PCl2P-OCkDDq6eIOzg7_o7Q-9wf2KNMPrRXHcER4P837WF3F"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-06.png",
+     "alt": "Photo library",
+     "label": "Screenshot 06",
+     "w": 1007,
+     "h": 1920,
+     "caption": "Photo library",
+     "src": "https://play-lh.googleusercontent.com/nlVIsQsgcDWLI_fXaVfkTYv0suSv3_P6XBmCCsZH6EPmiQ21Ad8DetZZ_PXNWc9o7K8ocWRBo4U14jRpzPDvDp0"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-07.png",
+     "alt": "Document upload",
+     "label": "Screenshot 07",
+     "w": 1007,
+     "h": 1920,
+     "caption": "Document upload",
+     "src": "https://play-lh.googleusercontent.com/r-0QWRZVhEy5F_Q9TuC07vNZiCwfcB1osJ9emjU3nqvO7B46zZ6oX0ELJaJoe36XK-XlhgHPyHd-WolPhq6g"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "landscape",
+     "file": "09-cloud-storage-sync/screenshot-08.png",
+     "alt": "Cloud storage promotion",
+     "label": "Screenshot 08",
+     "w": 1920,
+     "h": 1080,
+     "caption": "Cloud storage promotion",
+     "src": "https://play-lh.googleusercontent.com/TeDSDPUJLY7fROIB0Mcuz00BkM81SoQP7Z2GmW9zmbwtaApNUV44IdhiR_rujtg3krp6XC7eQiVhYmRDkRXAOVg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-09.png",
+     "alt": "Restore photos",
+     "label": "Screenshot 09",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore photos",
+     "src": "https://play-lh.googleusercontent.com/uAb1uSH1zv2DsWvMMntruvHBUncw_JMr0pI_5bFLFx6NKxSqtUSGVbydJ0fRjkITOUQscoAtvuCEnDTRmnkfDA"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-10.png",
+     "alt": "Backup gallery",
+     "label": "Screenshot 10",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Backup gallery",
+     "src": "https://play-lh.googleusercontent.com/eTjR6C3SAM7M1sDCYLmF5EcR0qdMvR27eUgB4VUdwxPbTwpn35kQc-3IJmAe8D5Rg8xZ2fLXT4NqAl54NJ4w"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-11.png",
+     "alt": "Storage plans",
+     "label": "Screenshot 11",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage plans",
+     "src": "https://play-lh.googleusercontent.com/X8nW6CP89ynL5W_WZkDPHlJ4vlmD3fXPccWGgldr8xX_UU5eXgmSfEIGdOel6IYkXTnH4Ap_gfTjDYkL7i_b"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "09-cloud-storage-sync/screenshot-12.png",
+     "alt": "Upload progress",
+     "label": "Screenshot 12",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload progress",
+     "src": "https://play-lh.googleusercontent.com/TF09iRRrPd0ozYFoilegN_WV0Rx8Mh7F3jTvh0azRTXs4tI8FIJG8VlJNYMyYqhIh_B9TJA7WkddVQF0Y8j1"
+    }
+   ]
+  },
+  {
+   "id": "10-cloud-storage",
+   "num": "10",
+   "name": "Cloud storage",
+   "title": "Cloud Storage App Drive Backup",
+   "publisher": "Golden Associate Pvt. Ltd.",
+   "downloads": "1K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.cloudstorage.cloudbackup.storagespaceapp&hl=en&gl=US",
+   "notes": {
+    "Icon": "A large white cloud on blue has a circular upload motif at its lower edge. The arrow's additional chevron detail makes the small badge busier than a plain arrow.",
+    "Feature graphic": "A centered cloud, category name and row of colored file symbols form a simple blue banner. Faint clouds add background texture.",
+    "Screenshot system": "Five portraits maintain blue backgrounds, centered white headings and tall outlined phones. They cover upload, photos, scanning, recovery and capacity breakdown. Lifted gallery tiles and a pointing hand emphasize actions; a multicolor donut chart finishes the sequence.",
+    "Design assessment": "Useful for a compact five-panel feature story and consistent heading placement. The small install bracket provides little evidence for treating it as a market leader. Thin badge details and tiny chart labels should be tested at real listing scale. No landscape screenshot was captured; a public rating was not returned in the captured listing data."
+   },
+   "tags": [
+    "upload badge",
+    "blue",
+    "five-panel story",
+    "scanner",
+    "storage chart"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "10-cloud-storage/icon-01.png",
+     "alt": "A large white cloud on blue has a circular upload motif at its lower edge. The arrow's additional chevron detail makes the small badge busier than a plain arrow.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/MRqQuLz58kqOBxkWcnukDRtb9tJejiovPMV1HvgucDG-tSB5TRcHUSSc7rkMCJ6P_dEVc7z6spbmhdhaa75qAUA"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "10-cloud-storage/feature-graphic-01.png",
+     "alt": "A centered cloud, category name and row of colored file symbols form a simple blue banner. Faint clouds add background texture.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/N0jQNcmBcWc0mFVBYlWN8iW_xGA8Bpi1XWVLtdqedhU_S3O47u2MurP58KAMpNVzAtyqv-8uqBcml9YaDmqt"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "10-cloud-storage/screenshot-01.png",
+     "alt": "Upload dashboard",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload dashboard",
+     "src": "https://play-lh.googleusercontent.com/pZxH1lpD3TgNHsy0p_FIFZR8JdjZLqbOY0nyN6Ykhl7gLuJqjcTm5M6rdxtNmIXihhFbHHafrBEWql9oTZNDDQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "10-cloud-storage/screenshot-02.png",
+     "alt": "Photo and video gallery",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Photo and video gallery",
+     "src": "https://play-lh.googleusercontent.com/rjzFVjYSTkbB5mL4W79mjZSPSKh2cZ0O3fJXvJ-KXEaKL5NQPgwssvRZYwVXiJG8vxvheFKVbGD_iXqHKyYbaw"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "10-cloud-storage/screenshot-03.png",
+     "alt": "Document camera",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Document camera",
+     "src": "https://play-lh.googleusercontent.com/zTfoO6kO8DOPFYzjsQSNDkvAI4tHzj19dBW0kxdtfthKCwZkuxosUZzB5MbDi_kB0WOre1VDOBR65cZzfG1M"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "10-cloud-storage/screenshot-04.png",
+     "alt": "Restore categories",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore categories",
+     "src": "https://play-lh.googleusercontent.com/d0dlULJY6vlwFQOT71XMeLqfB9jP0xi5GK8bxSU-YkYw6-QpZdWHKbH8hvXfnmQhFp-Bqf-R6rnUUJTN4P8l"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "10-cloud-storage/screenshot-05.png",
+     "alt": "Storage breakdown",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Storage breakdown",
+     "src": "https://play-lh.googleusercontent.com/E22ugG1388NTc4bJO3ZJPnF73Nqnt9KHb_o06w7owtSK5efV2TUvMjeMaJorRXgX1w7jlYU-JwcywNisgymtSA"
+    }
+   ]
+  },
+  {
+   "id": "11-nova-cloud",
+   "num": "11",
+   "name": "Nova Cloud",
+   "title": "Nova Cloud: Storage & Backup",
+   "publisher": "Nova Apps Studios",
+   "downloads": "5K+",
+   "playUrl": "https://play.google.com/store/apps/details?id=com.securebackup.cloudstorage.drivebackup.filestorage&hl=en&gl=US",
+   "notes": {
+    "Icon": "A thick extruded cloud blends purple and cyan around a pale upload arrow. A soft blue-lavender background supports the metallic edge and directional lighting.",
+    "Feature graphic": "A person and angled purple phone occupy the left; the right holds a small cloud, name and supporting copy. The light background connects to the screenshot surfaces.",
+    "Screenshot system": "Six portraits use pale backgrounds, large purple curves and dark purple app UI. The first two phones tilt; later devices stand upright. Transparent-looking category panels and lifted photo thumbnails reinforce the dimensional visual language.",
+    "Design assessment": "The most distinctive glossy purple reference in this sample and the closest material study for a 3D cloud direction. It also has only 5K+ displayed downloads, so visual novelty is not evidence of conversion. Small text over translucent purple panels needs close readability checks. The encryption statement is marketing, not a security audit. No landscape screenshot was captured."
+   },
+   "tags": [
+    "3D cloud",
+    "purple and cyan",
+    "glass-like panels",
+    "pale backgrounds",
+    "angled phones"
+   ],
+   "noLandscape": true,
+   "assets": [
+    {
+     "kind": "icon",
+     "orient": "square",
+     "file": "11-nova-cloud/icon-01.png",
+     "alt": "A thick extruded cloud blends purple and cyan around a pale upload arrow. A soft blue-lavender background supports the metallic edge and directional lighting.",
+     "label": "Icon 01",
+     "w": 512,
+     "h": 512,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/Ze2wmwy2S1upnoYbEMRMCXv1nfh7x5GgxqGhACGhR0LqtfK0_3uYTan6Asf9NsRPhZHoLD54S3428pHyRw-W-f4"
+    },
+    {
+     "kind": "feature-graphic",
+     "orient": "landscape",
+     "file": "11-nova-cloud/feature-graphic-01.png",
+     "alt": "A person and angled purple phone occupy the left; the right holds a small cloud, name and supporting copy. The light background connects to the screenshot surfaces.",
+     "label": "Feature Graphic 01",
+     "w": 1024,
+     "h": 500,
+     "caption": "Original listing asset",
+     "src": "https://play-lh.googleusercontent.com/WMyeDEH4ni33Q4BkowqjE01oZnH6hZlwKHL03m1ccamqKIEbQtWhQaOpiDt1NxG4i6BwrqeRzv2WIGi3vktSETo"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-01.png",
+     "alt": "Upload and download home",
+     "label": "Screenshot 01",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload and download home",
+     "src": "https://play-lh.googleusercontent.com/1kyDc8Bf1O44WnxlLP2Yi5Q7guV2xdfKr-XJhksH0Qcf69MkjMk0kByyw8nVvvv3mJa6yS1tV1ZB8P8rYRO1Yg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-02.png",
+     "alt": "File categories",
+     "label": "Screenshot 02",
+     "w": 1080,
+     "h": 1920,
+     "caption": "File categories",
+     "src": "https://play-lh.googleusercontent.com/9d3v-dKMD1ltxIb-J-jfT4Qm7l2cFhBJm7EiIYL-9zNrBsUqNvk8Bv5DBIyfWEhFG7Q7q6zpRUFz_0FgBkl0N5E"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-03.png",
+     "alt": "Upload folders",
+     "label": "Screenshot 03",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Upload folders",
+     "src": "https://play-lh.googleusercontent.com/2tiU146je7Wryr5Yo-ad_OVJ_BYPeYEpcv9PzZTCnPm6N6SdoIfdgUJ3OqiGGppelVFqJ3IJwtzEYH0COd6Rcg"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-04.png",
+     "alt": "Restore media",
+     "label": "Screenshot 04",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Restore media",
+     "src": "https://play-lh.googleusercontent.com/NRWsbOtgHK78dbKHplXsw5S6rZNB3k9rFhksovpw3_SYA8faEvFL602NWHe-Vffp5100TH61mfC5dCzPxmie"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-05.png",
+     "alt": "Expanded cloud categories",
+     "label": "Screenshot 05",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Expanded cloud categories",
+     "src": "https://play-lh.googleusercontent.com/oEmQin6Z0dXjgcLD3yBuzd9M3WQOX6T_gktDhAbDiaq6tUuB4P-cR_314CWDdW9pxCaU8r1pwzj2gLW14d40tQ"
+    },
+    {
+     "kind": "screenshot",
+     "orient": "portrait",
+     "file": "11-nova-cloud/screenshot-06.png",
+     "alt": "Encryption settings",
+     "label": "Screenshot 06",
+     "w": 1080,
+     "h": 1920,
+     "caption": "Encryption settings",
+     "src": "https://play-lh.googleusercontent.com/Ic55ia4G1EDLvyO7Vk2f-HQzQGQXw0DB_HUC96XKO6LAwUuHzRSFiCfffv5VWBFAAcqB1BmtwfIKowBZ1_xy"
+    }
+   ]
+  }
+ ],
+ "patterns": [
+  {
+   "h": "Icon silhouette",
+   "html": "Large filled clouds survive reduction better than thin strokes and several nested badge details. Preserve a recognizable outer shape and test internal arrows or locks at small sizes. Nova&#x27;s material depth is visually distinctive, while Daily Utility Apps shows the simplest upload construction. References: <a href=\"#g-06-cloud-storage-backup-drive\">06</a> <a href=\"#g-11-nova-cloud\">11</a>."
+  },
+  {
+   "h": "Badge alignment",
+   "html": "Fazcon and ANZ place their circular symbols along the lower cloud edge; MAPIDIRECTIONS places its ring inside the cloud. These create different visual balances. For the approved four-lobe concept, keep the badge on the cloud&#x27;s intended centerline and verify perceived weight as well as coordinates. References: <a href=\"#g-02-fazcon\">02</a> <a href=\"#g-03-anz-cloud-drive\">03</a> <a href=\"#g-04-cloud-backup\">04</a>."
+  },
+  {
+   "h": "Color system",
+   "html": "Blue is the category norm across the sample, so it is a familiarity cue rather than a differentiator. White UI, one consistent accent and a distinctive silhouette offer clearer ownership than adding more gradients. Nova provides a useful purple/cyan exception; MindByte provides a quieter white-surface treatment. References: <a href=\"#g-07-cloud-storage-drive-backup\">07</a> <a href=\"#g-11-nova-cloud\">11</a>."
+  },
+  {
+   "h": "Portrait composition",
+   "html": "Most sets place a short heading above one tall interface. Gallery images or controls occasionally extend beyond the phone. Stable heading position, phone size and surrounding space make a sequence easier to scan than panels that repeatedly switch composition. References: <a href=\"#g-01-cloudgate\">01</a> <a href=\"#g-02-fazcon\">02</a> <a href=\"#g-07-cloud-storage-drive-backup\">07</a> <a href=\"#g-10-cloud-storage\">10</a>."
+  },
+  {
+   "h": "Landscape adaptation",
+   "html": "Fazcon and Fuzon redistribute phone, headline and supporting objects across the width. This is a composition change, not a crop of a portrait. The captured landscapes usually show a portrait phone within a wide marketing canvas; they do not establish native tablet or landscape app support. References: <a href=\"#g-02-fazcon\">02</a> <a href=\"#g-05-cloud-storage-drive\">05</a>."
+  },
+  {
+   "h": "Connected popups",
+   "html": "Fuzon&#x27;s category chooser, Daily Utility Apps&#x27; completion dialog and MindByte&#x27;s share-link control retain visible source context. This is the most useful recurring treatment for the requested popup behavior. Enlarge the relevant element only enough to make its function readable. References: <a href=\"#g-05-cloud-storage-drive\">05</a> <a href=\"#g-06-cloud-storage-backup-drive\">06</a> <a href=\"#g-07-cloud-storage-drive-backup\">07</a>."
+  },
+  {
+   "h": "Message hierarchy",
+   "html": "Capacity, backup, restore and media are the recurring opening hooks. Vaults, document scanning, sharing and AI organization appear later. Capacity statements vary between assets on several listings; a future set should distinguish available allowance from paid maximum capacity. References: <a href=\"#g-01-cloudgate\">01</a> <a href=\"#g-04-cloud-backup\">04</a> <a href=\"#g-07-cloud-storage-drive-backup\">07</a>."
+  },
+  {
+   "h": "Consistency",
+   "html": "DataHatch and Utility Forge publish visibly different screenshot families. These may reflect device sets or updates; no experiment history is available. A new set should deliberately preserve its palette, typography, device proportions and callout treatment across orientations. References: <a href=\"#g-08-datahatch\">08</a> <a href=\"#g-09-cloud-storage-sync\">09</a>."
+  }
+ ],
+ "guidance": [
+  {
+   "h": "Keep the approved icon identity",
+   "html": "Use the latest approved four-circle cloud as the source. Carry forward only authorized adjustments: center circular arrow/lock badges, remove unwanted 3D frame outlines, keep the 2D cloud silhouette consistent, match background shades within the 2D and 3D groups, and keep the area outside rounded corners white in comparison presentations. These are recorded preferences, not changes performed by this research."
+  },
+  {
+   "h": "Choose one screenshot system",
+   "html": "For a calm productivity direction, start with MindByte&#x27;s hierarchy: a short dark heading, a large real screen, a restrained blue emphasis and one connected callout. If stronger category color is preferred, use Fazcon&#x27;s consistent portrait structure. Do not mix two heading systems within one approved sequence."
+  },
+  {
+   "h": "Build a six-screen narrative",
+   "html": "A practical sequence is: core backup value and home screen; photo/video preservation; visible backup progress and completion; restore selection; private files or vault if implemented; and document scanning or link sharing if implemented. Use actual app screens, real feature names and verified storage terms."
+  },
+  {
+   "h": "Design landscape separately",
+   "html": "For each selected portrait message, create a wide composition with the screen on one side and a short benefit on the other. Keep the same colors, source UI and feature-associated popup. Do not rotate the phone UI or imply a tablet interface that the app does not have."
+  },
+  {
+   "h": "Treat the feature graphic as its own asset",
+   "html": "Use one clear benefit and a restrained visual narrative at 1024 x 500. It should complement the icon rather than become an enlarged duplicate. The earlier rulebook&#x27;s 1920 x 1080 size can be used for a custom landscape marketing image; it is not the Google Play feature-graphic upload size."
+  },
+  {
+   "h": "Evaluate at realistic sizes",
+   "html": "Before selecting an icon, compare the exact assets at 32, 48, 64 and 96 pixels on a white surface. These are proposed inspection sizes, not guaranteed Play Store layout dimensions. Check arrow direction, badge alignment, cloud separation and whether thin frame lines disappear unevenly."
+  },
+  {
+   "h": "Test one variable at a time",
+   "html": "A future comparison can hold the four-lobe cloud fixed while testing 2D versus 3D materials, or hold the material fixed while testing arrows versus lock. For screenshots, hold the message and source screen fixed while testing white versus blue framing. No uplift estimate is supported by this archive."
+  },
+  {
+   "h": "Use references as design evidence",
+   "html": "Study composition, contrast, scale and feature emphasis. Generate new artwork around the app&#x27;s own UI and approved identity. Competitor storage, security, speed and AI claims are not requirements or verified capabilities of the app being designed."
+  }
+ ],
+ "requirements": [
+  "Google Play&#x27;s current preview-asset guidance specifies a 512 x 512 PNG app icon and a 1024 x 500 JPEG or 24-bit PNG feature graphic. The feature graphic and landscape screenshots are distinct asset roles.",
+  "Google recommends keeping feature-graphic focal content away from cutoff zones and avoiding tiny details, prominent icon duplication, device imagery and promotional wording such as free offers. Several references use these treatments; observed competitor practice is not a template for compliance.",
+  "Google permits up to eight screenshots per supported device type. More than eight unique images in this archive therefore does not establish that a listing violates that limit. Device-specific screenshots have additional requirements; check the intended upload slot before production.",
+  "<a href=\"https://support.google.com/googleplay/android-developer/answer/9866151?hl=en\" target=\"_blank\" rel=\"noopener\">Google Play preview asset guidance</a>"
+ ],
+ "sources": [
+  "CloudGate Technologies. <a href=\"https://play.google.com/store/apps/details?id=com.cloudgate.cloudstorage&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloudgate: Cloud Storage Drive</a>. Google Play. Captured 14 September 2026.",
+  "Fazcon Apps. <a href=\"https://play.google.com/store/apps/details?id=com.fazconapps.backup.restore.data&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage: Cloud Drive App</a>. Google Play. Captured 14 September 2026.",
+  "Auzi Apps Studios. <a href=\"https://play.google.com/store/apps/details?id=com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">ANZ Cloud Drive: Cloud Storage</a>. Google Play. Captured 14 September 2026.",
+  "MAPIDIRECTIONS STUDIOS. <a href=\"https://play.google.com/store/apps/details?id=com.backup.restore.clould.backup.freecloud.storage&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Backup : Cloud Storage</a>. Google Play. Captured 14 September 2026.",
+  "Fuzon Apps. <a href=\"https://play.google.com/store/apps/details?id=com.cloudstorageapp.cloudbackup.storagespace.databackup&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage &amp; Cloud Drive</a>. Google Play. Captured 14 September 2026.",
+  "Daily Utility Apps. <a href=\"https://play.google.com/store/apps/details?id=com.backup.and.restore.all.apps.photo.backup&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage Backup &amp; Drive</a>. Google Play. Captured 14 September 2026.",
+  "MindByte Studios L.L.C-FZ. <a href=\"https://play.google.com/store/apps/details?id=com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage Drive Backup app</a>. Google Play. Captured 14 September 2026.",
+  "Appseen Studio. <a href=\"https://play.google.com/store/apps/details?id=com.datahatch.cloud.storage.drive.data.backup&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage Drive: DataHatch</a>. Google Play. Captured 14 September 2026.",
+  "Utility Forge. <a href=\"https://play.google.com/store/apps/details?id=com.cloud.storage.extrastorage.gbsfreespace&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage: Drive Backup</a>. Google Play. Captured 14 September 2026.",
+  "Golden Associate Pvt. Ltd.. <a href=\"https://play.google.com/store/apps/details?id=com.cloudstorage.cloudbackup.storagespaceapp&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage App Drive Backup</a>. Google Play. Captured 14 September 2026.",
+  "Nova Apps Studios. <a href=\"https://play.google.com/store/apps/details?id=com.securebackup.cloudstorage.drivebackup.filestorage&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Nova Cloud: Storage &amp; Backup</a>. Google Play. Captured 14 September 2026.",
+  "Google. <a href=\"https://support.google.com/googleplay/android-developer/answer/9866151?hl=en\" target=\"_blank\" rel=\"noopener\">Add preview assets to showcase your app</a>. Play Console Help. Accessed 14 September 2026."
+ ]
+}

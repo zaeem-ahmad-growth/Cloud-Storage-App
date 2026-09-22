@@ -1,0 +1,12 @@
+const fs = require('fs'); const d = __dirname;
+let page = fs.readFileSync(d + '/page.html', 'utf8');
+const html = fs.readFileSync(d + '/meta_section.html', 'utf8');
+const js = fs.readFileSync(d + '/meta_js.js', 'utf8');
+const j1 = page.indexOf('  function highlight(text, kws'), j2 = page.indexOf('  // ---------- tabs ----------');
+if (j1 < 0 || j2 < 0 || j1 > j2) throw new Error('js markers ' + [j1, j2]);
+page = page.slice(0, j1) + js + page.slice(j2);
+const h1 = page.indexOf('<main class="wrap doc" id="metadata"'), h2 = page.indexOf('<dialog class="lb"');
+if (h1 < 0 || h2 < 0 || h1 > h2) throw new Error('html markers ' + [h1, h2]);
+page = page.slice(0, h1) + html + '\n' + page.slice(h2);
+fs.writeFileSync(d + '/page.html', page);
+console.log('spliced | m-targets:', page.includes('id="m-targets-table"'), '| m-compose:', page.includes('id="m-compose"'), '| ladder before used:', page.indexOf('id="m-ladder"') < page.indexOf('id="m-used"'), '| chg marks left:', /class="chg"/.test(page));

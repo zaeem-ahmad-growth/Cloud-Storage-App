@@ -1,0 +1,42 @@
+{
+ "source": "Feature audit slide, 12 apps × 14 features. ✓ = full, ◐ = basic, ✕ = not present.",
+ "ours": { "name": "Cloud Backup: Photo Storage", "auditName": "App 1 · Cloud Backup", "dev": "Gaminators", "installs": "50+" },
+ "pitch": "Our feature-complete architecture maximizes Google Ads conversion efficiency, creating a high-return foundation for aggressive ad spend. Integrated AdMob mediation instantly optimizes ad yield, driving rapid, highly scalable revenue growth.",
+ "apps": [
+  { "n": "Cloud Backup", "dev": "Gaminators", "installs": "50+", "ours": true },
+  { "n": "Cloud Drive", "dev": "CloudGate", "installs": "100K+" },
+  { "n": "Cloud Drive App", "dev": "Fazcon Apps", "installs": "5M+" },
+  { "n": "ANZ Drive", "dev": "Auzi Studios", "installs": "5K+" },
+  { "n": "Cloud Backup", "dev": "Mapi Studios", "installs": "100K+" },
+  { "n": "Cloud Storage", "dev": "Fuzon Apps", "installs": "500K+" },
+  { "n": "Cloud Storage", "dev": "Daily Utility Apps", "installs": "1M+" },
+  { "n": "Cloud Storage", "dev": "MindByte Studios", "installs": "500K+" },
+  { "n": "Data Hatch", "dev": "Appseen Studio", "installs": "10K+" },
+  { "n": "Drive Backup", "dev": "Utility Forge", "installs": "100K+" },
+  { "n": "Cloud storage", "dev": "Golden Associate", "installs": "100+" },
+  { "n": "Nova Cloud", "dev": "Nova Apps Studio", "installs": "5K+" }
+ ],
+ "features": [
+  { "f": "Fingerprint lock / vault", "group": "Security", "v": ["full", "basic", "none", "full", "none", "full", "full", "none", "full", "none", "none", "none"] },
+  { "f": "Real encryption", "group": "Security", "v": ["full", "basic", "none", "basic", "none", "none", "none", "basic", "none", "basic", "basic", "basic"] },
+  { "f": "Trash / recycle bin", "group": "Safety net", "v": ["full", "full", "none", "none", "full", "none", "none", "none", "full", "none", "none", "none"] },
+  { "f": "AI features (photo gallery + assistant)", "group": "Intelligence", "v": ["full", "none", "basic", "none", "none", "none", "none", "none", "none", "none", "none", "none"] },
+  { "f": "Duplicate cleaner", "group": "Space", "v": ["full", "none", "none", "none", "none", "none", "full", "none", "none", "none", "none", "none"] },
+  { "f": "Storage breakdown", "group": "Space", "v": ["full", "basic", "basic", "basic", "basic", "basic", "basic", "full", "none", "basic", "basic", "basic"] },
+  { "f": "App / APK backup", "group": "Backup coverage", "v": ["full", "none", "none", "none", "none", "full", "none", "none", "none", "full", "none", "none"] },
+  { "f": "WhatsApp media backup", "group": "Backup coverage", "v": ["full", "none", "none", "full", "none", "none", "none", "none", "none", "none", "none", "none"] },
+  { "f": "Phone-to-phone transfer", "group": "Backup coverage", "v": ["full", "none", "full", "none", "none", "full", "none", "none", "none", "none", "none", "none"] },
+  { "f": "Document scanner", "group": "Capture", "v": ["full", "full", "full", "none", "none", "full", "full", "none", "none", "none", "none", "none"] },
+  { "f": "Media editing tools (photo editor, video compression, video-to-audio)", "group": "Capture", "v": ["full", "basic", "full", "none", "none", "none", "none", "none", "none", "none", "none", "none"] },
+  { "f": "File browsing & organization (folders, view files)", "group": "Files", "v": ["full", "basic", "full", "full", "none", "basic", "none", "basic", "none", "none", "full", "none"] },
+  { "f": "Sharing & gifting (expiring links, gift storage)", "group": "Files", "v": ["full", "full", "basic", "basic", "basic", "none", "none", "none", "none", "none", "none", "none"] },
+  { "f": "Home-screen widget", "group": "Convenience", "v": ["full", "none", "none", "none", "none", "none", "none", "full", "none", "none", "none", "none"] }
+ ],
+ "inventory": [
+  { "screen": "Vault home", "items": ["Storage meter with used and free space", "100 GB free tier", "One-tap “Back up now”", "Earn +5 GB free by watching a short ad", "Sign-in with email or Google"] },
+  { "screen": "Files", "items": ["Folder browsing: Pictures, Documents, Snapchat, Alarms, Voice Recorder, Ringtones, Download", "Item and size counts per folder", "Search your vault", "Upload from anywhere in the app"] },
+  { "screen": "Tools", "items": ["Smart Assistant — ask about your storage", "Smart Gallery — AI photo search", "Restore — pull your files back", "Auto-backup on a schedule", "Nearby transfer — send to a device", "Scan Document — camera to PDF", "Compress Video — save space", "Video to Audio — extract MP3", "Photo Editor — crop & filter", "Encrypt Vault — lock files", "Clean Duplicates — find & remove copies", "Share Link — send a file", "Trash — recently deleted", "WhatsApp Backup — save chat media", "Contacts Backup — back up & restore"] },
+  { "screen": "Security & preferences", "items": ["Biometric lock — fingerprint to open", "End-to-end encryption, on by default", "Dark mode", "Back up on Wi-Fi only", "Language selection", "Privacy policy, sign out, delete account and erase data"] },
+  { "screen": "Premium paywall", "items": ["More storage — no teaser quotas", "No ads — a clean, distraction-free vault", "Priority restore — restores run first", "Standard 200 GB, Premium 2 TB monthly or yearly, and a one-time Lifetime 2 TB", "Restore purchases"] }
+ ]
+}

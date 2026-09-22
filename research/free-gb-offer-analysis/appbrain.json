@@ -1,0 +1,112 @@
+﻿[
+    {
+        "app":  "Cloud Storage Backup \u0026 Drive",
+        "total":  "3.8 million",
+        "last30":  "7 thousand",
+        "perDay":  "230",
+        "rank":  "",
+        "ranking":  "Medium ranked",
+        "libs":  "27",
+        "id":  "com.backup.and.restore.all.apps.photo.backup"
+    },
+    {
+        "app":  "Cloud Backup : Cloud Storage",
+        "total":  "450 thousand",
+        "last30":  "6.6 thousand",
+        "perDay":  "220",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "55",
+        "id":  "com.backup.restore.clould.backup.freecloud.storage"
+    },
+    {
+        "app":  "Cloud Storage: Drive Backup",
+        "total":  "220 thousand",
+        "last30":  "38 thousand",
+        "perDay":  "1.3 thousand",
+        "rank":  "",
+        "ranking":  "Medium ranked",
+        "libs":  "0",
+        "id":  "com.cloud.storage.extrastorage.gbsfreespace"
+    },
+    {
+        "app":  "Cloudgate: Cloud Storage Drive",
+        "total":  "440 thousand",
+        "last30":  "6.9 thousand",
+        "perDay":  "230",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "0",
+        "id":  "com.cloudgate.cloudstorage"
+    },
+    {
+        "app":  "Cloud Storage Drive Backup app",
+        "total":  "660 thousand",
+        "last30":  "36 thousand",
+        "perDay":  "1.2 thousand",
+        "rank":  "",
+        "ranking":  "Highly ranked",
+        "libs":  "30",
+        "id":  "com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup"
+    },
+    {
+        "app":  "Cloud Storage App Drive Backup",
+        "total":  "3.6 thousand",
+        "last30":  "540",
+        "perDay":  "18",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "",
+        "id":  "com.cloudstorage.cloudbackup.storagespaceapp"
+    },
+    {
+        "app":  "Cloud Storage \u0026 Cloud Drive",
+        "total":  "540 thousand",
+        "last30":  "29 thousand",
+        "perDay":  "980",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "29",
+        "id":  "com.cloudstorageapp.cloudbackup.storagespace.databackup"
+    },
+    {
+        "app":  "Cloud Storage Drive: DataHatch",
+        "total":  "19 thousand",
+        "last30":  "850",
+        "perDay":  "28",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "27",
+        "id":  "com.datahatch.cloud.storage.drive.data.backup"
+    },
+    {
+        "app":  "Cloud Storage: Cloud Drive App",
+        "total":  "6.1 million",
+        "last30":  "75 thousand",
+        "perDay":  "2.5 thousand",
+        "rank":  "#81 in Productivity Do",
+        "ranking":  "Highly ranked",
+        "libs":  "64",
+        "id":  "com.fazconapps.backup.restore.data"
+    },
+    {
+        "app":  "ANZ Cloud Drive: Cloud Storage",
+        "total":  "5.5 thousand",
+        "last30":  "0",
+        "perDay":  "",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "26",
+        "id":  "com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace"
+    },
+    {
+        "app":  "Nova Cloud: Storage \u0026 Backup",
+        "total":  "8.7 thousand",
+        "last30":  "560",
+        "perDay":  "19",
+        "rank":  "",
+        "ranking":  "Not ranked",
+        "libs":  "",
+        "id":  "com.securebackup.cloudstorage.drivebackup.filestorage"
+    }
+]

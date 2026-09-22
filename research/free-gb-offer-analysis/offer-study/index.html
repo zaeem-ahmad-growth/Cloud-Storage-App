@@ -1,0 +1,458 @@
+<title>Cloud Storage Install Engines</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#eef1f5; --surface:#fbfcfd; --raise:#f4f6f9;
+  --ink:#101419; --ink-2:#4d5663; --muted:#7c8694;
+  --line:#dde2e9; --track:#e6eaf0;
+  --paid:#2a78d6; --organic:#eb6834; --legacy:#1baf7a; --none:#98a1ae;
+  --crit:#d03b3b; --goodtext:#006300;
+  --chip:#e8f0fa; --chip-ink:#184f95;
+  --tip-bg:#101419; --tip-ink:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0c0e11; --surface:#191b1f; --raise:#212429;
+    --ink:#f4f6f8; --ink-2:#bcc3cd; --muted:#8a93a0;
+    --line:#2b2f36; --track:#262a31;
+    --paid:#3987e5; --organic:#d95926; --legacy:#199e70; --none:#79828f;
+    --crit:#e66767; --goodtext:#0ca30c;
+    --chip:#152540; --chip-ink:#b7d3f6;
+    --tip-bg:#f4f6f8; --tip-ink:#101419;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0c0e11; --surface:#191b1f; --raise:#212429;
+  --ink:#f4f6f8; --ink-2:#bcc3cd; --muted:#8a93a0;
+  --line:#2b2f36; --track:#262a31;
+  --paid:#3987e5; --organic:#d95926; --legacy:#199e70; --none:#79828f;
+  --crit:#e66767; --goodtext:#0ca30c;
+  --chip:#152540; --chip-ink:#b7d3f6;
+  --tip-bg:#f4f6f8; --tip-ink:#101419;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;padding-inline:16px;padding-block:30px 60px}
+.wrap{max-width:1040px;margin-inline:auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;margin:0;line-height:1.1;text-wrap:balance}
+h1{font-size:clamp(28px,5.2vw,46px);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(20px,3vw,26px);font-weight:600;letter-spacing:-.01em}
+h3{font-size:16px;font-weight:600;font-family:"Instrument Sans",sans-serif}
+p{margin:0;max-width:72ch}
+.kicker{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:18px;color:var(--ink-2);max-width:64ch}
+section{display:flex;flex-direction:column;gap:16px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+
+/* verdict band */
+.verdict{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.vcell{background:var(--surface);padding:14px 15px;display:flex;flex-direction:column;gap:5px}
+.vcell .n{font-family:"Bricolage Grotesque",sans-serif;font-size:31px;font-weight:700;line-height:1;display:flex;align-items:baseline;gap:7px}
+.vcell .n i{width:10px;height:10px;border-radius:2px;display:inline-block;flex:0 0 auto}
+.vcell .t{font-weight:600;font-size:14.5px}
+.vcell .s{font-size:13px;color:var(--ink-2);line-height:1.4}
+
+/* engine rows */
+.enginelist{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.erow{background:var(--surface);display:grid;grid-template-columns:174px 128px 1fr;gap:14px;padding:13px 16px;align-items:start}
+.erow.head{background:var(--raise);font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);align-items:center}
+.eapp{display:flex;flex-direction:column;gap:3px;min-width:0}
+.eapp b{font-weight:600;font-size:15px;overflow-wrap:anywhere;line-height:1.2}
+.eapp span{font-size:12px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.etag{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:3px 9px;border-radius:5px;background:var(--raise);border:1px solid var(--line);white-space:nowrap;align-self:start}
+.etag i{width:9px;height:9px;border-radius:2px;flex:0 0 auto}
+.i-paid{background:var(--paid)} .i-org{background:var(--organic)} .i-leg{background:var(--legacy)} .i-none{background:var(--none)}
+.eproof{font-size:14px;color:var(--ink-2);line-height:1.5}
+.eproof b{color:var(--ink);font-weight:600}
+
+/* bar rows */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:13px}
+.chart .sub{font-size:13.5px;color:var(--ink-2);max-width:74ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 15px;font-size:12.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:2px;display:inline-block;flex:0 0 auto}
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{display:grid;grid-template-columns:150px 62px 1fr;gap:12px;align-items:center;font-size:13.5px}
+.row.two{grid-template-columns:150px 1fr}
+.colhead{display:grid;grid-template-columns:150px 62px 1fr;gap:12px;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.colhead.two{grid-template-columns:150px 1fr}
+.name{overflow-wrap:anywhere;line-height:1.25}
+.dots{display:flex;gap:4px}
+.dots b{width:15px;height:15px;border-radius:3px;background:var(--track);display:block}
+.dots b.on{background:var(--ink-2)}
+.barcell{display:flex;align-items:center;gap:9px;min-width:0}
+.bar{height:15px;border-radius:0 4px 4px 0;min-width:3px;flex:0 0 auto;outline-offset:3px;cursor:default}
+.bar:focus-visible{outline:2px solid var(--ink)}
+.b-paid{background:var(--paid)} .b-org{background:var(--organic)} .b-leg{background:var(--legacy)} .b-none{background:var(--none)}
+.val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12.5px;color:var(--ink);white-space:nowrap}
+.val em{font-style:normal;color:var(--muted)}
+
+/* tables */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:620px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;background:var(--raise)}
+td.num,th.num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600}
+.tag{display:inline-block;background:var(--chip);color:var(--chip-ink);border-radius:4px;padding:1px 7px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.tag.hot{background:color-mix(in srgb,var(--paid) 16%,transparent);color:var(--paid)}
+.dash{color:var(--muted)}
+.do{color:var(--goodtext);font-weight:600}
+.dont{color:var(--crit);font-weight:600}
+
+/* misc */
+figure{margin:0;display:flex;flex-direction:column;gap:7px}
+figure img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block}
+figcaption{font-size:13px;color:var(--ink-2)}
+details{border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+summary{cursor:pointer;padding:12px 15px;font-weight:500;font-size:14.5px}
+summary:focus-visible{outline:2px solid var(--paid);outline-offset:-2px}
+details .inner{padding:0 15px 15px;display:flex;flex-direction:column;gap:14px}
+ol.steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:11px;max-width:74ch}
+ol.steps li::marker{font-family:"IBM Plex Mono",monospace;color:var(--muted);font-size:13px}
+.note{font-size:13px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:14px;max-width:80ch;line-height:1.5}
+.flag{background:var(--raise);border:1px solid var(--line);border-left:3px solid var(--organic);border-radius:0 6px 6px 0;padding:12px 14px;font-size:13.5px;color:var(--ink-2);max-width:78ch}
+#tip{position:fixed;z-index:30;pointer-events:none;background:var(--tip-bg);color:var(--tip-ink);font-size:12.5px;line-height:1.4;padding:8px 11px;border-radius:6px;max-width:250px}
+@media (max-width:720px){
+  .erow{grid-template-columns:1fr;gap:9px}
+  .erow.head{display:none}
+  .row,.colhead{grid-template-columns:104px 56px 1fr;gap:9px}
+  .row.two,.colhead.two{grid-template-columns:104px 1fr}
+}
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:12px">
+  <span class="kicker">Google Play US · 11 competitors · pulled 22 Sep 2026</span>
+  <h1>What is actually driving installs for each competitor</h1>
+  <p class="lede">Third-party tools, ad transparency records and live store data, read against the free-GB question.</p>
+</header>
+
+<!-- ============ THE ANSWER ============ -->
+<section aria-labelledby="ans">
+  <span class="kicker">The answer</span>
+  <h2 id="ans">Four engines. Only one of them is the storage offer — and it is the weakest.</h2>
+  <div class="vgrid">
+    <div class="vcell"><span class="n"><i class="i-paid"></i>3</span><span class="t">Paid ads</span><span class="s">MindByte, Utility Forge, Mapidirections. Confirmed running ads.</span></div>
+    <div class="vcell"><span class="n"><i class="i-org"></i>2</span><span class="t">Search rank</span><span class="s">Fazcon, Fuzon. Ranking on real searches.</span></div>
+    <div class="vcell"><span class="n"><i class="i-leg"></i>2</span><span class="t">Old install base</span><span class="s">Daily Utility, CloudGate. Coasting, not growing.</span></div>
+    <div class="vcell"><span class="n"><i class="i-none"></i>4</span><span class="t">No engine</span><span class="s">DataHatch, Nova, Golden, ANZ. Under 900 a month.</span></div>
+  </div>
+  <div class="flag"><b>The headline:</b> the three apps carrying the heaviest free-GB graphics — CloudGate (3 placements), Fuzon (3), ANZ (2) — pull <b>6,900</b>, <b>29,000</b> and <b>0</b> downloads a month. The offer is on the listing of winners and losers alike. What separates them is ad spend and keyword rank.</div>
+</section>
+
+<!-- ============ ENGINE MAP ============ -->
+<section aria-labelledby="map">
+  <span class="kicker">Per competitor</span>
+  <h2 id="map">The engine map</h2>
+  <div class="enginelist">
+    <div class="erow head"><span>App · monthly downloads</span><span>Engine</span><span>What proves it</span></div>
+
+    <div class="erow">
+      <span class="eapp"><b>Fazcon</b><span>75,000 / mo · 6.1M total</span></span>
+      <span class="etag"><i class="i-org"></i>Search rank</span>
+      <span class="eproof">The only one of the 11 with a real US chart position: <b>#81 in Productivity</b>, top-grossing <b>#82</b>. Sensor Tower marks it <b>not advertising</b> in the last 28 days. Holds 8 top-10 keyword ranks — more than the other ten combined. Live since Mar 2021; took until Sep 2025 to reach 5M.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Utility Forge</b><span>38,000 / mo · 220K total</span></span>
+      <span class="etag"><i class="i-paid"></i>Paid ads</span>
+      <span class="eproof">Sensor Tower flags it <b>newly advertising within the last 28 days</b>. Top countries <b>Kazakhstan, Indonesia, Russia</b> — low-cost install markets, not the US. Ratings grew <b>39.4% in 30 days</b>, the fastest in the set. Released Dec 2025, hit 100K in Jul 2026.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>MindByte</b><span>36,000 / mo · 660K total</span></span>
+      <span class="etag"><i class="i-paid"></i>Paid ads</span>
+      <span class="eproof">Sensor Tower: <b>actively advertising</b>. I pulled <b>219 live US ad creatives</b> from Google's Ads Transparency Center, all video. 10K installs in Feb 2026 to 500K by Aug 2026. Earns <b>$60,000 a month</b> — the most in the set — on the worst rating (3.67).</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Fuzon</b><span>29,000 / mo · 540K total</span></span>
+      <span class="etag"><i class="i-org"></i>Search rank</span>
+      <span class="eproof">The only app besides Fazcon ranking on numbered storage searches: <b>#6 "100gb cloud storage"</b>, #7 "100gb free cloud storage", #9 "1tb free cloud storage". Ratings +18.1% in 60 days. But earns just <b>$1,000 a month</b> — it converts installs to nothing.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Daily Utility Apps</b><span>7,000 / mo · 3.8M total</span></span>
+      <span class="etag"><i class="i-leg"></i>Old install base</span>
+      <span class="eproof">Passed 1M back in <b>Nov 2022</b>. Ratings grew <b>0.14% in 30 days</b> — effectively flat. A 3.8M-install base now producing 230 a day. Its "10 GB FREE" banner is not moving anything.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>CloudGate</b><span>6,900 / mo · 440K total</span></span>
+      <span class="etag"><i class="i-leg"></i>Old install base</span>
+      <span class="eproof">Top-grossing <b>#315</b> but <b>not ranked on any of the 94 keywords</b> I tracked, and no ads found. Carries the heaviest offer load in the set — 1TB icon, 1TB banner, "100GB Free Storage" screenshot — and still returns 230 a day.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Mapidirections</b><span>6,600 / mo · 450K total</span></span>
+      <span class="etag"><i class="i-paid"></i>Paid ads</span>
+      <span class="eproof">One video ad has run continuously since <b>Aug 2022 — 1,492 days</b>. Top countries Indonesia, Algeria, India. Has the <b>weakest offer messaging of all 11</b> (one line of small banner text) and the <b>fewest offer complaints</b> (6.4% of its 1–2★ vs 30–35% for the badge apps).</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>DataHatch</b><span>850 / mo · 19K total</span></span>
+      <span class="etag"><i class="i-none"></i>No engine</span>
+      <span class="eproof">"Get 25 GB Free" on both banner and first screenshot. 28 installs a day, rating <b>3.33</b> — the lowest here. No rank, no ads found.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Nova Cloud</b><span>560 / mo · 8.7K total</span></span>
+      <span class="etag"><i class="i-none"></i>No engine</span>
+      <span class="eproof">The best-looking listing in the set (3D purple, a video trailer) and <b>no storage offer anywhere</b>. Released May 2026. 19 a day. Design alone does nothing.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>Golden Associate</b><span>540 / mo · 3.6K total</span></span>
+      <span class="etag"><i class="i-none"></i>No engine</span>
+      <span class="eproof">No offer, no ads, no rank. 18 a day.</span>
+    </div>
+
+    <div class="erow">
+      <span class="eapp"><b>ANZ Cloud Drive</b><span>0 / mo · 5.5K total</span></span>
+      <span class="etag"><i class="i-none"></i>No engine</span>
+      <span class="eproof"><b>AppBrain reports 0 downloads in the last 30 days.</b> Yet it runs "Get 15 GB Free Storage" on the banner <em>and</em> "Free Storage 15 GB" as screenshot 1. The clearest single disproof of the offer hypothesis in this data.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFER VS DOWNLOADS ============ -->
+<section aria-labelledby="ovd">
+  <span class="kicker">The hypothesis, tested</span>
+  <h2 id="ovd">Offer load against actual downloads</h2>
+  <div class="chart">
+    <h3>Monthly downloads, coloured by engine</h3>
+    <p class="sub">Squares show how many of the three prime slots — icon, banner, first screenshot — carry a free-GB offer.</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--paid)"></i>Paid ads</span>
+      <span><i class="sw" style="background:var(--organic)"></i>Search rank</span>
+      <span><i class="sw" style="background:var(--legacy)"></i>Old install base</span>
+      <span><i class="sw" style="background:var(--none)"></i>No engine</span>
+      <span><i class="sw" style="background:var(--ink-2)"></i>Offer slot used</span>
+    </div>
+    <div class="colhead"><span>App</span><span>Offer</span><span>Downloads in the last 30 days</span></div>
+    <div class="rows" id="dl"></div>
+  </div>
+  <p>Sorted by downloads, the offer squares scatter at random. The top four average <b>1.75</b> offer slots; the bottom seven average <b>1.28</b>. Two of the four dead apps push the offer hard; the fastest riser, Utility Forge, is winning on ad spend in cheap markets rather than on its "200 GB FREE" banner.</p>
+</section>
+
+<!-- ============ THIRD-PARTY DATA ============ -->
+<section aria-labelledby="tp">
+  <span class="kicker">Third-party tools</span>
+  <h2 id="tp">The raw numbers, per tool</h2>
+  <div class="tablebox">
+    <table>
+      <thead><tr>
+        <th>App</th>
+        <th class="num">AppBrain<br>30-day DL</th>
+        <th class="num">Sensor Tower<br>month DL</th>
+        <th class="num">Sensor Tower<br>month revenue</th>
+        <th>Sensor Tower<br>advertising</th>
+        <th>Sensor Tower<br>top countries</th>
+        <th class="num">AndroidRank<br>ratings +30d</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><b>Fazcon</b></td><td class="num">75,000</td><td class="num">60,000</td><td class="num">$40,000</td><td><span class="dash">Inactive &lt;28d</span></td><td>US, IN, BR</td><td class="num">1.2%</td></tr>
+        <tr><td><b>Utility Forge</b></td><td class="num">38,000</td><td class="num">10,000</td><td class="num">$1,000</td><td><span class="tag hot">New &lt;28d</span></td><td>KZ, ID, RU</td><td class="num"><b>39.4%</b></td></tr>
+        <tr><td><b>MindByte</b></td><td class="num">36,000</td><td class="num">40,000</td><td class="num"><b>$60,000</b></td><td><span class="tag hot">Active</span></td><td>US, IN, NG</td><td class="num"><b>14.8%</b></td></tr>
+        <tr><td><b>Fuzon</b></td><td class="num">29,000</td><td class="num">60,000</td><td class="num">$1,000</td><td><span class="dash">not flagged</span></td><td>ES, ZA, GB</td><td class="num">8.9%</td></tr>
+        <tr><td><b>Daily Utility</b></td><td class="num">7,000</td><td class="num dash">no data</td><td class="num dash">no data</td><td><span class="dash">no data</span></td><td class="dash">no data</td><td class="num">0.1%</td></tr>
+        <tr><td><b>CloudGate</b></td><td class="num">6,900</td><td class="num">1,000</td><td class="num">$1,000</td><td><span class="dash">not flagged</span></td><td>US, IN, MX</td><td class="dash">not tracked</td></tr>
+        <tr><td><b>Mapidirections</b></td><td class="num">6,600</td><td class="num">1,000</td><td class="num">$1,000</td><td><span class="tag hot">New &lt;28d</span></td><td>ID, DZ, IN</td><td class="num">1.1%</td></tr>
+        <tr><td><b>DataHatch</b></td><td class="num">850</td><td class="num dash">no data</td><td class="num dash">no data</td><td><span class="dash">no data</span></td><td class="dash">no data</td><td class="num">7.4%</td></tr>
+        <tr><td><b>Nova Cloud</b></td><td class="num">560</td><td class="num">1,000</td><td class="num">$1,000</td><td><span class="dash">not flagged</span></td><td>BD, TN, LB</td><td class="dash">not tracked</td></tr>
+        <tr><td><b>Golden</b></td><td class="num">540</td><td class="num">1,000</td><td class="num">$1,000</td><td><span class="dash">not flagged</span></td><td class="dash">—</td><td class="dash">not tracked</td></tr>
+        <tr><td><b>ANZ</b></td><td class="num"><b>0</b></td><td class="num">1,000</td><td class="num">$1,000</td><td><span class="dash">not flagged</span></td><td class="dash">—</td><td class="dash">not tracked</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note"><b>Reading these:</b> Sensor Tower's free tier rounds hard — 1,000 is its floor, so treat it as "small", not literal. AppBrain's 30-day figure is the better velocity signal. AndroidRank's growth percentage counts <em>ratings</em>, not installs, so it is a proxy. Sensor Tower had no record for Daily Utility or DataHatch; AndroidRank does not track CloudGate, Nova, Golden or ANZ. Where two tools disagree, both are shown rather than averaged.</p>
+</section>
+
+<!-- ============ PAID PROOF ============ -->
+<section aria-labelledby="ads">
+  <span class="kicker">Proof · Google Ads Transparency Center</span>
+  <h2 id="ads">What the paid ads actually say</h2>
+  <p>These are frames from the live US video ads of the two advertisers I could identify by name. Note what leads: photo memories, a phone running out of space, backup and restore. <b>Not free gigabytes.</b> Only MindByte's newest ad opens on capacity.</p>
+  <figure>
+    <img src="img/ad-frames.jpg" alt="Six frames from Mapidirections and MindByte video ads: photo memories flying into a phone, a sad overloaded phone with the caption Put your phone on a storage diet, Backup and Restore files Anytime Anywhere, and one slide reading Private Vault plus 10TB Scale." loading="lazy">
+    <figcaption>Mapidirections has run its ad since Aug 2022. MindByte's ads for this app ran to 9 Sep, and from 11 Sep its spend moved to a brand-new app, "AI Cloud Storage &amp; Backup".</figcaption>
+  </figure>
+  <p class="note">I could only match <b>2 of the 11</b> developers in the Ads Transparency Center by name. The others may advertise under a personal legal name, so "not found" is not proof they do not advertise — which is why the Sensor Tower advertising column above matters.</p>
+</section>
+
+<!-- ============ WHICH FEATURES ============ -->
+<section aria-labelledby="feat">
+  <span class="kicker">Which features earn the installs</span>
+  <h2 id="feat">Backup and restore wins the searches. Free storage wins none.</h2>
+  <div class="chart">
+    <h3>Competitor top-10 Play search ranks, by feature family</h3>
+    <p class="sub">Across 94 tracked US keywords: how many top-10 positions the 11 competitors hold in each theme.</p>
+    <div class="colhead two"><span>Feature family</span><span>Top-10 ranks held</span></div>
+    <div class="rows" id="fam"></div>
+  </div>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Live search, US</th><th>Which competitors are on page 1</th><th>Who owns the top</th></tr></thead>
+      <tbody>
+        <tr><td><b>cloud storage drive backup</b></td><td><span class="tag">Utility Forge #1</span> <span class="tag">MindByte #3</span></td><td>This competitor set</td></tr>
+        <tr><td><b>cloud storage backup and restore</b></td><td><span class="tag">Fazcon #8</span> <span class="tag">Daily Utility #14</span></td><td>Mixed</td></tr>
+        <tr><td>100gb free cloud storage</td><td><span class="tag">Fazcon #4</span> <span class="tag">Fuzon #7</span></td><td>Dropbox, MobiDrive</td></tr>
+        <tr><td>100gb cloud storage</td><td><span class="tag">Fuzon #6</span> <span class="tag">Fazcon #8</span></td><td>Dropbox, MEGA</td></tr>
+        <tr><td>free cloud storage</td><td class="dash">none of the 11</td><td>Dropbox, TeraBox, OneDrive, MEGA</td></tr>
+        <tr><td>cloud storage free</td><td class="dash">none of the 11</td><td>Dropbox, TeraBox, OneDrive</td></tr>
+        <tr><td>1tb cloud storage</td><td class="dash">none of the 11</td><td>TeraBox, Dropbox, OneDrive</td></tr>
+        <tr><td>free storage</td><td class="dash">none of the 11</td><td>Dropbox, TeraBox, Google One</td></tr>
+        <tr><td>unlimited cloud storage</td><td class="dash">none of the 11</td><td>Unlim, Dropbox, pCloud</td></tr>
+        <tr><td>extra storage</td><td class="dash">none of the 11</td><td>Self-storage and cleaner apps</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Generic free-storage searches belong entirely to Dropbox, TeraBox, OneDrive and MEGA. Your competitors only break through when a <b>specific number</b> is in the query — and they win that with words in their title and description, never with a badge drawn on an image. <b>Security and vault keywords returned zero top-10 ranks for any of the 11</b>, which is open ground for your app's name.</p>
+</section>
+
+<!-- ============ MONEY ============ -->
+<section aria-labelledby="money">
+  <span class="kicker">Where the money is</span>
+  <h2 id="money">Revenue per download tells you what the offer is really for</h2>
+  <div class="chart">
+    <h3>Monthly revenue per download, Sensor Tower worldwide</h3>
+    <div class="colhead two"><span>App</span><span>Revenue ÷ downloads</span></div>
+    <div class="rows" id="rpi"></div>
+  </div>
+  <p>MindByte earns roughly <b>75× more per download than Fuzon</b> from a similar install volume. Both advertise a huge free tier. The difference is what happens after install: MindByte funnels hard into subscriptions and absorbs a 3.67 rating and a wave of "it said 100GB, I got 25GB" reviews. Fuzon gives space away and earns almost nothing. <b>The free-GB number is a monetisation funnel, not an acquisition channel.</b></p>
+</section>
+
+<!-- ============ EVIDENCE ============ -->
+<section aria-labelledby="ev">
+  <span class="kicker">Source graphics</span>
+  <h2 id="ev">The listings these scores were read from</h2>
+  <details>
+    <summary>Open the icons, banners and first screenshots of all 11</summary>
+    <div class="inner">
+      <figure><img src="img/icons.jpg" alt="The 11 competitor app icons; CloudGate, Fuzon and MindByte carry 1TB, 1TB and 10TB text on the icon." loading="lazy"><figcaption><b>Icons.</b> Three carry a capacity number. None writes the word "free" — Google Play's metadata policy forbids price and promotional text on icons.</figcaption></figure>
+      <figure><img src="img/feature-graphics.jpg" alt="The 11 competitor feature graphics at 1024 by 500; seven carry a storage figure or extra storage claim." loading="lazy"><figcaption><b>Banners.</b> Seven of eleven carry an offer. ANZ's "Get 15 GB Free Storage" sits on an app with zero downloads last month.</figcaption></figure>
+      <figure><img src="img/screenshots.jpg" alt="The first two screenshots from each of the 11 competitor listings." loading="lazy"><figcaption><b>Opening screenshots.</b> The number after # is the position in the listing carousel.</figcaption></figure>
+    </div>
+  </details>
+</section>
+
+<!-- ============ FOR YOU ============ -->
+<section aria-labelledby="you">
+  <span class="kicker">Cloud Storage: Secure Vault · 600 installs</span>
+  <h2 id="you">What this means for your app</h2>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Decision</th><th>Do</th><th>Because</th></tr></thead>
+      <tbody>
+        <tr><td><b>Your growth engine</b></td><td class="do">Paid ads first, rank second.</td><td>Every app above 29,000 a month is either advertising now or has held rank for years. At 600 installs you have neither. Nothing in your listing graphics can substitute.</td></tr>
+        <tr><td><b>Icon</b></td><td class="dont">No GB badge.</td><td>The three badge apps hold the worst ratings here (3.67, 3.95, 3.9) and 30–35% of their 1–2★ reviews are offer complaints. Play policy bars promotional text on icons anyway.</td></tr>
+        <tr><td><b>Screenshot 1</b></td><td class="do">Backup &amp; restore as the headline, "100 GB free" as support.</td><td>Backup-and-restore terms hold <b>13 of the 18</b> competitor top-10 ranks. Free-storage terms hold two. The ad creatives that are actually running lead the same way.</td></tr>
+        <tr><td><b>Title &amp; description</b></td><td class="do">Write "100GB", "free cloud storage", "backup and restore" as text.</td><td>Search reads words, not images. That is exactly how Fazcon and Fuzon got their offer-keyword ranks.</td></tr>
+        <tr><td><b>Your opening</b></td><td class="do">Target security and vault terms.</td><td><b>Zero</b> of the 11 hold a top-10 rank on any vault, secure or private keyword, and your app is already named for it.</td></tr>
+        <tr><td><b>The 100 GB promise</b></td><td class="do">Only show what a user really gets free.</td><td>Reviewers report real free tiers of ~2GB (Mapidirections), 10GB (Fuzon) and 25GB (MindByte) behind "unlimited", "1TB" and "100GB" artwork. If your 100 GB is genuinely free, that is a claim they cannot honestly match.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 style="margin-top:6px">To get your own number instead of an estimate</h3>
+  <ol class="steps">
+    <li><b>Google Ads, ~2 weeks.</b> Run "100 GB Free Cloud Storage" against "Backup &amp; Restore Photos" as competing assets in one ad group, then read installs per asset in the asset report.</li>
+    <li><b>Play Console store listing experiment.</b> Screenshots only — A is your current set, B leads screenshot 1 with backup &amp; restore. Play reports the lift with a confidence range.</li>
+    <li><b>Leave the icon out of both tests.</b> Nothing in this data justifies the risk.</li>
+  </ol>
+  <p class="note"><b>One conflict worth knowing:</b> Play's own exact install counter for MindByte read 655,989 on both 15 and 21 Sep — no movement. But Sensor Tower, AppBrain and AndroidRank all independently show it growing fast and advertising actively. The frozen counter is almost certainly a stale cache on Google's side, so I have gone with the three tools over the single reading. Figures here are a 22 Sep 2026 snapshot; brackets, ratings and graphics change.</p>
+</section>
+
+</div>
+<div id="tip" hidden></div>
+
+<script>
+(function(){
+  var dl=[
+    {n:"Fazcon",v:75000,e:"org",o:[0,0,1],t:"Not advertising. #81 in Productivity. 8 top-10 keyword ranks."},
+    {n:"Utility Forge",v:38000,e:"paid",o:[0,1,1],t:"Newly advertising <28 days. Top markets KZ, ID, RU. Ratings +39.4% in 30d."},
+    {n:"MindByte",v:36000,e:"paid",o:[1,0,0],t:"Actively advertising. 219 live US video creatives. $60,000/mo revenue."},
+    {n:"Fuzon",v:29000,e:"org",o:[1,1,1],t:"Ranks #6-#9 on numbered GB searches. Only $1,000/mo revenue."},
+    {n:"Daily Utility",v:7000,e:"leg",o:[0,1,0],t:"Reached 1M in Nov 2022. Ratings +0.14% in 30d — flat."},
+    {n:"CloudGate",v:6900,e:"leg",o:[1,1,1],t:"Heaviest offer load in the set. Not ranked on any of the 94 keywords."},
+    {n:"Mapidirections",v:6600,e:"paid",o:[0,1,0],t:"One video ad running 1,492 days. Weakest offer messaging, fewest offer complaints."},
+    {n:"DataHatch",v:850,e:"none",o:[0,1,1],t:"25 GB free on banner and screenshot 1. Rating 3.33, the lowest here."},
+    {n:"Nova Cloud",v:560,e:"none",o:[0,0,0],t:"Best-looking listing, no offer anywhere, no ads, no rank."},
+    {n:"Golden",v:540,e:"none",o:[0,0,0],t:"No offer, no ads, no rank."},
+    {n:"ANZ",v:0,e:"none",o:[0,1,1],t:"0 downloads in 30 days despite 15 GB free on banner AND screenshot 1."}
+  ];
+  var fam=[
+    {n:"Backup & restore",v:13,k:"37 keywords · 8 of the 11 apps rank here"},
+    {n:"Cloud / drive",v:3,k:"25 keywords · only Fazcon, Fuzon, Utility Forge"},
+    {n:"Offer / free GB",v:2,k:"17 keywords · only Fazcon and Fuzon"},
+    {n:"Photos & videos",v:1,k:"8 keywords · Fazcon only"},
+    {n:"Security / vault",v:0,k:"7 keywords · nobody ranks. Open ground for your app"}
+  ];
+  var rpi=[
+    {n:"MindByte",v:1.50,d:"$60,000 revenue ÷ 40,000 downloads"},
+    {n:"Fazcon",v:0.67,d:"$40,000 revenue ÷ 60,000 downloads"},
+    {n:"Fuzon",v:0.02,d:"$1,000 revenue ÷ 60,000 downloads"}
+  ];
+  var tip=document.getElementById("tip");
+  function show(e,txt){tip.textContent=txt;tip.hidden=false;var r=e.currentTarget.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(r.left,window.innerWidth-262))+"px";tip.style.top=(r.bottom+8)+"px";}
+  function hide(){tip.hidden=true;}
+  function wire(el,txt){el.tabIndex=0;el.addEventListener("mouseenter",function(e){show(e,txt)});el.addEventListener("focus",function(e){show(e,txt)});el.addEventListener("mouseleave",hide);el.addEventListener("blur",hide);}
+  function fmt(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");}
+  function mk(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
+
+  var box=document.getElementById("dl"),max=75000;
+  dl.forEach(function(d){
+    var row=mk("div","row");
+    row.appendChild(mk("span","name",d.n));
+    var dots=mk("span","dots");
+    d.o.forEach(function(s){dots.appendChild(mk("b",s?"on":""));});
+    dots.setAttribute("role","img");
+    dots.setAttribute("aria-label",d.o.reduce(function(a,b){return a+b;},0)+" of 3 offer slots used");
+    row.appendChild(dots);
+    var cell=mk("span","barcell");
+    var bar=mk("span","bar b-"+d.e);
+    bar.style.width=Math.max(0.4,d.v/max*74)+"%";
+    bar.setAttribute("role","img");
+    bar.setAttribute("aria-label",d.n+": "+fmt(d.v)+" downloads in 30 days");
+    wire(bar,d.n+" — "+d.t);
+    cell.appendChild(bar);
+    cell.appendChild(mk("span","val",fmt(d.v)));
+    row.appendChild(cell);
+    box.appendChild(row);
+  });
+
+  var fbox=document.getElementById("fam");
+  fam.forEach(function(d){
+    var row=mk("div","row two");
+    row.appendChild(mk("span","name",d.n));
+    var cell=mk("span","barcell");
+    var bar=mk("span","bar b-org");
+    bar.style.width=Math.max(0.4,d.v/13*62)+"%";
+    bar.setAttribute("role","img");
+    bar.setAttribute("aria-label",d.n+": "+d.v+" top-10 ranks");
+    wire(bar,d.k);
+    cell.appendChild(bar);
+    cell.appendChild(mk("span","val",d.v+" rank"+(d.v===1?"":"s")));
+    row.appendChild(cell);
+    fbox.appendChild(row);
+  });
+
+  var rbox=document.getElementById("rpi");
+  rpi.forEach(function(d){
+    var row=mk("div","row two");
+    row.appendChild(mk("span","name",d.n));
+    var cell=mk("span","barcell");
+    var bar=mk("span","bar b-paid");
+    bar.style.width=Math.max(0.5,d.v/1.5*60)+"%";
+    bar.setAttribute("role","img");
+    bar.setAttribute("aria-label",d.n+": $"+d.v.toFixed(2)+" per download");
+    wire(bar,d.d);
+    cell.appendChild(bar);
+    cell.appendChild(mk("span","val","$"+d.v.toFixed(2)));
+    row.appendChild(cell);
+    rbox.appendChild(row);
+  });
+})();
+</script>

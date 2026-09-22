@@ -1,0 +1,20 @@
+H|Secure Cloud Storage Vault
+H|Backup & Restore Cloud Storage
+H|Cloud Backup & Easy Restore
+H|Private Cloud Storage Drive
+H|100 GB Free Cloud Storage
+H|Cloud Photos & Video Backup
+H|Secure Cloud Drive Backup
+H|Phone Backup & Quick Restore
+H|Data Backup to Cloud Storage
+H|Private Cloud Drive & Vault
+D|Back up photos, videos & data to secure cloud storage in one tap.
+D|Restore your data to any phone in minutes from your secure cloud backup.
+D|Get 100 GB of free cloud storage when you sign up. No card, no trial.
+D|Move photos and videos to private cloud storage and free up space on your phone.
+D|Keep sensitive files in a private cloud vault, locked with PIN or biometrics.
+D|Switch phones easily: back up the old phone, then restore with no cables or PC.
+D|Turn on automatic photo backup and save every picture in original quality.
+D|Stream videos and open documents straight from your cloud drive.
+D|Share files and albums with a link, and revoke access whenever you like.
+D|Protect your memories with encrypted data backup you can restore anytime.

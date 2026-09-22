@@ -1,0 +1,122 @@
+﻿[
+    {
+        "label":  "CloudGate",
+        "id":  "com.cloudgate.cloudstorage",
+        "title":  "Cloudgate: Cloud Storage Drive",
+        "bracket":  "100,000+",
+        "installs":  441509,
+        "rating":  "3.9000000953674316",
+        "ratings":  "1893",
+        "video":  false
+    },
+    {
+        "label":  "Fazcon",
+        "id":  "com.fazconapps.backup.restore.data",
+        "title":  "Cloud Storage: Cloud Drive App",
+        "bracket":  "5,000,000+",
+        "installs":  6121989,
+        "rating":  "4.072681903839111",
+        "ratings":  "14689",
+        "video":  false
+    },
+    {
+        "label":  "ANZ",
+        "id":  "com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace",
+        "title":  "ANZ Cloud Drive: Cloud Storage",
+        "bracket":  "5,000+",
+        "installs":  5507,
+        "rating":  "",
+        "ratings":  "",
+        "video":  false
+    },
+    {
+        "label":  "Mapi CloudBackup",
+        "id":  "com.backup.restore.clould.backup.freecloud.storage",
+        "title":  "Cloud Backup : Cloud Storage",
+        "bracket":  "100,000+",
+        "installs":  454083,
+        "rating":  "4.269999980926514",
+        "ratings":  "1466",
+        "video":  false
+    },
+    {
+        "label":  "Fuzon",
+        "id":  "com.cloudstorageapp.cloudbackup.storagespace.databackup",
+        "title":  "Cloud Storage \u0026 Cloud Drive",
+        "bracket":  "500,000+",
+        "installs":  543645,
+        "rating":  "4.050000190734863",
+        "ratings":  "1252",
+        "video":  false
+    },
+    {
+        "label":  "Daily Utility",
+        "id":  "com.backup.and.restore.all.apps.photo.backup",
+        "title":  "Cloud Storage Backup \u0026 Drive",
+        "bracket":  "1,000,000+",
+        "installs":  3772147,
+        "rating":  "4.070000171661377",
+        "ratings":  "10017",
+        "video":  false
+    },
+    {
+        "label":  "MindByte",
+        "id":  "com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup",
+        "title":  "Cloud Storage Drive Backup app",
+        "bracket":  "500,000+",
+        "installs":  655989,
+        "rating":  "3.6666667461395264",
+        "ratings":  "1937",
+        "video":  false
+    },
+    {
+        "label":  "DataHatch",
+        "id":  "com.datahatch.cloud.storage.drive.data.backup",
+        "title":  "Cloud Storage Drive: DataHatch",
+        "bracket":  "10,000+",
+        "installs":  19649,
+        "rating":  "3.555555582046509",
+        "ratings":  "77",
+        "video":  false
+    },
+    {
+        "label":  "Utility Forge",
+        "id":  "com.cloud.storage.extrastorage.gbsfreespace",
+        "title":  "Cloud Storage: Drive Backup",
+        "bracket":  "100,000+",
+        "installs":  215408,
+        "rating":  "4.336633682250977",
+        "ratings":  "2811",
+        "video":  false
+    },
+    {
+        "label":  "Golden",
+        "id":  "com.cloudstorage.cloudbackup.storagespaceapp",
+        "title":  "Cloud Storage App Drive Backup",
+        "bracket":  "1,000+",
+        "installs":  3606,
+        "rating":  "",
+        "ratings":  "",
+        "video":  false
+    },
+    {
+        "label":  "Nova",
+        "id":  "com.securebackup.cloudstorage.drivebackup.filestorage",
+        "title":  "Nova Cloud: Storage \u0026 Backup",
+        "bracket":  "5,000+",
+        "installs":  8732,
+        "rating":  "",
+        "ratings":  "",
+        "video":  false
+    },
+    {
+        "label":  "YOU CloudVault",
+        "id":  "com.softwarealliance.cloudvault",
+        "title":  "Cloud Storage: Secure Vault",
+        "bracket":  "500+",
+        "installs":  600,
+        "rating":  "",
+        "ratings":  "",
+        "video":  false
+    }
+]

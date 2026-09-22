@@ -1,0 +1,54 @@
+[
+ {
+  "q": "secure vault",
+  "depth": 12,
+  "compRanks": [],
+  "brandTop10": 1,
+  "top3": [
+   "Hide Photos - Secure vault",
+   "Password Manager: Secure Vault",
+   "Secure Vault - Private Locker"
+  ],
+  "demand": 40,
+  "demandAt": "secure vau"
+ },
+ {
+  "q": "cloud vault app",
+  "depth": 20,
+  "compRanks": [],
+  "brandTop10": 3,
+  "top3": [
+   "com.applock.hidden.vaultmaster",
+   "Vault - Hide Pics, App Lock",
+   "Private Photo Vault - Keepsafe"
+  ],
+  "demand": 59,
+  "demandAt": "cloud vau"
+ },
+ {
+  "q": "private vault",
+  "depth": 13,
+  "compRanks": [],
+  "brandTop10": 1,
+  "top3": [
+   "Private Photo Vault",
+   "Private Photo Vault - Keepsafe",
+   "PRIVARY Secure Photo Vault"
+  ],
+  "demand": 46,
+  "demandAt": "private v"
+ },
+ {
+  "q": "cloud storage secure vault",
+  "depth": 12,
+  "compRanks": [],
+  "brandTop10": 5,
+  "top3": [
+   "pCloud: Cloud Storage",
+   "Dropbox: Secure Cloud Storage",
+   "Private Photo Vault - Keepsafe"
+  ],
+  "demand": 0,
+  "demandAt": null
+ }
+]

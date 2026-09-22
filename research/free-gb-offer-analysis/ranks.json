@@ -1,0 +1,156 @@
+﻿[
+    {
+        "fam":  "head",
+        "q":  "cloud storage",
+        "depth":  16,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.google.android.apps.cloudconsole | com.microsoft.skydrive | com.google.android.apps.docs | com.google.android.apps.subscriptions.red"
+    },
+    {
+        "fam":  "head",
+        "q":  "cloud backup",
+        "depth":  15,
+        "hits":  "",
+        "top5":  "cloud.storage.backup.restore | com.dropbox.android | com.microsoft.skydrive | com.google.android.apps.subscriptions.red | com.google.android.apps.cloudconsole"
+    },
+    {
+        "fam":  "head",
+        "q":  "cloud drive",
+        "depth":  14,
+        "hits":  "",
+        "top5":  "com.microsoft.skydrive | com.dropbox.android | ru.mail.cloud | com.google.android.apps.docs | com.totaldrive.my.ts"
+    },
+    {
+        "fam":  "head",
+        "q":  "cloud storage app",
+        "depth":  14,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.microsoft.skydrive | com.google.android.apps.docs | com.google.android.apps.subscriptions.red | com.google.android.apps.cloudconsole"
+    },
+    {
+        "fam":  "head",
+        "q":  "backup and restore",
+        "depth":  20,
+        "hits":  "",
+        "top5":  "com.riteshsahu.SMSBackupRestore | com.cloud.backup.restore.data | com.riteshsahu.SMSBackupRestorePro | backup.restore.contacts.sms | com.katyayini.appbackup.pro"
+    },
+    {
+        "fam":  "head",
+        "q":  "cloud storage backup and restore",
+        "depth":  20,
+        "hits":  "Fazcon#8; DailyUtil#14",
+        "top5":  "com.cloud.backup.restore.data | cloud.storage.backup.restore | com.infinite.cloudbackup | com.dropbox.android | com.mycloud.storage.photo.video.space"
+    },
+    {
+        "fam":  "head",
+        "q":  "cloud storage drive backup",
+        "depth":  9,
+        "hits":  "MindByte#3; UtilForge#1",
+        "top5":  "com.cloud.storage.extrastorage.gbsfreespace | com.dropbox.android | com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup | me.proton.android.drive | com.microsoft.skydrive"
+    },
+    {
+        "fam":  "head",
+        "q":  "photo backup",
+        "depth":  15,
+        "hits":  "",
+        "top5":  "com.google.android.apps.photos | ru.mail.cloud | com.google.android.apps.photosgo | com.dropbox.android | com.amazon.clouddrive.photos"
+    },
+    {
+        "fam":  "offer",
+        "q":  "free cloud storage",
+        "depth":  13,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.dubox.drive | com.microsoft.skydrive | mega.privacy.android.app | com.pcloud.pcloud"
+    },
+    {
+        "fam":  "offer",
+        "q":  "cloud storage free",
+        "depth":  17,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.dubox.drive | com.microsoft.skydrive | mega.privacy.android.app | com.s3.drive.file.explorer.storage.cloud.manager"
+    },
+    {
+        "fam":  "offer",
+        "q":  "free cloud storage for android",
+        "depth":  17,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.google.android.apps.cloudconsole | com.dubox.drive | com.microsoft.skydrive | com.google.android.apps.docs"
+    },
+    {
+        "fam":  "offer",
+        "q":  "100gb cloud storage",
+        "depth":  14,
+        "hits":  "Fazcon#8; Fuzon#6",
+        "top5":  "com.dropbox.android | com.mobisystems.mobidrive | mega.privacy.android.app | com.cloudstorage.cloudbackup.drivebackup | com.dubox.drive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "100gb free cloud storage",
+        "depth":  10,
+        "hits":  "Fazcon#4; Fuzon#7",
+        "top5":  "com.dropbox.android | com.mobisystems.mobidrive | com.cloudstorage.cloudbackup.drivebackup | com.fazconapps.backup.restore.data | com.clouddrive.storage.cloudbackup.restore.datatransfer.smartshare"
+    },
+    {
+        "fam":  "offer",
+        "q":  "1tb cloud storage",
+        "depth":  14,
+        "hits":  "",
+        "top5":  "com.dubox.drive | com.dropbox.android | com.s3.drive.file.explorer.storage.cloud.manager | com.microsoft.skydrive | com.mobisystems.mobidrive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "1tb free cloud storage",
+        "depth":  12,
+        "hits":  "Fuzon#9",
+        "top5":  "com.dubox.drive | com.dropbox.android | com.microsoft.skydrive | com.s3.drive.file.explorer.storage.cloud.manager | me.proton.android.drive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "free storage",
+        "depth":  15,
+        "hits":  "",
+        "top5":  "com.dropbox.android | com.dubox.drive | com.google.android.apps.subscriptions.red | com.google.android.apps.docs | com.microsoft.skydrive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "unlimited cloud storage",
+        "depth":  20,
+        "hits":  "",
+        "top5":  "com.kratosle.unlim | com.dropbox.android | com.pcloud.pcloud | me.proton.android.drive | com.dubox.drive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "unlimited storage",
+        "depth":  13,
+        "hits":  "Fuzon#10",
+        "top5":  "com.kratosle.unlim | com.dropbox.android | com.metamare.cloudifyplus | com.pcloud.pcloud | me.proton.android.drive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "extra storage",
+        "depth":  20,
+        "hits":  "",
+        "top5":  "com.extraspace.aspen | com.dropbox.android | com.dubox.drive | com.publicstorage.officialapp | com.catchy.tools.storagespace.nb"
+    },
+    {
+        "fam":  "offer",
+        "q":  "cloud space free",
+        "depth":  13,
+        "hits":  "Fuzon#8",
+        "top5":  "com.dropbox.android | com.dubox.drive | com.pcloud.pcloud | com.s3.drive.file.explorer.storage.cloud.manager | com.microsoft.skydrive"
+    },
+    {
+        "fam":  "offer",
+        "q":  "more storage",
+        "depth":  20,
+        "hits":  "Fuzon#17",
+        "top5":  "com.google.android.apps.subscriptions.red | com.dubox.drive | com.dropbox.android | com.avg.cleaner | com.extraspace.aspen"
+    },
+    {
+        "fam":  "offer",
+        "q":  "free 1000gb cloud storage",
+        "depth":  13,
+        "hits":  "Fazcon#6; Fuzon#7",
+        "top5":  "com.dubox.drive | com.tt.cloudstorage.databackup | com.dropbox.android | com.microsoft.skydrive | com.cloudstorage.cloudbackup.drivebackup"
+    }
+]

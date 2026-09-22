@@ -1,0 +1,12 @@
+const fs = require('fs'); const d = __dirname;
+let page = fs.readFileSync(d + '/page.html', 'utf8');
+const html = fs.readFileSync(d + '/feat_section.html', 'utf8');
+const js = fs.readFileSync(d + '/feat_js.js', 'utf8');
+const j = page.indexOf('  // ---------- tabs ----------');
+if (j < 0) throw new Error('no tabs marker');
+page = page.slice(0, j) + js + page.slice(j);
+const h = page.indexOf('<dialog class="lb"');
+if (h < 0) throw new Error('no dialog marker');
+page = page.slice(0, h) + html + '\n' + page.slice(h);
+fs.writeFileSync(d + '/page.html', page);
+console.log('inserted | features main:', page.includes('id="features" data-tab="features"'), '| renderFeatures:', (page.match(/renderFeatures/g) || []).length, 'refs');
