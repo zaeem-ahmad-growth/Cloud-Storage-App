@@ -51,7 +51,7 @@ function renderMarkdown(pageFile) {
       '--virtual-time-budget=10000', '--dump-dom', 'file:///' + probe.split(path.sep).join('/')], { encoding: 'utf8', maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
     const m = dom.match(/<pre id="__md"[^>]*>([\s\S]*?)<\/pre>/);
     if (!m) throw new Error('no Markdown produced for ' + rel(pageFile));
-    return m[1].replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+    return m[1].replace(/\r\n?/g, '\n').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
   } finally { fs.rmSync(probe, { force: true }); }
 }
 // Links and images are relative to the tab page; make them relative to docs/tabs/.
