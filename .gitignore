@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 Thumbs.db
 __test.html
+__md.html
+__parity.html

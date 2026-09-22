@@ -1,0 +1,278 @@
+# Data dictionary
+
+> **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js` on 2026-09-22 from [assets/data.js](../assets/data.js), which holds every number and text the data-driven tabs show.
+> Paths are written from the top-level constant (`PAYLOAD`); `[]` marks an array, `{}` an object whose keys are values such as market codes. Array records that the site reads by position are labelled with the names [assets/app.js](../assets/app.js) gives them. To find which function reads a field, search app.js for its last path segment or see the [code map](code-map.md).
+
+## Top level
+
+| Constant · key | Type | Size |
+| --- | --- | --- |
+| `PAYLOAD.data` | object | 7 keys |
+| `PAYLOAD.listing` | object | 6 keys |
+| `PAYLOAD.graphics` | object | 9 keys |
+| `PAYLOAD.mymeta` | object | 24 keys |
+| `PAYLOAD.features` | object | 6 keys |
+| `PAYLOAD.pricing` | object | 6 keys |
+
+## PAYLOAD
+
+- `data` · object with 7 keys:
+  - `collectedAt` · string · e.g. `"2026-09-15T06:26:35.985Z"`
+  - `apps[]` · array of 522 records, each an array of 11 values:
+    - `[0]` (`id`) · string · e.g. `"com.cloudgate.cloudstorage"`
+    - `[1]` (`t`) · string · e.g. `"Cloudgate: Cloud Storage Drive"`
+    - `[2]` (`dev`) · string or null · e.g. `"CloudGate Technologies"`
+    - `[3]` (`i`) · number or null · e.g. `441311`
+    - `[4]` (`s`) · number or null · e.g. `3.9`
+    - `[5]` (`n`) · number or null · e.g. `1890`
+    - `[6]` (`rel`) · string or null · e.g. `"Apr 22, 2024"`
+    - `[7]` (`g`) · string or null · e.g. `"Productivity"`
+    - `[8]` (`b`) · number · e.g. `1`
+    - `[9]` (`c`) · string · e.g. `"cloud"`
+    - `[10]` (`comp`) · number · e.g. `1`
+  - `markets{}` · object keyed by 4 keys (US, PK, AE, NG); each value:
+    - `<key>[]` · array of 94 objects:
+      - `q` · string · e.g. `"cloud storage backup and restore"`
+      - `tier` · string · e.g. `"A"`
+      - `src` · string · e.g. `"ac"`
+      - `depth` · number · e.g. `30`
+      - `ids[]` · array of 30 number · e.g. `[11,12,13,14]`
+      - `nb` · number · e.g. `8`
+      - `niche` · number · e.g. `1`
+      - `vol` · number · e.g. `2024402.5`
+      - `entry` · number · e.g. `3858`
+      - `entryIdx` · number · e.g. `14`
+      - `entryRank` · number · e.g. `4`
+      - `demand` · number · e.g. `57`
+      - `demandAt` · string · e.g. `"cloud storage b"`
+      - `c10` · number · e.g. `2`
+      - `c30` · number · e.g. `5`
+      - `R` · number · e.g. `1`
+      - `O` · number · e.g. `0.7`
+      - `P` · number · e.g. `70`
+  - `profiles[]` · array of 11 objects:
+    - `id` · string · e.g. `"com.cloudgate.cloudstorage"`
+    - `label` · string · e.g. `"CloudGate"`
+    - `title` · string · e.g. `"Cloudgate: Cloud Storage Drive"`
+    - `titleLen` · number · e.g. `30`
+    - `summary` · string · e.g. `"Get 100GB cloud storage space. Backup photo storage videos with data s…"`
+    - `summaryLen` · number · e.g. `80`
+    - `descLen` · number · e.g. `1967`
+    - `csCount` · number · e.g. `6`
+    - `csDensity` · number · e.g. `3.7`
+    - `installs` · number · e.g. `441311`
+    - `installsLabel` · string · e.g. `"100,000+"`
+    - `score` · number · e.g. `3.9`
+    - `ratings` · number · e.g. `1890`
+    - `released` · string · e.g. `"Apr 22, 2024"`
+    - `ageMonths` · number · e.g. `29`
+    - `perMonth` · number · e.g. `15218`
+    - `updated` · string · e.g. `"2026-08-04"`
+    - `ads` · boolean · e.g. `true`
+    - `iap` · string · e.g. `"$1.99 - $179.99 per item"`
+    - `genre` · string · e.g. `"Productivity"`
+    - `developer` · string · e.g. `"CloudGate Technologies"`
+    - `titleKw[]` · array of 2 string · e.g. `["cloud storage","cloud storage drive"]`
+    - `shortKw[]` · array of 5 string · e.g. `["cloud storage","photo storage","cloud storage space","storage space"]`
+    - `perMarket{}` · object keyed by 4 keys (US, PK, AE, NG); each value:
+      - `<key>` · object with 4 keys:
+        - `top10` · number · e.g. `0`
+        - `top30` · number · e.g. `2`
+        - `vis` · number · e.g. `1.17`
+        - `best[]` · array of 2 objects:
+          - `q` · string · e.g. `"100gb cloud storage"`
+          - `rank` · number · e.g. `13`
+          - `R` · number · e.g. `1`
+  - `evidence[]` · array of 50 objects:
+    - `id` · string · e.g. `"com.s3.drive.file.explorer.storage.cloud.manager"`
+    - `name` · string · e.g. `"S3Drive"`
+    - `q` · string · e.g. `"private cloud"`
+    - `was` · number · e.g. `2`
+    - `now` · number · e.g. `2`
+    - `depth` · number · e.g. `8`
+    - `cat` · string · e.g. `"cloud"`
+    - `idx` · number · e.g. `39`
+  - `probe[]` · array of 12 objects:
+    - `gl` · string · e.g. `"US"`
+    - `cells[]` · array of 5 objects:
+      - `q` · string · e.g. `"cloud storage"`
+      - `depth` · number · e.g. `15`
+      - `hits` · empty array
+  - `compIdx[]` · array of 11 number · e.g. `[0,1,2,3]`
+- `listing` · object with 6 keys:
+  - `titles[]` · array of 3 objects:
+    - `text` · string · e.g. `"Cloud Storage & Backup Drive"`
+    - `rec` · boolean · e.g. `true`
+    - `why` · string · e.g. `"Highest board coverage of 18 scored candidates. Every word of 13 prior…"`
+  - `taken[]` · array of 2 objects:
+    - `text` · string · e.g. `"Cloud Storage - Photo Backup"`
+    - `note` · string · e.g. `"the 8 Sep recommended title"`
+  - `shorts[]` · array of 2 objects:
+    - `text` · string · e.g. `"Secure, private backup for photos, videos & data. Restore to any phone…"`
+    - `pair` · number · e.g. `0`
+  - `long` · string · e.g. `"Cloud storage backup and restore for everything on your phone. [App na…"`
+  - `phrases[]` · array of 10 string · e.g. `["cloud storage","backup and restore","secure cloud storage","cloud drive"]`
+  - `verify[]` · array of 9 string · e.g. `["Free storage amount and the 100GB / 1TB / 2TB plan sizes","Encryption in transit and at rest","Version history","Offline files"]`
+- `graphics` · object with 9 keys:
+  - `overview[]` · array of 4 string · e.g. `["The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.","All 11 icons use a cloud. Ten place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.","Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.","The archive contains 11 icons, 11 feature graphics and 90 unique screenshot URLs: 74 portrait and 16 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."]`
+  - `captureNote` · string · e.g. `"Original assets captured 14 September 2026. Requested listing locale: …"`
+  - `table[]` · array of 11 objects:
+    - `id` · string · e.g. `"01-cloudgate"`
+    - `name` · string · e.g. `"CloudGate"`
+    - `publisher` · string · e.g. `"CloudGate Technologies"`
+    - `downloads` · string · e.g. `"100K+"`
+    - `rating` · string · e.g. `"4.1"`
+    - `portrait` · number · e.g. `6`
+    - `landscape` · number · e.g. `0`
+  - `scope[]` · array of 5 string · e.g. `["Snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.","Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.","Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.","All 112 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets."]`
+  - `apps[]` · array of 11 objects:
+    - `id` · string · e.g. `"01-cloudgate"`
+    - `num` · string · e.g. `"01"`
+    - `name` · string · e.g. `"CloudGate"`
+    - `title` · string · e.g. `"Cloudgate: Cloud Storage Drive"`
+    - `publisher` · string · e.g. `"CloudGate Technologies"`
+    - `downloads` · string · e.g. `"100K+"`
+    - `playUrl` · string · e.g. `"https://play.google.com/store/apps/details?id=com.cloudgate.cloudstora…"`
+    - `notes` · object with 4 keys:
+      - `Icon` · string · e.g. `"A white continuous cloud outline sits on a cyan-to-blue field. A red c…"`
+      - `Feature graphic` · string · e.g. `"A centered wordmark and capacity strip dominate a blue banner with fai…"`
+      - `Screenshot system` · string · e.g. `"Six portrait panels repeat an indigo background, centered white headin…"`
+      - `Design assessment` · string · e.g. `"Useful for a consistent portrait template and connected photo popups. …"`
+    - `tags[]` · array of 6 string · e.g. `["outline cloud","indigo","centered headings","gallery popups"]`
+    - `noLandscape` · boolean · e.g. `true`
+    - `assets[]` · array of 8 objects:
+      - `kind` · string · e.g. `"icon"`
+      - `orient` · string · e.g. `"square"`
+      - `file` · string · e.g. `"01-cloudgate/icon-01.png"`
+      - `alt` · string · e.g. `"A white continuous cloud outline sits on a cyan-to-blue field. A red c…"`
+      - `label` · string · e.g. `"Icon 01"`
+      - `w` · number · e.g. `512`
+      - `h` · number · e.g. `512`
+      - `caption` · string · e.g. `"Original listing asset"`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/uyHV-mrKyUmPhlHOaBdf2_f5rnjvlqD7…"`
+  - `patterns[]` · array of 8 objects:
+    - `h` · string · e.g. `"Icon silhouette"`
+    - `html` · string · e.g. `"Large filled clouds survive reduction better than thin strokes and sev…"`
+  - `guidance[]` · array of 8 objects:
+    - `h` · string · e.g. `"Keep the approved icon identity"`
+    - `html` · string · e.g. `"Use the latest approved four-circle cloud as the source. Carry forward…"`
+  - `requirements[]` · array of 4 string · e.g. `["Google Play&#x27;s current preview-asset guidance specifies a 512 x 512 PNG app icon and a 1024 x 500 JPEG or 24-bit PNG feature graphic. The feature graphic and landscape screenshots are distinct asset roles.","Google recommends keeping feature-graphic focal content away from cutoff zones and avoiding tiny details, prominent icon duplication, device imagery and promotional wording such as free offers. Several references use these treatments; observed competitor practice is not a template for compliance.","Google permits up to eight screenshots per supported device type. More than eight unique images in this archive therefore does not establish that a listing violates that limit. Device-specific screenshots have additional requirements; check the intended upload slot before production.","<a href=\"https://support.google.com/googleplay/android-developer/answer/9866151?hl=en\" target=\"_blank\" rel=\"noopener\">Google Play preview asset guidance</a>"]`
+  - `sources[]` · array of 12 string · e.g. `["CloudGate Technologies. <a href=\"https://play.google.com/store/apps/details?id=com.cloudgate.cloudstorage&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloudgate: Cloud Storage Drive</a>. Google Play. Captured 14 September 2026.","Fazcon Apps. <a href=\"https://play.google.com/store/apps/details?id=com.fazconapps.backup.restore.data&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Storage: Cloud Drive App</a>. Google Play. Captured 14 September 2026.","Auzi Apps Studios. <a href=\"https://play.google.com/store/apps/details?id=com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">ANZ Cloud Drive: Cloud Storage</a>. Google Play. Captured 14 September 2026.","MAPIDIRECTIONS STUDIOS. <a href=\"https://play.google.com/store/apps/details?id=com.backup.restore.clould.backup.freecloud.storage&amp;hl=en&amp;gl=US\" target=\"_blank\" rel=\"noopener\">Cloud Backup : Cloud Storage</a>. Google Play. Captured 14 September 2026."]`
+- `mymeta` · object with 24 keys:
+  - `appId` · string · e.g. `"com.softwarealliance.cloudvault"`
+  - `url` · string · e.g. `"https://play.google.com/store/apps/details?id=com.softwarealliance.clo…"`
+  - `fetchedAt` · string · e.g. `"2026-09-15T11:19:50.756Z"`
+  - `title` · string · e.g. `"Cloud Storage: Secure Vault"`
+  - `summary` · string · e.g. `"Free up space, backup photos & videos to a safe online drive. Sync and…"`
+  - `description` · string · e.g. `"Running out of space? Move your photos, videos and files to secure clo…"`
+  - `installsLabel` · string · e.g. `"500+"`
+  - `realInstalls` · number · e.g. `597`
+  - `score` · null · e.g. `null`
+  - `ratings` · null · e.g. `null`
+  - `developer` · string · e.g. `"Cell Cave"`
+  - `developerSite` · string · e.g. `"https://cellcave.github.io/cell-cave-website/"`
+  - `privacyPolicy` · string · e.g. `"https://cloud-vault.tech/privacy.html"`
+  - `genre` · string · e.g. `"Productivity"`
+  - `containsAds` · boolean · e.g. `true`
+  - `iap` · string · e.g. `"$9.99 - $49.99 per item"`
+  - `contentRating` · string · e.g. `"Everyone"`
+  - `updated` · string · e.g. `"Sep 8, 2026"`
+  - `released` · null · e.g. `null`
+  - `video` · null · e.g. `null`
+  - `assets` · object with 3 keys:
+    - `icon` · object with 4 keys:
+      - `file` · string · e.g. `"../../assets/mylisting/icon.png"`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/vEzREmfRl0dxDsKHpa41wB6tIcpItEu_…"`
+      - `bytes` · number · e.g. `39542`
+      - `type` · string · e.g. `"image/png"`
+    - `feature` · object with 4 keys:
+      - `file` · string · e.g. `"../../assets/mylisting/feature-graphic.png"`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/hNR2efqDB7DKTDcxyCV967DAEfEDQaph…"`
+      - `bytes` · number · e.g. `318633`
+      - `type` · string · e.g. `"image/png"`
+    - `screenshots[]` · array of 4 objects:
+      - `file` · string · e.g. `"../../assets/mylisting/screenshot-01.png"`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/VIpZ2wVQ5U2FK2DTSmUUOwg5XSj3Os1i…"`
+      - `bytes` · number · e.g. `715297`
+      - `type` · string · e.g. `"image/png"`
+  - `sep8` · object with 5 keys:
+    - `titles[]` · array of 3 string · e.g. `["Cloud Storage - Photo Backup","Cloud Drive: Secure File Vault","Phone Backup - Cloud Storage"]`
+    - `shortMain` · string · e.g. `"Backup your phone to a private cloud — restore files anytime, free up …"`
+    - `shortAlt` · string · e.g. `"Free up space: auto backup photos & videos to a safe online drive. Syn…"`
+    - `longText` · string · e.g. `"Running out of space? Move your photos, videos and files to secure clo…"`
+    - `ladder[]` · array of 4 objects:
+      - `phase` · string · e.g. `"Phase 0"`
+      - `range` · string · e.g. `"launch → 10K"`
+      - `keywords[]` · array of 6 string · e.g. `["secure cloud storage","private cloud storage","cloud vault","cloud space"]`
+      - `proof` · string · e.g. `"Proof: 5K–34K-install apps hold top-5 on all of these right now."`
+  - `titleTerms[]` · array of 4 objects:
+    - `q` · string · e.g. `"secure vault"`
+    - `depth` · number · e.g. `12`
+    - `compRanks` · empty array
+    - `brandTop10` · number · e.g. `1`
+    - `demand` · number · e.g. `40`
+    - `demandAt` · string · e.g. `"secure vau"`
+  - `release` · object with 5 keys:
+    - `title` · string · e.g. `"Cloud Storage: Secure Vault"`
+    - `summary` · string · e.g. `"Secure, private backup for photos, videos & data. Restore to any phone…"`
+    - `description` · string · e.g. `"Running out of space? Move your photos, videos and files to secure clo…"`
+    - `edits[]` · array of 4 objects:
+      - `field` · string · e.g. `"Short description"`
+      - `label` · string · e.g. `"Short description rewritten around backup and restore"`
+      - `before` · string · e.g. `"Free up space, backup photos & videos to a safe online drive. Sync and…"`
+      - `after` · string · e.g. `"Secure, private backup for photos, videos & data. Restore to any phone…"`
+      - `ref` · string · e.g. `"Proposed ASO package: recommended short description (80/80)"`
+    - `titleDecision` · string · e.g. `"Title kept: “Cloud Storage: Secure Vault” pairs the generic head term …"`
+- `features` · object with 6 keys:
+  - `source` · string · e.g. `"Feature audit slide, 12 apps × 14 features. ✓ = full, ◐ = basic, ✕ = n…"`
+  - `ours` · object with 4 keys:
+    - `name` · string · e.g. `"Cloud Backup: Photo Storage"`
+    - `auditName` · string · e.g. `"App 1 · Cloud Backup"`
+    - `dev` · string · e.g. `"Gaminators"`
+    - `installs` · string · e.g. `"50+"`
+  - `pitch` · string · e.g. `"Our feature-complete architecture maximizes Google Ads conversion effi…"`
+  - `apps[]` · array of 12 objects:
+    - `n` · string · e.g. `"Cloud Backup"`
+    - `dev` · string · e.g. `"Gaminators"`
+    - `installs` · string · e.g. `"50+"`
+    - `ours` · boolean · e.g. `true`
+  - `features[]` · array of 14 objects:
+    - `f` · string · e.g. `"Fingerprint lock / vault"`
+    - `group` · string · e.g. `"Security"`
+    - `v[]` · array of 12 string · e.g. `["full","basic","none","full"]`
+  - `inventory[]` · array of 5 objects:
+    - `screen` · string · e.g. `"Vault home"`
+    - `items[]` · array of 5 string · e.g. `["Storage meter with used and free space","100 GB free tier","One-tap “Back up now”","Earn +5 GB free by watching a short ad"]`
+- `pricing` · object with 6 keys:
+  - `currency` · string · e.g. `"PKR"`
+  - `source` · string · e.g. `"Cloud Storage Pricing Comparison (PKR), built from paywall screenshots…"`
+  - `recommended` · object with 2 keys:
+    - `paywall` · string · e.g. `"Annual selected by default, 500 GB marked Most Popular, 1 TB marked Be…"`
+    - `plans[]` · array of 3 objects:
+      - `plan` · string · e.g. `"Plus"`
+      - `gb` · number · e.g. `250`
+      - `curM` · number · e.g. `420`
+      - `recM` · number · e.g. `499`
+      - `curY` · number · e.g. `5600`
+      - `recY` · number · e.g. `2999`
+      - `pos` · string · e.g. `"Entry plan"`
+  - `benchmark[]` · array of 13 objects:
+    - `app` · string · e.g. `"Our app — current"`
+    - `kind` · string · e.g. `"ours-current"`
+    - `entry` · string · e.g. `"250 GB · Rs 420"`
+    - `m500` · number · e.g. `1400`
+    - `m1000` · number · e.g. `2800`
+    - `y500` · number · e.g. `8400`
+    - `y1000` · number · e.g. `19600`
+  - `plans[]` · array of 41 objects:
+    - `app` · string · e.g. `"Our app — current"`
+    - `kind` · string · e.g. `"ours-current"`
+    - `plan` · string · e.g. `"Plus"`
+    - `gb` · number · e.g. `250`
+    - `m` · number · e.g. `420`
+    - `y` · number · e.g. `5600`
+    - `note` · string · e.g. `"Entry plan"`
+    - `origY` · number · e.g. `2400`
+    - `flag` · boolean · e.g. `true`
+    - `origM` · number · e.g. `850`
+  - `notes[]` · array of 5 string · e.g. `["Daily Utility’s yearly prices sit 31× above its monthly ones (Rs 270 a month against Rs 8,400 a year on the same 25 GB plan). They are reproduced as captured, flagged, and left out of the yearly charts.","Fazcon and DataHatch both run a standing 50% offer, so their shelf prices are the promotional ones; the struck-through original is shown in the plan table.","ANZ and Fuzon sell “no ads + encryption” as a separate add-on rather than including it in a storage tier — the ad-free experience is a second purchase on top of storage.","Utility Forge renames its tiers between monthly and yearly billing (Basic/Plus, Classic/Premium, Premium/Pro at the same storage), so plan names are shown paired."]`

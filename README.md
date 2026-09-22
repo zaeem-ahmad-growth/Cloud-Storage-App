@@ -14,6 +14,10 @@ Research site for the Android app **Cloud Storage: Secure Vault** (`com.software
 
 Each section of a tab has its own link, for example `.../tabs/01-aso-playbook/#keywords`.
 
+## Documentation
+
+Start with [docs/README.md](docs/README.md): the full text of every tab ([docs/tabs/](docs/tabs/)), a [code map](docs/code-map.md) from each section to its markup, code and data, a [data dictionary](docs/data-dictionary.md) of every field, and a [parity report](docs/parity.md) against the original Claude artifacts. `node tools/export-docs.js` regenerates the generated parts.
+
 ## How it is built
 
 Plain HTML, CSS and JavaScript, published by GitHub Pages straight from the `main` branch; there is no build step. Every page opens from disk too. `CLAUDE.md` describes the layout and the editing rules, and Claude Code loads it automatically. `CONTRIBUTING.md` covers getting access and making changes.
