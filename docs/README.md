@@ -6,9 +6,11 @@ Everything on the site at https://zaeem-ahmad-growth.github.io/Cloud-Storage-App
 
 **"What does the site say about …?"** Search the tab snapshots in [tabs/](tabs/). Each is the full visible text of one tab (every heading, paragraph, table row, list item and image reference) with anchors such as `<a id="keywords">` for each section. For values the default view does not show (other markets, rows hidden behind "show all"), read [assets/data.js](../assets/data.js) using the [data dictionary](data-dictionary.md).
 
-**"Change …" or "Add …"** Find the section in the [code map](code-map.md): it gives the markup file and line, the function in [assets/app.js](../assets/app.js) that fills the section, and the data fields that function reads. Static wording lives in the tab's `index.html`; sentences built from numbers live in the named function; numbers and lists live in `assets/data.js`. Tab 05 is a plain page: edit its `index.html` directly. After the change, run `node tools/export-docs.js` so the snapshots, code map and dictionary match, then commit everything together (see [CLAUDE.md](../CLAUDE.md)).
+**"Change …" or "Add …"** Find the section in the [code map](code-map.md): it gives the markup file and line, the function in [assets/app.js](../assets/app.js) that fills the section, and the data fields that function reads. Static wording lives in the tab's `index.html`; sentences built from numbers live in the named function; numbers and lists live in `assets/data.js`. Tab 05 is a plain page: edit its `index.html` directly. After the change, commit and push; GitHub regenerates the generated docs by itself (see [CLAUDE.md](../CLAUDE.md)).
 
-**"Where did this number come from?"** The Google Play scrape and scoring scripts, the Google Ads assets study, the free-GB offer study and earlier reports are in [research/](../research/) ([research/README.md](../research/README.md) lists each file); the methods are also written out on the tabs.
+**"How does … work?" or a change to how a tab behaves** Load the tab's backend file in [backend/](backend/) (in Claude Code: `/backend <tab>`). It holds the full source of the code that draws the tab and the full data it reads. Wording-only requests do not need it.
+
+**"Where did this number come from?"** The Google Play scrape and scoring scripts, the Google Ads assets study, the free-GB offer study and earlier reports are in [research/](../research/) ([research/README.md](../research/README.md) lists each file); the methods are also written out on the tabs. Every research script and small data file is in [backend/research.md](backend/research.md) in full, and every research file is listed with its structure in [research-index.md](research-index.md); the PDF, Word and RTF reports have Markdown text versions next to them in research/.
 
 ## What is where
 
@@ -19,11 +21,16 @@ Everything on the site at https://zaeem-ahmad-growth.github.io/Cloud-Storage-App
 | [assets/app.js](../assets/app.js) | Draws tabs 01-04 from `PAYLOAD`; `<body data-page>` picks the tab |
 | [assets/site.css](../assets/site.css) · [assets/bar.css](../assets/bar.css) · [assets/nav.js](../assets/nav.js) | Shared styles · the tab bar alone, for self-styled tabs · the tab bar and its tab list |
 | [assets/mylisting/](../assets/mylisting/) | The app's live Play Store icon, feature graphic and 4 screenshots |
+| [docs/knowledge.md](knowledge.md) | Hand-written knowledge base: the key facts, findings and decisions. Imported into every Claude Code session by CLAUDE.md |
 | [docs/tabs/](tabs/) | Generated: full text of each tab |
 | [docs/code-map.md](code-map.md) | Generated: section → markup line → function → data fields |
 | [docs/data-dictionary.md](data-dictionary.md) | Generated: every field in `assets/data.js`, with types, sizes and examples |
+| [docs/backend/](backend/) | Generated: for each tab, the full code that draws it and the full data it reads; `research.md` holds every research script and small data file |
+| [docs/research-index.md](research-index.md) | Generated: every file in `research/`, what it is and the structure of each data file |
 | [docs/parity.md](parity.md) | Audit of the site against the original artifacts |
 | [tools/](../tools/) | `export-docs.js` regenerates the generated docs; `dom-to-md.js` is the page-to-Markdown converter it uses |
+| [.github/workflows/docs.yml](../.github/workflows/docs.yml) | Runs `tools/export-docs.js` on GitHub after every push and commits the regenerated docs |
+| [.claude/commands/backend.md](../.claude/commands/backend.md) | The `/backend <tab>` command for Claude Code |
 | [research/](../research/) | Backend scripts, raw scrape, study files and reports |
 
 ## The tabs
@@ -62,6 +69,7 @@ The snapshots record each tab in its default state. These controls change what i
 
 ## Keeping this complete
 
-- The generated files carry a "do not edit by hand" note. Change the page or data, then run `node tools/export-docs.js` (Node 18+, and Edge or Chrome) and commit the regenerated docs with the change.
+- The generated files carry a "do not edit by hand" note. Nobody regenerates them by hand: after every push, GitHub runs `tools/export-docs.js` (the "Update docs" workflow) and commits the result, so it costs no one's Claude credits.
+- `docs/knowledge.md` and this file are written by hand. When a change makes one of their facts wrong, correct it in the same commit.
 - New tabs are picked up automatically from the `TABS` list in `assets/nav.js`.
 - Put new backend material (scripts, raw data, reports as `.md`, `.json`, `.csv`) in `research/` and list it in `research/README.md`. Never commit secrets (see the content rules in [CLAUDE.md](../CLAUDE.md)).

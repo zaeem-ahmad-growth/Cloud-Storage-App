@@ -1,6 +1,6 @@
 # Code map
 
-> **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js` on 2026-09-22.
+> **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js`, which GitHub runs after every push.
 > For every section of every tab: the anchor id, where its markup is (file and line), which function in [assets/app.js](../assets/app.js) fills it, and which fields of [assets/data.js](../assets/data.js) that function reads (paths as in the [data dictionary](data-dictionary.md)). To change a section's wording, edit the markup for static text or the named function for text built from data; to change numbers, edit the data.
 
 <a id="01-aso-playbook"></a>

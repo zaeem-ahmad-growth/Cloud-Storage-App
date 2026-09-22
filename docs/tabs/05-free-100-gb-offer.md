@@ -1,6 +1,6 @@
 # Free 100 GB Offer
 
-> **Generated file: do not edit by hand.** Full visible text of the tab as it renders by default, produced by `node tools/export-docs.js` on 2026-09-22.
+> **Generated file: do not edit by hand.** Full visible text of the tab as it renders by default, produced by `node tools/export-docs.js`, which GitHub runs after every push.
 > Live page: https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/05-free-100-gb-offer/ · Source: [tabs/05-free-100-gb-offer/index.html](../../tabs/05-free-100-gb-offer/index.html) · Where each section comes from: [code map](../code-map.md#05-free-100-gb-offer)
 > Controls on the page (market pickers, version switches, filters, "show more") change the view; this snapshot shows their default state. The data behind every state is in [assets/data.js](../../assets/data.js), described in the [data dictionary](../data-dictionary.md).
 

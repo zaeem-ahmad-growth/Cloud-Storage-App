@@ -32,7 +32,7 @@ Also here: `features.json` and `pricing.json` (the hand-edited feature and IAP c
 
 ## google-ads-assets/
 
-- `Cloud Storage Google Ads Assets By Zaeem.docx` / `.pdf`: the delivered assets, 10 headlines (30 characters) and 10 descriptions (90 characters) in two ad groups, storage and security, and backup and restore.
+- `Cloud Storage Google Ads Assets By Zaeem.docx` / `.pdf`: the delivered assets, 10 headlines (30 characters) and 10 descriptions (90 characters) in two ad groups, storage and security, and backup and restore. Its text is also in `Cloud Storage Google Ads Assets By Zaeem.md`.
 - `serps.ps1`, `serps_live.json`, `serp_rows.json`: live Play results for the candidate phrases.
 - `generic.ps1`, `brandcheck.ps1`, `brandcheck.json`, `headcheck.ps1`, `resolve.ps1`, `summary.ps1`: the brand-name and exact-title checks of every headline against 522 board apps and live Play searches.
 - `keywords.txt`, `candidates.txt`, `final_headlines.txt`, `assets.txt`: the working lists.
@@ -49,6 +49,8 @@ Also here: `features.json` and `pricing.json` (the hand-edited feature and IAP c
 - `offer-study/`: the study's summary page.
 
 ## reports/
+
+Each PDF and the RTF file has a Markdown text version with the same name next to it (`.md`), extracted on 22 Sep 2026 so it can be read and searched; images and charts are only in the originals.
 
 - `CloudStorage-Market-Teardown.pdf` and `Cloud-Vault-CallerID-App-Analysis.pdf` (17 Aug 2026)
 - `CloudVault_ASO_Competitor_Analysis.md` and `Cloud_Vault_Play_Store_Portfolio_Optimized.pdf` (7 Sep 2026)

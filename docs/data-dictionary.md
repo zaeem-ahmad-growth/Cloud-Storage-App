@@ -1,6 +1,6 @@
 # Data dictionary
 
-> **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js` on 2026-09-22 from [assets/data.js](../assets/data.js), which holds every number and text the data-driven tabs show.
+> **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js` (GitHub runs it after every push) from [assets/data.js](../assets/data.js), which holds every number and text the data-driven tabs show.
 > Paths are written from the top-level constant (`PAYLOAD`); `[]` marks an array, `{}` an object whose keys are values such as market codes. Array records that the site reads by position are labelled with the names [assets/app.js](../assets/app.js) gives them. To find which function reads a field, search app.js for its last path segment or see the [code map](code-map.md).
 
 ## Top level

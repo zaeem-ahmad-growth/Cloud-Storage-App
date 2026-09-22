@@ -4,7 +4,23 @@ This repository is the shared, public research site for the Android app **Cloud 
 
 The site started as the Claude artifact https://claude.ai/artifact/GMDahxdE589GyGefGyTdpK ("Cloud Storage ASO By Zaeem"). Only the account that owns an artifact can update it, so this repository is now the master copy. Edit here, not the artifact.
 
-**Start with [docs/README.md](docs/README.md).** It says where everything is and how to answer a request. [docs/tabs/](docs/tabs/) holds the full visible text of every tab, [docs/code-map.md](docs/code-map.md) maps every section to its markup line, the function that fills it and the data it reads, and [docs/data-dictionary.md](docs/data-dictionary.md) describes every field in `assets/data.js`. [docs/parity.md](docs/parity.md) records that the site matches the original artifact with no gaps.
+## Knowledge base (always loaded)
+
+The file below is imported into every Claude Code session in this repository, so the key facts are known before any request.
+
+@docs/knowledge.md
+
+## Load only what the request needs
+
+Keep every request cheap. Answer from the knowledge base when you can, and open other files only when the request needs them:
+
+| The request is about | Open | Do not |
+| --- | --- | --- |
+| Wording, numbers or a new paragraph on a tab | `docs/tabs/<tab>.md` to find the text, then the file and line the [code map](docs/code-map.md) points to (the tab's `index.html`, or `assets/data.js`) | load backend files, or run scripts, browsers, builds or checks |
+| How a tab works (calculations, filters, data flow, behaviour) or a change to its code | `docs/backend/<tab>.md` first, or run `/backend <tab>`: the full code that draws the tab and the full data it reads | run anything the user did not ask for |
+| How the data was collected or scored | `docs/backend/research.md` (or `/backend research`), `docs/research-index.md`, `research/README.md` | re-run the scrapers unless the user asks |
+| What a data field means | `docs/data-dictionary.md` | |
+| Anything else about the repository | `docs/README.md` | |
 
 ## Layout
 
@@ -23,7 +39,10 @@ tabs/
   03-features-comparison/      data-page="features"
   04-competitors-graphics/     data-page="graphics"; competitor images in graphics/
   05-free-100-gb-offer/        self-contained page with its own CSS and JS (from a Claude artifact); images in img/
-docs/                          start with docs/README.md; tabs/, code-map.md and data-dictionary.md are generated
+docs/                          knowledge.md (always loaded) and README.md are written by hand; everything else is generated
+  backend/                     per tab: the full code that draws it and the full data it reads; research.md: every research script
+.github/workflows/docs.yml     regenerates docs/ on GitHub after every push
+.claude/commands/backend.md    the /backend command, which loads a tab's code and data
 tools/                         export-docs.js regenerates docs/; dom-to-md.js converts a rendered page to Markdown
 research/                      backend data, scripts and reports behind the pages
 ```
@@ -49,12 +68,12 @@ To turn a Claude artifact into a tab: read it with the Artifact tool (`action: "
 
 ## Checking your work
 
-Every page works when opened straight from disk: open `tabs/<NN>-<slug>/index.html` in a browser, click through the tabs and the section links, and look for errors in the browser console.
+Only after a code change (`assets/app.js`, a page's `<script>`, or the structure of `assets/data.js`): open the affected tab pages from disk in a browser, click through them and look for errors in the browser console. Skip this for wording and number edits.
 
 ## Saving and publishing
 
 1. `git pull --rebase`
-2. If you changed a tab, `assets/app.js` or `assets/data.js`, run `node tools/export-docs.js` (Node 18+, with Edge or Chrome installed). It regenerates `docs/tabs/`, `docs/code-map.md` and `docs/data-dictionary.md`; commit them with your change. If it cannot run on your machine, say so to the user rather than editing the generated files by hand.
+2. Do not run `tools/export-docs.js` and do not edit the generated files in `docs/`: after your push, GitHub regenerates them (the "Update docs" workflow) and commits the result within a few minutes, so run `git pull --rebase` before your next change. If your change makes a fact in `docs/knowledge.md` wrong, correct that line in the same commit.
 3. `git add` only the files you changed, then `git commit -m "<Tab label>: <what changed>"`.
 4. `git push`. If it is rejected because someone pushed first, run `git pull --rebase` and push again. Never force-push.
 5. Tell the user the change is live about a minute after the push, at `https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/<NN>-<slug>/`.
