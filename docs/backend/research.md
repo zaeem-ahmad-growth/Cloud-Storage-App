@@ -4033,8 +4033,8 @@ cloud drive app
 - [research/free-gb-offer-analysis/atc-creatives-Mapidirections-0.json](../../research/free-gb-offer-analysis/atc-creatives-Mapidirections-0.json) · 63 KB
 - [research/free-gb-offer-analysis/atc-creatives-MindByte-0.json](../../research/free-gb-offer-analysis/atc-creatives-MindByte-0.json) · 63 KB
 - [research/free-gb-offer-analysis/atc-creatives-MindByte-1.json](../../research/free-gb-offer-analysis/atc-creatives-MindByte-1.json) · 64 KB
-- [research/free-gb-offer-analysis/atc-scan.json](../../research/free-gb-offer-analysis/atc-scan.json) · 135 KB
-- [research/free-gb-offer-analysis/reviews.json](../../research/free-gb-offer-analysis/reviews.json) · 831 KB
-- [research/google-ads-assets/serp_rows.json](../../research/google-ads-assets/serp_rows.json) · 124 KB
+- [research/free-gb-offer-analysis/atc-scan.json](../../research/free-gb-offer-analysis/atc-scan.json) · 133 KB
+- [research/free-gb-offer-analysis/reviews.json](../../research/free-gb-offer-analysis/reviews.json) · 805 KB
+- [research/google-ads-assets/serp_rows.json](../../research/google-ads-assets/serp_rows.json) · 119 KB
 
 Raw response caches (not listed file by file): `research/aso-pipeline/`, `research/aso-pipeline/cache/`.

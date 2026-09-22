@@ -4,9 +4,9 @@
 
 ## research/
 
-1 files · 5 KB
+1 files · 6 KB
 
-- **[README.md](../research/README.md)** · 5 KB · Markdown: “Research data”, “aso-pipeline/”, “google-ads-assets/”, “free-gb-offer-analysis/”, “reports/”, “Kept out on purpose”
+- **[README.md](../research/README.md)** · 6 KB · Markdown: “Research data”, “aso-pipeline/”, “google-ads-assets/”, “free-gb-offer-analysis/”, “reports/”, “Kept out on purpose”
 
 ## research/aso-pipeline/
 
@@ -699,7 +699,7 @@ Images: [sheet-fg.jpg](../research/free-gb-offer-analysis/sheet-fg.jpg) (453 KB)
     - `13` · number · e.g. `3`
   - `4` · string · e.g. `"1"`
   - `5` · string · e.g. `"1"`
-- **[atc-scan.json](../research/free-gb-offer-analysis/atc-scan.json)** · 135 KB · JSON, array of 233:
+- **[atc-scan.json](../research/free-gb-offer-analysis/atc-scan.json)** · 133 KB · JSON, array of 233:
   - `(root)[]` · array of 233 objects:
     - `adv` · string · e.g. `"MindByte"`
     - `cr` · string · e.g. `"CR12494300322103033857"`
@@ -736,7 +736,7 @@ Images: [sheet-fg.jpg](../research/free-gb-offer-analysis/sheet-fg.jpg) (453 KB)
     - `hits` · string · e.g. `""`
     - `top5` · string · e.g. `"com.dropbox.android \| com.google.android.apps.cloudconsole \| com.micro…"`
 - **[ranks.ps1](../research/free-gb-offer-analysis/ranks.ps1)** · 4 KB · PowerShell script, 55 lines.  Reads nothing on disk; writes `ranks.json`.
-- **[reviews.json](../research/free-gb-offer-analysis/reviews.json)** · 831 KB · JSON, array of 2908:
+- **[reviews.json](../research/free-gb-offer-analysis/reviews.json)** · 805 KB · JSON, array of 2908:
   - `(root)[]` · array of 2908 objects:
     - `app` · string · e.g. `"CloudGate"`
     - `score` · number · e.g. `5`
@@ -826,7 +826,7 @@ Images: [ad-frames.jpg](../research/free-gb-offer-analysis/offer-study/img/ad-fr
 
 ## research/google-ads-assets/
 
-16 files · 591 KB
+16 files · 585 KB
 
 - **[Cloud Storage Google Ads Assets By Zaeem.docx](../research/google-ads-assets/Cloud%20Storage%20Google%20Ads%20Assets%20By%20Zaeem.docx)** · 11 KB · DOCX · text version: [Cloud Storage Google Ads Assets By Zaeem.md](../research/google-ads-assets/Cloud%20Storage%20Google%20Ads%20Assets%20By%20Zaeem.md)
 - **[Cloud Storage Google Ads Assets By Zaeem.md](../research/google-ads-assets/Cloud%20Storage%20Google%20Ads%20Assets%20By%20Zaeem.md)** · 14 KB · Markdown: “Cloud Storage Google Ads Assets By Zaeem”, “Google Ads Text Assets”, “1. What the analysis found”, “2. Ten headlines (limit 30 characters)”, “3. Ten descriptions (limit 90 characters)”, “4. Ad group split”, “5. Traffic, competition and competitor ranks”, “Your 11 competitors”, “6. Generic keywords versus brand identity: cross-verification”, “Test 1: are the top keywords shared across many developers? Confirmed.”, “Test 2: does an exact full title work as identity? Confirmed.”, “Test 3: do generic-keyword titles rank? Confirmed.”, “What changed from version 1”
@@ -940,7 +940,7 @@ Images: [ad-frames.jpg](../research/free-gb-offer-analysis/offer-study/img/ad-fr
   cloud drive app
   ```
 - **[resolve.ps1](../research/google-ads-assets/resolve.ps1)** · 3 KB · PowerShell script, 47 lines.  Reads `serps_live.json`; writes `serp_rows.json`.
-- **[serp_rows.json](../research/google-ads-assets/serp_rows.json)** · 124 KB · JSON, array of 381:
+- **[serp_rows.json](../research/google-ads-assets/serp_rows.json)** · 119 KB · JSON, array of 381:
   - `(root)[]` · array of 381 objects:
     - `q` · string · e.g. `"video backup"`
     - `rank` · number · e.g. `1`
@@ -953,7 +953,7 @@ Images: [ad-frames.jpg](../research/free-gb-offer-analysis/offer-study/img/ad-fr
     - `comp` · number · e.g. `0`
     - `total` · number · e.g. `15`
 - **[serps.ps1](../research/google-ads-assets/serps.ps1)** · 1 KB · PowerShell script, 29 lines.  Reads `keywords.txt`; writes `serps_live.json`.
-- **[serps_live.json](../research/google-ads-assets/serps_live.json)** · 38 KB · JSON, object with 38 keys:
+- **[serps_live.json](../research/google-ads-assets/serps_live.json)** · 37 KB · JSON, object with 38 keys:
   - `video backup[]` · array of 15 string · e.g. `["com.google.android.apps.photos","com.dropbox.android","com.amazon.clouddrive.photos","ru.mail.cloud"]`
   - `cloud storage photos[]` · array of 13 string · e.g. `["com.dropbox.android","ru.mail.cloud","com.google.android.apps.photos","com.microsoft.skydrive"]`
   - `cloud storage drive backup[]` · array of 9 string · e.g. `["com.cloud.storage.extrastorage.gbsfreespace","com.dropbox.android","com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup","me.proton.android.drive"]`
@@ -1013,7 +1013,7 @@ Images: [ad-frames.jpg](../research/free-gb-offer-analysis/offer-study/img/ad-fr
 13 files · 6.7 MB
 
 - **[Cloud App Metadata.md](../research/reports/Cloud%20App%20Metadata.md)** · 38 KB · Markdown: “Cloud App Metadata”
-- **[Cloud App Metadata.rtf](../research/reports/Cloud%20App%20Metadata.rtf)** · 740 KB · RTF · text version: [Cloud App Metadata.md](../research/reports/Cloud%20App%20Metadata.md)
+- **[Cloud App Metadata.rtf](../research/reports/Cloud%20App%20Metadata.rtf)** · 738 KB · RTF · text version: [Cloud App Metadata.md](../research/reports/Cloud%20App%20Metadata.md)
 - **[Cloud Storage ASO Playbook.md](../research/reports/Cloud%20Storage%20ASO%20Playbook.md)** · 11 KB · Markdown: “Cloud Storage ASO Playbook”, “Cloud Storage ASO Playbook”, “8/10 #1 1.24B”, “5”, “Five niches, one opening”, “Top non-branded rankers”, “APP INSTALLS RATING SINCE CORE KEYWORD RANKS”, “Keyword opportunity board”, “Proposed ASO package”, “Cloud Storage - Photo Backup Cloud Drive: Secure File Vault”, “Phone Backup - Cloud”, “Storage”, “☁”, “Launch keyword ladder”
 - **[Cloud Storage ASO Playbook.pdf](../research/reports/Cloud%20Storage%20ASO%20Playbook.pdf)** · 431 KB · PDF · text version: [Cloud Storage ASO Playbook.md](../research/reports/Cloud%20Storage%20ASO%20Playbook.md)
 - **[Cloud-Storage-Visual-Research.md](../research/reports/Cloud-Storage-Visual-Research.md)** · 26 KB · Markdown: “Cloud-Storage-Visual-Research”, “Cloud Storage Competitor Visual Memory”, “Scope and evidence”, “Market and asset inventory”, “01. CloudGate”, “02. Fazcon”, “03. ANZ Cloud Drive”, “04. Cloud Backup”, “05. Cloud Storage & Drive”, “06. Cloud Storage Backup & Drive”, “07. Cloud Storage Drive Backup”, “08. DataHatch”, “09. Cloud Storage-Sync”, “10. Cloud storage”
