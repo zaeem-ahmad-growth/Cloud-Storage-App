@@ -10,6 +10,7 @@ Research site for the Android app **Cloud Storage: Secure Vault** (`com.software
 | [PlayStore Metadata](https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/02-playstore-metadata/) | The live listing, targeted and finalized keywords, composition, ladder, competitor ranks, comparison with the proposed package, first-run check |
 | [Features Comparison](https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/03-features-comparison/) | Feature coverage and matrix against the competitors, what ships, in-app purchase comparison |
 | [Competitor’s Graphics](https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/04-competitors-graphics/) | Every competitor icon, feature graphic and screenshot, patterns, design guidance and Play requirements |
+| [Free 100 GB Offer](https://zaeem-ahmad-growth.github.io/Cloud-Storage-App/tabs/05-free-100-gb-offer/) | Do free-GB offers drive installs? What actually drives each competitor's downloads (paid ads, search rank, old install base), offer load against downloads, revenue per download, and what it means for the app |
 
 Each section of a tab has its own link, for example `.../tabs/01-aso-playbook/#keywords`.
 

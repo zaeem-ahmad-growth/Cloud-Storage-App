@@ -11,6 +11,7 @@ index.html                     redirects to the first tab
 assets/
   nav.js                       the tab bar on every page; the TABS list sets the tabs and their order
   site.css                     shared styles
+  bar.css                      the tab bar alone, for tabs that bring their own styles
   data.js                      PAYLOAD: the research data behind every tab
   app.js                       draws the tabs from PAYLOAD; <body data-page="..."> picks which part runs
   mylisting/                   the app's Play Store icon, feature graphic and screenshots
@@ -19,13 +20,15 @@ tabs/
   02-playstore-metadata/       data-page="metadata"
   03-features-comparison/      data-page="features"
   04-competitors-graphics/     data-page="graphics"; competitor images in graphics/
+  05-free-100-gb-offer/        self-contained page with its own CSS and JS (from a Claude artifact); images in img/
 research/                      backend data, scripts and reports behind the pages
 ```
 
 ## Editing an existing tab
 
-- All four tabs are drawn by `assets/app.js` from `assets/data.js`. Numbers and tables come from `PAYLOAD`; many sentences are written in the render function for that tab (`renderHeader`, `renderListing`, `renderMetadata`, `renderFeatures`, `renderGraphics` and so on). Static headings, section intros and the niche table are in the tab's `index.html`.
-- `app.js` and `data.js` are shared by every tab. After changing them, open all the tabs and check that nothing broke (see "Checking your work").
+- Tab 05 is a plain, self-contained page: edit `tabs/05-free-100-gb-offer/index.html` directly. Its numbers are inline in the HTML and in the small script at the bottom. Keep its section menu (the `.jump` links in the bar) in step with the section `id`s.
+- Tabs 01-04 are drawn by `assets/app.js` from `assets/data.js`. Numbers and tables come from `PAYLOAD`; many sentences are written in the render function for that tab (`renderHeader`, `renderListing`, `renderMetadata`, `renderFeatures`, `renderGraphics` and so on). Static headings, section intros and the niche table are in the tab's `index.html`.
+- `app.js` and `data.js` are shared by tabs 01-04. After changing them, open all the tabs and check that nothing broke (see "Checking your work").
 - In `app.js`, attach listeners with `on('<element id>', 'click', ...)` rather than `document.getElementById(...).addEventListener(...)`: the element may exist on only one page.
 
 ## Adding a tab
@@ -37,7 +40,7 @@ research/                      backend data, scripts and reports behind the page
 5. Add one line to `TABS` in `assets/nav.js`: `{ slug: '<NN>-<slug>', label: '<Tab label>' }`.
 6. The page must work at phone width and in light and dark mode. Reuse the CSS variables in `site.css` (`--surface`, `--ink`, `--accent`, `--line` and so on) instead of fixed colours.
 
-To turn a Claude artifact into a tab: read it with the Artifact tool (`action: "read"`), fetch every file it references (`action: "read"` with `paths`) into the tab folder, then wrap it in the skeleton above.
+To turn a Claude artifact into a tab: read it with the Artifact tool (`action: "read"`), fetch every file it references (`action: "read"` with `paths`) into the tab folder, then wrap it in the skeleton above. An artifact keeps its own design: load `../../assets/bar.css` instead of `site.css`, give the nav `id="bar"` but no `bar` class (many artifacts use `.bar` and `.wrap` for their own elements), and keep the artifact's CSS and script inline. Drop the claude.ai frame-runtime script if the saved HTML has one at the top of `<head>`. `tabs/05-free-100-gb-offer/` is the worked example.
 
 ## Checking your work
 

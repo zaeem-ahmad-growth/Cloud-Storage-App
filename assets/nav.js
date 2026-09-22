@@ -5,7 +5,8 @@
     { slug: '01-aso-playbook', label: 'ASO Playbook' },
     { slug: '02-playstore-metadata', label: 'PlayStore Metadata' },
     { slug: '03-features-comparison', label: 'Features Comparison' },
-    { slug: '04-competitors-graphics', label: 'Competitor’s Graphics' }
+    { slug: '04-competitors-graphics', label: 'Competitor’s Graphics' },
+    { slug: '05-free-100-gb-offer', label: 'Free 100 GB Offer' }
   ];
   var RESEARCH = 'https://github.com/zaeem-ahmad-growth/Cloud-Storage-App/tree/main/research';
 
