@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Competitor’s Graphics · Cloud Storage App</title>
+<meta name="description" content="Icons, feature graphics and screenshots of the 11 competitors, with patterns and design guidance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body data-page="graphics">
+
+<nav class="bar" aria-label="Tabs, sections and controls" id="bar">
+  <div class="wrap bar-top">
+    <div class="tabs" id="site-tabs" aria-label="Tabs"></div>
+  </div>
+  <div class="wrap bar-sections" aria-label="Sections">
+    <div class="jump" id="jump-graphics">
+      <a href="#g-overview">Overview</a><a href="#g-icons">Icons</a><a href="#g-features">Feature graphics</a><a href="#g-apps">By app</a><a href="#g-patterns">Patterns</a><a href="#g-guidance">Guidance</a><a href="#g-requirements">Play requirements</a><a href="#g-scope">Scope</a><a href="#g-sources">Sources</a>
+    </div>
+  </div>
+</nav>
+<script src="../../assets/nav.js"></script>
+
+<main class="wrap doc" id="graphics">
+  <header class="g-head" id="g-overview">
+    <div class="eyebrow"><span><b>Competitor’s Graphics</b></span><span>Google Play listing assets</span><span>11 direct competitors</span><span>Captured 14 Sep 2026</span><span>English / US listings</span></div>
+    <h1>Competitor’s Graphics</h1>
+    <p class="lede">Every icon, feature graphic and screenshot your 11 direct competitors publish on Google Play, with a design read for each app and a link back to every original file.</p>
+    <div class="chips" id="g-chips"></div>
+    <div class="g-cols" id="g-overview-text"></div>
+    <p class="note" id="g-capture"></p>
+  </header>
+
+  <section id="g-icons">
+    <div class="sec-head">
+      <p class="kicker">Icon lineup · 512 × 512 originals</p>
+      <h2>All 11 icons side by side</h2>
+      <p class="sub">Each icon is shown at 96, 64, 48 and 32 pixels on a white plate, the inspection sizes the design guidance below recommends. Watch which silhouettes, badges and capacity labels hold up as they shrink.</p>
+    </div>
+    <div class="tscroll"><table class="iconwall" id="g-iconwall"></table></div>
+  </section>
+
+  <section id="g-features">
+    <div class="sec-head">
+      <p class="kicker">Feature graphics · 1024 × 500</p>
+      <h2>All 11 feature graphics</h2>
+      <p class="sub">The banner each listing shows above its screenshots. Click any graphic to view it large.</p>
+    </div>
+    <div class="fg-grid" id="g-fg"></div>
+  </section>
+
+  <section id="g-apps">
+    <div class="sec-head">
+      <p class="kicker">Visual library · 112 original assets</p>
+      <h2>Every asset, app by app</h2>
+      <p class="sub">Listing facts as captured on 14 Sep 2026, a four-part design read, and every icon, feature graphic and screenshot. Filter by app, asset type or orientation, or search the notes. Click an image to view it large.</p>
+    </div>
+    <div class="tscroll"><table id="g-summary"></table></div>
+    <div class="g-filter" role="search">
+      <input class="search" id="g-q" type="search" placeholder="Search app, feature or visual style" aria-label="Search the visual library">
+      <select id="g-app" aria-label="App"></select>
+      <select id="g-kind" aria-label="Asset type"><option value="">All asset types</option><option value="icon">Icons</option><option value="feature-graphic">Feature graphics</option><option value="screenshot">Screenshots</option></select>
+      <select id="g-orient" aria-label="Orientation"><option value="">All orientations</option><option value="portrait">Portrait</option><option value="landscape">Landscape</option><option value="square">Square</option></select>
+      <span class="count" id="g-count" aria-live="polite"></span>
+    </div>
+    <div id="g-applist"></div>
+  </section>
+
+  <section id="g-patterns">
+    <div class="sec-head">
+      <p class="kicker">Across all 11 apps</p>
+      <h2>Cross-app design patterns</h2>
+    </div>
+    <div class="cards" id="g-patterns-list"></div>
+  </section>
+
+  <section id="g-guidance">
+    <div class="sec-head">
+      <p class="kicker">For your next graphics set</p>
+      <h2>Guidance for future graphics</h2>
+    </div>
+    <div class="cards" id="g-guidance-list"></div>
+  </section>
+
+  <section id="g-requirements">
+    <div class="sec-head">
+      <p class="kicker">Google Play</p>
+      <h2>Play Store production requirements</h2>
+    </div>
+    <div class="panel g-req" id="g-req" style="padding:18px 22px"></div>
+  </section>
+
+  <section id="g-scope">
+    <div class="sec-head">
+      <p class="kicker">How this library was made</p>
+      <h2>Scope, evidence and limitations</h2>
+    </div>
+    <div class="g-cols" id="g-scope-text" style="margin-top:0"></div>
+  </section>
+
+  <section id="g-sources" style="padding-bottom:40px">
+    <div class="sec-head">
+      <p class="kicker">Links</p>
+      <h2>Sources</h2>
+    </div>
+    <ol class="g-sources" id="g-sources-list"></ol>
+  </section>
+</main>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <div class="lb-in" id="lb-in">
+    <img id="lb-img" alt="">
+    <p class="lb-cap" id="lb-cap"></p>
+    <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close viewer">✕</button>
+    <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image">‹</button>
+    <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next image">›</button>
+  </div>
+</dialog>
+
+<div id="tip" hidden></div>
+
+<script src="../../assets/data.js"></script>
+<script src="../../assets/app.js"></script>
+
+</body>
+</html>
