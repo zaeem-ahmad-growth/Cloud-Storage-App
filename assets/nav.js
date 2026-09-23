@@ -4,6 +4,7 @@
 // that label until the next section line. Tabs listed before the first section line are ungrouped.
 (function () {
   var TABS = [
+    { slug: '07-cloud-storage', label: 'Cloud Storage' },
     { slug: '01-aso-playbook', label: 'ASO Playbook' },
     { slug: '02-playstore-metadata', label: 'PlayStore Metadata' },
     { slug: '03-features-comparison', label: 'Features Comparison' },

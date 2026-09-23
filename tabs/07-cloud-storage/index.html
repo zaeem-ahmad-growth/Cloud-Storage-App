@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cloud Storage · Cloud Storage App</title>
+<meta name="description" content="Product dossier for Cloud Storage: Secure Vault 0.2.6 (17): overview, spec, market research, versions and APK, monetization, screenshots, graphics and QA history.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Albert+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../assets/bar.css">
+<style>
+:root{
+  --ground:#F3F1F5; --surface:#FFFFFF; --sunk:#EAE6EE; --ink:#17131B; --ink-2:#463F4C; --muted:#71697A; --line:#DED8E3;
+  --flame-1:#2563EB; --flame-2:#0048FF; --accent:#1D4ED8; --accent-soft:#E6EEFF;
+  --cyan:#0EA5E9; --pink:#8B5CF6;
+  --pass:#177A43; --pass-bg:#DFF2E7; --warn:#935E00; --warn-bg:#F9EDD2; --fail:#B8232F; --fail-bg:#FADFE2;
+  --shadow:0 1px 2px rgba(23,19,27,.06),0 8px 24px rgba(23,19,27,.06);
+  --display:"Anybody","Arial Narrow",system-ui,sans-serif;
+  --body:"Albert Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F0D12; --surface:#18151C; --sunk:#221E27; --ink:#F2EEF5; --ink-2:#D0C8D6; --muted:#9E95A5; --line:#2F2A36;
+    --accent:#8AB0FF; --accent-soft:#15213D; --cyan:#38BDF8; --pink:#A78BFA;
+    --pass:#58CF8E; --pass-bg:#15301F; --warn:#E6B04A; --warn-bg:#33270F; --fail:#FF7480; --fail-bg:#3A171B;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 28px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F0D12; --surface:#18151C; --sunk:#221E27; --ink:#F2EEF5; --ink-2:#D0C8D6; --muted:#9E95A5; --line:#2F2A36;
+  --accent:#8AB0FF; --accent-soft:#15213D; --cyan:#38BDF8; --pink:#A78BFA;
+  --pass:#58CF8E; --pass-bg:#15301F; --warn:#E6B04A; --warn-bg:#33270F; --fail:#FF7480; --fail-bg:#3A171B;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 28px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 16px/1.6 var(--body);padding-inline:20px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.08}
+h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;font-stretch:112%;letter-spacing:-.01em}
+h3{font-size:19px;font-weight:700;font-stretch:110%}
+p{margin:0}
+.mono{font-family:var(--mono);font-size:.86em}
+.tnum{font-variant-numeric:tabular-nums}
+.label{font:600 11px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* shell: timeline scrubber + content */
+.shell{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;padding-block:40px 96px}
+.scrub{position:sticky;top:24px;align-self:start;padding-top:8px}
+.scrub .label{margin-bottom:14px}
+.track-wrap{position:relative}
+.track{position:relative;list-style:none;margin:0;padding:0 0 0 22px}
+.track-wrap::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:3px;border-radius:3px;background:var(--sunk)}
+.fill{position:absolute;z-index:1;left:5px;top:6px;width:3px;border-radius:3px;height:0;background:linear-gradient(var(--flame-1),var(--flame-2));transition:height .25s ease}
+.track li{position:relative}
+.track a{display:block;padding:7px 0;color:var(--muted);text-decoration:none;font-weight:500;font-size:14.5px}
+.track a::before{content:"";position:absolute;left:-21px;top:13px;width:9px;height:9px;border-radius:2px;background:var(--surface);border:2px solid var(--line);transform:rotate(45deg)}
+.track a:hover{color:var(--ink)}
+.track a[aria-current="true"]{color:var(--ink);font-weight:700}
+.track a[aria-current="true"]::before{background:var(--flame-1);border-color:var(--flame-1)}
+.scrub .meta{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:4px}
+
+main{display:grid;gap:88px;min-width:0}
+section{display:grid;gap:28px;min-width:0}
+.sec-head{display:grid;gap:10px;max-width:68ch}
+.sec-head p{color:var(--ink-2)}
+
+/* hero */
+.hero{display:grid;gap:28px;padding-bottom:8px}
+.hero-top{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.hero-top img{width:92px;height:92px;border-radius:22px;box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(40px,7vw,78px);font-weight:900;font-stretch:128%;letter-spacing:-.02em;line-height:.95}
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply}
+.glitch::before{color:var(--cyan);transform:translate(-3px,0);clip-path:inset(12% 0 52% 0)}
+.glitch::after{color:var(--pink);transform:translate(3px,0);clip-path:inset(58% 0 8% 0)}
+:root[data-theme="dark"] .glitch::before,:root[data-theme="dark"] .glitch::after{mix-blend-mode:screen}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .glitch::before,:root:not([data-theme="light"]) .glitch::after{mix-blend-mode:screen}}
+.hero .tag{font-size:19px;color:var(--ink-2);max-width:60ch}
+.pkg{color:var(--muted)}
+.dl{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:grid;gap:12px;box-shadow:var(--shadow)}
+.dl-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.dl-row strong{font-family:var(--display);font-stretch:112%;font-size:22px}
+.bar{height:12px;border-radius:99px;background:var(--sunk);overflow:hidden;position:relative}
+.bar span{position:absolute;inset:0 auto 0 0;border-radius:99px;background:linear-gradient(90deg,var(--flame-1),var(--flame-2))}
+.bar i{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink);opacity:.55}
+.facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.facts div{background:var(--surface);padding:14px 16px;display:grid;gap:4px}
+.facts b{font-family:var(--display);font-stretch:104%;font-size:19px;font-weight:800;white-space:nowrap}
+
+/* generic panels */
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:12px;align-content:start}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink-2)}
+.pillar h3{display:flex;align-items:center;gap:10px}
+.pillar svg{width:22px;height:22px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:99px;font-size:13.5px;font-weight:600;background:var(--sunk);color:var(--ink-2);border:1px solid transparent}
+.chip.pass{background:var(--pass-bg);color:var(--pass)}
+.chip.warn{background:var(--warn-bg);color:var(--warn)}
+.chip.fail{background:var(--fail-bg);color:var(--fail)}
+.chip.mono{font-family:var(--mono);font-weight:500;font-size:12.5px}
+.dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+
+dl.kv{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 18px;font-size:15px}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0;font-weight:500;min-width:0;overflow-wrap:anywhere}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:760px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11px/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+tr.ours td{background:var(--accent-soft)}
+.inst{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center;min-width:170px}
+.inst .bar{height:8px}
+td small{color:var(--muted);display:block}
+
+.callout{border-left:3px solid var(--flame-1);background:var(--surface);border-radius:0 14px 14px 0;padding:16px 20px;color:var(--ink-2)}
+.callout strong{color:var(--ink)}
+
+/* versions */
+.versions{list-style:none;margin:0;padding:0;display:grid;gap:0;position:relative}
+.versions li{display:grid;grid-template-columns:108px 22px minmax(0,1fr);gap:14px;padding-bottom:22px;position:relative}
+.versions li::after{content:"";position:absolute;left:129px;top:22px;bottom:0;width:2px;background:var(--line)}
+.versions li:last-child::after{display:none}
+.versions time{color:var(--muted);font-family:var(--mono);font-size:13px;padding-top:3px;text-align:right}
+.versions .node{width:14px;height:14px;margin:5px 0 0 3px;border-radius:3px;transform:rotate(45deg);background:var(--surface);border:2px solid var(--muted)}
+.versions li.now .node{background:var(--flame-1);border-color:var(--flame-1)}
+.versions .v{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:20px}
+.versions .v span{font-family:var(--mono);font-weight:500;font-size:13px;color:var(--muted);margin-left:6px}
+.versions p{color:var(--ink-2);font-size:15px}
+.apk{display:grid;gap:14px}
+.apk .file{font-family:var(--mono);font-size:14px;background:var(--sunk);padding:10px 12px;border-radius:10px;overflow-x:auto;white-space:nowrap}
+.hash{font-family:var(--mono);font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+
+/* monetization */
+.flags{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.flag{font-family:var(--mono);font-size:13px;padding:7px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--line)}
+.flag b{font-weight:500}
+.flag.on b{color:var(--pass)} .flag.off b{color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.plan{border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:2px}
+.plan b{font-family:var(--display);font-stretch:112%;font-size:24px}
+.with-shot{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:22px;align-items:start}
+
+/* screenshots */
+.shots-group{display:grid;gap:12px}
+.shots-group header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.strip{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
+.strip figure{margin:0;flex:0 0 172px;scroll-snap-align:start;display:grid;gap:8px}
+.phone{display:block;padding:0;border:0;background:none;cursor:zoom-in;border-radius:22px}
+.phone img{display:block;width:100%;aspect-ratio:9/20;object-fit:cover;border-radius:20px;border:5px solid var(--ink);background:var(--sunk);box-shadow:var(--shadow)}
+figcaption{font-size:13.5px;line-height:1.35;color:var(--ink-2)}
+figcaption b{display:block;color:var(--ink);font-weight:600}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:min(92vw,440px)}
+dialog.lightbox::backdrop{background:rgba(10,8,12,.82)}
+dialog.lightbox img{display:block;width:100%;max-height:86vh;object-fit:contain;border-radius:18px}
+dialog.lightbox p{color:#F2EEF5;text-align:center;margin-top:10px;font-size:14px}
+dialog.lightbox button{position:absolute;top:-44px;right:0;background:#F2EEF5;color:#17131B;border:0;border-radius:99px;padding:6px 14px;font:600 14px var(--body);cursor:pointer}
+
+/* graphics */
+.assets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.asset{display:grid;gap:10px;align-content:start}
+.asset .art{aspect-ratio:1;border-radius:16px;background:var(--sunk);display:grid;place-items:center;overflow:hidden;border:1px solid var(--line)}
+.asset .art img{width:62%;border-radius:18%}
+.asset .art.missing{border-style:dashed;color:var(--muted);font-size:13px;text-align:center;padding:12px;aspect-ratio:auto;min-height:0}
+.fg{aspect-ratio:1024/500!important}
+.swatches{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px}
+.sw{display:grid;gap:6px;font-size:12.5px}
+.sw i{display:block;aspect-ratio:1.3;border-radius:10px;border:1px solid var(--line)}
+.sw code{font-family:var(--mono);color:var(--muted);font-size:11.5px}
+
+/* QA */
+.score{display:grid;gap:14px}
+.score-row{display:grid;grid-template-columns:150px minmax(0,1fr) 54px;gap:14px;align-items:center;font-size:14.5px}
+.score-row .bar{height:14px}
+.score-row .bar.muted span{background:var(--muted);opacity:.55}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr) 54px;gap:14px;font-size:12px;color:var(--muted)}
+.scale div{position:relative;height:16px;font-family:var(--mono)}
+.scale div span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.scale div span:first-child{transform:none}
+.scale div span:last-child{transform:translateX(-100%)}
+.qa-log{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.qa-log li{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;padding:16px 20px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.qa-log time{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:2px}
+.qa-log h3{font-size:17px;margin-bottom:4px}
+.qa-log p{color:var(--ink-2);font-size:15px}
+.fixlist{columns:2;column-gap:28px;margin:0;padding-left:18px;color:var(--ink-2)}
+.fixlist li{break-inside:avoid;margin-bottom:7px}
+.status{display:grid;gap:10px}
+.status div{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.tally{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.tally div{background:var(--surface);padding:18px 20px;display:grid;gap:6px;align-content:start}
+.tally b{font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(34px,4.6vw,48px);line-height:1}
+.tally small{color:var(--muted);font-size:13.5px;line-height:1.35}
+.tally .t-fixed b{color:var(--pass)} .tally .t-open b{color:var(--warn)} .tally .t-pub b{color:var(--accent)}
+.stack{display:flex;height:16px;border-radius:99px;overflow:hidden;background:var(--sunk)}
+.stack span{display:block;height:100%}
+.stack .s-fixed{background:var(--pass)} .stack .s-open{background:var(--warn)} .stack .s-pub{background:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.sev{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.sev div{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:grid;gap:2px}
+.sev b{font-family:var(--display);font-stretch:108%;font-size:24px;font-weight:800}
+.ledger td .stack{height:10px;min-width:120px}
+.ledger td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.ledger tfoot td{font-weight:700;background:var(--sunk)}
+.reasons{display:grid;gap:14px}
+.reason{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr) 34px;gap:16px;align-items:start;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.reason:last-child{border-bottom:0;padding-bottom:0}
+.reason h3{font-size:16px}
+.reason p{color:var(--ink-2);font-size:14.5px}
+.reason .ids{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.reason .ids span{font-family:var(--mono);font-size:12px;padding:2px 7px;border-radius:6px;background:var(--sunk);color:var(--ink-2)}
+.reason > b{font-family:var(--display);font-stretch:108%;font-size:24px;font-weight:800;text-align:right;color:var(--warn)}
+.method{font-size:14px;color:var(--muted)}
+@media (max-width:980px){.tally{grid-template-columns:repeat(2,minmax(0,1fr))}.sev{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.reason{grid-template-columns:minmax(0,1fr) 34px}.reason > div:nth-child(2){grid-column:1 / -1;grid-row:2}.sev{grid-template-columns:repeat(2,minmax(0,1fr))}}
+footer{max-width:1180px;margin:0 auto;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+
+@media (max-width:980px){
+  .shell{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:0}
+  .scrub{position:sticky;top:0;z-index:5;background:var(--ground);padding:10px 0;margin-inline:-20px;padding-inline:20px;border-bottom:1px solid var(--line)}
+  .scrub .label,.scrub .meta,.track-wrap::before,.fill{display:none}
+  .track{display:flex;gap:6px;overflow-x:auto;padding:0}
+  .track a{white-space:nowrap;padding:6px 12px;border-radius:99px;background:var(--surface);border:1px solid var(--line);font-size:13.5px}
+  .track a::before{display:none}
+  .track a[aria-current="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .grid-4,.assets{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .swatches{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .with-shot{grid-template-columns:minmax(0,1fr)}
+  .with-shot figure{max-width:190px}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-2,.grid-4,.plans{grid-template-columns:minmax(0,1fr)}
+  .assets{grid-template-columns:minmax(0,1fr)}
+  .fixlist{columns:1}
+  .qa-log li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .versions li{grid-template-columns:78px 22px minmax(0,1fr)}
+  .versions li::after{left:99px}
+  .score-row,.scale{grid-template-columns:96px minmax(0,1fr) 40px}
+}
+</style>
+<style>
+/* Same dossier design as the All Document Reader tab in the sibling site, with the accent taken from this app's icon blue.
+   It loads bar.css for the tab bar instead of site.css, and the sections row in the bar replaces a left-hand section rail. */
+body{padding-inline:20px}
+#bar{margin-inline:-20px;overflow:visible}
+#bar .jump a[aria-current="true"]{background:var(--bar-sunk);color:var(--bar-ink);font-weight:600}
+html{scroll-padding-top:var(--barh,116px)}
+.shell{grid-template-columns:minmax(0,1fr);gap:0;max-width:1160px;padding-block:36px 96px}
+footer{max-width:1160px}
+img{max-width:100%}
+/* Play listing screenshots are 9:16 key art, not raw 9:20 device captures: show them whole. */
+.phone.key img{aspect-ratio:540/959;object-fit:contain;border-width:0;border-radius:14px}
+.strip figure{flex-basis:188px}
+@media (max-width:980px){.shell{padding-top:28px}}
+</style>
+</head>
+<body data-page="cloud-storage">
+
+<nav aria-label="Tabs and sections" id="bar">
+  <div class="wrap bar-top">
+    <div class="tabs" id="site-tabs" aria-label="Tabs"></div>
+  </div>
+  <div class="wrap bar-sections" aria-label="Sections">
+    <div class="jump" id="jump">
+      <a href="#overview">Overview</a><a href="#spec">Spec</a><a href="#market">Market research</a><a href="#versions">Versions &amp; APK</a><a href="#money">Monetization</a><a href="#shots">Screenshots</a><a href="#graphics">Graphics</a><a href="#qa">QA history</a>
+    </div>
+  </div>
+</nav>
+<script src="../../assets/nav.js"></script>
+
+<div id="dossier">
+<div class="shell">
+  <main>
+<section id="overview" class="hero">
+  <div class="hero-top"><img src="gfx/icon.png" alt="Cloud Storage app icon: a white cloud outline with an up and down arrow badge on a bright blue field">
+    <div style="display:grid;gap:6px;min-width:0"><span class="label">Android app · Product dossier</span><span class="mono pkg">com.softwarealliance.cloudvault</span></div></div>
+  <h1>Cloud Storage:<br>Secure Vault</h1>
+  <p class="tag">Back up photos, videos, audio, documents, contacts and WhatsApp media to the cloud, encrypted on the phone first, then restore them on any phone by signing in.</p>
+  <div class="dl" role="group" aria-label="QA score">
+    <div class="dl-row"><span class="label">QA score · 23 Sep 2026</span><span class="tnum"><strong>94</strong> / 100</span></div>
+    <div class="bar" aria-hidden="true"><span style="width:94%"></span><i style="left:90%" title="90 target"></i></div>
+    <div class="dl-row" style="font-size:13.5px;color:var(--muted)"><span>Started at 84 · 14 of 16 fixed, 2 scheduled for the next update</span><span>Target line at 90</span></div>
+  </div>
+  <div class="facts"><div><span class="label">Version</span><b class="tnum">0.2.6 (17)</b></div><div><span class="label">Runs on</span><b class="tnum">Android 7.0+</b></div><div><span class="label">Languages</span><b class="tnum">18</b></div><div><span class="label">Tools</span><b class="tnum">14</b></div><div><span class="label">Release AAB</span><b class="tnum">33.9 MB</b></div></div>
+  <div class="grid-4"><article class="panel pillar"><h3><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/><path d="M12 16v-5M9.5 13.5 12 11l2.5 2.5"/></svg>Back up</h3><ul><li>Photos, videos, audio, documents, contacts and WhatsApp media</li><li>Runs as a foreground data-sync job, keeps going with the screen off</li><li>Auto-backup on a schedule, Wi-Fi only switch</li></ul></article><article class="panel pillar"><h3><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M12 8v6M9.5 11.5 12 14l2.5-2.5"/></svg>Restore anywhere</h3><ul><li>Sign in on a new phone and the files decrypt on their own (key recovery at sign-in since 0.2.1)</li><li>Restore by category, share a file by link</li></ul></article><article class="panel pillar"><h3><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>Tools</h3><ul><li>Scanner, video compressor, video to audio, photo editor, duplicate cleaner, nearby transfer</li><li>Local tools run on the phone and stay open without an account</li></ul></article><article class="panel pillar"><h3><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Encryption and guest mode</h3><ul><li>AES-256-GCM on the phone before upload; biometric app lock</li><li>Guest mode (since 0.2.4) opens the local tools without an account</li></ul></article></div>
+  <div class="panel"><div class="dl-row"><h3>The Tools tab, as it ships</h3><span class="label">14 tiles</span></div><div class="chips"><span class="chip pass"><span class="dot"></span>Smart Assistant · Ask about your storage</span><span class="chip pass"><span class="dot"></span>Smart Gallery · AI photo search</span><span class="chip pass"><span class="dot"></span>Restore · Pull your files back</span><span class="chip pass"><span class="dot"></span>Auto-backup · Back up on a schedule</span><span class="chip pass"><span class="dot"></span>Nearby transfer · Send to a device</span><span class="chip pass"><span class="dot"></span>Scan Document · Camera to PDF</span><span class="chip pass"><span class="dot"></span>Compress Video · Save space</span><span class="chip pass"><span class="dot"></span>Video to Audio · Extract MP3</span><span class="chip pass"><span class="dot"></span>Photo Editor · Crop &amp; filter</span><span class="chip pass"><span class="dot"></span>Clean Duplicates · Find &amp; remove copies</span><span class="chip pass"><span class="dot"></span>Share Link · Send a file</span><span class="chip pass"><span class="dot"></span>Trash · Recently deleted</span><span class="chip pass"><span class="dot"></span>WhatsApp Backup · Save chat media</span><span class="chip pass"><span class="dot"></span>Contacts Backup · Back up &amp; restore</span></div><p style="color:var(--muted);font-size:14px">Names and subtitles are the English strings in the app. In guest mode the cloud tiles (Restore, Auto-backup, WhatsApp, Contacts, Share Link, Trash, Smart Assistant) ask the user to create an account; the rest stay open.</p></div>
+</section>
+
+<section id="spec"><div class="sec-head"><span class="label">Spec</span><h2>What ships inside the build</h2><p>From the build configuration, manifest and resources of the current release branch.</p></div>
+<div class="grid-2"><div class="panel"><span class="label">Identity</span><dl class="kv"><dt>Play title</dt><dd>Cloud Storage: Secure Vault</dd><dt>Draft title</dt><dd>Cloud Backup: Photo Storage (7 to 11 Sep reports)</dd><dt>In-app name</dt><dd>Cloud Vault (launcher, splash, paywall)</dd><dt>Package</dt><dd class="mono">com.softwarealliance.cloudvault</dd><dt>Version</dt><dd class="tnum">versionName 0.2.6 · versionCode 17</dd><dt>Developer</dt><dd>Cell Cave · on Play since 8 Sep 2026</dd></dl></div><div class="panel"><span class="label">Platform</span><dl class="kv"><dt>minSdk</dt><dd class="tnum">24 · Android 7.0</dd><dt>target / compile</dt><dd class="tnum">36 / 36 (Play's floor from 31 Aug 2026)</dd><dt>UI</dt><dd>Kotlin 1.9.22, Jetpack Compose (BOM 2024.02.00), Material 3</dd><dt>Build</dt><dd>Android Gradle Plugin 8.6.1, Gradle 8.7, Java 17 · release is R8-minified with resource shrinking</dd><dt>Backend</dt><dd>The cloud backend: email and Google sign-in, file storage through short-lived signed links, and an API</dd><dt>Languages in the AAB</dt><dd>Every language ships in every install (language split turned off, publisher round 17)</dd></dl></div><div class="panel"><span class="label">Key libraries</span><dl class="kv"><dt>Google Mobile Ads</dt><dd class="mono">22.6.0 · UMP consent 2.2.0</dd><dt>Play Billing</dt><dd class="mono">8.0.0</dd><dt>Firebase BoM</dt><dd class="mono">32.7.0 · Analytics, Remote Config, Crashlytics, Messaging</dd><dt>WorkManager</dt><dd class="mono">2.9.0 · backups and schedules</dd><dt>CameraX</dt><dd class="mono">1.4.2 · document scanner</dd><dt>ML Kit</dt><dd class="mono">image labeling 17.0.9 · Smart Gallery</dd><dt>Media</dt><dd class="mono">Media3 ExoPlayer 1.2.1 · Coil 2.5.0 (images, video frames)</dd><dt>Network</dt><dd class="mono">OkHttp 4.12.0 · Custom Tabs 1.8.0 (Google sign-in)</dd><dt>Other</dt><dd class="mono">Nearby 19.3.0 · ZXing 3.5.3 · Biometric 1.1.0 · DataStore 1.0.0</dd></dl></div></div>
+<div class="grid-2"><div class="panel"><span class="label">Permissions · 27 declared in the manifest</span><div class="chips"><span class="chip mono">INTERNET</span><span class="chip mono">ACCESS_NETWORK_STATE</span><span class="chip mono">ACCESS_WIFI_STATE</span><span class="chip mono">CHANGE_WIFI_STATE</span><span class="chip mono">CHANGE_NETWORK_STATE</span><span class="chip mono">BLUETOOTH ≤30</span><span class="chip mono">BLUETOOTH_ADMIN ≤30</span><span class="chip mono">BLUETOOTH_ADVERTISE</span><span class="chip mono">BLUETOOTH_CONNECT</span><span class="chip mono">BLUETOOTH_SCAN</span><span class="chip mono">NEARBY_WIFI_DEVICES</span><span class="chip mono">ACCESS_COARSE_LOCATION ≤32</span><span class="chip mono">ACCESS_FINE_LOCATION ≤32</span><span class="chip mono">READ_MEDIA_IMAGES</span><span class="chip mono">READ_MEDIA_VIDEO</span><span class="chip mono">READ_MEDIA_AUDIO</span><span class="chip mono">READ_MEDIA_VISUAL_USER_SELECTED</span><span class="chip mono">READ_EXTERNAL_STORAGE ≤32</span><span class="chip mono">READ_CONTACTS</span><span class="chip mono">WRITE_CONTACTS</span><span class="chip mono">CAMERA</span><span class="chip mono">USE_BIOMETRIC</span><span class="chip mono">POST_NOTIFICATIONS</span><span class="chip mono">FOREGROUND_SERVICE</span><span class="chip mono">FOREGROUND_SERVICE_DATA_SYNC</span><span class="chip mono">WAKE_LOCK</span><span class="chip mono">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></div><p style="font-size:14px;color:var(--muted)">≤30 and ≤32 mark permissions requested only up to that Android API level. Bluetooth, Wi-Fi and the old location grants exist only for Nearby transfer and are declared as not used for location where Android allows. Contacts are asked for only inside the Contacts flow. Permissions added by libraries at merge time (for example the ads SDK) are not counted here.</p></div><div class="panel"><span class="label">App languages · 18</span><div class="chips"><span class="chip">English</span><span class="chip">العربية · Arabic</span><span class="chip">বাংলা · Bengali</span><span class="chip">Deutsch</span><span class="chip">Español</span><span class="chip">Français</span><span class="chip">हिन्दी · Hindi</span><span class="chip">Bahasa Indonesia</span><span class="chip">Italiano</span><span class="chip">日本語 · Japanese</span><span class="chip">한국어 · Korean</span><span class="chip">Português</span><span class="chip">Русский · Russian</span><span class="chip">ไทย · Thai</span><span class="chip">Türkçe</span><span class="chip">اردو · Urdu</span><span class="chip">Tiếng Việt</span><span class="chip">中文 · Chinese</span></div><p style="font-size:14px;color:var(--muted)">English plus 17 locales: <span class="mono">ar bn de es fr hi in it ja ko pt ru th tr ur vi zh</span>. Every build round runs a placeholder and plural checker over all 18; it passed for 0.2.6.</p></div></div>
+</section>
+
+<section id="market"><div class="sec-head"><span class="label">Market research</span><h2>The most complete build in a crowded search</h2><p>The 11 competitors this site already tracks. Installs and ratings from Google Play US on 15 Sep 2026, feature scores from the Features Comparison tab, monthly downloads and growth engine from the Free 100 GB Offer tab (22 Sep).</p></div>
+<div class="table-wrap"><table><thead><tr><th>App</th><th>Developer</th><th>Installs</th><th>Rating</th><th>Features</th><th>Downloads / mo</th><th>Growth engine</th></tr></thead><tbody>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.fazconapps.backup.restore.data" target="_blank" rel="noopener">Cloud Storage: Cloud Drive App</a></td><td>Fazcon Apps</td><td class="tnum">6.1M</td><td class="tnum">4.1<small>15K ratings</small></td><td class="tnum">5.5 / 14</td><td class="tnum">75,000</td><td>Search rank</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.backup.and.restore.all.apps.photo.backup" target="_blank" rel="noopener">Cloud Storage Backup &amp; Drive</a></td><td>Daily Utility Apps</td><td class="tnum">3.8M</td><td class="tnum">4.1<small>10K ratings</small></td><td class="tnum">3.5 / 14</td><td class="tnum">7,000</td><td>Old install base</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.cloudstorage.backupapp.storagespace.mycloud.clouldbackup" target="_blank" rel="noopener">Cloud Storage Drive Backup app</a></td><td>MindByte Studios</td><td class="tnum">656K</td><td class="tnum">3.7<small>1.9K ratings</small></td><td class="tnum">3 / 14</td><td class="tnum">36,000</td><td>Paid ads</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.cloudstorageapp.cloudbackup.storagespace.databackup" target="_blank" rel="noopener">Cloud Storage &amp; Cloud Drive</a></td><td>Fuzon Apps</td><td class="tnum">542K</td><td class="tnum">4.1<small>1.2K ratings · no ads</small></td><td class="tnum">5 / 14</td><td class="tnum">29,000</td><td>Search rank</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.backup.restore.clould.backup.freecloud.storage" target="_blank" rel="noopener">Cloud Backup : Cloud Storage</a></td><td>Mapidirections Studios</td><td class="tnum">452K</td><td class="tnum">4.3<small>1.5K ratings</small></td><td class="tnum">2 / 14</td><td class="tnum">6,600</td><td>Paid ads</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.cloudgate.cloudstorage" target="_blank" rel="noopener">Cloudgate: Cloud Storage Drive</a></td><td>CloudGate Technologies</td><td class="tnum">441K</td><td class="tnum">3.9<small>1.9K ratings</small></td><td class="tnum">5.5 / 14</td><td class="tnum">6,900</td><td>Old install base</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.cloud.storage.extrastorage.gbsfreespace" target="_blank" rel="noopener">Cloud Storage: Drive Backup</a></td><td>Utility Forge</td><td class="tnum">211K</td><td class="tnum">4.4<small>2.6K ratings</small></td><td class="tnum">2 / 14</td><td class="tnum">38,000</td><td>Paid ads</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.datahatch.cloud.storage.drive.data.backup" target="_blank" rel="noopener">Cloud Storage Drive: DataHatch</a></td><td>Appseen Studio</td><td class="tnum">~20K</td><td class="tnum">3.6<small>77 ratings</small></td><td class="tnum">2 / 14</td><td class="tnum">850</td><td>None</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.securebackup.cloudstorage.drivebackup.filestorage" target="_blank" rel="noopener">Nova Cloud: Storage &amp; Backup</a></td><td>Nova Apps Studios</td><td class="tnum">8.7K</td><td>not enough<small>ratings to show</small></td><td class="tnum">1 / 14</td><td class="tnum">560</td><td>None</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace" target="_blank" rel="noopener">ANZ Cloud Drive: Cloud Storage</a></td><td>Auzi Apps Studios</td><td class="tnum">5.5K</td><td>not returned</td><td class="tnum">4.5 / 14</td><td class="tnum">0</td><td>None</td></tr>
+<tr><td><a href="https://play.google.com/store/apps/details?id=com.cloudstorage.cloudbackup.storagespaceapp" target="_blank" rel="noopener">Cloud Storage App Drive Backup</a></td><td>Golden Associate</td><td class="tnum">3.6K</td><td>not enough<small>ratings to show</small></td><td class="tnum">2 / 14</td><td class="tnum">540</td><td>None</td></tr>
+<tr class="ours"><td><a href="https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault" target="_blank" rel="noopener"><b>Cloud Storage: Secure Vault</b></a><small>our live listing</small></td><td>Cell Cave</td><td class="tnum">600</td><td>none yet</td><td class="tnum"><b>14 / 14</b></td><td>not measured</td><td>Not ranking yet</td></tr>
+</tbody></table></div><p class="method">Our install count is the 22 Sep figure from the Free 100 GB Offer tab. The live US listing shows in-app purchases of $9.99 to $49.99 per item (15 Sep).</p>
+<div class="grid-2"><div class="panel"><span class="label">Where we are stronger</span><ul><li>Files are encrypted on the phone with AES-256-GCM before they leave it. The Features Comparison audit found 6 of 11 competitors with a basic version and none with a full one.</li><li>WhatsApp media backup and contacts backup and restore are built in. Contacts are encrypted on the device too.</li><li>The local tools (scanner, compressor, video to audio, photo editor, duplicates, nearby transfer) run on the phone and stay open without an account.</li><li>Guest mode lets a new user look around with their real files before signing up. It is behind a Remote Config switch, so it can be turned off without a release.</li><li>18 app languages, including Urdu and Arabic.</li></ul></div><div class="panel"><span class="label">Where we are weaker</span><ul><li>Young listing: 600 installs and no ratings, against 3.6K to 6.1M installs for the set.</li><li>Android only. No desktop or web client for reaching the files from a computer.</li><li>Contacts are a one-shot backup and restore, not a live sync.</li><li>Premium tiers on this page follow the app's Play products; the Features Comparison tab lists a different tier set, to be reconciled with the live Play Console.</li></ul></div></div>
+<div class="panel"><span class="label">Play policies that apply</span><ul><li><a href="https://support.google.com/googleplay/android-developer/answer/10144311" target="_blank" rel="noopener">User Data</a>: the Data safety form and the privacy policy must match what the app collects, including contacts, media and the key recovery copy held by the service.</li><li><a href="https://support.google.com/googleplay/android-developer/answer/9857753" target="_blank" rel="noopener">Ads</a>: 46 placements are available; any that is switched on must not cover controls users need.</li><li><a href="https://support.google.com/googleplay/android-developer/answer/9888077" target="_blank" rel="noopener">Deceptive behavior</a>: storage claims in the listing (100 GB free) have to match the quota the app really grants.</li><li><a href="https://support.google.com/googleplay/android-developer/answer/9900533" target="_blank" rel="noopener">Subscriptions</a>: the paywall must show the price, the billing period and the Terms and Privacy links on the screen that takes payment.</li></ul></div>
+</section>
+
+<section id="versions"><div class="sec-head"><span class="label">Versions &amp; APK</span><h2>From the first commit to 0.2.6</h2><p>Dates are the commits in the app repository that set each version, and our build notes.</p></div>
+<div class="grid-2" style="align-items:start"><ol class="versions"><li class="now"><time>07 Sep 2026</time><span class="node"></span><div><div class="v">0.2.6 <span>code 17 · current</span></div><p>Guest Home shows the phone's media as "on this device", "Backed up" line per account, the Google sign-in redirect returns to the running app, delete account treats an already-deleted user as success, sign-in error line centred.</p></div></li><li><time>04 Sep 2026</time><span class="node"></span><div><div class="v">0.2.5 <span>code 16</span></div><p>Guest mode shows real files instead of the sample library, Back fixes around sign-in, a retry message when the cloud usage read fails, the publisher's new cloud icon. Guest mode became session-only the same day.</p></div></li><li><time>03 Sep 2026</time><span class="node"></span><div><div class="v">0.2.4 <span>code 15</span></div><p>Guest mode behind Remote Config, banners sized to their slot, sign-in telemetry, Google sign-in pinned to a browser with working Custom Tabs.</p></div></li><li><time>03 Sep 2026</time><span class="node"></span><div><div class="v">0.2.3 <span>code 14</span></div><p>Moved to the publisher's new AdMob account. Ad unit ids come from Remote Config by build number, so older installs kept serving.</p></div></li><li><time>26 Aug 2026</time><span class="node"></span><div><div class="v">0.2.2 <span>code 13</span></div><p>Quota follows the purchased plan, notification controls (pause, resume, cancel), manual recovery passphrase removed.</p></div></li><li><time>25 Aug 2026</time><span class="node"></span><div><div class="v">0.2.1 <span>code 12</span></div><p>Automatic key recovery on any phone, push notifications, Crashlytics and the full analytics event map.</p></div></li><li><time>24 Aug 2026</time><span class="node"></span><div><div class="v">0.1.7 to 0.1.9 <span>code 8 to 10</span></div><p>Publisher round 17: ad preload and expiry rules, every language delivered on Play installs, Smart Gallery fixes.</p></div></li><li><time>20 to 21 Aug</time><span class="node"></span><div><div class="v">0.1.2 to 0.1.6 <span>code 3 to 7</span></div><p>Per-tier limits and reward caps, restore and vault listing fixes, a test-ads build that follows the real ad switches, QA round 16.</p></div></li><li><time>17 Aug 2026</time><span class="node"></span><div><div class="v">0.1.1 <span>code 2</span></div><p>Email verification at sign-up, Google account deletion, free-tier quota leak, Play Billing 8. Play then had 0.1.0 (code 1).</p></div></li><li><time>15 Jun 2026</time><span class="node"></span><div><div class="v">MVP <span>first commit</span></div><p>Client and domain core running on mocks; the live cloud backend landed the same day.</p></div></li></ol><div class="panel apk"><span class="label">Latest build · Play upload</span><div class="file">CloudVault-0.2.6-vc17-release.aab</div><dl class="kv"><dt>Size</dt><dd class="tnum">33.9 MB · 33,904,602 bytes</dd><dt>Variant</dt><dd>release · signed with the upload key · R8 minified · production ads, test flag off</dd><dt>Built</dt><dd class="tnum">7 Sep 2026, 11:04</dd><dt>Checked</dt><dd>aapt2 and bundletool: version 0.2.6, sign-in redirect launch mode, correct ads app id for the build</dd></dl><div><span class="label">MD5</span><p class="hash">35eb9fe3bab621bc3ae7b7a968c50ceb</p></div><span class="label">QA build</span><div class="file">CloudVault-0.2.6-vc17-TEST-ADS.apk</div><dl class="kv"><dt>Size</dt><dd class="tnum">52.3 MB · 52,332,041 bytes</dd><dt>Ads</dt><dd>Google test app id and test units only; every ad carries the "Test Ad" label. Never for Play.</dd></dl><div><span class="label">MD5</span><p class="hash">3dfacb10cbdf21841fcf55312ad14965</p></div><div class="callout" style="font-size:14.5px"><strong>Not in this repository:</strong> the AAB and APK files themselves. The site is public, so only names, sizes and hashes are listed here.</div><span class="label">Earlier Play uploads · MD5</span><dl class="kv" style="font-size:14px"><dt>0.2.5 (16) · 56971029…</dt><dd class="tnum">04 Sep 2026</dd><dt>0.2.4 (15) · c5537f51…</dt><dd class="tnum">03 Sep 2026</dd><dt>0.2.3 (14) · 0fcfa2ae…</dt><dd class="tnum">03 Sep 2026</dd><dt>0.2.2 (13) · d575d400…</dt><dd class="tnum">26 Aug 2026</dd><dt>0.2.1 (12) · 19bd1d04…</dt><dd class="tnum">25 Aug 2026</dd><dt>0.1.9 (10) · 20047eb5…</dt><dd class="tnum">24 Aug 2026</dd></dl></div></div>
+</section>
+
+<section id="money"><div class="sec-head"><span class="label">Monetization</span><h2>46 ad slots, each with its own switch</h2><p>From the app's monetization code and its Remote Config key guide. Which slots are switched on in production is set in Firebase and was not read for this page.</p></div>
+<div class="flags" aria-label="Switches"><span class="flag on">ADS_ENABLED <b>build flag</b></span><span class="flag off">&lt;placement&gt;_control <b>default false</b></span><span class="flag on">&lt;placement&gt;_id <b>Remote Config</b></span><span class="flag on">guest_mode_control <b>Remote Config</b></span><span style="color:var(--ink-2);font-size:14.5px">Each placement has an on/off key and a unit id key, 92 keys in all. With every <span class="mono">_control</span> off, no ad shows; turning one on needs no release. Premium removes ads. Consent runs through Google's UMP form.</span></div>
+<div class="table-wrap"><table><thead><tr><th>Format</th><th>Placements</th><th>Where</th><th>Rules</th></tr></thead><tbody>
+<tr><td><b>App open</b></td><td class="tnum">2</td><td>Cold start (splash) and return from background</td><td>Only the cold-start one loads at launch; the resume ad keeps a Remote Config gap between ads (45 s by default)</td></tr>
+<tr><td><b>Banner</b></td><td class="tnum">10</td><td>Splash, language, onboarding, Home, and during each upload by type (photo, video, audio, document, contact, app)</td><td>Adaptive size requested for the exact width of the slot since 0.2.4, so it cannot be clipped</td></tr>
+<tr><td><b>MREC</b></td><td class="tnum">15</td><td>Language, onboarding, Home, while uploading and while downloading each file type</td><td>Home MREC kept clear of the Upload button (46 px gap measured, 0.2.4)</td></tr>
+<tr><td><b>Interstitial</b></td><td class="tnum">18</td><td>Language and onboarding, Cloud and Files tabs, upload buttons by type, downloads by type, backup finished</td><td>Frequency caps checked when the ad loads; preloads wait for the moment of intent, not app launch (0.1.9)</td></tr>
+<tr><td><b>Rewarded</b></td><td class="tnum">1</td><td>"Get +5 GB free, watch a short ad" on Home</td><td>5 GB per completed view by default; GB per ad, lifetime cap and views per day are Remote Config keys; the bonus is cleared on sign-out</td></tr>
+</tbody></table></div><p class="method">Counted from the app's placement list: 2 + 10 + 15 + 18 + 1 = 46 keys. Placements that belong to one file type share a format, so turning on "uploading banner" means six keys, one per type.</p>
+<div class="with-shot"><div class="panel"><span class="label">Free tier and Premium</span><div class="plans"><div class="plan"><span class="label">Free</span><b class="tnum">100 GB</b><span style="color:var(--muted)">default quota</span></div><div class="plan"><span class="label">1 TB yearly · seen 17 Aug</span><b class="tnum">Rs 13,900</b><span class="mono" style="color:var(--muted)">1tb_yearly_plan</span></div></div><p style="color:var(--ink-2)">Six Play products: <span class="mono">100gb</span>, <span class="mono">200gb</span> and <span class="mono">1tb</span>, each monthly and yearly. Prices are set in Play Console, not in the code. On 17 Aug the paywall showed six tiers from Rs 2,750 (monthly) to Rs 13,900 (1 TB a year). A plan adds to the free space: the 200 GB plan gives 300 GB in total (0.2.2). The paywall promises three things: more storage, no ads, priority restore.</p><div class="callout">The Features Comparison tab lists a different tier set (Plus 250 GB, Pro 500 GB and Family 1 TB at Rs 5,600, Rs 8,400 and Rs 19,600 a year), to be reconciled with the live Play Console.</div></div><figure style="margin:0;display:grid;gap:8px"><button class="phone key" type="button" data-full="shots/listing-01-home.jpg" data-cap="Home with the rewarded button · Play listing"><img src="shots/listing-01-home.jpg" alt="Play listing screenshot: Home with the storage ring at 25 GB of 100 GB and a Get +5 GB free button" loading="lazy"></button><figcaption><b>Rewarded storage</b>"Get +5 GB free" under Back up now</figcaption></figure></div>
+</section>
+
+<section id="shots"><div class="sec-head"><span class="label">Screenshots</span><h2>What the Play listing shows</h2><p>The four phone screenshots on the live listing, built from real app screens. The device captures from the 7 Sep QA round were kept in a temporary folder that no longer exists, so they are not on this page; the next device round should save a set here.</p></div>
+<div class="shots-group"><header><h3>Play listing</h3><span class="label">4 of 8 slots used</span></header><div class="strip"><figure><button class="phone key" type="button" data-full="shots/listing-01-home.jpg" data-cap="Your Digital Life, Perfectly Protected"><img src="shots/listing-01-home.jpg" alt="Listing screenshot 1: Home, storage ring by category, Back up now" loading="lazy"></button><figcaption><b>1 · Home</b>Storage ring by category, Back up now, rewarded +5 GB</figcaption></figure><figure><button class="phone key" type="button" data-full="shots/listing-02-save.jpg" data-cap="Save on Cloud"><img src="shots/listing-02-save.jpg" alt="Listing screenshot 2: Files grid of photos and videos" loading="lazy"></button><figcaption><b>2 · Save on Cloud</b>Photo and video grid</figcaption></figure><figure><button class="phone key" type="button" data-full="shots/listing-03-files.jpg" data-cap="Find Every File in Seconds"><img src="shots/listing-03-files.jpg" alt="Listing screenshot 3: Files tab with device folders and a Scan this device prompt" loading="lazy"></button><figcaption><b>3 · Files</b>Device folders, search, scan prompt</figcaption></figure><figure><button class="phone key" type="button" data-full="shots/listing-04-tools.jpg" data-cap="Powerful Tools. Zero Complexity."><img src="shots/listing-04-tools.jpg" alt="Listing screenshot 4: Tools tab with Smart Assistant, Smart Gallery, Restore and more" loading="lazy"></button><figcaption><b>4 · Tools</b>The first 8 of 14 tiles</figcaption></figure></div></div>
+<div class="panel"><span class="label">Checked on a device on 7 Sep (from the build notes, no pictures kept)</span><ul><li>Signed-in Home: ring "5.3 GB of 100 GB", matching 567 objects and 5,314,394,494 bytes read from the cloud.</li><li>Guest Home: ring "4.1 GB on this device", no Free row, status "Nothing backed up yet. Sign up to back these up."</li><li>Guest Files: the phone's real folders (DCIM, Download, Movies, Music, Pictures).</li><li>Back on signed-in Home opens "Exit Cloud Vault?"; Back on guest Home returns to sign-in; Back on sign-in shows a toast, a second Back exits.</li><li>Delete account for a user already removed on the server: receipt "Your account and data are deleted", lands on sign-in.</li><li>Sign-in error line, "Forgot password?" and "Continue without an account" all centred at x = 540 on the 1080 px screen.</li></ul></div>
+</section>
+
+<section id="graphics"><div class="sec-head"><span class="label">Graphics</span><h2>Brand assets and store readiness</h2><p>The icon is the publisher's, added in 0.2.5 as an adaptive icon with round and themed variants. The feature graphic and screenshots are the live listing's, from this site's listing assets.</p></div>
+<div class="assets"><div class="asset"><div class="art" style="background:#0048FF"><img src="gfx/icon.png" alt="Play icon"></div><div><b>Play icon</b><p class="mono" style="color:var(--muted)">512 × 512 PNG</p><span class="chip pass"><span class="dot"></span>Meets Play spec</span></div></div><div class="asset"><div class="art"><img src="shots/listing-01-home.jpg" alt="Phone screenshot 1" style="width:auto;height:88%;border-radius:8px"></div><div><b>Phone screenshot 1</b><p class="mono" style="color:var(--muted)">788 × 1400 · 4 in the set</p><span class="chip pass"><span class="dot"></span>Live</span></div></div><div class="asset"><div class="art"><img src="shots/listing-04-tools.jpg" alt="Phone screenshot 4" style="width:auto;height:88%;border-radius:8px"></div><div><b>Phone screenshot 4</b><p class="mono" style="color:var(--muted)">788 × 1400</p><span class="chip warn"><span class="dot"></span>4 of 8 slots</span></div></div><div class="asset"><div class="art fg"><img src="gfx/feature-graphic.jpg" alt="Feature graphic: One Cloud. Every Phone. Backup and restore across multiple phones, with a Free 100 GB cloud" style="width:100%;border-radius:0"></div><div><b>Feature graphic</b><p class="mono" style="color:var(--muted)">1024 × 500</p><span class="chip warn"><span class="dot"></span>Carries "Free 100 GB"</span></div></div></div>
+<div class="panel"><span class="label">Palette, from the icon and the app theme</span><div class="swatches"><div class="sw"><i style="background:#0048FF"></i>Icon blue<code>#0048FF</code></div><div class="sw"><i style="background:#2563EB"></i>Blue500 · photos<code>#2563EB</code></div><div class="sw"><i style="background:#1E40AF"></i>Blue700<code>#1E40AF</code></div><div class="sw"><i style="background:#0EA5E9"></i>Sky500<code>#0EA5E9</code></div><div class="sw"><i style="background:#14B8A6"></i>Teal500 · contacts<code>#14B8A6</code></div><div class="sw"><i style="background:#8B5CF6"></i>Violet500 · videos<code>#8B5CF6</code></div><div class="sw"><i style="background:#F59E0B"></i>Amber500 · audio<code>#F59E0B</code></div><div class="sw"><i style="background:#F43F5E"></i>Rose500 · documents<code>#F43F5E</code></div></div><p style="font-size:14px;color:var(--muted)">Each file category keeps one colour across the storage ring, the tiles and the file list. The code still marks this palette as a placeholder for the publisher's artist. The Competitor&rsquo;s Graphics tab advises keeping promo wording like "Free 100 GB" off the feature graphic.</p></div>
+</section>
+
+<section id="qa"><!--
+  QA SCORE WORKINGS (formula as published in .method below, same as the All Document Reader tab).
+  18 scored categories; Load not scored. Deductions: open critical 25, high 12, medium 6, low 2, unrated 4,
+  fix not device-checked 3, planned test not run 5. Total = average (rounded), then capped: 69 open critical,
+  84 open high, 94 open medium, 95 unrated, 98 open low, 99 until every fix is device-checked and every planned test has run.
+
+  Scheduled for the next update (medium, 6 each): ad pacing after a full-screen ad (Functional),
+  onboarding wording aligned with the privacy policy (Security). Unrated 0, unchecked fixes 0.
+  Planned tests in the measurement pass (5 each while not run): Installation, Performance, Stress, Network,
+  Interrupt, Accessibility, Battery, Permission.
+
+  NOW (23 Sep 2026, 0.2.6 (17)):
+    Functional 100 minus 6 = 94
+    Security 100 minus 6 = 94
+    Installation, Performance, Stress, Network, Interrupt, Accessibility, Battery, Permission: 100 minus 5 = 95 each (8 x 95 = 760)
+    UI, UX, Compatibility, Usability, Regression, Smoke, Sanity, Localization: 100 each (800)
+    Sum 94 + 94 + 760 + 800 = 1748; 1748 / 18 = 97.1; average 97; medium cap: TOTAL 94
+  If the measurement pass runs clean: 94 + 94 + 1600 = 1788; / 18 = 99.3; average 99; TOTAL still 94 until the
+  two scheduled items ship.
+
+  HISTORY (same formula; planned-test deduction of 8 x 5 applies to every row):
+    Publisher round 1, 3 Sep: Compatibility 88, UI 94, Network 89, 7 other tested-later categories 95;
+      sum 1736; / 18 = 96.4; high cap: 84
+    Round 2 fixes, 4 Sep: two fixes awaiting the publisher's phones (Compatibility 97, Functional 97);
+      sum 1754; / 18 = 97.4; cap 99: 97
+    Round 3 fixes, 7 Sep: medium cap: 94
+    Publisher retests, 23 Sep: fixes checked on their phones; average 97, total 94
+-->
+<div class="sec-head"><span class="label">QA history</span><h2>14 bugs fixed, 2 improvements scheduled</h2><p>Every bug from the publisher's rounds on 3, 4 and 7 Sep and our own QA, counted once. Taken from our QA build notes and the testing scorecard, with the publisher's retests from the owner's statement on 23 Sep 2026. Our checks run on a Samsung A17 (SM-A176W, Android 16).</p></div>
+<div class="tally">
+  <div><span class="label">Bugs found</span><b class="tnum">16</b><small>Across 3 publisher rounds and our own QA, 3 to 18 Sep 2026</small></div>
+  <div class="t-fixed"><span class="label">Fixed</span><b class="tnum">14</b><small>All checked on a device, 4 retested by the publisher on 23 Sep</small></div>
+  <div class="t-open"><span class="label">Scheduled</span><b class="tnum">2</b><small>Improvements planned for the next update</small></div>
+  <div><span class="label">QA score</span><b class="tnum">94<span style="font-size:.45em;color:var(--muted)"> / 100</span></b><small>Target 90 · started at 84</small></div>
+</div>
+<div class="panel">
+  <div class="dl-row"><span class="label">Fixed vs scheduled · all rounds</span><span class="tnum" style="font-size:14px;color:var(--ink-2)">14 fixed · 2 scheduled</span></div>
+  <div class="stack" role="img" aria-label="14 fixed, 2 scheduled for the next update"><span class="s-fixed" style="width:87.5%"></span><span class="s-open" style="width:12.5%"></span></div>
+  <div class="legend"><span><i style="background:var(--pass)"></i>Fixed 14</span><span><i style="background:var(--warn)"></i>Scheduled 2</span></div>
+</div>
+<div class="table-wrap"><table class="ledger" style="min-width:680px"><thead><tr><th>Round</th><th>What the publisher reported</th><th>Fixed in</th><th>Status</th></tr></thead><tbody>
+<tr><td class="num"><b>3 Sep 2026</b></td><td>Google sign-in opened a black tab on a Xiaomi phone; banner clipped in padded screens; a false "No internet" dialog for guests</td><td class="num">0.2.4 (15)</td><td><span class="chip pass"><span class="dot"></span>Fixed</span></td></tr>
+<tr><td class="num"><b>4 Sep 2026</b></td><td>Guest dashboard showed sample data; Back from sign-in and on the sign-in screen exited the app; guest mode survived a relaunch; a 20 GB account showed 0 B</td><td class="num">0.2.5 (16)</td><td><span class="chip pass"><span class="dot"></span>Fixed</span></td></tr>
+<tr><td class="num"><b>7 Sep 2026</b></td><td>Galaxy S7 Edge replayed onboarding after Google sign-in; delete account reported a failure; "Backed up 3 hours ago" on a new account; guest ring shown as vault usage; sign-in error line misaligned</td><td class="num">0.2.6 (17)</td><td><span class="chip pass"><span class="dot"></span>Fixed</span></td></tr>
+</tbody></table></div>
+<div class="panel score" id="qa-score"><span class="label">QA score · out of 100</span>
+<div class="score-row"><span>Publisher round 1, 3 Sep 2026</span><div class="bar muted"><span style="width:84%"></span><i style="left:90%"></i></div><b class="tnum">84</b></div>
+<div class="score-row"><span>Round 2 fixes, 4 Sep 2026</span><div class="bar muted"><span style="width:97%"></span><i style="left:90%"></i></div><b class="tnum">97</b></div>
+<div class="score-row"><span>Round 3 fixes, 7 Sep 2026</span><div class="bar muted"><span style="width:94%"></span><i style="left:90%"></i></div><b class="tnum">94</b></div>
+<div class="score-row"><span>Publisher retests, 23 Sep 2026</span><div class="bar"><span style="width:94%"></span><i style="left:90%"></i></div><b class="tnum">94</b></div>
+<div class="scale"><span></span><div><span style="left:0">0</span><span style="left:50%">50</span><span style="left:90%">90 target</span><span style="left:100%">100</span></div><span></span></div>
+<p class="method">How the score works: each of the 18 scored categories starts at 100 and loses 25 per open critical, 12 per high, 6 per medium, 2 per low and 4 per unrated bug, 3 per fix not yet checked on a device, and 5 per planned test that could not be run. The total is the average, capped while serious items remain: at most 69 with an open critical, 84 with an open high, 94 with an open medium, 95 with an unrated bug, 98 with an open low, and 99 until every fix is device-checked and every planned test has run. Now: average 97, capped at 94 pending two scheduled improvements in the next update (ad pacing after a full-screen ad; onboarding wording). Not scored: Load (managed backend, single-digit testers).</p>
+<div class="table-wrap" style="margin-top:4px"><table style="min-width:520px"><thead><tr><th>Category</th><th>Score</th><th>Why not 100</th></tr></thead><tbody><tr><td>Functional</td><td class="tnum">94</td><td>−6 scheduled: ad pacing after a full-screen ad, next update</td></tr><tr><td>UI</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>UX</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Compatibility</td><td class="tnum">100</td><td>no deduction: A17 in our lab, S7 Edge and Xiaomi retested by the publisher</td></tr><tr><td>Installation</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Performance</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Load</td><td class="tnum">n/a</td><td>managed backend, single-digit testers; no load to generate</td></tr><tr><td>Stress</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Network</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Security</td><td class="tnum">94</td><td>−6 scheduled: onboarding wording aligned with the privacy policy, next update</td></tr><tr><td>Usability</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Regression</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Smoke</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Sanity</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Interrupt</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Battery</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Permission</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr><tr><td>Localization</td><td class="tnum">100</td><td>no deduction</td></tr><tr><td>Accessibility</td><td class="tnum">95</td><td>−5 not tested: measurement pass scheduled</td></tr></tbody></table></div>
+</div>
+<div class="panel"><div class="dl-row"><h3>Verification coverage, 0.2.6 (17)</h3><span class="tnum" style="font-size:14px;color:var(--ink-2)">10 verified · 1 by publisher · 4 in the 23 Sep pass · 1 not measured</span></div>
+<div class="table-wrap"><table style="min-width:680px;font-size:13.5px"><thead><tr><th>Test type</th><th>What was checked</th><th>Evidence</th><th>Status</th></tr></thead><tbody><tr><td><b>Functional</b></td><td>1,136 unit tests; device checks of signed-in Home, guest Home, guest Files, guest "Back up now" and the sign-in screen</td><td>All unit tests pass, lint 0 errors; every device check passed on the A17 (7 Sep notes)</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Installation, update</b></td><td>Test-ads build installed over 0.2.5 (16) with app data kept</td><td>Still signed in after the update, Home reads "5.3 GB backed up"</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Installation, fresh</b></td><td>Fresh install of 0.2.6</td><td>Scheduled: <a href="#qa-score">measurement pass</a></td><td><span class="chip warn"><span class="dot"></span>Measurement pass</span></td></tr><tr><td><b>Compatibility, our lab</b></td><td>Samsung A17 (SM-A176W, Android 16)</td><td>Every device check in this table ran on it</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Compatibility, publisher</b></td><td>Samsung Galaxy S7 Edge and a Xiaomi phone: Google sign-in and delete account</td><td>Publisher retests completed and passed (owner statement, 23 Sep 2026)</td><td><span class="chip pass"><span class="dot"></span>Verified by publisher</span></td></tr><tr><td><b>Sign-in and auth</b></td><td>Google sign-in through the browser tab; the redirect on 0.2.5 (16) against 0.2.6 (17)</td><td>16 created a second app screen and replayed onboarding; 17 returned to the running app with one screen; Continue with Google lands on Home</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Network, offline</b></td><td>Custom Tab held open with the network cut during Google sign-in; delete reply lost on the network</td><td>Sign-in screen shows "Google sign-in was cancelled"; the backend log shows the S7 Edge delete succeeded at 16:22:45 PKT; 0.2.6 counts the retry's "User does not exist" reply as success</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Network, expired token</b></td><td>401 handling for an expired session</td><td>Scheduled: <a href="#qa-score">measurement pass</a></td><td><span class="chip"><span class="dot"></span>Not measured</span></td></tr><tr><td><b>Interruption</b></td><td>Back on every entry screen, warm relaunch from the launcher, relaunch with the process alive</td><td>"Exit Cloud Vault?" on signed-in Home, sign-in from guest Home, toast then exit on sign-in; one app screen, same process, no splash replay; process-alive relaunch lands on onboarding</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Data integrity</b></td><td>Cloud usage ring against the backend object list</td><td>Ring "5.3 GB of 100 GB" matches the cloud backend's usage count: 567 objects, 5,314,394,494 bytes</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Account deletion</b></td><td>Delete for a user already removed on the server (throwaway test account)</td><td>Receipt "Your account and data are deleted", lands on sign-in, relaunch does not restore the session</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Localization</b></td><td>18 app languages</td><td>All 18 locales pass the placeholder and plural checker</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Ads</b></td><td>Test-ads APK on Google's test ids; release AAB on the production app id</td><td>"Test Ad" labels visible on signed-in Home on the A17; production id and test flag off confirmed in the AAB with bundletool and the build configuration</td><td><span class="chip pass"><span class="dot"></span>Verified</span></td></tr><tr><td><b>Accessibility</b></td><td>Font scale 1.3, unlabeled controls</td><td>Scheduled: <a href="#qa-score">measurement pass</a></td><td><span class="chip warn"><span class="dot"></span>Measurement pass</span></td></tr><tr><td><b>Battery</b></td><td>Drain during backup (batterystats)</td><td>Scheduled: <a href="#qa-score">measurement pass</a></td><td><span class="chip warn"><span class="dot"></span>Measurement pass</span></td></tr><tr><td><b>Stress</b></td><td>Large uploads, process death</td><td>Scheduled: <a href="#qa-score">measurement pass</a></td><td><span class="chip warn"><span class="dot"></span>Measurement pass</span></td></tr></tbody></table></div>
+<p class="method">From our QA build notes of 3 and 7 Sep; type names from the publisher's testing taxonomy. This table is the evidence behind the scored categories above; the 23 Sep pass also covers performance, network switching, interrupts and the permission deny path.</p></div>
+<ol class="qa-log"><li><time>23 Sep</time><div><h3>Publisher retests passed, measurement pass started</h3><p>S7 Edge Google sign-in, S7 Edge delete account, the Xiaomi sign-in from 3 Sep and the publisher's own account all passed (owner statement). The two fixes that only the publisher's phones could reproduce now count as device-checked. A measurement pass on the A17 covers fresh install, performance, stress, network switching, interrupts, accessibility, battery and the permission deny path. Category average 97, capped at 94 pending two improvements scheduled for the next update.</p></div></li>
+<li><time>07 Sep</time><div><h3>0.2.6 (17) handed over</h3><p>Answers the four QA videos filmed that day. 1,136 unit tests pass, lint reports 0 errors, all 18 locales pass the checker, and both files were inspected with aapt2 and bundletool. Device checks on the A17 with the test-ads build installed over 0.2.5. Category average 97, capped at 94.</p></div></li>
+<li><time>04 Sep</time><div><h3>0.2.5 (16) handed over</h3><p>Guest mode shows real files, Back fixes, the 0 B guard and logging, the publisher's new icon. Guest mode made session-only and guest Back routed to sign-in the same day. Nothing open; score 97, held under 99 by the planned tests and two fixes only the publisher's phones could check.</p></div></li>
+<li><time>03 Sep</time><div><h3>0.2.4 (15) handed over</h3><p>Guest mode, banner width fix, Google sign-in browser pinning and telemetry. 9 of 9 guest-flow steps passed on the A17; the offline dialog found that day was fixed before handoff. Score 84 on the day the round came in, held down by the Xiaomi sign-in.</p></div></li>
+<li><time>03 Sep</time><div><h3>0.2.3 (14) and the test taxonomy</h3><p>AdMob account move; new units requested and filled on the device. The publisher's 19-type testing taxonomy arrived the same day.</p></div></li></ol>
+<div class="panel"><span class="label">Publisher retests · 23 Sep 2026</span><ul><li>S7 Edge Google sign-in (guest, Settings, Sign in, Continue with Google, Home, then Back shows "Exit Cloud Vault?"): done, passed.</li><li>S7 Edge delete account: done, passed.</li><li>Xiaomi Google sign-in from 3 Sep: done, passed.</li><li>The publisher's own account was tested. Owner statement, 23 Sep 2026.</li><li>Guest ring shows on-device totals since 0.2.6; publisher informed that these are the phone's own files.</li></ul></div>
+</section>
+  </main>
+</div>
+
+<footer>Cloud Storage: Secure Vault 0.2.6 (17) · compiled 23 Sep 2026 from the app repository (branch feature/contacts-ads-flow-control) and its build notes, device testing on a Samsung SM-A176W, competitor figures from the other tabs of this site (15 and 22 Sep).</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot">
+  <button type="button" id="lb-close">Close</button>
+  <img id="lb-img" alt="">
+  <p id="lb-cap"></p>
+</dialog>
+
+<script>
+// Sections row in the tab bar: marks the section you are reading, and the screenshot lightbox.
+(function () {
+  var bar = document.getElementById('bar');
+  var links = [].slice.call(document.querySelectorAll('#jump a'));
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var jump = document.getElementById('jump');
+
+  function syncBar() { document.documentElement.style.setProperty('--barh', bar.offsetHeight + 'px'); }
+
+  function update() {
+    var y = window.scrollY + bar.offsetHeight + window.innerHeight * 0.2, idx = 0;
+    sections.forEach(function (s, i) { if (s && s.getBoundingClientRect().top + window.scrollY <= y) idx = i; });
+    links.forEach(function (a, i) { a.setAttribute('aria-current', i === idx ? 'true' : 'false'); });
+    var active = links[idx];
+    if (active && jump.scrollWidth > jump.clientWidth) {
+      var left = active.offsetLeft - jump.offsetLeft;
+      if (left < jump.scrollLeft || left + active.offsetWidth > jump.scrollLeft + jump.clientWidth) jump.scrollLeft = left - 16;
+    }
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { update(); ticking = false; }); }
+  }, { passive: true });
+  window.addEventListener('resize', function () { syncBar(); update(); });
+  syncBar(); update();
+
+  var lb = document.getElementById('lightbox'), img = document.getElementById('lb-img'), cap = document.getElementById('lb-cap');
+  if (!lb) return;
+  document.querySelectorAll('#dossier .phone').forEach(function (b) {
+    b.addEventListener('click', function () {
+      img.src = b.dataset.full; img.alt = b.querySelector('img').alt; cap.textContent = b.dataset.cap || '';
+      if (typeof lb.showModal === 'function') lb.showModal();
+    });
+  });
+  document.getElementById('lb-close').addEventListener('click', function () { lb.close(); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+})();
+</script>
+
+</div>
+</body>
+</html>
