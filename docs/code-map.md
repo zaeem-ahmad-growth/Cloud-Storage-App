@@ -3,6 +3,23 @@
 > **Generated file: do not edit by hand.** Produced by `node tools/export-docs.js`, which GitHub runs after every push.
 > For every section of every tab: the anchor id, where its markup is (file and line), which function in [assets/app.js](../assets/app.js) fills it, and which fields of [assets/data.js](../assets/data.js) that function reads (paths as in the [data dictionary](data-dictionary.md)). To change a section's wording, edit the markup for static text or the named function for text built from data; to change numbers, edit the data.
 
+<a id="07-cloud-storage"></a>
+
+## Cloud Storage
+
+Markup: [tabs/07-cloud-storage/index.html](../tabs/07-cloud-storage/index.html) · `<body data-page="cloud-storage">` · self-contained page (static HTML plus the inline script at the bottom of the file) · [text snapshot](tabs/07-cloud-storage.md)
+
+| Section | Menu label | Heading in the markup | Markup line | Filled by (assets/app.js) | Data read |
+| --- | --- | --- | --- | --- | --- |
+| [#overview](tabs/07-cloud-storage.md#overview) | Overview | Cloud Storage:Secure Vault | [L289](../tabs/07-cloud-storage/index.html#L289) | static markup / inline script |  |
+| [#spec](tabs/07-cloud-storage.md#spec) | Spec | What ships inside the build | [L304](../tabs/07-cloud-storage/index.html#L304) | static markup / inline script |  |
+| [#market](tabs/07-cloud-storage.md#market) | Market research | The most complete build in a crowded search | [L309](../tabs/07-cloud-storage/index.html#L309) | static markup / inline script |  |
+| [#versions](tabs/07-cloud-storage.md#versions) | Versions & APK | From the first commit to 0.2.6 | [L328](../tabs/07-cloud-storage/index.html#L328) | static markup / inline script |  |
+| [#money](tabs/07-cloud-storage.md#money) | Monetization | 46 ad slots, each with its own switch | [L332](../tabs/07-cloud-storage/index.html#L332) | static markup / inline script |  |
+| [#shots](tabs/07-cloud-storage.md#shots) | Screenshots | What the Play listing shows | [L344](../tabs/07-cloud-storage/index.html#L344) | static markup / inline script |  |
+| [#graphics](tabs/07-cloud-storage.md#graphics) | Graphics | Brand assets and store readiness | [L349](../tabs/07-cloud-storage/index.html#L349) | static markup / inline script |  |
+| [#qa](tabs/07-cloud-storage.md#qa) | QA history | 14 bugs fixed, 2 improvements scheduled | [L354](../tabs/07-cloud-storage/index.html#L354) | static markup / inline script |  |
+
 <a id="01-aso-playbook"></a>
 
 ## ASO Playbook
