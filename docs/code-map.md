@@ -113,12 +113,13 @@ Markup: [tabs/06-ua-strategy/index.html](../tabs/06-ua-strategy/index.html) · `
 
 | Section | Menu label | Heading in the markup | Markup line | Filled by (assets/app.js) | Data read |
 | --- | --- | --- | --- | --- | --- |
-| [#summary](tabs/06-ua-strategy.md#summary) | Summary | What this strategy bets on | [L82](../tabs/06-ua-strategy/index.html#L82) | static markup / inline script |  |
-| [#keywords](tabs/06-ua-strategy.md#keywords) | Keyword board | Keyword metrics and competitor analysis | [L126](../tabs/06-ua-strategy/index.html#L126) | static markup / inline script |  |
-| [#headlines](tabs/06-ua-strategy.md#headlines) | Headlines | Ten headlines | [L155](../tabs/06-ua-strategy/index.html#L155) | static markup / inline script |  |
-| [#descriptions](tabs/06-ua-strategy.md#descriptions) | Descriptions | Ten descriptions | [L176](../tabs/06-ua-strategy/index.html#L176) | static markup / inline script |  |
-| [#comparison](tabs/06-ua-strategy.md#comparison) | Side by side | First draft against the web-scraped re-run | [L197](../tabs/06-ua-strategy/index.html#L197) | static markup / inline script |  |
-| [#checks](tabs/06-ua-strategy.md#checks) | Checks | What was verified, and what still has to be | [L258](../tabs/06-ua-strategy/index.html#L258) | static markup / inline script |  |
+| [#summary](tabs/06-ua-strategy.md#summary) | Summary | What this strategy bets on | [L99](../tabs/06-ua-strategy/index.html#L99) | static markup / inline script |  |
+| [#keywords](tabs/06-ua-strategy.md#keywords) | Keyword board | Keyword metrics and competitor analysis | [L143](../tabs/06-ua-strategy/index.html#L143) | static markup / inline script |  |
+| [#headlines](tabs/06-ua-strategy.md#headlines) | Headlines | Ten headlines | [L172](../tabs/06-ua-strategy/index.html#L172) | static markup / inline script |  |
+| [#descriptions](tabs/06-ua-strategy.md#descriptions) | Descriptions | Ten descriptions | [L193](../tabs/06-ua-strategy/index.html#L193) | static markup / inline script |  |
+| [#comparison](tabs/06-ua-strategy.md#comparison) | Side by side | First draft against the web-scraped re-run | [L214](../tabs/06-ua-strategy/index.html#L214) | static markup / inline script |  |
+| [#countries](tabs/06-ua-strategy.md#countries) | Target countries | Target Countries of Competitors | [L275](../tabs/06-ua-strategy/index.html#L275) | static markup / inline script |  |
+| [#checks](tabs/06-ua-strategy.md#checks) | Checks | What was verified, and what still has to be | [L580](../tabs/06-ua-strategy/index.html#L580) | static markup / inline script |  |
 
 ## All functions in assets/app.js
 
