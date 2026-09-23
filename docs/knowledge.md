@@ -1,6 +1,6 @@
 # Cloud Storage: Secure Vault: knowledge base
 
-Loaded automatically in every Claude session in this repo. Facts as of 22 Sep 2026 (ASO data refreshed 15 Sep, Google Ads assets 21 Sep, free-GB study and install count 22 Sep); detail lives in the files linked below.
+Loaded automatically in every Claude session in this repo. Facts as of 22 Sep 2026 (ASO data refreshed 15 Sep, Google Ads assets 21 Sep, free-GB study and install count 22 Sep, competitor country analysis 24 Sep); detail lives in the files linked below.
 
 ## The app
 
@@ -79,6 +79,15 @@ Published 23 Sep 2026 as tab 06 (`tabs/06-ua-strategy/`), the first tab under th
 - **Counts re-verified 23 Sep 2026:** every asset is inside its limit, but the source draft mislabelled headline 3 and all 10 descriptions by 1–5 chars. Verified headline lengths 29, 27, 22, 25, 29, 28, 23, 25, 25, 25; descriptions 82, 77, 77, 74, 74, 73, 75, 73, 75, 74.
 - **Title-collision check has not been run for this set** — the 21 Sep set's clearance does not carry over, so it must run before these assets go into an ad. No other company's brand or product name appears in the copy.
 - **Open:** six of the twenty assets promise 100 GB free; the number has to match the free tier the app actually grants (see the Free 100 GB Offer tab).
+
+### Target Countries of Competitors (section 06 of the tab, added 24 Sep 2026)
+
+Source [research/ua-strategy/Cloud Storage Competitor Target Countries.md](../research/ua-strategy/Cloud%20Storage%20Competitor%20Target%20Countries.md); the country score is reproducible from `research/ua-strategy/country-score.ps1`, which reads only repo files and makes no network calls.
+
+- **Top 15 countries**, scored from the 21 Sep Sensor Tower markets and the 15 Sep rank boards: US 76.4, Nigeria 57.9, Pakistan 41.7, India 30.2, Spain 29.7, UAE 29.2, Bangladesh 25.5, Philippines 25.0, UK 24.4, South Africa 17.8, Mexico 12.7, Egypt 12.5, Brazil 11.9, Kazakhstan 5.0, Indonesia 3.5. **Russia is excluded** — Play billing suspended for Russian users since Mar 2022, developer payouts to Russian banks halted Dec 2024.
+- **Nigeria is the most contested catalogue** (36 competitor top-10 slots of 94 keywords; Fazcon holds 15) and also the cheapest to enter (68 keywords with an entry bar under 50K installs, CPI under $0.30). **UAE has the softest entry bar** of the four measured boards (620K installs on average) on Gulf ARPU. **India is the biggest download pool with zero competitor placements** on the five head terms — their volume there is bought, not ranked. Tiers set for us: Nigeria, Pakistan and UAE primary; US and India organic only.
+- **Revenue (Sensor Tower, 21-22 Sep):** MindByte $60K/mo on 40K downloads ($1.50 per download) and the only competitor flagged as actively advertising; Fazcon $40K/mo on 60K ($0.67); Fuzon takes 60K downloads and earns under $1K ($0.02); seven of the eleven sit under Sensor Tower's $1K floor, so their paywalls are decorative.
+- **No per-country spend or download figure is obtainable free** (re-checked 24 Sep 2026): AppBrain returns 403, Sensor Tower and AppMagic country panels need a paid seat, the Google Ads Transparency Center does not render to a fetch, and App Annie/data.ai was absorbed by Sensor Tower in Mar 2024. The downloads column is **modelled** (each app's monthly downloads split 50/30/20 across its published top-3 markets); Daily Utility Apps and DataHatch are missing from the Sensor Tower pull, so the ranking rests on nine of the eleven competitors.
 
 ## Features and pricing
 

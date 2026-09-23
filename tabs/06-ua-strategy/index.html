@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>UA Strategy · Cloud Storage App</title>
-<meta name="description" content="Version 1 of the user-acquisition strategy for Cloud Storage: Secure Vault: the ASO and Google Ads angle, the keyword board behind it, 10 headlines, 10 descriptions, and a side-by-side of the first draft against the web-scraped re-run.">
+<meta name="description" content="Version 1 of the user-acquisition strategy for Cloud Storage: Secure Vault: the ASO and Google Ads angle, the keyword board behind it, 10 headlines, 10 descriptions, and a side-by-side of the first draft against the web-scraped re-run, plus the country-by-country read of where the eleven tracked competitors get their downloads, ranks and revenue.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -33,6 +33,22 @@
   .cmp .idx{font:600 12px/1.5 var(--mono); color:var(--muted); font-variant-numeric:tabular-nums}
   .subhead{margin-top:34px}
   .mt12{margin-top:12px}
+
+  /* Section 06: country cards. Four SWOT quadrants per country, stacking to one column on a phone. */
+  .ctries{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr)); gap:14px; margin-top:18px}
+  .ctry{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+  .ctry-head{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap}
+  .ctry-head h4{font-size:1.06rem}
+  .ctry-head .sc{font:500 12px/1.5 var(--mono); color:var(--muted); font-variant-numeric:tabular-nums; margin-left:auto}
+  .ctry .why{font-size:13.5px; color:var(--muted); margin-top:7px}
+  .quad{display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-top:13px}
+  .q{border-radius:9px; padding:9px 11px; font-size:14px; color:var(--ink-2)}
+  .q .lbl{display:block; font:600 10.5px/1.4 var(--mono); letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px}
+  .q.s{background:var(--good-soft)}  .q.s .lbl{color:var(--good)}
+  .q.w{background:var(--risk-soft)}  .q.w .lbl{color:var(--risk)}
+  .q.o{background:var(--accent-soft)} .q.o .lbl{color:var(--accent)}
+  .q.t{background:var(--warn-soft)}  .q.t .lbl{color:var(--warn)}
+  @media (max-width:620px){ .quad{grid-template-columns:1fr} }
 </style>
 </head>
 <body data-page="ua-strategy">
@@ -43,20 +59,21 @@
   </div>
   <div class="wrap bar-sections" aria-label="Sections">
     <div class="jump">
-      <a href="#summary">Summary</a><a href="#keywords">Keyword board</a><a href="#headlines">Headlines</a><a href="#descriptions">Descriptions</a><a href="#comparison">Side by side</a><a href="#checks">Checks</a>
+      <a href="#summary">Summary</a><a href="#keywords">Keyword board</a><a href="#headlines">Headlines</a><a href="#descriptions">Descriptions</a><a href="#comparison">Side by side</a><a href="#countries">Target countries</a><a href="#checks">Checks</a>
     </div>
   </div>
 </nav>
 <script src="../../assets/nav.js"></script>
 
 <header class="wrap masthead">
-  <div class="eyebrow"><span><b>UA strategy</b></span><span>Version 1</span><span>Google Play · Google Ads</span><span>Keyword board 15 Sep 2026</span><span>Published 23 Sep 2026</span></div>
+  <div class="eyebrow"><span><b>UA strategy</b></span><span>Version 1</span><span>Google Play · Google Ads</span><span>Keyword board 15 Sep 2026</span><span>Published 23 Sep 2026</span><span>Country analysis 24 Sep 2026</span></div>
   <h1>Cloud Storage UA Strategy</h1>
   <p class="lede">The acquisition angle for <strong>Cloud Storage: Secure Vault</strong> in one page: why people install a cloud storage app, which keywords a listing with no brand behind it can actually win, and the ten headlines and ten descriptions that carry that angle into Google Ads.</p>
   <div class="chips">
     <span class="chip">10 headlines · ≤30 chars</span>
     <span class="chip">10 descriptions · ≤90 chars</span>
     <span class="chip">8 keywords scored</span>
+    <span class="chip">15 countries scored</span>
     <span class="chip">Title 27/30</span>
   </div>
 
@@ -255,9 +272,314 @@
     <p class="note">Two lines moved, both of them headlines. Headline 2 was pulled into line with the title that actually shipped. Headline 7 dropped "Storage Drive" for "Free Cloud Drive", trading a keyword for the offer hook — the one place in the set where the two drafts disagree on substance.</p>
   </section>
 
+  <section id="countries">
+    <div class="sec-head">
+      <div class="kicker">06 · <span class="scope">Target countries</span></div>
+      <h2>Target Countries of Competitors</h2>
+      <p class="sub">Where the eleven tracked competitors earn their downloads and hold their ranks, country by country: the fifteen markets that carry them, a SWOT for each, what they take in in-app revenue, and how much of it goes back into paid ads. Scored 24 Sep 2026 from the Sensor Tower pull of 21 Sep and the rank boards of 15 Sep.</p>
+    </div>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="tag">Most contested</div>
+        <h3>Nigeria</h3>
+        <p>36 competitor top-10 slots across the 94-keyword board — more than any other measured catalogue — and Fazcon alone holds 15 of them. It is also the cheapest door: 68 of the 94 keywords have an entry bar under 50K installs.</p>
+      </div>
+      <div class="insight">
+        <div class="tag">Biggest pool, no ranks</div>
+        <h3>India</h3>
+        <p>Four competitors name India a top-three download market, the most of any country. Not one of them appeared anywhere in the results for the five head terms on 15 Sep. Their India volume is bought, not searched.</p>
+      </div>
+      <div class="insight">
+        <div class="tag">One funded advertiser</div>
+        <h3>MindByte</h3>
+        <p>$60,000 a month on 40,000 downloads — $1.50 per download, and the only competitor Sensor Tower flags as actively advertising. Fuzon takes the same download volume and earns under $1,000 on it.</p>
+      </div>
+      <div class="insight watch">
+        <div class="tag">What no tool would give</div>
+        <h3>Per-country spend</h3>
+        <p>Country splits sit behind paid seats. AppBrain returned 403 to every request on 24 Sep, Sensor Tower's country panels need a login, and the Ads Transparency Center will not render to a fetch. Every figure here is labelled measured, modelled or inferred.</p>
+      </div>
+    </div>
+
+    <h3 class="subhead">The fifteen countries that carry them</h3>
+    <p class="sub">Two signals, each normalised to 100 and averaged. <strong>Downloads</strong> is modelled: each app's Sensor Tower monthly downloads split 50/30/20 across the three top markets it publishes, because the order is public and the split is not. <strong>Ranks</strong> is measured: competitor top-10 slots on the 94-keyword board (US, Pakistan, UAE, Nigeria) or, elsewhere, placements in the 12-market head-term probe.</p>
+    <div class="tscroll mt12">
+      <table>
+        <thead>
+          <tr>
+            <th class="nowrap">#</th><th>Country</th><th class="nowrap">Score</th><th class="nowrap">Downloads<br><span class="small muted">modelled</span></th><th class="nowrap">Ranks<br><span class="small muted">measured</span></th><th class="nowrap">Apps calling it<br>a top-3 market</th><th class="nowrap">Top-10 slots<br><span class="small muted">of 94 keywords</span></th><th class="nowrap">Probe<br>placements</th><th>Priority for us</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1</td><td><strong>United States</strong></td><td class="num">76.4</td><td class="num">100</td><td class="num">52.8</td><td class="num">3</td><td class="num">19</td><td class="num">0</td><td><span class="pill p-mute">Watch</span> too expensive to buy into</td></tr>
+          <tr><td class="num">2</td><td><strong>Nigeria</strong></td><td class="num">57.9</td><td class="num">15.8</td><td class="num">100</td><td class="num">1</td><td class="num">36</td><td class="num">4</td><td><span class="pill p-good">Primary</span> cheapest rank to buy</td></tr>
+          <tr><td class="num">3</td><td><strong>Pakistan</strong></td><td class="num">41.7</td><td class="num">0</td><td class="num">83.3</td><td class="num">0</td><td class="num">30</td><td class="num">4</td><td><span class="pill p-good">Primary</span> home market, PKR pricing ready</td></tr>
+          <tr><td class="num">4</td><td><strong>India</strong></td><td class="num">30.2</td><td class="num">60.4</td><td class="num">0</td><td class="num">4</td><td class="muted">not measured</td><td class="num">0</td><td><span class="pill p-warn">Second wave</span> volume without revenue</td></tr>
+          <tr><td class="num">5</td><td><strong>Spain</strong></td><td class="num">29.7</td><td class="num">59.4</td><td class="num">0</td><td class="num">1</td><td class="muted">not measured</td><td class="muted">not probed</td><td><span class="pill p-warn">Second wave</span> best revenue per install outside tier 1</td></tr>
+          <tr><td class="num">6</td><td><strong>United Arab Emirates</strong></td><td class="num">29.2</td><td class="num">0</td><td class="num">58.3</td><td class="num">0</td><td class="num">21</td><td class="num">4</td><td><span class="pill p-good">Primary</span> softest entry bar, high ARPU</td></tr>
+          <tr><td class="num">7</td><td><strong>Bangladesh</strong></td><td class="num">25.5</td><td class="num">1.0</td><td class="num">50</td><td class="num">1</td><td class="muted">not measured</td><td class="num">2</td><td><span class="pill p-warn">Second wave</span> install velocity only</td></tr>
+          <tr><td class="num">8</td><td><strong>Philippines</strong></td><td class="num">25.0</td><td class="num">0</td><td class="num">50</td><td class="num">0</td><td class="muted">not measured</td><td class="num">2</td><td><span class="pill p-warn">Second wave</span> soft-launch market</td></tr>
+          <tr><td class="num">9</td><td><strong>United Kingdom</strong></td><td class="num">24.4</td><td class="num">23.8</td><td class="num">25</td><td class="num">1</td><td class="muted">not measured</td><td class="num">1</td><td><span class="pill p-mute">Watch</span> install cost rising 80% a year</td></tr>
+          <tr><td class="num">10</td><td><strong>South Africa</strong></td><td class="num">17.8</td><td class="num">35.6</td><td class="num">0</td><td class="num">1</td><td class="muted">not measured</td><td class="muted">not probed</td><td><span class="pill p-mute">Hold</span> economics blind spot</td></tr>
+          <tr><td class="num">11</td><td><strong>Mexico</strong></td><td class="num">12.7</td><td class="num">0.4</td><td class="num">25</td><td class="num">1</td><td class="muted">not measured</td><td class="num">1</td><td><span class="pill p-warn">Second wave</span> needs a Spanish listing</td></tr>
+          <tr><td class="num">12</td><td><strong>Egypt</strong></td><td class="num">12.5</td><td class="num">0</td><td class="num">25</td><td class="num">0</td><td class="muted">not measured</td><td class="num">1</td><td><span class="pill p-warn">Second wave</span> uncontested, unpriceable</td></tr>
+          <tr><td class="num">13</td><td><strong>Brazil</strong></td><td class="num">11.9</td><td class="num">23.8</td><td class="num">0</td><td class="num">1</td><td class="muted">not measured</td><td class="num">0</td><td><span class="pill p-mute">Watch</span> needs a Portuguese listing</td></tr>
+          <tr><td class="num">14</td><td><strong>Kazakhstan</strong></td><td class="num">5.0</td><td class="num">9.9</td><td class="num">0</td><td class="num">1</td><td class="muted">not measured</td><td class="muted">not probed</td><td><span class="pill p-mute">Hold</span> one competitor, no economics data</td></tr>
+          <tr><td class="num">15</td><td><strong>Indonesia</strong></td><td class="num">3.5</td><td class="num">6.9</td><td class="num">0</td><td class="num">2</td><td class="muted">not measured</td><td class="num">0</td><td><span class="pill p-warn">Second wave</span> large base, thin revenue</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Just outside the fifteen: <strong>Russia</strong> (score 2.0, Utility Forge's third market) is excluded on merit as well as score — Google Play billing has been suspended for Russian users since March 2022 and developer payouts to Russian bank accounts stopped in December 2024, so installs there cannot be monetised. Tunisia, Algeria and Lebanon each score under 0.4 and rest on one small app's top-three ordering. <strong>Positions 5 to 15 are a band, not a ladder:</strong> Spain, South Africa and the UK sit where they do because of a single app (Fuzon), and two of the eleven competitors — Daily Utility Apps at 3.8M installs and DataHatch — are missing from the Sensor Tower pull entirely, so the ranking is built on nine.</p>
+
+    <h3 class="subhead">SWOT by country</h3>
+    <p class="sub">Strength and weakness describe the competitors in that catalogue. Opportunity and risk describe us entering it, from 600 installs and no ranking anywhere.</p>
+    <div class="ctries">
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>1 · United States</h4><span class="pill p-mute">Watch</span><span class="sc">Score 76.4</span></div>
+        <p class="why">Top-3 market for CloudGate, MindByte and Fazcon · 19 top-10 slots · 0 head-term placements · CPI $4–8, rewarded eCPM $16.49</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>The money sits here: MindByte earns $60K a month and advertises actively, and Fazcon holds #1 on "cloud storage cloud drive". Tier-1 eCPM pays their ad bills.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Not one of them reached the results for any of the five head terms, and 83 of 94 keywords have no competitor in the top 10. CloudGate has 441K installs and zero top-10 slots.</div>
+          <div class="q o"><span class="lbl">Our opening</span>The security and vault terms are empty — no competitor holds a top-10 on any of them — and the app is already named for that job. Highest revenue per install of any market on this list.</div>
+          <div class="q t"><span class="lbl">Our risk</span>At $4–8 an install we cannot buy volume against a rival with $60K a month behind it, and the head terms belong to the big companies regardless of budget.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>2 · Nigeria</h4><span class="pill p-good">Primary</span><span class="sc">Score 57.9</span></div>
+        <p class="why">MindByte's #3 market · 36 top-10 slots, the most measured anywhere · Fazcon #8 on "cloud storage" · CPI under $0.30, eCPM $2–3</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fazcon's best catalogue on earth: 15 top-10 slots, two #1s, and one of only two head-term top-10s found across twelve countries. Fuzon adds 8 slots, MindByte 5.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>75 of the 94 keywords still have nobody in the top 10, and at $2–3 eCPM the traffic barely pays. MindByte buys installs here that earn a fraction of its US ones.</div>
+          <div class="q o"><span class="lbl">Our opening</span>The cheapest rank in the world: 68 keywords with an entry bar under 50K installs, at installs under $0.30. The fastest place to manufacture the velocity Play's new-listing boost rewards.</div>
+          <div class="q t"><span class="lbl">Our risk</span>It is also the most crowded catalogue, with the head phrases already taken. Revenue per install will not cover a paid campaign, so this is a rank play, not a profit play.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>3 · Pakistan</h4><span class="pill p-good">Primary</span><span class="sc">Score 41.7</span></div>
+        <p class="why">No competitor names it a top-3 market, yet 3 of the 11 publishers are based here · 30 top-10 slots · 4 probe placements · CPI under $0.30</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>30 top-10 slots, with Fazcon on two #1s and MindByte #1 on "cloud storage drive backup app". MindByte, Mapidirections and Golden are all Pakistani publishers who know the catalogue.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Not one of the nine measured apps counts Pakistan among its three biggest download markets — they rank here without harvesting it. The contested keywords also carry the highest average entry bar of the four boards, 2.4M installs.</div>
+          <div class="q o"><span class="lbl">Our opening</span>Home market: the paywall is already priced in rupees against a category median of Rs 13,900 for 1TB a year, 77 keywords have no competitor in the top 10, and installs are near-free.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Play billing is weak where JazzCash and Easypaisa carry over 85% of wallet transactions and card penetration is low, so subscription conversion will lag the install count.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>4 · India</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 30.2</span></div>
+        <p class="why">Top-3 market for four competitors, the most of any country · 0 placements on 5 head terms · 25.5bn Play installs in 2025 · utility CPI around $0.05</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>The largest download pool on the planet, and Fazcon, MindByte, CloudGate and Mapidirections all draw on it.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>None of them ranks. Zero placements across five head terms on 15 Sep means the volume comes from ad buys and install-base inertia, which stop when the spend stops.</div>
+          <div class="q o"><span class="lbl">Our opening</span>The biggest unranked catalogue in the set: an ASO-first entry has no incumbent to displace, at the lowest install cost measured anywhere ($0.05 for Android utilities, 2024).</div>
+          <div class="q t"><span class="lbl">Our risk</span>Revenue per install is close to nothing, four funded rivals are already buying here, and no 94-keyword board has ever been run for India — so the true competitive depth is unknown.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>5 · Spain</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 29.7</span></div>
+        <p class="why">Fuzon's #1 market · no rank data of any kind · Android CPI $1.85 (Western Europe), eCPM $8–10</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fuzon — ad-free, roughly 54K installs a month, the fastest organic grower in the set — treats Spain as its largest market.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>It is the only competitor visible here, it earns $0.02 per download, and no other app names Spain at all. Nobody is defending this catalogue with money.</div>
+          <div class="q o"><span class="lbl">Our opening</span>Tier-2 revenue at tier-2 install cost with one competitor in sight — the best revenue-per-install trade outside the US, UK and Gulf.</div>
+          <div class="q t"><span class="lbl">Our risk</span>The whole position rests on one app's top-three ordering, and our listing is English-only: Spain needs a Spanish listing before a single euro goes into it.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>6 · United Arab Emirates</h4><span class="pill p-good">Primary</span><span class="sc">Score 29.2</span></div>
+        <p class="why">21 top-10 slots · softest average entry bar of the four boards, 620K installs · 4 probe placements · blended eCPM around $14.55</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fazcon takes 10 of the 21 slots and holds #1 on "cloud storage cloud drive"; Fuzon and MindByte take 3 each.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Their grip is the softest measured: the average app holding a top-10 here has 620K installs, a quarter of Pakistan's bar. 81 of 94 keywords have nobody in the top 10.</div>
+          <div class="q o"><span class="lbl">Our opening</span>The best rank-for-revenue trade on the list — Gulf ARPU with a beatable entry bar, and an English listing already works for the expat majority.</div>
+          <div class="q t"><span class="lbl">Our risk</span>A small population caps total volume, no country-exact install cost exists to budget against, and Fazcon will defend the head phrase it already owns.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>7 · Bangladesh</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 25.5</span></div>
+        <p class="why">Nova Cloud's #1 market · 2 probe placements, both Fuzon (#11, #22) · CPI under $0.30, the lowest tier measured</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Almost none. Fuzon appears twice, deep in the results, and Nova Cloud — 8.7K installs in total — calls this its biggest market.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>The only competitors present are the weakest in the set, and neither holds a top-10 on anything.</div>
+          <div class="q o"><span class="lbl">Our opening</span>The cheapest installs measured anywhere against effectively no competitor rank — pure velocity fuel for a listing that needs its first thousand installs.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Revenue per install is near zero, the market is flagged as lagging on mobile-economy growth, and installs bought here will not lift a US or Gulf rank.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>8 · Philippines</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 25.0</span></div>
+        <p class="why">No competitor names it a top-3 market · 2 probe placements: Fuzon #15, Utility Forge #23 · low CPI, eCPM $2–3</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Nothing worth the name: two apps appear, both deep in the results for a single keyword.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>No competitor treats the Philippines as a meaningful market, and no competitor holds a top-10 in it.</div>
+          <div class="q o"><span class="lbl">Our opening</span>An open catalogue where an English listing works unchanged — the natural soft-launch market for testing screenshots, onboarding and day-7 retention before spending in a tier-1 market.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Thin monetisation, and no 94-keyword board has been run here, so what looks empty on five head terms may not be empty on ninety-four.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>9 · United Kingdom</h4><span class="pill p-mute">Watch</span><span class="sc">Score 24.4</span></div>
+        <p class="why">Fuzon's #3 market · 1 probe placement (Fuzon #13) · install cost $3.85 and rising 80% year on year · eCPM $14–22</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fuzon ranks mid-table on "cloud storage space" and collects tier-1 traffic while paying nothing for it.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>One competitor, one placement, no top-10. Nobody in the set has made a serious attempt at the UK catalogue.</div>
+          <div class="q o"><span class="lbl">Our opening</span>Tier-1 revenue with a rank that is genuinely available — the highest-value catalogue on this list where no incumbent is already sitting in the top 10.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Install costs rose 80% year on year to $3.85, and the brand wall is at its most absolute in tier-1 catalogues. Organic only, until the listing converts.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>10 · South Africa</h4><span class="pill p-mute">Hold</span><span class="sc">Score 17.8</span></div>
+        <p class="why">Fuzon's #2 market · never probed, never boarded · no install cost, eCPM or Play-spend figure found on any dimension</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fuzon's second-largest market, which on the 50/30/20 model is roughly 18,000 downloads a month.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>No other competitor appears, and Fuzon monetises at $0.02 per download — presence without a business.</div>
+          <div class="q o"><span class="lbl">Our opening</span>English-language, one competitor, and a catalogue nobody in the set is defending.</div>
+          <div class="q t"><span class="lbl">Our risk</span>A complete economics blind spot: no install cost, no eCPM, no consumer-spend figure surfaced, so no budget can honestly be set for it yet.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>11 · Mexico</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 12.7</span></div>
+        <p class="why">CloudGate's #3 market · Fazcon #6 on "cloud storage" — one of only two head-term top-10s in the whole probe · LatAm CPI $0.50–2</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fazcon holds a genuine head-term top-10 here, something it manages in only one other country.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Only two of the eleven show up at all, and CloudGate — the one that names Mexico a top market — holds at most one top-10 slot in any catalogue measured.</div>
+          <div class="q o"><span class="lbl">Our opening</span>A Spanish listing plus a catalogue where a single app is strong, at LatAm install prices.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Fazcon owns the head term, cash-voucher payment habits suppress subscription conversion, and the one eCPM figure available for Mexico is dated and weak.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>12 · Egypt</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 12.5</span></div>
+        <p class="why">No competitor names it a top-3 market · 1 probe placement (Fuzon #12) · 90.4% Android share · no install cost or eCPM figure found</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>One Fuzon placement. That is the entire competitor footprint.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Nobody invests here, nobody ranks here, and nobody in this set localises for Arabic.</div>
+          <div class="q o"><span class="lbl">Our opening</span>An uncontested catalogue on a 90.4% Android base, where an Arabic listing would be a real differentiator rather than a translation exercise.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Currency devaluation eats dollar revenue, and with no install-cost or eCPM figure available the market cannot be modelled before it is tested.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>13 · Brazil</h4><span class="pill p-mute">Watch</span><span class="sc">Score 11.9</span></div>
+        <p class="why">Fazcon's #3 market · 0 probe placements · top-3 global download market in 2025 · LatAm CPI $0.50–2, Pix payments</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Fazcon — 6.1M installs, $40K a month — harvests one of the three biggest download markets in the world.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Zero rank placements. As in India, Brazil is volume Fazcon acquired rather than volume it ranks for.</div>
+          <div class="q o"><span class="lbl">Our opening</span>A huge download pool with no competitor ranking in it, where a Portuguese listing is the moat instead of the keyword.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Full localisation cost before the first install, against the largest install base in the set already present.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>14 · Kazakhstan</h4><span class="pill p-mute">Hold</span><span class="sc">Score 5.0</span></div>
+        <p class="why">Utility Forge's #1 market · never probed, never boarded · no install cost, eCPM or spend figure found</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Utility Forge, 38K downloads a month, concentrates its volume here and has the market largely to itself.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>It earns under $1,000 a month on that volume, and no other competitor appears at all.</div>
+          <div class="q o"><span class="lbl">Our opening</span>A market one mid-size competitor found and the other ten ignored.</div>
+          <div class="q t"><span class="lbl">Our risk</span>No economics data whatsoever, a Russian-language listing required, and Kaspi-dominated payments to work around.</div>
+        </div>
+      </article>
+
+      <article class="ctry">
+        <div class="ctry-head"><h4>15 · Indonesia</h4><span class="pill p-warn">Second wave</span><span class="sc">Score 3.5</span></div>
+        <p class="why">Top-3 market for Mapidirections and Utility Forge · 0 probe placements · 89.6% Android share · SEA CPI $0.50–2</p>
+        <div class="quad">
+          <div class="q s"><span class="lbl">Their strength</span>Two competitors harvest it, on one of the highest Android shares in the world.</div>
+          <div class="q w"><span class="lbl">Their weakness</span>Both are small — Mapidirections at 6.6K downloads a month, Utility Forge at 38K — and neither placed anywhere in the head-term probe.</div>
+          <div class="q o"><span class="lbl">Our opening</span>A large, cheap, unranked catalogue: the volume half of a launch plan whose revenue comes from elsewhere.</div>
+          <div class="q t"><span class="lbl">Our risk</span>Wallet-first payments, tier-3 ad revenue, and a Bahasa listing needed to compete on relevance.</div>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subhead">In-app revenue and paid-ads investment</h3>
+    <p class="sub">Downloads, revenue and advertising status from Sensor Tower (21 Sep 2026); 30-day downloads from AppBrain (21 Sep); in-app purchase ranges from the Play listings (15 Sep). "&lt;$1K" is Sensor Tower's floor bucket, not a measured figure.</p>
+    <div class="tscroll mt12">
+      <table>
+        <thead>
+          <tr><th>App</th><th class="nowrap">Installs</th><th class="nowrap">Downloads/mo<br><span class="small muted">Sensor Tower</span></th><th class="nowrap">Revenue/mo<br><span class="small muted">Sensor Tower</span></th><th class="nowrap">Revenue per<br>download</th><th class="nowrap">30-day<br><span class="small muted">AppBrain</span></th><th>Advertising</th><th class="nowrap">IAP range</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Fazcon</strong></td><td class="num">6.1M</td><td class="num">60,000</td><td class="num">$40,000</td><td class="num">$0.67</td><td class="num">75,000</td><td><span class="pill p-mute">Inactive</span> stopped inside 28 days</td><td class="num">$0.99–$215.99</td></tr>
+          <tr><td>Cloud Storage Backup &amp; Drive <span class="small muted">(Daily Utility)</span></td><td class="num">3.8M</td><td class="muted">not in pull</td><td class="muted">not in pull</td><td class="muted">—</td><td class="num">7,000</td><td class="muted">no flag</td><td class="num">$0.49–$499.99</td></tr>
+          <tr><td>Cloud Storage Drive Backup <span class="small muted">(MindByte)</span></td><td class="num">656K</td><td class="num">40,000</td><td class="num"><strong>$60,000</strong></td><td class="num"><strong>$1.50</strong></td><td class="num">36,000</td><td><span class="pill p-risk">Active</span> the only one buying now</td><td class="num">$9.99–$179.99</td></tr>
+          <tr><td>Cloud Storage &amp; Cloud Drive <span class="small muted">(Fuzon)</span></td><td class="num">542K</td><td class="num">60,000</td><td class="num">&lt;$1K</td><td class="num">$0.02</td><td class="num">29,000</td><td class="muted">no flag</td><td class="num">$1.49–$69.99</td></tr>
+          <tr><td>Cloud Backup <span class="small muted">(Mapidirections)</span></td><td class="num">452K</td><td class="num">&lt;1K</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">6,600</td><td><span class="pill p-warn">New</span> started inside 28 days</td><td class="num">$1.99–$4.99</td></tr>
+          <tr><td>CloudGate</td><td class="num">441K</td><td class="num">&lt;1K</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">6,900</td><td class="muted">no flag</td><td class="num">$1.99–$179.99</td></tr>
+          <tr><td>Cloud Storage-Sync <span class="small muted">(Utility Forge)</span></td><td class="num">211K</td><td class="num">10,000</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">38,000</td><td><span class="pill p-warn">New</span> started inside 28 days</td><td class="num">$2.49–$134.99</td></tr>
+          <tr><td>DataHatch</td><td class="num">19.5K</td><td class="muted">not in pull</td><td class="muted">not in pull</td><td class="muted">—</td><td class="num">850</td><td class="muted">no flag</td><td class="num">$2.99–$39.99</td></tr>
+          <tr><td>Nova Cloud</td><td class="num">8.7K</td><td class="num">&lt;1K</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">560</td><td class="muted">no flag</td><td class="num">$0.99–$119.99</td></tr>
+          <tr><td>ANZ Cloud Drive</td><td class="num">5.5K</td><td class="num">&lt;1K</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">0</td><td class="muted">no flag</td><td class="num">$1.99–$99.99</td></tr>
+          <tr><td>Cloud storage <span class="small muted">(Golden)</span></td><td class="num">3.6K</td><td class="num">&lt;1K</td><td class="num">&lt;$1K</td><td class="muted">—</td><td class="num">540</td><td class="muted">no flag</td><td class="num">$1.09–$14.99</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><strong>No dollar spend figure exists for any of the eleven</strong> in any tool reachable without a paid seat, and the Ads Transparency Center — which does hold the served-region list per advertiser — will not render to an automated fetch. What can be said: MindByte earns more per month than Fazcon on two-thirds of its downloads and is the only competitor actively advertising, so it is the only one whose revenue plausibly funds sustained paid acquisition. Fuzon takes 29–60K downloads a month and earns under $1,000 on them: an organic engine with no money behind it. Seven of the eleven sit under Sensor Tower's $1K floor, which makes their paywalls decorative. <strong>Inferred, not measured:</strong> the money of the advertising-flagged apps most likely lands in their own top-three markets — MindByte in the US, India and Nigeria; Utility Forge in Kazakhstan, Indonesia and Russia; Mapidirections in Indonesia, Algeria and India.</p>
+
+    <h3 class="subhead">What an install costs, and what it earns</h3>
+    <p class="sub">Third-party Android benchmarks, none specific to cloud storage — no source publishes an install cost for this category. The confidence column is part of the data: several rows are tier bands quoted in secondary write-ups rather than primary reports.</p>
+    <div class="tscroll mt12">
+      <table>
+        <thead><tr><th>Country</th><th class="nowrap">Android CPI</th><th class="nowrap">Rewarded eCPM</th><th>What else changes the maths</th><th class="nowrap">Confidence</th></tr></thead>
+        <tbody>
+          <tr><td>United States</td><td class="num">$4–8</td><td class="num">$16.49</td><td>About $60bn of Play consumer spend in 2025 — the ceiling every other market is measured against.</td><td><span class="pill p-warn">Medium</span></td></tr>
+          <tr><td>United Kingdom</td><td class="num">$3.85</td><td class="num">$14–22</td><td>Install cost up 80% year on year. Named as a Play growth driver alongside Germany and France.</td><td><span class="pill p-warn">Medium-low</span></td></tr>
+          <tr><td>Spain</td><td class="num">$1.85</td><td class="num">$8–10</td><td>Western-European Android average; needs a Spanish listing.</td><td><span class="pill p-warn">Medium</span></td></tr>
+          <tr><td>United Arab Emirates</td><td class="muted">no figure found</td><td class="num">~$14.55</td><td>High-ARPU Gulf market, 82.1% smartphone penetration; the eCPM is a blended aggregate, not rewarded-specific.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>India</td><td class="num">~0.12× US<br><span class="small muted">utilities $0.05</span></td><td class="num">$2–3</td><td>25.5bn Play installs in 2025, the largest download market in the world.</td><td><span class="pill p-warn">Medium-low</span></td></tr>
+          <tr><td>Pakistan</td><td class="num">under $0.30</td><td class="num">$2–3</td><td>93.8% Android. JazzCash and Easypaisa carry over 85% of wallet transactions; card penetration is low.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Nigeria</td><td class="num">under $0.30</td><td class="num">$2–3</td><td>91.3% Android, 83.3M users. A $40 entry-4G push shows how much device cost still gates the market.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Bangladesh</td><td class="num">under $0.30</td><td class="num">$2–3 assumed</td><td>Lowest install-cost tier measured; flagged as lagging on mobile-economy growth.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Philippines</td><td class="muted">very low, no figure</td><td class="num">$2–3</td><td>A standard soft-launch market; no monetisation figure surfaced.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Indonesia</td><td class="num">$0.50–2</td><td class="num">$2–3</td><td>89.6% Android. DANA, OVO and GoPay wallets dominate payment.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Brazil</td><td class="num">$0.50–2</td><td class="num">$2–3</td><td>Top-3 global download market in 2025; Pix keeps payment friction low.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Mexico</td><td class="num">$0.50–2</td><td class="num">$0.76 <span class="small muted">dated</span></td><td>Cash vouchers are a common payment route, which suppresses subscription conversion.</td><td><span class="pill p-risk">Low</span></td></tr>
+          <tr><td>Egypt</td><td class="muted">no figure found</td><td class="muted">no figure found</td><td>90.4% Android; a history of currency devaluation against the dollar.</td><td><span class="pill p-risk">Very low</span></td></tr>
+          <tr><td>South Africa</td><td class="muted">no figure found</td><td class="muted">no figure found</td><td>Nothing surfaced on any dimension — a genuine blind spot.</td><td><span class="pill p-risk">Very low</span></td></tr>
+          <tr><td>Kazakhstan</td><td class="muted">no figure found</td><td class="muted">no figure found</td><td>Kaspi-dominated payments; 93.4% internet penetration is the only figure available.</td><td><span class="pill p-risk">Very low</span></td></tr>
+          <tr><td>Russia <span class="small muted">(excluded)</span></td><td class="muted">n/a</td><td class="muted">n/a</td><td>Play billing suspended for Russian users since March 2022; developer payouts to Russian banks halted in December 2024.</td><td><span class="pill p-good">High on the block</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Global reference points for sanity-checking the rows above: Android install cost around $1.12 worldwide and $1.85 in Western Europe. The figure that would matter most for this app has no public source at all — the share of phones in each country still sold with 32 or 64GB of storage, which is the real demand signal behind every install of a cloud backup app.</p>
+
+    <h3 class="subhead">What this changes for our launch</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="tag">Rank where it is cheap</div>
+        <p><strong>Nigeria, Pakistan, Bangladesh.</strong> Installs under $0.30 and, in Nigeria, 68 of 94 keywords with an entry bar below 50K installs. This is where the first few thousand installs and the first top-10 slots cost what a tier-1 week costs. Treat the revenue as zero and the rank as the product.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Earn where it is open</div>
+        <p><strong>UAE, Spain, United Kingdom.</strong> Gulf and Western-European revenue, one competitor apiece, and in the UAE the softest entry bar of every catalogue measured (620K installs). Spain needs a Spanish listing first; the UAE and UK do not.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Do not fight here yet</div>
+        <p><strong>United States, India.</strong> The US costs $4–8 an install against a rival earning $60K a month; India is almost free but earns almost nothing and has four funded buyers in it. Both deserve an organic listing, neither deserves a budget at 600 installs.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Take the vault opening everywhere</div>
+        <p>No competitor holds a top-10 on any vault, secure or private keyword in <em>any</em> of the four measured catalogues. The one asset that travels across all fifteen countries is the security angle the app is already named for.</p>
+      </div>
+    </div>
+
+    <p class="note">Method, full tables and every source: <a href="https://github.com/zaeem-ahmad-growth/Cloud-Storage-App/blob/main/research/ua-strategy/Cloud%20Storage%20Competitor%20Target%20Countries.md">research/ua-strategy/Cloud Storage Competitor Target Countries.md</a>. The country score is reproducible from <code>research/ua-strategy/country-score.ps1</code>, which reads only files already in this repository and makes no network calls.</p>
+  </section>
+
   <section id="checks">
     <div class="sec-head">
-      <div class="kicker">06 · <span class="scope">Checks</span></div>
+      <div class="kicker">07 · <span class="scope">Checks</span></div>
       <h2>What was verified, and what still has to be</h2>
       <p class="sub">The rule in this repository is that a check is never reported as passed unless it was run. Here is where each one stands for this version.</p>
     </div>
@@ -278,13 +600,25 @@
         <div class="tag">Open question</div>
         <p><strong>The 100 GB claim.</strong> Six of the twenty assets promise 100 GB free. Competitors advertise storage numbers their apps do not deliver, and reviewers punish it. The number in the ads has to match the free tier the app actually grants — see the <a href="../05-free-100-gb-offer/">Free 100 GB Offer</a> tab.</p>
       </div>
+      <div class="card">
+        <div class="tag">Run · 24 Sep 2026</div>
+        <p><strong>Country evidence.</strong> The fifteen countries were scored by script from three pulls this repository already held: the Sensor Tower markets of 21 Sep, the 94-keyword rank board of 15 Sep and the 12-market probe of the same date. <code>research/ua-strategy/country-score.ps1</code> makes no network calls, so every figure in section 06 can be reproduced exactly.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Modelled, not measured</div>
+        <p><strong>The downloads column.</strong> Sensor Tower publishes the order of an app's three largest markets, never the split, so the 50/30/20 weighting is an assumption. Two of the eleven competitors — Daily Utility Apps and DataHatch — are missing from that pull altogether. The ranks column is measured; the downloads column is a model.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Not available</div>
+        <p><strong>Per-country spend and downloads.</strong> Re-checked live on 24 Sep 2026: AppBrain returned 403 to every request, Sensor Tower's and AppMagic's country panels need a paid seat, the Google Ads Transparency Center will not render to an automated fetch, and App Annie no longer exists — Sensor Tower absorbed data.ai in March 2024. No dollar ad-spend figure for any competitor could be obtained from any free source.</p>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="wrap foot">
-  <p class="small muted">Version 1 of the UA strategy · keyword board from the 15 Sep 2026 ASO research · ad assets published 23 Sep 2026. Source document in <a href="https://github.com/zaeem-ahmad-growth/Cloud-Storage-App/tree/main/research/ua-strategy">research/ua-strategy</a>.</p>
+  <p class="small muted">Version 1 of the UA strategy · keyword board from the 15 Sep 2026 ASO research · ad assets published 23 Sep 2026. Source document in <a href="https://github.com/zaeem-ahmad-growth/Cloud-Storage-App/tree/main/research/ua-strategy">research/ua-strategy</a>, where the competitor target-countries document sits alongside it.</p>
 </footer>
 
 <script>
