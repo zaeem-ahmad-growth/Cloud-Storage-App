@@ -72,6 +72,14 @@ Delivered 21 Sep 2026 (v2, after a title-check failure in v1): [research/google-
 - **Findings:** "cloud storage" is in 45 third-party titles from 44 developers (incl. all 11 competitors) — free to use; "backup and restore" in 42 titles/38 developers; "cloud backup" 12; "cloud drive" 8; "drive backup" 5. Head terms have 9–10/10 top results from big companies. Backup-and-restore keywords are most winnable (0–2 big companies in top-10, apps with 864–27.5K installs rank). "Secure vault" alone surfaces photo-hiding/app-lock apps — used only next to "cloud".
 - **Rules used:** a keyword many developers carry is generic, not a brand; brand identity = a real company/product name or an app's exact full title. Tested against 551 titles: 94% are unique to one app. All 10 headlines checked against all 551 titles and a live Play search each — no exact or near-exact match.
 
+## UA strategy (Version 1)
+
+Published 23 Sep 2026 as tab 06 (`tabs/06-ua-strategy/`), the first tab under the bar section **Version 1**; source in [research/ua-strategy/Cloud Storage UA Strategy v1.md](../research/ua-strategy/Cloud%20Storage%20UA%20Strategy%20v1.md). A second Google Ads asset set, separate from the 21 Sep one: 10 headlines (≤30 chars) and 10 descriptions (≤90 chars) built on the "out of space / switching phones" install moment, with the 100 GB free hook as the conversion trigger. Also carries an 8-keyword board (top: cloud storage backup and restore, priority 70, relevance 100; 6 of the 8 keywords have 0 competitors in the top 10) and a side-by-side of the first draft against a web-scraped re-run — 18 of 20 lines identical, headlines 2 and 7 the only ones that moved.
+
+- **Counts re-verified 23 Sep 2026:** every asset is inside its limit, but the source draft mislabelled headline 3 and all 10 descriptions by 1–5 chars. Verified headline lengths 29, 27, 22, 25, 29, 28, 23, 25, 25, 25; descriptions 82, 77, 77, 74, 74, 73, 75, 73, 75, 74.
+- **Title-collision check has not been run for this set** — the 21 Sep set's clearance does not carry over, so it must run before these assets go into an ad. No other company's brand or product name appears in the copy.
+- **Open:** six of the twenty assets promise 100 GB free; the number has to match the free tier the app actually grants (see the Free 100 GB Offer tab).
+
 ## Features and pricing
 
 Our app ships **14/14** audited features in full; strongest competitor (CloudGate) reaches **5.5/14**; 12 apps audited. Only in our app: real encryption (6/11 competitors offer only basic, none in full) and AI features (1/11 basic). Rare (1 competitor matches in full): duplicate cleaner, storage breakdown, WhatsApp media backup, media editing tools, sharing & gifting, home-screen widget. Table stakes (5+ competitors have at least basic): fingerprint lock/vault, real encryption, storage breakdown, file browsing & organization.

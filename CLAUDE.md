@@ -39,6 +39,7 @@ tabs/
   03-features-comparison/      data-page="features"
   04-competitors-graphics/     data-page="graphics"; competitor images in graphics/
   05-free-100-gb-offer/        self-contained page with its own CSS and JS (from a Claude artifact); images in img/
+  06-ua-strategy/                self-contained page in the "Version 1" section of the bar; no PAYLOAD
 docs/                          knowledge.md (always loaded) and README.md are written by hand; everything else is generated
   backend/                     per tab: the full code that draws it and the full data it reads; research.md: every research script
 .github/workflows/docs.yml     regenerates docs/ on GitHub after every push
@@ -61,7 +62,7 @@ research/                      backend data, scripts and reports behind the page
 2. Create `tabs/<NN>-<slug>/index.html`. `NN` is one more than the highest number in `tabs/`; `<slug>` is short, lowercase and hyphenated.
 3. Start from the page skeleton of an existing tab: the `<head>` (fonts and `../../assets/site.css`), the `<nav class="bar" id="bar">` block with an empty `<div class="tabs" id="site-tabs">`, and the `<script src="../../assets/nav.js"></script>` line straight after the nav. Set `<body data-page="<slug>">` and a `<title>` of the form `<Tab label> · Cloud Storage App`.
 4. Put the tab's own CSS and JS inline, or in files inside the tab folder. Save its images and data files in the tab folder and use relative paths (`img/chart.png`), never `/img/...` and never a claude.ai URL.
-5. Add one line to `TABS` in `assets/nav.js`: `{ slug: '<NN>-<slug>', label: '<Tab label>' }`.
+5. Add one line to `TABS` in `assets/nav.js`: `{ slug: '<NN>-<slug>', label: '<Tab label>' }`. To place the tab under a named section in the bar, put a `{ section: '<Section name>' }` line above it: that line draws the label, and every tab after it belongs to the section until the next `section` line. Tabs listed before the first `section` line stay ungrouped.
 6. The page must work at phone width and in light and dark mode. Reuse the CSS variables in `site.css` (`--surface`, `--ink`, `--accent`, `--line` and so on) instead of fixed colours.
 
 To turn a Claude artifact into a tab: read it with the Artifact tool (`action: "read"`), fetch every file it references (`action: "read"` with `paths`) into the tab folder, then wrap it in the skeleton above. An artifact keeps its own design: load `../../assets/bar.css` instead of `site.css`, give the nav `id="bar"` but no `bar` class (many artifacts use `.bar` and `.wrap` for their own elements), and keep the artifact's CSS and script inline. Drop the claude.ai frame-runtime script if the saved HTML has one at the top of `<head>`. `tabs/05-free-100-gb-offer/` is the worked example.

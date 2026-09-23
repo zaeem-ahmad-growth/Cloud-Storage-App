@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>UA Strategy · Cloud Storage App</title>
+<meta name="description" content="Version 1 of the user-acquisition strategy for Cloud Storage: Secure Vault: the ASO and Google Ads angle, the keyword board behind it, 10 headlines, 10 descriptions, and a side-by-side of the first draft against the web-scraped re-run.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  /* This page carries its own copy and needs no PAYLOAD, so it does not load app.js or data.js.
+     app.js is what normally measures the bar and sets --barh; without it the fallback is too short for this two-row bar. */
+  :root{ --barh:96px }
+
+  .assets{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:12px}
+  .asset{display:flex; align-items:baseline; gap:12px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:13px 15px}
+  .asset .n{flex:none; width:1.6em; font:600 12px/1.5 var(--mono); color:var(--muted); font-variant-numeric:tabular-nums}
+  .asset .t{flex:1 1 auto; min-width:0; color:var(--ink); overflow-wrap:anywhere}
+  .asset.head .t{font-weight:600}
+  .asset .c{flex:none; font:500 12px/1.5 var(--mono); color:var(--muted); font-variant-numeric:tabular-nums}
+
+  /* Comparison view switch: the wrapper carries data-view, each row carries data-match. */
+  [data-view] tbody tr{transition:background-color .12s ease}
+  [data-view="highlight"] tbody tr[data-match="exact"]{background:var(--good-soft)}
+  [data-view="highlight"] tbody tr[data-match="changed"]{background:var(--warn-soft)}
+  [data-view="diff"] tbody tr[data-match="exact"]{display:none}
+  [data-view="diff"] tbody tr[data-match="changed"]{background:var(--warn-soft)}
+  @media (prefers-reduced-motion: reduce){ [data-view] tbody tr{transition:none} }
+  .cmp td:nth-child(2), .cmp td:nth-child(4){min-width:16ch}
+  .cmp .idx{font:600 12px/1.5 var(--mono); color:var(--muted); font-variant-numeric:tabular-nums}
+  .subhead{margin-top:34px}
+  .mt12{margin-top:12px}
+</style>
+</head>
+<body data-page="ua-strategy">
+
+<nav class="bar" aria-label="Tabs, sections and controls" id="bar">
+  <div class="wrap bar-top">
+    <div class="tabs" id="site-tabs" aria-label="Tabs"></div>
+  </div>
+  <div class="wrap bar-sections" aria-label="Sections">
+    <div class="jump">
+      <a href="#summary">Summary</a><a href="#keywords">Keyword board</a><a href="#headlines">Headlines</a><a href="#descriptions">Descriptions</a><a href="#comparison">Side by side</a><a href="#checks">Checks</a>
+    </div>
+  </div>
+</nav>
+<script src="../../assets/nav.js"></script>
+
+<header class="wrap masthead">
+  <div class="eyebrow"><span><b>UA strategy</b></span><span>Version 1</span><span>Google Play · Google Ads</span><span>Keyword board 15 Sep 2026</span><span>Published 23 Sep 2026</span></div>
+  <h1>Cloud Storage UA Strategy</h1>
+  <p class="lede">The acquisition angle for <strong>Cloud Storage: Secure Vault</strong> in one page: why people install a cloud storage app, which keywords a listing with no brand behind it can actually win, and the ten headlines and ten descriptions that carry that angle into Google Ads.</p>
+  <div class="chips">
+    <span class="chip">10 headlines · ≤30 chars</span>
+    <span class="chip">10 descriptions · ≤90 chars</span>
+    <span class="chip">8 keywords scored</span>
+    <span class="chip">Title 27/30</span>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-main">
+      <div class="tag">The angle</div>
+      <p>People reach for a cloud storage app at two moments: <strong>the phone is out of space</strong>, or <strong>they are moving to a new phone</strong>. The <strong>100 GB free storage</strong> hook is what converts that moment — it is the trigger, not the argument. Every headline and description below either names the moment or names the hook.</p>
+    </div>
+    <div class="refresh">
+      <h3>How this version was built</h3>
+      <ol>
+        <li><strong>Scored the board</strong> — eight keywords by relevance, demand and entry bar.</li>
+        <li><strong>Picked the winnable ones</strong> — backup, restore and vault terms over head terms.</li>
+        <li><strong>Wrote the assets</strong> — ten headlines and ten descriptions inside the Google Ads limits.</li>
+        <li><strong>Re-ran it web-scraped</strong> — then compared the two drafts line by line.</li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<main class="wrap doc">
+
+  <section id="summary">
+    <div class="sec-head">
+      <div class="kicker">01 · <span class="scope">Executive summary</span></div>
+      <h2>What this strategy bets on</h2>
+      <p class="sub">A listing with no brand behind it will not take a head term off the big companies. It can own the phrases they never bothered to write into their titles.</p>
+    </div>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="tag">Driving force</div>
+        <h3>Low storage, or a new phone</h3>
+        <p>Installs come from a moment of need, not from browsing the category. The 100 GB free storage hook is the conversion trigger sitting on top of that moment.</p>
+      </div>
+      <div class="insight">
+        <div class="tag">Niche core terms</div>
+        <h3>Cloud storage · cloud backup · cloud drive</h3>
+        <p>The category head terms. High demand, brand-held top three — worth carrying in the copy for relevance, not worth treating as the whole plan.</p>
+      </div>
+      <div class="insight">
+        <div class="tag">Winnable terms</div>
+        <h3>Secure vault · backup and restore · photo backup</h3>
+        <p>Low competition and directly on-intent. This is where a new listing can take a top-10 slot, and where the app is already named for the job.</p>
+      </div>
+      <div class="insight">
+        <div class="tag">Policy</div>
+        <h3>Generic, not brand</h3>
+        <p><em>Vault</em>, <em>cloud drive</em> and <em>cloud storage</em> are category terms carried across many competitor titles, so they are free to use. No other company's product name appears anywhere in this copy.</p>
+      </div>
+    </div>
+
+    <h3 class="subhead">Title strategy</h3>
+    <div class="tscroll mt12">
+      <table>
+        <thead><tr><th>Title</th><th class="nowrap">Length</th><th>Standing</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cloud Storage: Secure Vault</strong></td><td class="num">27/30</td><td><span class="pill p-good">Selected</span> — pairs the head term with the open "secure vault" niche.</td></tr>
+          <tr><td>Cloud Storage &amp; Backup Drive</td><td class="num">28/30</td><td><span class="pill p-mute">Alternative</span> — the widest keyword coverage of the three.</td></tr>
+          <tr><td>Cloud Drive: Secure File Vault</td><td class="num">28/30</td><td><span class="pill p-mute">Alternative</span> — leans hardest into the vault niche.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">"Cloud Storage: Secure Vault" is the title live on Google Play today. The two alternatives are held for a future listing test, not queued to ship.</p>
+  </section>
+
+  <section id="keywords">
+    <div class="sec-head">
+      <div class="kicker">02 · <span class="scope">Keyword board</span></div>
+      <h2>Keyword metrics and competitor analysis</h2>
+      <p class="sub">Eight keywords scored on relevance to this app, search demand, and how hard the top ten is to enter. The last column counts how many of the eleven tracked competitors hold a top-10 slot on that keyword.</p>
+    </div>
+
+    <div class="tscroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Keyword</th><th class="nowrap">Priority</th><th class="nowrap">Relevance</th><th class="nowrap">Demand</th><th>Entry bar</th><th>Competitors in top 10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="kw">cloud storage backup and restore</td><td class="num">70</td><td class="num">100</td><td class="num">57</td><td><span class="pill p-warn">Medium</span> <span class="small muted">3.9K installs</span></td><td>2 <span class="small muted">(Fazcon #10)</span></td></tr>
+          <tr><td class="kw">secure cloud storage</td><td class="num">46</td><td class="num">90</td><td class="num">63</td><td><span class="pill p-risk">High</span> <span class="small muted">34K installs</span></td><td>0</td></tr>
+          <tr><td class="kw">cloud backup and restore</td><td class="num">46</td><td class="num">85</td><td class="num">68</td><td><span class="pill p-risk">High</span> <span class="small muted">27K installs</span></td><td>0</td></tr>
+          <tr><td class="kw">private cloud storage</td><td class="num">43</td><td class="num">90</td><td class="num">63</td><td><span class="pill p-risk">High</span> <span class="small muted">34K installs</span></td><td>0</td></tr>
+          <tr><td class="kw">cloud backup cloud storage</td><td class="num">40</td><td class="num">100</td><td class="num">0</td><td><span class="pill p-warn">Medium</span> <span class="small muted">27K installs</span></td><td>3 <span class="small muted">(&amp; Drive #2)</span></td></tr>
+          <tr><td class="kw">drive backup</td><td class="num">40</td><td class="num">88</td><td class="num">40</td><td><span class="pill p-risk">High</span> <span class="small muted">27K installs</span></td><td>0</td></tr>
+          <tr><td class="kw">cloud photos backup</td><td class="num">39</td><td class="num">87</td><td class="num">47</td><td><span class="pill p-good">Low</span> <span class="small muted">3.9K installs</span></td><td>0</td></tr>
+          <tr><td class="kw">data backup</td><td class="num">38</td><td class="num">83</td><td class="num">40</td><td><span class="pill p-good">Very low</span> <span class="small muted">&lt;1K installs</span></td><td>0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">The entry bar is the install count of the weakest app currently holding a top-10 slot — the rough cost of entry. Six of the eight keywords have no tracked competitor in the top ten at all, and that gap is the opening this strategy plays for. Demand 0 on "cloud backup cloud storage" means the phrase draws no measurable volume on its own; it is kept for its perfect relevance score inside longer queries.</p>
+  </section>
+
+  <section id="headlines">
+    <div class="sec-head">
+      <div class="kicker">03 · <span class="scope">Google Ads</span></div>
+      <h2>Ten headlines</h2>
+      <p class="sub">Google Ads allows 30 characters per headline. The lengths below were re-counted on 23 Sep 2026 and are the verified figures.</p>
+    </div>
+    <div class="assets">
+      <div class="asset head"><span class="n">1</span><span class="t">Get 100 GB Free Cloud Storage</span><span class="c">29/30</span></div>
+      <div class="asset head"><span class="n">2</span><span class="t">Cloud Storage: Secure Vault</span><span class="c">27/30</span></div>
+      <div class="asset head"><span class="n">3</span><span class="t">Free Up Space On Phone</span><span class="c">22/30</span></div>
+      <div class="asset head"><span class="n">4</span><span class="t">Auto Photo &amp; Video Backup</span><span class="c">25/30</span></div>
+      <div class="asset head"><span class="n">5</span><span class="t">Secure Cloud Backup &amp; Restore</span><span class="c">29/30</span></div>
+      <div class="asset head"><span class="n">6</span><span class="t">Backup Photos to Cloud Drive</span><span class="c">28/30</span></div>
+      <div class="asset head"><span class="n">7</span><span class="t">100 GB Free Cloud Drive</span><span class="c">23/30</span></div>
+      <div class="asset head"><span class="n">8</span><span class="t">Private Cloud Data Backup</span><span class="c">25/30</span></div>
+      <div class="asset head"><span class="n">9</span><span class="t">Free Storage &amp; File Vault</span><span class="c">25/30</span></div>
+      <div class="asset head"><span class="n">10</span><span class="t">Restore Data to Any Phone</span><span class="c">25/30</span></div>
+    </div>
+    <p class="note">Four headlines carry the free-storage hook, four carry backup and restore, two carry the vault angle — so whichever combination Google assembles, the ad still names a reason to install.</p>
+  </section>
+
+  <section id="descriptions">
+    <div class="sec-head">
+      <div class="kicker">04 · <span class="scope">Google Ads</span></div>
+      <h2>Ten descriptions</h2>
+      <p class="sub">Google Ads allows 90 characters per description. The lengths below were re-counted on 23 Sep 2026 and are the verified figures.</p>
+    </div>
+    <div class="assets">
+      <div class="asset"><span class="n">1</span><span class="t">Claim 100 GB free cloud storage instantly. Free up space on your phone in minutes.</span><span class="c">82/90</span></div>
+      <div class="asset"><span class="n">2</span><span class="t">Back up photos, videos, and files automatically. Keep all your memories safe.</span><span class="c">77/90</span></div>
+      <div class="asset"><span class="n">3</span><span class="t">Running out of phone space? Move photos to secure cloud storage with one tap.</span><span class="c">77/90</span></div>
+      <div class="asset"><span class="n">4</span><span class="t">Encrypt sensitive documents and photos inside a private, safe cloud vault.</span><span class="c">74/90</span></div>
+      <div class="asset"><span class="n">5</span><span class="t">Restore files, photos, and videos to any new phone quickly without cables.</span><span class="c">74/90</span></div>
+      <div class="asset"><span class="n">6</span><span class="t">Save full-quality photos and videos to cloud storage without compression.</span><span class="c">73/90</span></div>
+      <div class="asset"><span class="n">7</span><span class="t">Clear phone storage safely while keeping your files protected in the cloud.</span><span class="c">75/90</span></div>
+      <div class="asset"><span class="n">8</span><span class="t">Preview photos and stream video backups directly inside your cloud drive.</span><span class="c">73/90</span></div>
+      <div class="asset"><span class="n">9</span><span class="t">Protect your phone data with automatic background cloud backup and restore.</span><span class="c">75/90</span></div>
+      <div class="asset"><span class="n">10</span><span class="t">Get instant 100 GB cloud space. Move big files online and free up storage.</span><span class="c">74/90</span></div>
+    </div>
+    <p class="note">Every description sits 8–17 characters under the limit, which leaves room to swap a longer phrase in during testing without rewriting the line.</p>
+  </section>
+
+  <section id="comparison">
+    <div class="sec-head">
+      <div class="kicker">05 · <span class="scope">Side by side</span></div>
+      <h2>First draft against the web-scraped re-run</h2>
+      <p class="sub">The assets were written once from the analysis, then written again from freshly scraped Play data. Twenty lines, eighteen of them identical — the two that moved are the interesting ones.</p>
+    </div>
+
+    <div class="controls">
+      <div class="chipset" role="group" aria-label="Comparison view" id="cmp-controls">
+        <button type="button" data-set="highlight" aria-pressed="true">Highlight matches</button>
+        <button type="button" data-set="diff" aria-pressed="false">Show differences only</button>
+        <button type="button" data-set="plain" aria-pressed="false">Plain view</button>
+      </div>
+    </div>
+
+    <div id="cmp" data-view="highlight">
+      <h3>Headlines</h3>
+      <div class="tscroll mt12">
+        <table class="cmp">
+          <thead>
+            <tr><th>#</th><th>First draft</th><th class="nowrap">Chars</th><th>Web-scraped re-run</th><th class="nowrap">Chars</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr data-match="exact"><td class="idx">1</td><td>Get 100 GB Free Cloud Storage</td><td class="num">29</td><td>Get 100 GB Free Cloud Storage</td><td class="num">29</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="changed"><td class="idx">2</td><td>Cloud Storage &amp; Secure Vault</td><td class="num">28</td><td>Cloud Storage: Secure Vault</td><td class="num">27</td><td><span class="pill p-warn">Changed</span> <span class="small muted">matched to the live title</span></td></tr>
+            <tr data-match="exact"><td class="idx">3</td><td>Free Up Space On Phone</td><td class="num">22</td><td>Free Up Space On Phone</td><td class="num">22</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">4</td><td>Auto Photo &amp; Video Backup</td><td class="num">25</td><td>Auto Photo &amp; Video Backup</td><td class="num">25</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">5</td><td>Secure Cloud Backup &amp; Restore</td><td class="num">29</td><td>Secure Cloud Backup &amp; Restore</td><td class="num">29</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">6</td><td>Backup Photos to Cloud Drive</td><td class="num">28</td><td>Backup Photos to Cloud Drive</td><td class="num">28</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="changed"><td class="idx">7</td><td>100 GB Cloud Storage Drive</td><td class="num">26</td><td>100 GB Free Cloud Drive</td><td class="num">23</td><td><span class="pill p-warn">Changed</span> <span class="small muted">rewritten around the free hook</span></td></tr>
+            <tr data-match="exact"><td class="idx">8</td><td>Private Cloud Data Backup</td><td class="num">25</td><td>Private Cloud Data Backup</td><td class="num">25</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">9</td><td>Free Storage &amp; File Vault</td><td class="num">25</td><td>Free Storage &amp; File Vault</td><td class="num">25</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">10</td><td>Restore Data to Any Phone</td><td class="num">25</td><td>Restore Data to Any Phone</td><td class="num">25</td><td><span class="pill p-good">Unchanged</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="subhead">Descriptions</h3>
+      <div class="tscroll mt12">
+        <table class="cmp">
+          <thead>
+            <tr><th>#</th><th>First draft</th><th class="nowrap">Chars</th><th>Web-scraped re-run</th><th class="nowrap">Chars</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr data-match="exact"><td class="idx">1</td><td>Claim 100 GB free cloud storage instantly. Free up space on your phone in minutes.</td><td class="num">82</td><td>Claim 100 GB free cloud storage instantly. Free up space on your phone in minutes.</td><td class="num">82</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">2</td><td>Back up photos, videos, and files automatically. Keep all your memories safe.</td><td class="num">77</td><td>Back up photos, videos, and files automatically. Keep all your memories safe.</td><td class="num">77</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">3</td><td>Running out of phone space? Move photos to secure cloud storage with one tap.</td><td class="num">77</td><td>Running out of phone space? Move photos to secure cloud storage with one tap.</td><td class="num">77</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">4</td><td>Encrypt sensitive documents and photos inside a private, safe cloud vault.</td><td class="num">74</td><td>Encrypt sensitive documents and photos inside a private, safe cloud vault.</td><td class="num">74</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">5</td><td>Restore files, photos, and videos to any new phone quickly without cables.</td><td class="num">74</td><td>Restore files, photos, and videos to any new phone quickly without cables.</td><td class="num">74</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">6</td><td>Save full-quality photos and videos to cloud storage without compression.</td><td class="num">73</td><td>Save full-quality photos and videos to cloud storage without compression.</td><td class="num">73</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">7</td><td>Clear phone storage safely while keeping your files protected in the cloud.</td><td class="num">75</td><td>Clear phone storage safely while keeping your files protected in the cloud.</td><td class="num">75</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">8</td><td>Preview photos and stream video backups directly inside your cloud drive.</td><td class="num">73</td><td>Preview photos and stream video backups directly inside your cloud drive.</td><td class="num">73</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">9</td><td>Protect your phone data with automatic background cloud backup and restore.</td><td class="num">75</td><td>Protect your phone data with automatic background cloud backup and restore.</td><td class="num">75</td><td><span class="pill p-good">Unchanged</span></td></tr>
+            <tr data-match="exact"><td class="idx">10</td><td>Get instant 100 GB cloud space. Move big files online and free up storage.</td><td class="num">74</td><td>Get instant 100 GB cloud space. Move big files online and free up storage.</td><td class="num">74</td><td><span class="pill p-good">Unchanged</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="note">Two lines moved, both of them headlines. Headline 2 was pulled into line with the title that actually shipped. Headline 7 dropped "Storage Drive" for "Free Cloud Drive", trading a keyword for the offer hook — the one place in the set where the two drafts disagree on substance.</p>
+  </section>
+
+  <section id="checks">
+    <div class="sec-head">
+      <div class="kicker">06 · <span class="scope">Checks</span></div>
+      <h2>What was verified, and what still has to be</h2>
+      <p class="sub">The rule in this repository is that a check is never reported as passed unless it was run. Here is where each one stands for this version.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="tag">Run · 23 Sep 2026</div>
+        <p><strong>Character counts.</strong> All twenty assets re-counted with a script. Every one is inside the Google Ads limit. The source draft mislabelled headline 3 and all ten descriptions by one to five characters; the figures on this page are the counted ones.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Run · 23 Sep 2026</div>
+        <p><strong>Brand names.</strong> No other company's brand or product name appears in any headline or description. "Cloud storage", "cloud drive", "cloud backup" and "backup and restore" are category terms carried by many developers' titles and are free to use.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Not yet run</div>
+        <p><strong>Title-collision check.</strong> This set differs from the 21 Sep asset set, so that set's clearance does not carry over. Each headline still needs the script check against the tracked titles <em>and</em> a live Google Play search before any of it goes into an ad.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Open question</div>
+        <p><strong>The 100 GB claim.</strong> Six of the twenty assets promise 100 GB free. Competitors advertise storage numbers their apps do not deliver, and reviewers punish it. The number in the ads has to match the free tier the app actually grants — see the <a href="../05-free-100-gb-offer/">Free 100 GB Offer</a> tab.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p class="small muted">Version 1 of the UA strategy · keyword board from the 15 Sep 2026 ASO research · ad assets published 23 Sep 2026. Source document in <a href="https://github.com/zaeem-ahmad-growth/Cloud-Storage-App/tree/main/research/ua-strategy">research/ua-strategy</a>.</p>
+</footer>
+
+<script>
+(function () {
+  var box = document.getElementById('cmp');
+  var controls = document.getElementById('cmp-controls');
+  if (!box || !controls) return;
+  var buttons = controls.querySelectorAll('button[data-set]');
+  controls.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-set]');
+    if (!btn) return;
+    box.setAttribute('data-view', btn.getAttribute('data-set'));
+    Array.prototype.forEach.call(buttons, function (b) {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
