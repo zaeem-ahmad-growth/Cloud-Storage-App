@@ -1026,3 +1026,9 @@ Images: [ad-frames.jpg](../research/free-gb-offer-analysis/offer-study/img/ad-fr
 - **[Cloud_Vault_Play_Store_Portfolio_Optimized.md](../research/reports/Cloud_Vault_Play_Store_Portfolio_Optimized.md)** · 3 KB · Markdown: “Cloud_Vault_Play_Store_Portfolio_Optimized”, “Cloud Vault”, “Google Play Store Creative Portfolio”, “Secure.”, “Backup.”, “Access.”, “Campaign Overview”, “Eight coordinated creatives with one consistent visual language.”, “Your Files Always With You”, “Back Up What Matters”, “Backup Photos & Videos”, “Free Up Your Phone Storage”, “All Your Files In One Place”, “Powerful Tools”
 - **[Cloud_Vault_Play_Store_Portfolio_Optimized.pdf](../research/reports/Cloud_Vault_Play_Store_Portfolio_Optimized.pdf)** · 1.3 MB · PDF · text version: [Cloud_Vault_Play_Store_Portfolio_Optimized.md](../research/reports/Cloud_Vault_Play_Store_Portfolio_Optimized.md)
 
+## research/ua-strategy/
+
+1 files · 6 KB
+
+- **[Cloud Storage UA Strategy v1.md](../research/ua-strategy/Cloud%20Storage%20UA%20Strategy%20v1.md)** · 6 KB · Markdown: “Cloud Storage App — ASO & Google Ads Campaign Strategy”, “Executive Summary & Deep Analysis”, “Keyword Metrics & Competitor Analysis”, “Google Ads Campaign Text Ad Assets”, “10 Headlines (max 30 characters each)”, “10 Descriptions (max 90 characters each)”, “Side-by-Side Asset Comparison”, “Headlines”, “Descriptions”, “Checks”
+

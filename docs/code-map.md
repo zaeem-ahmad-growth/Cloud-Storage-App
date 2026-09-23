@@ -88,6 +88,21 @@ Markup: [tabs/05-free-100-gb-offer/index.html](../tabs/05-free-100-gb-offer/inde
 | Section | Menu label | Heading in the markup | Markup line | Filled by (assets/app.js) | Data read |
 | --- | --- | --- | --- | --- | --- |
 
+<a id="06-ua-strategy"></a>
+
+## UA Strategy
+
+Markup: [tabs/06-ua-strategy/index.html](../tabs/06-ua-strategy/index.html) · `<body data-page="ua-strategy">` · self-contained page (static HTML plus the inline script at the bottom of the file) · [text snapshot](tabs/06-ua-strategy.md)
+
+| Section | Menu label | Heading in the markup | Markup line | Filled by (assets/app.js) | Data read |
+| --- | --- | --- | --- | --- | --- |
+| [#summary](tabs/06-ua-strategy.md#summary) | Summary | What this strategy bets on | [L82](../tabs/06-ua-strategy/index.html#L82) | static markup / inline script |  |
+| [#keywords](tabs/06-ua-strategy.md#keywords) | Keyword board | Keyword metrics and competitor analysis | [L126](../tabs/06-ua-strategy/index.html#L126) | static markup / inline script |  |
+| [#headlines](tabs/06-ua-strategy.md#headlines) | Headlines | Ten headlines | [L155](../tabs/06-ua-strategy/index.html#L155) | static markup / inline script |  |
+| [#descriptions](tabs/06-ua-strategy.md#descriptions) | Descriptions | Ten descriptions | [L176](../tabs/06-ua-strategy/index.html#L176) | static markup / inline script |  |
+| [#comparison](tabs/06-ua-strategy.md#comparison) | Side by side | First draft against the web-scraped re-run | [L197](../tabs/06-ua-strategy/index.html#L197) | static markup / inline script |  |
+| [#checks](tabs/06-ua-strategy.md#checks) | Checks | What was verified, and what still has to be | [L258](../tabs/06-ua-strategy/index.html#L258) | static markup / inline script |  |
+
 ## All functions in assets/app.js
 
 | Function | Lines | Data read |
