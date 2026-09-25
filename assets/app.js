@@ -355,7 +355,7 @@
     document.getElementById('g-summary').innerHTML = `<thead><tr><th>#</th><th>Reference</th><th>Publisher</th><th class="num">Downloads</th><th class="num">Rating</th><th class="num">Portrait</th><th class="num">Landscape</th><th>Listing</th></tr></thead><tbody>` +
       G.table.map((t, k) => { const app = G.apps.find(a => a.id === t.id); return `<tr><td class="num muted">${app.num}</td><td><a href="#g-${t.id}"><b>${esc(t.name)}</b></a><div class="small muted">${esc(app.title)}</div></td><td>${esc(t.publisher)}</td><td class="num">${esc(t.downloads)}</td><td class="num">${esc(t.rating)}</td><td class="num">${t.portrait}</td><td class="num">${t.landscape}</td><td class="nowrap"><a href="${esc(app.playUrl)}" target="_blank" rel="noopener">Google Play ↗</a></td></tr>`; }).join('') + '</tbody>';
 
-    document.getElementById('g-app').innerHTML = '<option value="">All 11 apps</option>' + G.apps.map(app => `<option value="${app.id}">${app.num} · ${esc(app.name)}</option>`).join('');
+    document.getElementById('g-app').innerHTML = '<option value="">All 12 apps</option>' + G.apps.map(app => `<option value="${app.id}">${app.num} · ${esc(app.name)}</option>`).join('');
 
     document.getElementById('g-applist').innerHTML = G.apps.map(app => {
       const row = G.table.find(t => t.id === app.id);

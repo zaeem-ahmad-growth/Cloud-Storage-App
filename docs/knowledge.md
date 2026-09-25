@@ -1,6 +1,6 @@
 # Cloud Storage: Secure Vault: knowledge base
 
-Loaded automatically in every Claude session in this repo. Facts as of 22 Sep 2026 (ASO data refreshed 15 Sep, Google Ads assets 21 Sep, free-GB study and install count 22 Sep, competitor country analysis 24 Sep); detail lives in the files linked below.
+Loaded automatically in every Claude session in this repo. Facts as of 22 Sep 2026 (ASO data refreshed 15 Sep, Google Ads assets 21 Sep, free-GB study and install count 22 Sep, competitor country analysis 24 Sep, live listing assets and copy re-read 25 Sep); detail lives in the files linked below.
 
 ## The app
 
@@ -8,8 +8,8 @@ Loaded automatically in every Claude session in this repo. Facts as of 22 Sep 20
 - **Installs:** 500+ (Google Ads assets doc, 21 Sep) → 600 (Free 100 GB Offer tab, 22 Sep). Not ranking yet: 0 of 38 live US searches (21 Sep), absent from the 94-keyword ASO board (15 Sep).
 - **Monetization:** contains ads. Live US listing IAP: **$9.99–$49.99/item** (15 Sep). The Features Comparison research separately captures PKR paywall pricing (see below).
 - **Links:** [Play listing](https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault&hl=en&gl=US) · [Privacy policy](https://cloud-vault.tech/privacy.html) · [Developer site](https://cellcave.github.io/cell-cave-website/)
-- **Assets:** icon, feature graphic, 4 screenshots (Play allows up to 8; competitors publish 5–14).
-- **Short description (80/80):** "Secure, private backup for photos, videos & data. Restore to any phone in a tap." Full description: 2,681/4,000 chars, copied 15 Sept 2026.
+- **Assets (25 Sep 2026):** icon (512×512), feature graphic (1024×500) and **17 screenshots** — 7 phone (3 portrait 1080×1920, 4 landscape 1920×1080), 5 at 1280×720 and 5 at 2560×1440 (Play allows up to 8 per device type). Icon and feature graphic are both new since the 22 Sep capture, when the phone set was 4 screenshots.
+- **Short description (80/80):** "Secure, private backup for photos, videos & data. Restore to any phone in a tap." Full description: 2,681/4,000 chars. Re-read 25 Sep 2026: still 2,681 chars, with three changes since the stored copy - "Cloud Storage: Secure Vault" now uses a colon in the WHY paragraph, a trailing space was dropped, and the closing paragraph gained a blank line before it.
 
 ## Listing decisions
 
@@ -97,9 +97,9 @@ Our app ships **14/14** audited features in full; strongest competitor (CloudGat
 
 ## Competitor graphics
 
-Captured 14 Sep 2026: 11 apps, 11 icons (512×512), 11 feature graphics (1024×500), 90 screenshots (74 portrait, 16 landscape).
+Competitors captured 14 Sep 2026, our own listing 25 Sep 2026: **12 apps** (ours first), 12 icons (512×512), 12 feature graphics (1024×500), 107 screenshots (77 portrait, 30 landscape).
 
-- All 11 icons use a cloud; 10 sit on a blue/blue-purple field, Utility Forge alone uses cyan on white — a new blue cloud alone risks looking generic.
+- All 12 icons use a cloud; 11 sit on a blue/blue-purple field, Utility Forge alone uses cyan on white — a new blue cloud alone risks looking generic. Our own icon is a filled white three-lobe cloud with a down/up sync badge on blue, carrying no capacity or offer text.
 - Strongest references: **Fazcon** (portrait-to-landscape adaptation), **MindByte** (restrained white surfaces, attached UI callouts), **Fuzon** (expanded category sheets), **Nova Cloud** (dimensional purple/cyan materials).
 - Guidance: keep the approved icon identity (four-circle cloud, centered badges); choose **one** screenshot system; build a six-screen narrative (home/value, photo-video preservation, backup progress+completion, restore, vault, scan/share); design landscape separately; treat the feature graphic as its own asset. Play limits: 512×512 PNG icon, 1024×500 JPEG/24-bit PNG feature graphic, up to 8 screenshots/device type; avoid promo wording (free offers) on the feature graphic.
 
