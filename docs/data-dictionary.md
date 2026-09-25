@@ -114,42 +114,42 @@
   - `phrases[]` · array of 10 string · e.g. `["cloud storage","backup and restore","secure cloud storage","cloud drive"]`
   - `verify[]` · array of 9 string · e.g. `["Free storage amount and the 100GB / 1TB / 2TB plan sizes","Encryption in transit and at rest","Version history","Offline files"]`
 - `graphics` · object with 9 keys:
-  - `overview[]` · array of 4 string · e.g. `["The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.","All 11 icons use a cloud. Ten place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.","Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.","The archive contains 11 icons, 11 feature graphics and 90 unique screenshot URLs: 74 portrait and 16 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."]`
-  - `captureNote` · string · e.g. `"Original assets captured 14 September 2026. Requested listing locale: …"`
-  - `table[]` · array of 11 objects:
-    - `id` · string · e.g. `"01-cloudgate"`
-    - `name` · string · e.g. `"CloudGate"`
-    - `publisher` · string · e.g. `"CloudGate Technologies"`
-    - `downloads` · string · e.g. `"100K+"`
-    - `rating` · string · e.g. `"4.1"`
-    - `portrait` · number · e.g. `6`
-    - `landscape` · number · e.g. `0`
-  - `scope[]` · array of 5 string · e.g. `["Snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.","Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.","Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.","All 112 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets."]`
-  - `apps[]` · array of 11 objects:
-    - `id` · string · e.g. `"01-cloudgate"`
-    - `num` · string · e.g. `"01"`
-    - `name` · string · e.g. `"CloudGate"`
-    - `title` · string · e.g. `"Cloudgate: Cloud Storage Drive"`
-    - `publisher` · string · e.g. `"CloudGate Technologies"`
-    - `downloads` · string · e.g. `"100K+"`
-    - `playUrl` · string · e.g. `"https://play.google.com/store/apps/details?id=com.cloudgate.cloudstora…"`
+  - `overview[]` · array of 4 string · e.g. `["The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.","All 12 icons use a cloud. Eleven place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Our own icon sits in that blue majority, separated mainly by its filled three-lobe cloud and the down/up sync badge rather than by colour. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.","Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova; our own listing is the smallest in the library at 500+. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.","The archive contains 12 icons, 12 feature graphics and 107 unique screenshot URLs: 77 portrait and 30 landscape. Our own listing supplies 1 icon, 1 feature graphic and 17 screenshots of that total, 3 portrait and 14 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."]`
+  - `captureNote` · string · e.g. `"Competitor assets captured 14 September 2026; our own listing assets c…"`
+  - `table[]` · array of 12 objects:
+    - `id` · string · e.g. `"00-cloud-storage-secure-vault"`
+    - `name` · string · e.g. `"Cloud Storage: Secure Vault"`
+    - `publisher` · string · e.g. `"Cell Cave"`
+    - `downloads` · string · e.g. `"500+"`
+    - `rating` · string · e.g. `"Not returned"`
+    - `portrait` · number · e.g. `3`
+    - `landscape` · number · e.g. `14`
+  - `scope[]` · array of 5 string · e.g. `["Competitor snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, and our own listing re-read on 25 September 2026, both requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.","Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.","Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.","All 131 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets."]`
+  - `apps[]` · array of 12 objects:
+    - `id` · string · e.g. `"00-cloud-storage-secure-vault"`
+    - `num` · string · e.g. `"00"`
+    - `name` · string · e.g. `"Cloud Storage: Secure Vault"`
+    - `title` · string · e.g. `"Cloud Storage: Secure Vault"`
+    - `publisher` · string · e.g. `"Cell Cave"`
+    - `downloads` · string · e.g. `"500+"`
+    - `playUrl` · string · e.g. `"https://play.google.com/store/apps/details?id=com.softwarealliance.clo…"`
     - `notes` · object with 4 keys:
-      - `Icon` · string · e.g. `"A white continuous cloud outline sits on a cyan-to-blue field. A red c…"`
-      - `Feature graphic` · string · e.g. `"A centered wordmark and capacity strip dominate a blue banner with fai…"`
-      - `Screenshot system` · string · e.g. `"Six portrait panels repeat an indigo background, centered white headin…"`
-      - `Design assessment` · string · e.g. `"Useful for a consistent portrait template and connected photo popups. …"`
-    - `tags[]` · array of 6 string · e.g. `["outline cloud","indigo","centered headings","gallery popups"]`
-    - `noLandscape` · boolean · e.g. `true`
-    - `assets[]` · array of 8 objects:
+      - `Icon` · string · e.g. `"A white three-lobe cloud sits on a bright blue gradient with soft wave…"`
+      - `Feature graphic` · string · e.g. `"The app name is set in two lines at the left over a pale blue wave fie…"`
+      - `Screenshot system` · string · e.g. `"Seven phone panels run headline-above-device on one pale blue wave bac…"`
+      - `Design assessment` · string · e.g. `"The most internally consistent set in this library: one background sys…"`
+    - `tags[]` · array of 7 string · e.g. `["our app","filled cloud","sync badge","blue waves"]`
+    - `assets[]` · array of 19 objects:
       - `kind` · string · e.g. `"icon"`
       - `orient` · string · e.g. `"square"`
-      - `file` · string · e.g. `"01-cloudgate/icon-01.png"`
-      - `alt` · string · e.g. `"A white continuous cloud outline sits on a cyan-to-blue field. A red c…"`
+      - `file` · string · e.g. `"00-cloud-storage-secure-vault/icon-01.png"`
+      - `alt` · string · e.g. `"A white three-lobe cloud sits on a bright blue gradient with soft wave…"`
       - `label` · string · e.g. `"Icon 01"`
       - `w` · number · e.g. `512`
       - `h` · number · e.g. `512`
       - `caption` · string · e.g. `"Original listing asset"`
-      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/uyHV-mrKyUmPhlHOaBdf2_f5rnjvlqD7…"`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/tiTl5Bh1EKxT8IuyKDl3syleNmk7-QzV…"`
+    - `noLandscape` · boolean · e.g. `true`
   - `patterns[]` · array of 8 objects:
     - `h` · string · e.g. `"Icon silhouette"`
     - `html` · string · e.g. `"Large filled clouds survive reduction better than thin strokes and sev…"`
@@ -161,9 +161,9 @@
 - `mymeta` · object with 24 keys:
   - `appId` · string · e.g. `"com.softwarealliance.cloudvault"`
   - `url` · string · e.g. `"https://play.google.com/store/apps/details?id=com.softwarealliance.clo…"`
-  - `fetchedAt` · string · e.g. `"2026-09-15T11:19:50.756Z"`
+  - `fetchedAt` · string · e.g. `"2026-09-25T09:20:00.000Z"`
   - `title` · string · e.g. `"Cloud Storage: Secure Vault"`
-  - `summary` · string · e.g. `"Free up space, backup photos & videos to a safe online drive. Sync and…"`
+  - `summary` · string · e.g. `"Secure, private backup for photos, videos & data. Restore to any phone…"`
   - `description` · string · e.g. `"Running out of space? Move your photos, videos and files to secure clo…"`
   - `installsLabel` · string · e.g. `"500+"`
   - `realInstalls` · number · e.g. `597`
@@ -182,18 +182,20 @@
   - `assets` · object with 3 keys:
     - `icon` · object with 4 keys:
       - `file` · string · e.g. `"../../assets/mylisting/icon.png"`
-      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/vEzREmfRl0dxDsKHpa41wB6tIcpItEu_…"`
-      - `bytes` · number · e.g. `39542`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/tiTl5Bh1EKxT8IuyKDl3syleNmk7-QzV…"`
+      - `bytes` · number · e.g. `294943`
       - `type` · string · e.g. `"image/png"`
     - `feature` · object with 4 keys:
       - `file` · string · e.g. `"../../assets/mylisting/feature-graphic.png"`
-      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/hNR2efqDB7DKTDcxyCV967DAEfEDQaph…"`
-      - `bytes` · number · e.g. `318633`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g1…"`
+      - `bytes` · number · e.g. `184790`
       - `type` · string · e.g. `"image/png"`
-    - `screenshots[]` · array of 4 objects:
+    - `screenshots[]` · array of 17 objects:
       - `file` · string · e.g. `"../../assets/mylisting/screenshot-01.png"`
-      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/VIpZ2wVQ5U2FK2DTSmUUOwg5XSj3Os1i…"`
-      - `bytes` · number · e.g. `715297`
+      - `src` · string · e.g. `"https://play-lh.googleusercontent.com/XpeF1GkqmPFAKLPSWtBvwFxRxKVipQ9Q…"`
+      - `bytes` · number · e.g. `707612`
+      - `w` · number · e.g. `1080`
+      - `h` · number · e.g. `1920`
       - `type` · string · e.g. `"image/png"`
   - `sep8` · object with 5 keys:
     - `titles[]` · array of 3 string · e.g. `["Cloud Storage - Photo Backup","Cloud Drive: Secure File Vault","Phone Backup - Cloud Storage"]`

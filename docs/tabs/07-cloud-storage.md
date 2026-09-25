@@ -6,7 +6,7 @@
 
 <a id="overview"></a>
 
-![Cloud Storage app icon: a white cloud outline with an up and down arrow badge on a bright blue field](../../tabs/07-cloud-storage/gfx/icon.png)
+![Cloud Storage app icon: a filled white three-lobe cloud with a circular down and up arrow badge on a bright blue field](../../tabs/07-cloud-storage/gfx/icon.png)
 
 Android app · Product dossier · com.softwarealliance.cloudvault
 
@@ -359,7 +359,7 @@ Graphics
 
 ## Brand assets and store readiness
 
-The icon is the publisher's, added in 0.2.5 as an adaptive icon with round and themed variants. The feature graphic and screenshots are the live listing's, from this site's listing assets.
+The icon is the publisher's, added in 0.2.5 as an adaptive icon with round and themed variants; the one shown here is the live listing icon as read on 25 Sep 2026. The feature graphic and screenshots are the live listing's, from this site's listing assets.
 
 ![Play icon](../../tabs/07-cloud-storage/gfx/icon.png)
 

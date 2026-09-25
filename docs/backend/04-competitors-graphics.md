@@ -84,7 +84,7 @@
     document.getElementById('g-summary').innerHTML = `<thead><tr><th>#</th><th>Reference</th><th>Publisher</th><th class="num">Downloads</th><th class="num">Rating</th><th class="num">Portrait</th><th class="num">Landscape</th><th>Listing</th></tr></thead><tbody>` +
       G.table.map((t, k) => { const app = G.apps.find(a => a.id === t.id); return `<tr><td class="num muted">${app.num}</td><td><a href="#g-${t.id}"><b>${esc(t.name)}</b></a><div class="small muted">${esc(app.title)}</div></td><td>${esc(t.publisher)}</td><td class="num">${esc(t.downloads)}</td><td class="num">${esc(t.rating)}</td><td class="num">${t.portrait}</td><td class="num">${t.landscape}</td><td class="nowrap"><a href="${esc(app.playUrl)}" target="_blank" rel="noopener">Google Play ↗</a></td></tr>`; }).join('') + '</tbody>';
 
-    document.getElementById('g-app').innerHTML = '<option value="">All 11 apps</option>' + G.apps.map(app => `<option value="${app.id}">${app.num} · ${esc(app.name)}</option>`).join('');
+    document.getElementById('g-app').innerHTML = '<option value="">All 12 apps</option>' + G.apps.map(app => `<option value="${app.id}">${app.num} · ${esc(app.name)}</option>`).join('');
 
     document.getElementById('g-applist').innerHTML = G.apps.map(app => {
       const row = G.table.find(t => t.id === app.id);
@@ -9071,6 +9071,233 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 ```json
 [
   {
+    "id": "00-cloud-storage-secure-vault",
+    "num": "00",
+    "name": "Cloud Storage: Secure Vault",
+    "title": "Cloud Storage: Secure Vault",
+    "publisher": "Cell Cave",
+    "downloads": "500+",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault&hl=en&gl=US",
+    "notes": {
+      "Icon": "A white three-lobe cloud sits on a bright blue gradient with soft wave shapes, with a circular badge of down and up arrows across its lower edge. The badge reads as sync rather than capacity, and the icon carries no capacity text or promotional badge. Ten of the eleven competitors place a capacity or offer badge on the icon; this one does not, which is what the Free 100 GB study recommends.",
+      "Feature graphic": "The app name is set in two lines at the left over a pale blue wave field, with a phone mock showing a Your vault home and a 25 GB of 100 GB storage ring at the right, plus floating photo and video cards, the line Backup & Restore across multiple devices, and a solid blue Free 100 GB button. The promotional Free 100 GB wording runs against the guidance in this tab, which advises keeping free-storage offers off the feature graphic.",
+      "Screenshot system": "Seven phone panels run headline-above-device on one pale blue wave background, mixing three portrait panels with four landscape ones. The sequence covers upload, WhatsApp media backup, video offload, photo security, encrypted file storage and a three-card plan panel. Two further sets of five repeat the same designs at 1280 and 2560 pixels wide and drop the plan panel.",
+      "Design assessment": "The most internally consistent set in this library: one background system, one type treatment, and real interface in every panel rather than decorative mockups. Three things to watch. Panels 2 and 7 build their message on WhatsApp media and name that brand in the artwork, which is worth a separate listing-policy check even though competitor names are fine in research. The Files panel shows a folder named snaptube, another third-party app name, inside an otherwise generic mock file list. The plan panel promises Free 100 GB on sign-in, which agrees with the current full description but still has to match the tier the app actually grants."
+    },
+    "tags": ["our app","filled cloud","sync badge","blue waves","headline above device","real UI","100 GB offer"],
+    "assets": [
+      {
+        "kind": "icon",
+        "orient": "square",
+        "file": "00-cloud-storage-secure-vault/icon-01.png",
+        "alt": "A white three-lobe cloud sits on a bright blue gradient with soft wave shapes, with a circular badge of down and up arrows across its lower edge. The badge reads as sync rather than capacity, and the icon carries no capacity text or promotional badge.",
+        "label": "Icon 01",
+        "w": 512,
+        "h": 512,
+        "caption": "Original listing asset",
+        "src": "https://play-lh.googleusercontent.com/tiTl5Bh1EKxT8IuyKDl3syleNmk7-QzVKZ2KKnbFCCrgJN0q3gtc6tBBeKGCjK20N5Ttroy0PwEAZC_PKfxEmg"
+      },
+      {
+        "kind": "feature-graphic",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/feature-graphic-01.png",
+        "alt": "The app name is set in two lines at the left over a pale blue wave field, with a phone mock showing a Your vault home and a 25 GB of 100 GB storage ring at the right, plus floating photo and video cards, the line Backup & Restore across multiple devices, and a solid blue Free 100 GB button.",
+        "label": "Feature Graphic 01",
+        "w": 1024,
+        "h": 500,
+        "caption": "Original listing asset",
+        "src": "https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g17KoF5IzmidzzqyqUICT-T8e_ERlzZN7RLr79hTdKcZl0r-JpeeoDnEo"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "portrait",
+        "file": "00-cloud-storage-secure-vault/screenshot-01.png",
+        "alt": "Headline \"Select & Upload Your Data\" over a phone showing an Upload Data picker with file tiles and an upload card reading 84 of 120 files at 70 per cent. A Free 100 GB pill sits under the subhead.",
+        "label": "Screenshot 01",
+        "w": 1080,
+        "h": 1920,
+        "caption": "Select and upload",
+        "src": "https://play-lh.googleusercontent.com/XpeF1GkqmPFAKLPSWtBvwFxRxKVipQ9QwTMciZzPdNbUHCf3oTFMSpjU1ZTJWgAsEjjzIUiiZg2M4wv0h1zB"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "portrait",
+        "file": "00-cloud-storage-secure-vault/screenshot-02.png",
+        "alt": "Headline \"Backup All WA Media\" over a phone showing a WhatsApp Backup screen, a folder preview grid of photos and videos, and an Upload entire folder button.",
+        "label": "Screenshot 02",
+        "w": 1080,
+        "h": 1920,
+        "caption": "WhatsApp media backup",
+        "src": "https://play-lh.googleusercontent.com/uWwHt7KwXo1kRMCihy4D02Vz-KU7eN3oAmQmsNR571GAhSKAmmJQ9Rnq-BDKL2Q1yxCTg7xiB0NJhguBMY6v"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-03.png",
+        "alt": "Left headline \"Can't Find Space For Your Favourite Videos And Music? Upload Them On Cloud Storage\" beside a phone showing a Videos library with a large detached player card.",
+        "label": "Screenshot 03",
+        "w": 1920,
+        "h": 1080,
+        "caption": "Video offload",
+        "src": "https://play-lh.googleusercontent.com/DTDxDpCBvaJ5RzjO-mozgAFZWHP-mqMcqvJ2ACQYJWJ3WyMLo4_RUH-RxypPLGQ_lq7PqtuQMiMO7YMK88EiAw"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "portrait",
+        "file": "00-cloud-storage-secure-vault/screenshot-04.png",
+        "alt": "Headline \"Secure Your Photos on Cloud\" over a phone showing a Photos grid with several images lifted out of the grid on white cards.",
+        "label": "Screenshot 04",
+        "w": 1080,
+        "h": 1920,
+        "caption": "Photo grid security",
+        "src": "https://play-lh.googleusercontent.com/C6Wb4MyHYKWxCClDnNC2d8SVcFtXoOxbQyYHg5DqQ7RXvr70Sdx-QSnNF1TKETIKC2OQzSojDEhXvdoEgDp6Vg"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-05.png",
+        "alt": "A phone showing a Files list of device folders beside dashed arrows carrying photo, video and document icons into a padlocked cloud, with an Encryption end-to-end card and the headline \"Secure Data Storage\".",
+        "label": "Screenshot 05",
+        "w": 1920,
+        "h": 1080,
+        "caption": "Encrypted file storage",
+        "src": "https://play-lh.googleusercontent.com/L__sV4ouqinTdvf1eo47SPbrRuO-Ax0Rm00MfTBX6_r02yri5QakDUxGwDDUX-6x2HJ8G-6tskkbnXFStgMfDA"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-06.png",
+        "alt": "Headline \"Your Storage, Your Choice\" above three cards: No Account with on-device tools, Free 100 GB on sign-in, and a Premium card for up to 1 TB with no ads and priority restore.",
+        "label": "Screenshot 06",
+        "w": 1920,
+        "h": 1080,
+        "caption": "Plan tiers",
+        "src": "https://play-lh.googleusercontent.com/_rL6P-Q3g3gjNsRDACJ4s5b7CH1LXRT_iTcW7eBwYmgavxEQ_NXzFV5mCPkUfLL3Zv9HOgjln-kU3tvkyR4hsA"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-07.png",
+        "alt": "Left headline \"Phone Switch: And you worried about images and videos of WA Chat? Backup All WA Media\" beside a phone showing the WhatsApp Backup folder preview.",
+        "label": "Screenshot 07",
+        "w": 1920,
+        "h": 1080,
+        "caption": "WhatsApp media backup, landscape",
+        "src": "https://play-lh.googleusercontent.com/kNXAJ1nJwHEnan0dn4KYuDlLm5YqJ4JeDLLwbMiiXQ3fRxjobjcODwAczmHXuHVlT4aXG4ty80VlfaP4pAmyow"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-08.png",
+        "alt": "Tablet-width version of the upload panel, with a Free Cloud Storage 100 GB block at the left and the Upload Data picker filling the device.",
+        "label": "Screenshot 08",
+        "w": 1280,
+        "h": 720,
+        "caption": "Select and upload · 1280-wide set",
+        "src": "https://play-lh.googleusercontent.com/T2KIqOFBIQlYvNbJ2uaAaWc4go3rr2Dg95TfWQrnZ7IaiXtfvx-JaAGZ3p-FOhwswJaa3Oo_Xero9BUl6_hDNA"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-09.png",
+        "alt": "Tablet-width version of the WhatsApp media panel, with the folder preview grid widened across the device.",
+        "label": "Screenshot 09",
+        "w": 1280,
+        "h": 720,
+        "caption": "WhatsApp media backup · 1280-wide set",
+        "src": "https://play-lh.googleusercontent.com/oItTUOI-cIzm483ebYD5Mafsr1Q4oqNVYhjN49X1qgKnK17xTXmzK052C3uqnn_CqiZp6W-vX_PDhzbipUEE7A"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-10.png",
+        "alt": "Tablet-width version of the encrypted storage panel, with the Files list in two columns.",
+        "label": "Screenshot 10",
+        "w": 1280,
+        "h": 720,
+        "caption": "Encrypted file storage · 1280-wide set",
+        "src": "https://play-lh.googleusercontent.com/o3Ul2Fg9BrF9JBcQ5T94wBc9V9kNIv5QeZpCVnp4sqIcbRDWzJ3U0B4mYYmInhhBGNavLJUsenjKacEG0ocTunc"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-11.png",
+        "alt": "Tablet-width version of the video offload panel, with the player card overlapping the video library.",
+        "label": "Screenshot 11",
+        "w": 1280,
+        "h": 720,
+        "caption": "Video offload · 1280-wide set",
+        "src": "https://play-lh.googleusercontent.com/sBcjPH7TY7XU7QgAMiVYd2KEgS1cL0uewsZOOcFOLO17icyuKuxAgvMpAUXfFp2uC3SSIKOhXjl0JbP0y8_dqx0"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-12.png",
+        "alt": "Tablet-width version of the photo security panel, with the Photos grid widened and cards lifted out.",
+        "label": "Screenshot 12",
+        "w": 1280,
+        "h": 720,
+        "caption": "Photo grid security · 1280-wide set",
+        "src": "https://play-lh.googleusercontent.com/WvudMkKHt-IYTiUrUUNDGvIe01BEPktB1mb2AH1RAQdYqAGmeCMCt7ckFQ3fRHMB8woLHFulo1_AstzIar_BCw"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-13.png",
+        "alt": "Large tablet version of the upload panel, with a Free Cloud Storage 100 GB block at the left and the Upload Data picker filling the device.",
+        "label": "Screenshot 13",
+        "w": 2560,
+        "h": 1440,
+        "caption": "Select and upload · 2560-wide set",
+        "src": "https://play-lh.googleusercontent.com/lMHo8wJUxtwXK3GVHi2fAUbn1EVcbZAAKw8SNgm2vBndiPiLOx8p47ON1Dhb1MQ00EAeLIGxBRR-EARWdjCK"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-14.png",
+        "alt": "Large tablet version of the WhatsApp media panel, with the folder preview grid widened across the device.",
+        "label": "Screenshot 14",
+        "w": 2560,
+        "h": 1440,
+        "caption": "WhatsApp media backup · 2560-wide set",
+        "src": "https://play-lh.googleusercontent.com/YTmFN6T6le5IiGrPnL-nSp_owiVDPdHLP7mQk2ZyUYdRGt-7VaVuC6rFJ2FQN-DScjtXTPd3YWHxEki0dLlUbw"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-15.png",
+        "alt": "Large tablet version of the encrypted storage panel, with the Files list in two columns.",
+        "label": "Screenshot 15",
+        "w": 2560,
+        "h": 1440,
+        "caption": "Encrypted file storage · 2560-wide set",
+        "src": "https://play-lh.googleusercontent.com/64Rws71F_VNzonabIZeFlJGrFkHIlIkljhYUb-v45x1h7ef1x7YhHCiB0x_IdKgB9RWiST2UgxlRAyfaRkFR"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-16.png",
+        "alt": "Large tablet version of the video offload panel, with the player card overlapping the video library.",
+        "label": "Screenshot 16",
+        "w": 2560,
+        "h": 1440,
+        "caption": "Video offload · 2560-wide set",
+        "src": "https://play-lh.googleusercontent.com/Ug8ct8Q2o8VxwARw0I5xAm_0Amol7b077tEg0ARn-U382Ut1opUrTEVYy5Vjn0edwRu3EMU6i17gRblLyKa_oqo"
+      },
+      {
+        "kind": "screenshot",
+        "orient": "landscape",
+        "file": "00-cloud-storage-secure-vault/screenshot-17.png",
+        "alt": "Large tablet version of the photo security panel, with the Photos grid widened and cards lifted out.",
+        "label": "Screenshot 17",
+        "w": 2560,
+        "h": 1440,
+        "caption": "Photo grid security · 2560-wide set",
+        "src": "https://play-lh.googleusercontent.com/jO7QQIj-eWrO3NDum6qPhXLDe7DEXSPgTB9XJVQ3Uvbw1Fmy87Te3F0EpNPRNEITHm4n5tgmBoJIa1vx-YZaig"
+      }
+    ]
+  },
+  {
     "id": "01-cloudgate",
     "num": "01",
     "name": "CloudGate",
@@ -10517,7 +10744,7 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 ### graphics.captureNote
 
 ```json
-"Original assets captured 14 September 2026. Requested listing locale: English / US. Click an image to open its saved full-resolution file."
+"Competitor assets captured 14 September 2026; our own listing assets captured 25 September 2026. Requested listing locale: English / US. Click an image to open its saved full-resolution file."
 ```
 
 ### graphics.guidance
@@ -10564,9 +10791,9 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 ```json
 [
   "The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.",
-  "All 11 icons use a cloud. Ten place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.",
-  "Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.",
-  "The archive contains 11 icons, 11 feature graphics and 90 unique screenshot URLs: 74 portrait and 16 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."
+  "All 12 icons use a cloud. Eleven place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Our own icon sits in that blue majority, separated mainly by its filled three-lobe cloud and the down/up sync badge rather than by colour. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.",
+  "Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova; our own listing is the smallest in the library at 500+. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.",
+  "The archive contains 12 icons, 12 feature graphics and 107 unique screenshot URLs: 77 portrait and 30 landscape. Our own listing supplies 1 icon, 1 feature graphic and 17 screenshots of that total, 3 portrait and 14 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated."
 ]
 ```
 
@@ -10624,10 +10851,10 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 
 ```json
 [
-  "Snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.",
+  "Competitor snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, and our own listing re-read on 25 September 2026, both requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.",
   "Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.",
   "Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.",
-  "All 112 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets.",
+  "All 131 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets.",
   "The library is reusable project memory: an index, per-app notes, local original assets and a machine-readable manifest containing URLs, dimensions and file hashes. It is not an assertion of account-wide memory or ongoing monitoring. Recheck listings before a new production campaign because graphics, names, ratings and download brackets can change."
 ]
 ```
@@ -10655,6 +10882,15 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 
 ```json
 [
+  {
+    "id": "00-cloud-storage-secure-vault",
+    "name": "Cloud Storage: Secure Vault",
+    "publisher": "Cell Cave",
+    "downloads": "500+",
+    "rating": "Not returned",
+    "portrait": 3,
+    "landscape": 14
+  },
   {"id":"01-cloudgate","name":"CloudGate","publisher":"CloudGate Technologies","downloads":"100K+","rating":"4.1","portrait":6,"landscape":0},
   {"id":"02-fazcon","name":"Fazcon","publisher":"Fazcon Apps","downloads":"5M+","rating":"4.1","portrait":7,"landscape":7},
   {
@@ -10715,10 +10951,10 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
 {
   "appId": "com.softwarealliance.cloudvault",
   "url": "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault&hl=en&gl=US",
-  "fetchedAt": "2026-09-15T11:19:50.756Z",
+  "fetchedAt": "2026-09-25T09:20:00.000Z",
   "title": "Cloud Storage: Secure Vault",
-  "summary": "Free up space, backup photos & videos to a safe online drive. Sync and share.",
-  "description": "Running out of space? Move your photos, videos and files to secure cloud storage and free up space on your phone in minutes. Sign up and get free cloud storage instantly — automatic photo backup, a private file vault and easy sharing, all in one simple cloud drive.\n\nBackup your phone to a private cloud — restore files anytime, free up storage.\n\nWHY CLOUD STORAGE: SECURE VAULT?\nYour phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage, Secure Vault keeps every photo, video and document safe online and within reach on any device.\n\n100 GB FREE CLOUD STORAGE\n●\tSign up and get 100 GB of free cloud storage right away. \n●\tNo account creation, no trial period, no credit card, no countdown timer. \n●\tPaid plans go up to 1 TB if you ever outgrow it, but the free tier stays free.\n\nAUTOMATIC PHOTO & VIDEO BACKUP\n●\tBack up photos and videos automatically in the background\n●\tOriginal quality — no compression, no stripped metadata\n●\tNever lose a memory again, even if you lose your phone\n●\tFree up storage space with one tap once your gallery backup is complete\n\nPREVIEW AND PLAY, RIGHT FROM THE CLOUD\n●\tMost backup apps bury your files somewhere you can't actually open them. This one doesn't. \n●\tBrowse full-quality photos, stream your video backup, and read documents directly inside the app before you download anything.\n\nNEW PHONE? RESTORE IN MINUTES\n●\tData backup before a factory reset or a device switch.\n●\tSign in on the new handset and restore.\n●\tTransfer data to a new phone with no cables, no PC and nothing left behind.\n\nSECURE CLOUD STORAGE\n●\tYour data is encrypted in transit and at rest\n●\tLock the app with PIN or biometrics\n●\tA private cloud vault for your most sensitive photos and documents\n●\tNo ads. We don’t sell your data.\n●\tExport your data or delete your account and everything in it whenever you decide to.\n\nSHARE WITHOUT LIMITS\n●\tShare files and albums with a simple link\n●\tControl access and revoke it anytime\n\nFREE UP SPACE, KEEP EVERYTHING\nStorage full? Don’t delete your memories — move them. Cloud Storage: Secure Vault shows you what’s using your storage space, uploads it safely to the cloud, and clears it from your device. Gigabytes freed, nothing lost.\n\nONE SAFE PLACE FOR EVERYTHING\n●\tPhoto storage and video storage in original quality\n●\tDocument storage for work and personal files\n●\tFile storage for everything else — zips, audio, any format\n●\tSync across all your devices automatically\nGet started free today — download [App name], claim your free cloud storage, back up your phone and free up space in minutes. Your files, safe forever.",
+  "summary": "Secure, private backup for photos, videos & data. Restore to any phone in a tap.",
+  "description": "Running out of space? Move your photos, videos and files to secure cloud storage and free up space on your phone in minutes. Sign up and get free cloud storage instantly — automatic photo backup, a private file vault and easy sharing, all in one simple cloud drive.\n\nBackup your phone to a private cloud — restore files anytime, free up storage.\n\nWHY CLOUD STORAGE: SECURE VAULT?\nYour phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage: Secure Vault keeps every photo, video and document safe online and within reach on any device.\n\n100 GB FREE CLOUD STORAGE\n●\tSign up and get 100 GB of free cloud storage right away. \n●\tGet limited features without account creation, no trial period, no credit card, no countdown timer.\n●\tPaid plans go up to 1 TB if you ever outgrow it, but the free tier stays free.\n\nAUTOMATIC PHOTO & VIDEO BACKUP\n●\tBack up photos and videos automatically in the background\n●\tOriginal quality — no compression, no stripped metadata\n●\tNever lose a memory again, even if you lose your phone\n●\tFree up storage space with one tap once your gallery backup is complete\n\nPREVIEW AND PLAY, RIGHT FROM THE CLOUD\n●\tMost backup apps bury your files somewhere you can't actually open them. This one doesn't. \n●\tBrowse full-quality photos, stream your video backup, and read documents directly inside the app before you download anything.\n\nNEW PHONE? RESTORE IN MINUTES\n●\tData backup before a factory reset or a device switch.\n●\tSign in on the new handset and restore.\n●\tTransfer data to a new phone with no cables, no PC and nothing left behind.\n\nSECURE CLOUD STORAGE\n●\tYour data is encrypted in transit and at rest\n●\tLock the app with PIN or biometrics\n●\tA private cloud vault for your most sensitive photos and documents\n●\tWe don’t sell your data.\n●\tExport your data or delete your account and everything in it whenever you decide to.\n\nSHARE WITHOUT LIMITS\n●\tShare files and albums with a simple link\n●\tControl access and revoke it anytime\n\nFREE UP SPACE, KEEP EVERYTHING\nStorage full? Don’t delete your memories — move them. Cloud Storage: Secure Vault shows you what’s using your storage space, uploads it safely to the cloud, and clears it from your device. Gigabytes freed, nothing lost.\n\nONE SAFE PLACE FOR EVERYTHING\n●\tPhoto storage and video storage in original quality\n●\tDocument storage for work and personal files\n●\tFile storage for everything else — zips, audio, any format\n●\tSync across all your devices automatically\n\nGet started free today — download Cloud Storage: Secure Vault, claim your free cloud storage, back up your phone and free up space in minutes. Your files, safe forever.",
   "installsLabel": "500+",
   "realInstalls": 597,
   "score": null,
@@ -10736,39 +10972,151 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
   "assets": {
     "icon": {
       "file": "../../assets/mylisting/icon.png",
-      "src": "https://play-lh.googleusercontent.com/vEzREmfRl0dxDsKHpa41wB6tIcpItEu_7ZeznGkjaMShUzz7Q_OjyiokAl3feIZe21XOyIfnBZDHzsvJXvNVFQ",
-      "bytes": 39542,
+      "src": "https://play-lh.googleusercontent.com/tiTl5Bh1EKxT8IuyKDl3syleNmk7-QzVKZ2KKnbFCCrgJN0q3gtc6tBBeKGCjK20N5Ttroy0PwEAZC_PKfxEmg",
+      "bytes": 294943,
       "type": "image/png"
     },
     "feature": {
       "file": "../../assets/mylisting/feature-graphic.png",
-      "src": "https://play-lh.googleusercontent.com/hNR2efqDB7DKTDcxyCV967DAEfEDQaphf5xOzO0Wkwvzp2euPSnPlMc6AsGY0GvF4Ho_y2OYJQzKAAqHk2RPrnM",
-      "bytes": 318633,
+      "src": "https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g17KoF5IzmidzzqyqUICT-T8e_ERlzZN7RLr79hTdKcZl0r-JpeeoDnEo",
+      "bytes": 184790,
       "type": "image/png"
     },
     "screenshots": [
       {
         "file": "../../assets/mylisting/screenshot-01.png",
-        "src": "https://play-lh.googleusercontent.com/VIpZ2wVQ5U2FK2DTSmUUOwg5XSj3Os1i2C16LvBbnQZpdsf3EDxD3QcmL_k256UOCZESLHsLC4I1zRVn8sVl9A",
-        "bytes": 715297,
+        "src": "https://play-lh.googleusercontent.com/XpeF1GkqmPFAKLPSWtBvwFxRxKVipQ9QwTMciZzPdNbUHCf3oTFMSpjU1ZTJWgAsEjjzIUiiZg2M4wv0h1zB",
+        "bytes": 707612,
+        "w": 1080,
+        "h": 1920,
         "type": "image/png"
       },
       {
         "file": "../../assets/mylisting/screenshot-02.png",
-        "src": "https://play-lh.googleusercontent.com/W0vhjzGOaSIJmbX8V0Kyx-oopN7csaEtdJC4n_GcCwTPEvJ3U6ysev4jrkRCkzA2197EHyZ7xZrw44mfiYrg",
-        "bytes": 1056017,
+        "src": "https://play-lh.googleusercontent.com/uWwHt7KwXo1kRMCihy4D02Vz-KU7eN3oAmQmsNR571GAhSKAmmJQ9Rnq-BDKL2Q1yxCTg7xiB0NJhguBMY6v",
+        "bytes": 574269,
+        "w": 1080,
+        "h": 1920,
         "type": "image/png"
       },
       {
         "file": "../../assets/mylisting/screenshot-03.png",
-        "src": "https://play-lh.googleusercontent.com/A5zVrUYmRoZlakxBqGbfZg1oOIwoIoRAExDKRRiZtgG-o1o92vDE51fWFxYItJ_0H2pHc0VRM4VgPFwRIaugCw",
-        "bytes": 740901,
+        "src": "https://play-lh.googleusercontent.com/DTDxDpCBvaJ5RzjO-mozgAFZWHP-mqMcqvJ2ACQYJWJ3WyMLo4_RUH-RxypPLGQ_lq7PqtuQMiMO7YMK88EiAw",
+        "bytes": 514461,
+        "w": 1920,
+        "h": 1080,
         "type": "image/png"
       },
       {
         "file": "../../assets/mylisting/screenshot-04.png",
-        "src": "https://play-lh.googleusercontent.com/vK6Ov71jOTBFlZjHBiKtXKGRf_jYjZb2DyIMnzq4t1kif4aOs8UN87RSvI7tCksMZ5B8kY4oO1h6t2Nivw_R2g",
-        "bytes": 745134,
+        "src": "https://play-lh.googleusercontent.com/C6Wb4MyHYKWxCClDnNC2d8SVcFtXoOxbQyYHg5DqQ7RXvr70Sdx-QSnNF1TKETIKC2OQzSojDEhXvdoEgDp6Vg",
+        "bytes": 659975,
+        "w": 1080,
+        "h": 1920,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-05.png",
+        "src": "https://play-lh.googleusercontent.com/L__sV4ouqinTdvf1eo47SPbrRuO-Ax0Rm00MfTBX6_r02yri5QakDUxGwDDUX-6x2HJ8G-6tskkbnXFStgMfDA",
+        "bytes": 359144,
+        "w": 1920,
+        "h": 1080,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-06.png",
+        "src": "https://play-lh.googleusercontent.com/_rL6P-Q3g3gjNsRDACJ4s5b7CH1LXRT_iTcW7eBwYmgavxEQ_NXzFV5mCPkUfLL3Zv9HOgjln-kU3tvkyR4hsA",
+        "bytes": 378916,
+        "w": 1920,
+        "h": 1080,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-07.png",
+        "src": "https://play-lh.googleusercontent.com/kNXAJ1nJwHEnan0dn4KYuDlLm5YqJ4JeDLLwbMiiXQ3fRxjobjcODwAczmHXuHVlT4aXG4ty80VlfaP4pAmyow",
+        "bytes": 465725,
+        "w": 1920,
+        "h": 1080,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-08.png",
+        "src": "https://play-lh.googleusercontent.com/T2KIqOFBIQlYvNbJ2uaAaWc4go3rr2Dg95TfWQrnZ7IaiXtfvx-JaAGZ3p-FOhwswJaa3Oo_Xero9BUl6_hDNA",
+        "bytes": 250108,
+        "w": 1280,
+        "h": 720,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-09.png",
+        "src": "https://play-lh.googleusercontent.com/oItTUOI-cIzm483ebYD5Mafsr1Q4oqNVYhjN49X1qgKnK17xTXmzK052C3uqnn_CqiZp6W-vX_PDhzbipUEE7A",
+        "bytes": 275131,
+        "w": 1280,
+        "h": 720,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-10.png",
+        "src": "https://play-lh.googleusercontent.com/o3Ul2Fg9BrF9JBcQ5T94wBc9V9kNIv5QeZpCVnp4sqIcbRDWzJ3U0B4mYYmInhhBGNavLJUsenjKacEG0ocTunc",
+        "bytes": 187740,
+        "w": 1280,
+        "h": 720,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-11.png",
+        "src": "https://play-lh.googleusercontent.com/sBcjPH7TY7XU7QgAMiVYd2KEgS1cL0uewsZOOcFOLO17icyuKuxAgvMpAUXfFp2uC3SSIKOhXjl0JbP0y8_dqx0",
+        "bytes": 298337,
+        "w": 1280,
+        "h": 720,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-12.png",
+        "src": "https://play-lh.googleusercontent.com/WvudMkKHt-IYTiUrUUNDGvIe01BEPktB1mb2AH1RAQdYqAGmeCMCt7ckFQ3fRHMB8woLHFulo1_AstzIar_BCw",
+        "bytes": 255330,
+        "w": 1280,
+        "h": 720,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-13.png",
+        "src": "https://play-lh.googleusercontent.com/lMHo8wJUxtwXK3GVHi2fAUbn1EVcbZAAKw8SNgm2vBndiPiLOx8p47ON1Dhb1MQ00EAeLIGxBRR-EARWdjCK",
+        "bytes": 289479,
+        "w": 2560,
+        "h": 1440,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-14.png",
+        "src": "https://play-lh.googleusercontent.com/YTmFN6T6le5IiGrPnL-nSp_owiVDPdHLP7mQk2ZyUYdRGt-7VaVuC6rFJ2FQN-DScjtXTPd3YWHxEki0dLlUbw",
+        "bytes": 776148,
+        "w": 2560,
+        "h": 1440,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-15.png",
+        "src": "https://play-lh.googleusercontent.com/64Rws71F_VNzonabIZeFlJGrFkHIlIkljhYUb-v45x1h7ef1x7YhHCiB0x_IdKgB9RWiST2UgxlRAyfaRkFR",
+        "bytes": 501986,
+        "w": 2560,
+        "h": 1440,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-16.png",
+        "src": "https://play-lh.googleusercontent.com/Ug8ct8Q2o8VxwARw0I5xAm_0Amol7b077tEg0ARn-U382Ut1opUrTEVYy5Vjn0edwRu3EMU6i17gRblLyKa_oqo",
+        "bytes": 829671,
+        "w": 2560,
+        "h": 1440,
+        "type": "image/png"
+      },
+      {
+        "file": "../../assets/mylisting/screenshot-17.png",
+        "src": "https://play-lh.googleusercontent.com/jO7QQIj-eWrO3NDum6qPhXLDe7DEXSPgTB9XJVQ3Uvbw1Fmy87Te3F0EpNPRNEITHm4n5tgmBoJIa1vx-YZaig",
+        "bytes": 722400,
+        "w": 2560,
+        "h": 1440,
         "type": "image/png"
       }
     ]
@@ -10814,7 +11162,7 @@ These are exact copies of the values in [assets/data.js](../../assets/data.js); 
   "release": {
     "title": "Cloud Storage: Secure Vault",
     "summary": "Secure, private backup for photos, videos & data. Restore to any phone in a tap.",
-    "description": "Running out of space? Move your photos, videos and files to secure cloud storage and free up space on your phone in minutes. Sign up and get free cloud storage instantly — automatic photo backup, a private file vault and easy sharing, all in one simple cloud drive.\n\nBackup your phone to a private cloud — restore files anytime, free up storage.\n\nWHY CLOUD STORAGE: SECURE VAULT?\nYour phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage, Secure Vault keeps every photo, video and document safe online and within reach on any device.\n\n100 GB FREE CLOUD STORAGE\n●\tSign up and get 100 GB of free cloud storage right away. \n●\tGet limited features without account creation, no trial period, no credit card, no countdown timer. \n●\tPaid plans go up to 1 TB if you ever outgrow it, but the free tier stays free.\n\nAUTOMATIC PHOTO & VIDEO BACKUP\n●\tBack up photos and videos automatically in the background\n●\tOriginal quality — no compression, no stripped metadata\n●\tNever lose a memory again, even if you lose your phone\n●\tFree up storage space with one tap once your gallery backup is complete\n\nPREVIEW AND PLAY, RIGHT FROM THE CLOUD\n●\tMost backup apps bury your files somewhere you can't actually open them. This one doesn't. \n●\tBrowse full-quality photos, stream your video backup, and read documents directly inside the app before you download anything.\n\nNEW PHONE? RESTORE IN MINUTES\n●\tData backup before a factory reset or a device switch.\n●\tSign in on the new handset and restore.\n●\tTransfer data to a new phone with no cables, no PC and nothing left behind.\n\nSECURE CLOUD STORAGE\n●\tYour data is encrypted in transit and at rest\n●\tLock the app with PIN or biometrics\n●\tA private cloud vault for your most sensitive photos and documents\n●\tWe don’t sell your data.\n●\tExport your data or delete your account and everything in it whenever you decide to.\n\nSHARE WITHOUT LIMITS\n●\tShare files and albums with a simple link\n●\tControl access and revoke it anytime\n\nFREE UP SPACE, KEEP EVERYTHING\nStorage full? Don’t delete your memories — move them. Cloud Storage: Secure Vault shows you what’s using your storage space, uploads it safely to the cloud, and clears it from your device. Gigabytes freed, nothing lost.\n\nONE SAFE PLACE FOR EVERYTHING\n●\tPhoto storage and video storage in original quality\n●\tDocument storage for work and personal files\n●\tFile storage for everything else — zips, audio, any format\n●\tSync across all your devices automatically\nGet started free today — download Cloud Storage: Secure Vault, claim your free cloud storage, back up your phone and free up space in minutes. Your files, safe forever.",
+    "description": "Running out of space? Move your photos, videos and files to secure cloud storage and free up space on your phone in minutes. Sign up and get free cloud storage instantly — automatic photo backup, a private file vault and easy sharing, all in one simple cloud drive.\n\nBackup your phone to a private cloud — restore files anytime, free up storage.\n\nWHY CLOUD STORAGE: SECURE VAULT?\nYour phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage: Secure Vault keeps every photo, video and document safe online and within reach on any device.\n\n100 GB FREE CLOUD STORAGE\n●\tSign up and get 100 GB of free cloud storage right away. \n●\tGet limited features without account creation, no trial period, no credit card, no countdown timer.\n●\tPaid plans go up to 1 TB if you ever outgrow it, but the free tier stays free.\n\nAUTOMATIC PHOTO & VIDEO BACKUP\n●\tBack up photos and videos automatically in the background\n●\tOriginal quality — no compression, no stripped metadata\n●\tNever lose a memory again, even if you lose your phone\n●\tFree up storage space with one tap once your gallery backup is complete\n\nPREVIEW AND PLAY, RIGHT FROM THE CLOUD\n●\tMost backup apps bury your files somewhere you can't actually open them. This one doesn't. \n●\tBrowse full-quality photos, stream your video backup, and read documents directly inside the app before you download anything.\n\nNEW PHONE? RESTORE IN MINUTES\n●\tData backup before a factory reset or a device switch.\n●\tSign in on the new handset and restore.\n●\tTransfer data to a new phone with no cables, no PC and nothing left behind.\n\nSECURE CLOUD STORAGE\n●\tYour data is encrypted in transit and at rest\n●\tLock the app with PIN or biometrics\n●\tA private cloud vault for your most sensitive photos and documents\n●\tWe don’t sell your data.\n●\tExport your data or delete your account and everything in it whenever you decide to.\n\nSHARE WITHOUT LIMITS\n●\tShare files and albums with a simple link\n●\tControl access and revoke it anytime\n\nFREE UP SPACE, KEEP EVERYTHING\nStorage full? Don’t delete your memories — move them. Cloud Storage: Secure Vault shows you what’s using your storage space, uploads it safely to the cloud, and clears it from your device. Gigabytes freed, nothing lost.\n\nONE SAFE PLACE FOR EVERYTHING\n●\tPhoto storage and video storage in original quality\n●\tDocument storage for work and personal files\n●\tFile storage for everything else — zips, audio, any format\n●\tSync across all your devices automatically\n\nGet started free today — download Cloud Storage: Secure Vault, claim your free cloud storage, back up your phone and free up space in minutes. Your files, safe forever.",
     "edits": [
       {
         "field": "Short description",

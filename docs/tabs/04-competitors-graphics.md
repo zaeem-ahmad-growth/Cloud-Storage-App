@@ -8,47 +8,51 @@
 
 <a id="g-overview"></a>
 
-**Competitor’s Graphics** · Google Play listing assets · 11 direct competitors · Captured 14 Sep 2026 · English / US listings
+**Competitor’s Graphics** · Google Play listing assets · Our app + 11 competitors · Captured 14 and 25 Sep 2026 · English / US listings
 
 # Competitor’s Graphics
 
-Every icon, feature graphic and screenshot your 11 direct competitors publish on Google Play, with a design read for each app and a link back to every original file.
+Our own listing assets first, then every icon, feature graphic and screenshot your 11 direct competitors publish on Google Play, with a design read for each app and a link back to every original file.
 
-11 apps · 11 icons · 11 feature graphics · 90 screenshots · 74 portrait · 16 landscape
+12 apps · 12 icons · 12 feature graphics · 107 screenshots · 77 portrait · 30 landscape
 
 The strongest starting references serve different purposes: Fazcon for portrait-to-landscape adaptation; MindByte's Cloud Storage Drive Backup for restrained white surfaces and attached UI callouts; Fuzon for expanded category sheets; and Nova Cloud for dimensional purple/cyan materials. These are visual judgments, not conversion rankings.
 
-All 11 icons use a cloud. Ten place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.
+All 12 icons use a cloud. Eleven place the main symbol on a blue or blue-purple field; Utility Forge places a cyan cloud on white. Our own icon sits in that blue majority, separated mainly by its filled three-lobe cloud and the down/up sync badge rather than by colour. Badges, arrows and capacity text supply most differentiation. A new blue cloud alone will look familiar but may be difficult to distinguish from this group.
 
-Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.
+Fazcon has the highest displayed download bracket at 5M+, followed by Daily Utility Apps at 1M+. Fuzon and MindByte each show 500K+. The smallest brackets are 1K+ for Golden Associate and 5K+ for ANZ and Nova; our own listing is the smallest in the library at 500+. Cumulative install brackets do not show acquisition cost, current momentum, active users, retention or creative conversion.
 
-The archive contains 11 icons, 11 feature graphics and 90 unique screenshot URLs: 74 portrait and 16 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated.
+The archive contains 12 icons, 12 feature graphics and 107 unique screenshot URLs: 77 portrait and 30 landscape. Our own listing supplies 1 icon, 1 feature graphic and 17 screenshots of that total, 3 portrait and 14 landscape. Every captured feature graphic measures 1024 x 500; every icon measures 512 x 512. Fazcon, Fuzon, Daily Utility Apps, DataHatch and Utility Forge expose landscape screenshots in this snapshot. Missing landscape sets are recorded as not observed, not recreated.
 
-Original assets captured 14 September 2026. Requested listing locale: English / US. Click an image to view it large; each caption links to the full-resolution original on Google Play.
+Competitor assets captured 14 September 2026; our own listing assets captured 25 September 2026. Requested listing locale: English / US. Click an image to view it large; each caption links to the full-resolution original on Google Play.
 
 <a id="g-icons"></a>
 
 Icon lineup · 512 × 512 originals
 
-## All 11 icons side by side
+## All 12 icons side by side, ours first
 
 Each icon is shown at 96, 64, 48 and 32 pixels on a white plate, the inspection sizes the design guidance below recommends. Watch which silhouettes, badges and capacity labels hold up as they shrink.
 
-|  | [CloudGate](#g-01-cloudgate) | [Fazcon](#g-02-fazcon) | [ANZ Cloud Drive](#g-03-anz-cloud-drive) | [Cloud Backup](#g-04-cloud-backup) | [Cloud Storage & Drive](#g-05-cloud-storage-drive) | [Cloud Storage Backup & Drive](#g-06-cloud-storage-backup-drive) | [Cloud Storage Drive Backup](#g-07-cloud-storage-drive-backup) | [DataHatch](#g-08-datahatch) | [Cloud Storage-Sync](#g-09-cloud-storage-sync) | [Cloud storage](#g-10-cloud-storage) | [Nova Cloud](#g-11-nova-cloud) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 96 px | ![CloudGate icon](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![Fazcon icon](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![ANZ Cloud Drive icon](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![Cloud Backup icon](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![Cloud Storage & Drive icon](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![Cloud Storage Backup & Drive icon](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![Cloud Storage Drive Backup icon](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![DataHatch icon](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![Cloud Storage-Sync icon](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![Cloud storage icon](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![Nova Cloud icon](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
-| 64 px | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
-| 48 px | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
-| 32 px | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
-| Downloads | **100K+**<br>CloudGate Technologies | **5M+**<br>Fazcon Apps | **5K+**<br>Auzi Apps Studios | **100K+**<br>MAPIDIRECTIONS STUDIOS | **500K+**<br>Fuzon Apps | **1M+**<br>Daily Utility Apps | **500K+**<br>MindByte Studios L.L.C-FZ | **10K+**<br>Appseen Studio | **100K+**<br>Utility Forge | **1K+**<br>Golden Associate Pvt. Ltd. | **5K+**<br>Nova Apps Studios |
+|  | [Cloud Storage: Secure Vault](#g-00-cloud-storage-secure-vault) | [CloudGate](#g-01-cloudgate) | [Fazcon](#g-02-fazcon) | [ANZ Cloud Drive](#g-03-anz-cloud-drive) | [Cloud Backup](#g-04-cloud-backup) | [Cloud Storage & Drive](#g-05-cloud-storage-drive) | [Cloud Storage Backup & Drive](#g-06-cloud-storage-backup-drive) | [Cloud Storage Drive Backup](#g-07-cloud-storage-drive-backup) | [DataHatch](#g-08-datahatch) | [Cloud Storage-Sync](#g-09-cloud-storage-sync) | [Cloud storage](#g-10-cloud-storage) | [Nova Cloud](#g-11-nova-cloud) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 96 px | ![Cloud Storage: Secure Vault icon](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png) | ![CloudGate icon](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![Fazcon icon](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![ANZ Cloud Drive icon](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![Cloud Backup icon](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![Cloud Storage & Drive icon](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![Cloud Storage Backup & Drive icon](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![Cloud Storage Drive Backup icon](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![DataHatch icon](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![Cloud Storage-Sync icon](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![Cloud storage icon](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![Nova Cloud icon](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
+| 64 px | ![](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
+| 48 px | ![](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
+| 32 px | ![](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/01-cloudgate/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/02-fazcon/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/03-anz-cloud-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/04-cloud-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/05-cloud-storage-drive/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/06-cloud-storage-backup-drive/icon-01.jpg) | ![](../../tabs/04-competitors-graphics/graphics/07-cloud-storage-drive-backup/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/08-datahatch/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/09-cloud-storage-sync/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/10-cloud-storage/icon-01.png) | ![](../../tabs/04-competitors-graphics/graphics/11-nova-cloud/icon-01.png) |
+| Downloads | **500+**<br>Cell Cave | **100K+**<br>CloudGate Technologies | **5M+**<br>Fazcon Apps | **5K+**<br>Auzi Apps Studios | **100K+**<br>MAPIDIRECTIONS STUDIOS | **500K+**<br>Fuzon Apps | **1M+**<br>Daily Utility Apps | **500K+**<br>MindByte Studios L.L.C-FZ | **10K+**<br>Appseen Studio | **100K+**<br>Utility Forge | **1K+**<br>Golden Associate Pvt. Ltd. | **5K+**<br>Nova Apps Studios |
 
 <a id="g-features"></a>
 
 Feature graphics · 1024 × 500
 
-## All 11 feature graphics
+## All 12 feature graphics, ours first
 
 The banner each listing shows above its screenshots. Click any graphic to view it large.
+
+![The app name is set in two lines at the left over a pale blue wave field, with a phone mock showing a Your vault home and a 25 GB of 100 GB storage ring at the right, plus floating photo and video cards, the line Backup & Restore across multiple devices, and a solid blue Free 100 GB button.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/feature-graphic-01.jpg)
+
+[00 · Cloud Storage: Secure Vault](#g-00-cloud-storage-secure-vault) · Cell Cave · 500+ downloads · 1024 × 500 · landscape · Original listing asset · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g17KoF5IzmidzzqyqUICT-T8e_ERlzZN7RLr79hTdKcZl0r-JpeeoDnEo)
 
 ![A centered wordmark and capacity strip dominate a blue banner with faint cloud silhouettes. The hierarchy is simple; the smallest supporting line loses prominence at listing scale.](../../tabs/04-competitors-graphics/graphics/01-cloudgate/feature-graphic-01.jpg)
 
@@ -96,14 +100,15 @@ The banner each listing shows above its screenshots. Click any graphic to view i
 
 <a id="g-apps"></a>
 
-Visual library · 112 original assets
+Visual library · 131 original assets
 
 ## Every asset, app by app
 
-Listing facts as captured on 14 Sep 2026, a four-part design read, and every icon, feature graphic and screenshot. Filter by app, asset type or orientation, or search the notes. Click an image to view it large.
+Listing facts as captured on 14 Sep 2026 for the competitors and 25 Sep 2026 for our own listing, a four-part design read, and every icon, feature graphic and screenshot. Filter by app, asset type or orientation, or search the notes. Click an image to view it large.
 
 | # | Reference | Publisher | Downloads | Rating | Portrait | Landscape | Listing |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 00 | [**Cloud Storage: Secure Vault**](#g-00-cloud-storage-secure-vault)<br>Cloud Storage: Secure Vault | Cell Cave | 500+ | Not returned | 3 | 14 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault&hl=en&gl=US) |
 | 01 | [**CloudGate**](#g-01-cloudgate)<br>Cloudgate: Cloud Storage Drive | CloudGate Technologies | 100K+ | 4.1 | 6 | 0 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.cloudgate.cloudstorage&hl=en&gl=US) |
 | 02 | [**Fazcon**](#g-02-fazcon)<br>Cloud Storage: Cloud Drive App | Fazcon Apps | 5M+ | 4.1 | 7 | 7 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.fazconapps.backup.restore.data&hl=en&gl=US) |
 | 03 | [**ANZ Cloud Drive**](#g-03-anz-cloud-drive)<br>ANZ Cloud Drive: Cloud Storage | Auzi Apps Studios | 5K+ | Not returned | 6 | 0 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.filestorage.cloudbackup.clouddrive.photosbackup.storagespace&hl=en&gl=US) |
@@ -116,7 +121,119 @@ Listing facts as captured on 14 Sep 2026, a four-part design read, and every ico
 | 10 | [**Cloud storage**](#g-10-cloud-storage)<br>Cloud Storage App Drive Backup | Golden Associate Pvt. Ltd. | 1K+ | Not returned | 5 | 0 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.cloudstorage.cloudbackup.storagespaceapp&hl=en&gl=US) |
 | 11 | [**Nova Cloud**](#g-11-nova-cloud)<br>Nova Cloud: Storage & Backup | Nova Apps Studios | 5K+ | Not returned | 6 | 0 | [Google Play ↗](https://play.google.com/store/apps/details?id=com.securebackup.cloudstorage.drivebackup.filestorage&hl=en&gl=US) |
 
-112 of 112 assets shown
+131 of 131 assets shown
+
+<a id="g-00-cloud-storage-secure-vault"></a>
+
+![](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png)
+
+00 · Cell Cave
+
+### Cloud Storage: Secure Vault
+
+“Cloud Storage: Secure Vault” · 500+ downloads · rating Not returned · 3 portrait and 14 landscape screenshots
+
+Open listing on Google Play ↗
+
+#### Icon
+
+A white three-lobe cloud sits on a bright blue gradient with soft wave shapes, with a circular badge of down and up arrows across its lower edge. The badge reads as sync rather than capacity, and the icon carries no capacity text or promotional badge. Ten of the eleven competitors place a capacity or offer badge on the icon; this one does not, which is what the Free 100 GB study recommends.
+
+#### Feature graphic
+
+The app name is set in two lines at the left over a pale blue wave field, with a phone mock showing a Your vault home and a 25 GB of 100 GB storage ring at the right, plus floating photo and video cards, the line Backup & Restore across multiple devices, and a solid blue Free 100 GB button. The promotional Free 100 GB wording runs against the guidance in this tab, which advises keeping free-storage offers off the feature graphic.
+
+#### Screenshot system
+
+Seven phone panels run headline-above-device on one pale blue wave background, mixing three portrait panels with four landscape ones. The sequence covers upload, WhatsApp media backup, video offload, photo security, encrypted file storage and a three-card plan panel. Two further sets of five repeat the same designs at 1280 and 2560 pixels wide and drop the plan panel.
+
+#### Design assessment
+
+The most internally consistent set in this library: one background system, one type treatment, and real interface in every panel rather than decorative mockups. Three things to watch. Panels 2 and 7 build their message on WhatsApp media and name that brand in the artwork, which is worth a separate listing-policy check even though competitor names are fine in research. The Files panel shows a folder named snaptube, another third-party app name, inside an otherwise generic mock file list. The plan panel promises Free 100 GB on sign-in, which agrees with the current full description but still has to match the tier the app actually grants.
+
+our app · filled cloud · sync badge · blue waves · headline above device · real UI · 100 GB offer
+
+Icon and feature graphic
+
+![A white three-lobe cloud sits on a bright blue gradient with soft wave shapes, with a circular badge of down and up arrows across its lower edge. The badge reads as sync rather than capacity, and the icon carries no capacity text or promotional badge.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/icon-01.png)
+
+Icon 01 · 512 × 512 · square · Original listing asset · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/tiTl5Bh1EKxT8IuyKDl3syleNmk7-QzVKZ2KKnbFCCrgJN0q3gtc6tBBeKGCjK20N5Ttroy0PwEAZC_PKfxEmg)
+
+![The app name is set in two lines at the left over a pale blue wave field, with a phone mock showing a Your vault home and a 25 GB of 100 GB storage ring at the right, plus floating photo and video cards, the line Backup & Restore across multiple devices, and a solid blue Free 100 GB button.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/feature-graphic-01.jpg)
+
+Feature Graphic 01 · 1024 × 500 · landscape · Original listing asset · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g17KoF5IzmidzzqyqUICT-T8e_ERlzZN7RLr79hTdKcZl0r-JpeeoDnEo)
+
+Portrait screenshots · 3
+
+![Headline "Select & Upload Your Data" over a phone showing an Upload Data picker with file tiles and an upload card reading 84 of 120 files at 70 per cent. A Free 100 GB pill sits under the subhead.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-01.jpg)
+
+Screenshot 01 · 1080 × 1920 · portrait · Select and upload · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/XpeF1GkqmPFAKLPSWtBvwFxRxKVipQ9QwTMciZzPdNbUHCf3oTFMSpjU1ZTJWgAsEjjzIUiiZg2M4wv0h1zB)
+
+![Headline "Backup All WA Media" over a phone showing a WhatsApp Backup screen, a folder preview grid of photos and videos, and an Upload entire folder button.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-02.jpg)
+
+Screenshot 02 · 1080 × 1920 · portrait · WhatsApp media backup · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/uWwHt7KwXo1kRMCihy4D02Vz-KU7eN3oAmQmsNR571GAhSKAmmJQ9Rnq-BDKL2Q1yxCTg7xiB0NJhguBMY6v)
+
+![Headline "Secure Your Photos on Cloud" over a phone showing a Photos grid with several images lifted out of the grid on white cards.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-04.jpg)
+
+Screenshot 04 · 1080 × 1920 · portrait · Photo grid security · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/C6Wb4MyHYKWxCClDnNC2d8SVcFtXoOxbQyYHg5DqQ7RXvr70Sdx-QSnNF1TKETIKC2OQzSojDEhXvdoEgDp6Vg)
+
+Landscape screenshots · 14
+
+![Left headline "Can't Find Space For Your Favourite Videos And Music? Upload Them On Cloud Storage" beside a phone showing a Videos library with a large detached player card.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-03.jpg)
+
+Screenshot 03 · 1920 × 1080 · landscape · Video offload · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/DTDxDpCBvaJ5RzjO-mozgAFZWHP-mqMcqvJ2ACQYJWJ3WyMLo4_RUH-RxypPLGQ_lq7PqtuQMiMO7YMK88EiAw)
+
+![A phone showing a Files list of device folders beside dashed arrows carrying photo, video and document icons into a padlocked cloud, with an Encryption end-to-end card and the headline "Secure Data Storage".](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-05.jpg)
+
+Screenshot 05 · 1920 × 1080 · landscape · Encrypted file storage · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/L__sV4ouqinTdvf1eo47SPbrRuO-Ax0Rm00MfTBX6_r02yri5QakDUxGwDDUX-6x2HJ8G-6tskkbnXFStgMfDA)
+
+![Headline "Your Storage, Your Choice" above three cards: No Account with on-device tools, Free 100 GB on sign-in, and a Premium card for up to 1 TB with no ads and priority restore.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-06.jpg)
+
+Screenshot 06 · 1920 × 1080 · landscape · Plan tiers · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/_rL6P-Q3g3gjNsRDACJ4s5b7CH1LXRT_iTcW7eBwYmgavxEQ_NXzFV5mCPkUfLL3Zv9HOgjln-kU3tvkyR4hsA)
+
+![Left headline "Phone Switch: And you worried about images and videos of WA Chat? Backup All WA Media" beside a phone showing the WhatsApp Backup folder preview.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-07.jpg)
+
+Screenshot 07 · 1920 × 1080 · landscape · WhatsApp media backup, landscape · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/kNXAJ1nJwHEnan0dn4KYuDlLm5YqJ4JeDLLwbMiiXQ3fRxjobjcODwAczmHXuHVlT4aXG4ty80VlfaP4pAmyow)
+
+![Tablet-width version of the upload panel, with a Free Cloud Storage 100 GB block at the left and the Upload Data picker filling the device.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-08.jpg)
+
+Screenshot 08 · 1280 × 720 · landscape · Select and upload · 1280-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/T2KIqOFBIQlYvNbJ2uaAaWc4go3rr2Dg95TfWQrnZ7IaiXtfvx-JaAGZ3p-FOhwswJaa3Oo_Xero9BUl6_hDNA)
+
+![Tablet-width version of the WhatsApp media panel, with the folder preview grid widened across the device.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-09.jpg)
+
+Screenshot 09 · 1280 × 720 · landscape · WhatsApp media backup · 1280-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/oItTUOI-cIzm483ebYD5Mafsr1Q4oqNVYhjN49X1qgKnK17xTXmzK052C3uqnn_CqiZp6W-vX_PDhzbipUEE7A)
+
+![Tablet-width version of the encrypted storage panel, with the Files list in two columns.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-10.jpg)
+
+Screenshot 10 · 1280 × 720 · landscape · Encrypted file storage · 1280-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/o3Ul2Fg9BrF9JBcQ5T94wBc9V9kNIv5QeZpCVnp4sqIcbRDWzJ3U0B4mYYmInhhBGNavLJUsenjKacEG0ocTunc)
+
+![Tablet-width version of the video offload panel, with the player card overlapping the video library.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-11.jpg)
+
+Screenshot 11 · 1280 × 720 · landscape · Video offload · 1280-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/sBcjPH7TY7XU7QgAMiVYd2KEgS1cL0uewsZOOcFOLO17icyuKuxAgvMpAUXfFp2uC3SSIKOhXjl0JbP0y8_dqx0)
+
+![Tablet-width version of the photo security panel, with the Photos grid widened and cards lifted out.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-12.jpg)
+
+Screenshot 12 · 1280 × 720 · landscape · Photo grid security · 1280-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/WvudMkKHt-IYTiUrUUNDGvIe01BEPktB1mb2AH1RAQdYqAGmeCMCt7ckFQ3fRHMB8woLHFulo1_AstzIar_BCw)
+
+![Large tablet version of the upload panel, with a Free Cloud Storage 100 GB block at the left and the Upload Data picker filling the device.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-13.jpg)
+
+Screenshot 13 · 2560 × 1440 · landscape · Select and upload · 2560-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/lMHo8wJUxtwXK3GVHi2fAUbn1EVcbZAAKw8SNgm2vBndiPiLOx8p47ON1Dhb1MQ00EAeLIGxBRR-EARWdjCK)
+
+![Large tablet version of the WhatsApp media panel, with the folder preview grid widened across the device.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-14.jpg)
+
+Screenshot 14 · 2560 × 1440 · landscape · WhatsApp media backup · 2560-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/YTmFN6T6le5IiGrPnL-nSp_owiVDPdHLP7mQk2ZyUYdRGt-7VaVuC6rFJ2FQN-DScjtXTPd3YWHxEki0dLlUbw)
+
+![Large tablet version of the encrypted storage panel, with the Files list in two columns.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-15.jpg)
+
+Screenshot 15 · 2560 × 1440 · landscape · Encrypted file storage · 2560-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/64Rws71F_VNzonabIZeFlJGrFkHIlIkljhYUb-v45x1h7ef1x7YhHCiB0x_IdKgB9RWiST2UgxlRAyfaRkFR)
+
+![Large tablet version of the video offload panel, with the player card overlapping the video library.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-16.jpg)
+
+Screenshot 16 · 2560 × 1440 · landscape · Video offload · 2560-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/Ug8ct8Q2o8VxwARw0I5xAm_0Amol7b077tEg0ARn-U382Ut1opUrTEVYy5Vjn0edwRu3EMU6i17gRblLyKa_oqo)
+
+![Large tablet version of the photo security panel, with the Photos grid widened and cards lifted out.](../../tabs/04-competitors-graphics/graphics/00-cloud-storage-secure-vault/screenshot-17.jpg)
+
+Screenshot 17 · 2560 × 1440 · landscape · Photo grid security · 2560-wide set · [Original image on Google Play ↗](https://play-lh.googleusercontent.com/jO7QQIj-eWrO3NDum6qPhXLDe7DEXSPgTB9XJVQ3Uvbw1Fmy87Te3F0EpNPRNEITHm4n5tgmBoJIa1vx-YZaig)
 
 <a id="g-01-cloudgate"></a>
 
@@ -986,7 +1103,7 @@ Landscape screenshots: not observed in this snapshot.
 
 <a id="g-patterns"></a>
 
-Across all 11 apps
+Across all 11 competitors
 
 ## Cross-app design patterns
 
@@ -1080,13 +1197,13 @@ How this library was made
 
 ## Scope, evidence and limitations
 
-Snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.
+Competitor snapshot collected on 14 September 2026 from the 11 supplied public Google Play URLs, and our own listing re-read on 25 September 2026, both requesting English and US listing context. User aliases and package IDs are retained alongside current listing titles and publishers. Market figures come from the directly retrieved listing data; cached web readings sometimes displayed slightly different rating values. Figures are a dated snapshot, not a live dashboard.
 
 Original image responses were archived without redesign, cropping or recoloring. Dimensions and orientation were measured from saved files. Asset roles follow the listing's icon, feature-graphic and screenshot fields, with role-specific dimensions used as a consistency check. The feature graphic was not inferred merely from a landscape aspect ratio.
 
 Repeated screenshot URLs across device markup were deduplicated within each app, retaining first encounter order. Numbering is an archive identifier; it is not a promise that every device or locale displays the same carousel order. Counts describe unique published assets, not a single device's eight-image allowance. Device labels and custom listing variants were not conclusively resolved.
 
-All 112 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets.
+All 131 images were visually reviewed through labeled contact sheets. The saved originals remain available for close examination. The report assesses composition and messaging, not the installed apps, security implementation, service reliability or measured conversion. Exact typeface names, experiment history and the cause of download counts cannot be established from these assets.
 
 The library is reusable project memory: an index, per-app notes, local original assets and a machine-readable manifest containing URLs, dimensions and file hashes. It is not an assertion of account-wide memory or ongoing monitoring. Recheck listings before a new production campaign because graphics, names, ratings and download brackets can change.
 

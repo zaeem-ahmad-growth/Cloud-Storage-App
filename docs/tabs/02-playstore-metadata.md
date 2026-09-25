@@ -8,13 +8,13 @@
 
 <a id="m-overview"></a>
 
-**PlayStore Metadata** · Finalized from the ASO Playbook · United States · English · Listing copied 15 Sept 2026
+**PlayStore Metadata** · Finalized from the ASO Playbook · United States · English · Listing copied 25 Sept 2026
 
 ![App icon](../../assets/mylisting/icon.png)
 
 # Cloud Storage: Secure Vault
 
-Finalized · results pending · Cell Cave · Productivity · Contains ads · In-app purchases $9.99 - $49.99 per item · Rated Everyone · 4 screenshots · Feature graphic
+Finalized · results pending · Cell Cave · Productivity · Contains ads · In-app purchases $9.99 - $49.99 per item · Rated Everyone · 17 screenshots · Feature graphic
 
 [Google Play listing ↗](https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault&hl=en&gl=US) · [Privacy policy ↗](https://cloud-vault.tech/privacy.html) · [Developer site ↗](https://cellcave.github.io/cell-cave-website/) · com.softwarealliance.cloudvault
 
@@ -36,23 +36,75 @@ The finalized metadata for this app, targeted from the ASO Playbook’s US keywo
 
 ![Feature graphic](../../assets/mylisting/feature-graphic.png)
 
-Feature graphic · [original ↗](https://play-lh.googleusercontent.com/hNR2efqDB7DKTDcxyCV967DAEfEDQaphf5xOzO0Wkwvzp2euPSnPlMc6AsGY0GvF4Ho_y2OYJQzKAAqHk2RPrnM)
+Feature graphic · [original ↗](https://play-lh.googleusercontent.com/CE9IBgu9a6-sNwc7Glj9Q9fgkhHlI9g17KoF5IzmidzzqyqUICT-T8e_ERlzZN7RLr79hTdKcZl0r-JpeeoDnEo)
 
 ![Screenshot 1](../../assets/mylisting/screenshot-01.png)
 
-Screenshot 1 · [original ↗](https://play-lh.googleusercontent.com/VIpZ2wVQ5U2FK2DTSmUUOwg5XSj3Os1i2C16LvBbnQZpdsf3EDxD3QcmL_k256UOCZESLHsLC4I1zRVn8sVl9A)
+Screenshot 1 · [original ↗](https://play-lh.googleusercontent.com/XpeF1GkqmPFAKLPSWtBvwFxRxKVipQ9QwTMciZzPdNbUHCf3oTFMSpjU1ZTJWgAsEjjzIUiiZg2M4wv0h1zB)
 
 ![Screenshot 2](../../assets/mylisting/screenshot-02.png)
 
-Screenshot 2 · [original ↗](https://play-lh.googleusercontent.com/W0vhjzGOaSIJmbX8V0Kyx-oopN7csaEtdJC4n_GcCwTPEvJ3U6ysev4jrkRCkzA2197EHyZ7xZrw44mfiYrg)
+Screenshot 2 · [original ↗](https://play-lh.googleusercontent.com/uWwHt7KwXo1kRMCihy4D02Vz-KU7eN3oAmQmsNR571GAhSKAmmJQ9Rnq-BDKL2Q1yxCTg7xiB0NJhguBMY6v)
 
 ![Screenshot 3](../../assets/mylisting/screenshot-03.png)
 
-Screenshot 3 · [original ↗](https://play-lh.googleusercontent.com/A5zVrUYmRoZlakxBqGbfZg1oOIwoIoRAExDKRRiZtgG-o1o92vDE51fWFxYItJ_0H2pHc0VRM4VgPFwRIaugCw)
+Screenshot 3 · [original ↗](https://play-lh.googleusercontent.com/DTDxDpCBvaJ5RzjO-mozgAFZWHP-mqMcqvJ2ACQYJWJ3WyMLo4_RUH-RxypPLGQ_lq7PqtuQMiMO7YMK88EiAw)
 
 ![Screenshot 4](../../assets/mylisting/screenshot-04.png)
 
-Screenshot 4 · [original ↗](https://play-lh.googleusercontent.com/vK6Ov71jOTBFlZjHBiKtXKGRf_jYjZb2DyIMnzq4t1kif4aOs8UN87RSvI7tCksMZ5B8kY4oO1h6t2Nivw_R2g)
+Screenshot 4 · [original ↗](https://play-lh.googleusercontent.com/C6Wb4MyHYKWxCClDnNC2d8SVcFtXoOxbQyYHg5DqQ7RXvr70Sdx-QSnNF1TKETIKC2OQzSojDEhXvdoEgDp6Vg)
+
+![Screenshot 5](../../assets/mylisting/screenshot-05.png)
+
+Screenshot 5 · [original ↗](https://play-lh.googleusercontent.com/L__sV4ouqinTdvf1eo47SPbrRuO-Ax0Rm00MfTBX6_r02yri5QakDUxGwDDUX-6x2HJ8G-6tskkbnXFStgMfDA)
+
+![Screenshot 6](../../assets/mylisting/screenshot-06.png)
+
+Screenshot 6 · [original ↗](https://play-lh.googleusercontent.com/_rL6P-Q3g3gjNsRDACJ4s5b7CH1LXRT_iTcW7eBwYmgavxEQ_NXzFV5mCPkUfLL3Zv9HOgjln-kU3tvkyR4hsA)
+
+![Screenshot 7](../../assets/mylisting/screenshot-07.png)
+
+Screenshot 7 · [original ↗](https://play-lh.googleusercontent.com/kNXAJ1nJwHEnan0dn4KYuDlLm5YqJ4JeDLLwbMiiXQ3fRxjobjcODwAczmHXuHVlT4aXG4ty80VlfaP4pAmyow)
+
+![Screenshot 8](../../assets/mylisting/screenshot-08.png)
+
+Screenshot 8 · [original ↗](https://play-lh.googleusercontent.com/T2KIqOFBIQlYvNbJ2uaAaWc4go3rr2Dg95TfWQrnZ7IaiXtfvx-JaAGZ3p-FOhwswJaa3Oo_Xero9BUl6_hDNA)
+
+![Screenshot 9](../../assets/mylisting/screenshot-09.png)
+
+Screenshot 9 · [original ↗](https://play-lh.googleusercontent.com/oItTUOI-cIzm483ebYD5Mafsr1Q4oqNVYhjN49X1qgKnK17xTXmzK052C3uqnn_CqiZp6W-vX_PDhzbipUEE7A)
+
+![Screenshot 10](../../assets/mylisting/screenshot-10.png)
+
+Screenshot 10 · [original ↗](https://play-lh.googleusercontent.com/o3Ul2Fg9BrF9JBcQ5T94wBc9V9kNIv5QeZpCVnp4sqIcbRDWzJ3U0B4mYYmInhhBGNavLJUsenjKacEG0ocTunc)
+
+![Screenshot 11](../../assets/mylisting/screenshot-11.png)
+
+Screenshot 11 · [original ↗](https://play-lh.googleusercontent.com/sBcjPH7TY7XU7QgAMiVYd2KEgS1cL0uewsZOOcFOLO17icyuKuxAgvMpAUXfFp2uC3SSIKOhXjl0JbP0y8_dqx0)
+
+![Screenshot 12](../../assets/mylisting/screenshot-12.png)
+
+Screenshot 12 · [original ↗](https://play-lh.googleusercontent.com/WvudMkKHt-IYTiUrUUNDGvIe01BEPktB1mb2AH1RAQdYqAGmeCMCt7ckFQ3fRHMB8woLHFulo1_AstzIar_BCw)
+
+![Screenshot 13](../../assets/mylisting/screenshot-13.png)
+
+Screenshot 13 · [original ↗](https://play-lh.googleusercontent.com/lMHo8wJUxtwXK3GVHi2fAUbn1EVcbZAAKw8SNgm2vBndiPiLOx8p47ON1Dhb1MQ00EAeLIGxBRR-EARWdjCK)
+
+![Screenshot 14](../../assets/mylisting/screenshot-14.png)
+
+Screenshot 14 · [original ↗](https://play-lh.googleusercontent.com/YTmFN6T6le5IiGrPnL-nSp_owiVDPdHLP7mQk2ZyUYdRGt-7VaVuC6rFJ2FQN-DScjtXTPd3YWHxEki0dLlUbw)
+
+![Screenshot 15](../../assets/mylisting/screenshot-15.png)
+
+Screenshot 15 · [original ↗](https://play-lh.googleusercontent.com/64Rws71F_VNzonabIZeFlJGrFkHIlIkljhYUb-v45x1h7ef1x7YhHCiB0x_IdKgB9RWiST2UgxlRAyfaRkFR)
+
+![Screenshot 16](../../assets/mylisting/screenshot-16.png)
+
+Screenshot 16 · [original ↗](https://play-lh.googleusercontent.com/Ug8ct8Q2o8VxwARw0I5xAm_0Amol7b077tEg0ARn-U382Ut1opUrTEVYy5Vjn0edwRu3EMU6i17gRblLyKa_oqo)
+
+![Screenshot 17](../../assets/mylisting/screenshot-17.png)
+
+Screenshot 17 · [original ↗](https://play-lh.googleusercontent.com/jO7QQIj-eWrO3NDum6qPhXLDe7DEXSPgTB9XJVQ3Uvbw1Fmy87Te3F0EpNPRNEITHm4n5tgmBoJIa1vx-YZaig)
 
 <a id="m-current"></a>
 
@@ -84,7 +136,7 @@ Backup your phone to a private cloud — restore files anytime, free up storage.
 
 #### WHY CLOUD STORAGE: SECURE VAULT?
 
-Your phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage, Secure Vault keeps every photo, video and document safe online and within reach on any device.
+Your phone is not a safe place for your memories. Phones get lost, broken and stolen — your cloud backup doesn’t. Cloud Storage: Secure Vault keeps every photo, video and document safe online and within reach on any device.
 
 #### 100 GB FREE CLOUD STORAGE
 
@@ -276,7 +328,7 @@ What each field is built to carry, the evidence behind the title decision, and t
 | • Recorded | **Head-term density, measured against the competitive set** | “cloud storage” runs 4.4% of description words (10 uses in 453 words). Your 11 competitors run 3.7–10.5% (median 4.9%), and 11 of them sit above 3%, 7 of them above this listing. It is the app’s core niche term, so the level is recorded, not treated as a violation. |
 | ✓ Met | **Every other phrase below 3% of description words** | Highest after the head term: “free cloud storage” 2.6%, “free up space” 2.0%, “secure cloud storage” 1.3%. |
 | • Recorded | **Storage amounts declared** | “100 GB FREE CLOUD STORAGE” · in-app prices $9.99 - $49.99 per item. |
-| • Recorded | **Screenshots** | 4 published (8 phone slots available); your competitors publish 5–14. |
+| • Recorded | **Screenshots** | 17 published (8 phone slots available); your competitors publish 5–17. |
 | ✓ Met | **Feature graphic published** | Published. |
 | • Recorded | **Category** | Productivity · 9 of your 11 competitors use the same category. |
 | ✓ Met | **Privacy policy linked** | Linked. |
@@ -542,7 +594,7 @@ Method
 
 ## How this tab was built
 
-**The metadata.** The Google Play listing for com.softwarealliance.cloudvault (English, United States) was copied on 15 Sept 2026, and the team’s finalized wording was applied to it: the short description from the proposed package, the app name in place of the draft placeholder, the ads wording removed and the account wording aligned with sign-up. The title is unchanged. Listing graphics shown are copies of the published icon, feature graphic and screenshots.
+**The metadata.** The Google Play listing for com.softwarealliance.cloudvault (English, United States) was copied on 25 Sept 2026, and the team’s finalized wording was applied to it: the short description from the proposed package, the app name in place of the draft placeholder, the ads wording removed and the account wording aligned with sign-up. The title is unchanged. Listing graphics shown are copies of the published icon, feature graphic and screenshots.
 
 **No app ranking.** This tab never measures where your own app ranks. Every rank shown belongs to your 11 competitors or to the evidence apps from the 8 Sep report, all from the same 15 Sep US results the playbook uses. They are the baseline against which this metadata’s results will be read.
 
